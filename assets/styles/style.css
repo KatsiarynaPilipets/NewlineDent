@@ -1,4 +1,98 @@
 .container {
-  max-width: 1622px;
+  max-width: 1920px;
   margin: 0 auto;
 }
+
+.btn_sign {
+  border-radius: 12px;
+  padding: 30px 60px;
+  border-width: 0;
+}
+
+.container_sign_up {
+  display: flex;
+  flex-direction: row;
+  height: 397px;
+  background-image: url(/before/assets/img/before_after/sign_up_block.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 115%;
+  background-size: 57% 100%;
+}
+
+.blue_gradient {
+  background: linear-gradient(125deg, #4FA7FB 80%, transparent 50%);
+}
+
+.sign_up_price > p {
+  display: flex;
+  margin: 0;
+}
+
+del {
+  text-decoration: line-through;
+  text-decoration-color: #E33434;
+}
+
+.sign_up_lines {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.sign_up_arrow {
+  width: 64px;
+  margin-top: 10px;
+}
+
+.sign_up_img {
+  height: 397px;
+}
+
+.inner_container_sign-up {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 150px;
+  height: 317px;
+}
+
+.sign_up_title {
+  width: 1005px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  line-height: 60.45px;
+}
+
+.sign_up_title,
+.sign_up_price > p {
+  font-family: "Gilroy";
+  font-size: 50px;
+  color: #fff;
+}
+
+.sign_up_price > p {
+  line-height: 29.02px;
+}
+
+.sign_up_price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn_signUp_white_blue {
+  width: 454px;
+  height: 89px;
+  background-color: white;
+  box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
+}
+
+.btn_signUp_white_blue {
+  font-family: "Gilroy";
+  font-size: 24px;
+  line-height: 29.02px;
+  color: #4FA7FB;
+}
+
+/*# sourceMappingURL=style.css.map */
