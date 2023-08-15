@@ -14,7 +14,7 @@ $black: #000000;
 
 //Screens
 $tablet: 1200px;
-$mobile: 390px;
+$mobile: 768px;
 
 //mixins
 @mixin container {
@@ -22,8 +22,13 @@ $mobile: 390px;
     margin: 0 auto;
   }
 
-  @mixin tablet-container {
+@mixin tablet-container {
     max-width: 1200px;
+    margin: 0 auto;
+  }
+
+@mixin mobile-container {
+    max-width: 768px;
     margin: 0 auto;
   }
 
