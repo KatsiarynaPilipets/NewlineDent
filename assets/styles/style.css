@@ -1,4 +1,25 @@
-.container {
-  max-width: 1622px;
-  margin: 0 auto;
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
 }
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */
