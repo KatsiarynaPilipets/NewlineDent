@@ -1,23 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+
+//colors
+$blue: #4FA7FB;
+$pink: #FF9FB7;
+$whitesmoke: #F3F3F3;
+$lightblue: #CBE5FF;
+$white: #FFFFFF;
+$black: #000000;
+
+//Screens
+$tablet: 1200px;
+$mobile: 768px;
+
+//mixins
+@mixin container {
+  max-width: 1622px;
+  margin: 0 auto;
+}
+
+@mixin tablet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin mobile-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@import "reset";
+
+
+// FONTS
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'),
+    url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: local('Coolvetica'),
+    url(../fonts/Coolvetica_400/CoolveticaRg-Regular\ 400.ttf);
+}
+
 .container {
   // max-width: 1622px;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-$bglightblue: #CBE5FF;
-$titleblue: #4FA7FB;
-$pinkButton: #FF9FB7;
-$pinkShadow: #FFC8D6;
-$innerShadow: #C88D9C;
-
-.btn_sign {
-  border-radius: 12px;
-  padding: 30px 60px;
-  border-width: 0;
-}
-
 // БЛОК ЗАПИШИСЬ НА КОНСУЛЬТАЦИЮ
-.container_sign_up {
+.container__sign_up {
   display: flex;
   flex-direction: row;
   height: 397px;
@@ -28,35 +65,68 @@ $innerShadow: #C88D9C;
   background-size: 57% 100%;
 }
 
+// диагональный синий блок: размеры, угол наклона
 .blue_gradient {
-  background: linear-gradient(125deg, $titleblue 80%, transparent 50%);
+  background: linear-gradient(125deg, $blue 80%, transparent 50%);
 }
 
-.sign_up_price>p {
-  display: flex;
-  margin: 0;
-}
+// .sign_up_price>p {
+//   display: flex;
+//   margin: 0;
+// }
 
 del {
   text-decoration: line-through;
   text-decoration-color: #E33434;
 }
 
-.sign_up_lines {
-  display: flex;
-  flex-direction: row;
-  margin: 20px;
+// блок запишись на консультацию
+.sign_up {
+
+  // стили блока со стрелкой
+  &_arrow {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 64px;
+    margin-top: 10px;
+  }
+
+  // высота картинки
+  &_img {
+    height: 397px;
+  }
+
+  // стили блока заголовка
+  &__title {
+    width: 1005px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 60.45px;
+  }
+
+  // стили текста заголовка и цены
+  &__title,
+  &_price>p {
+    font-family: 'Gilroy';
+    font-size: 50px;
+    color: #fff;
+  }
+
+  &_price>p {
+    line-height: 29.02px;
+  }
+
+  // стили блока с ценами
+  &_price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
-.sign_up_arrow {
-  width: 64px;
-  margin-top: 10px;
-}
-
-.sign_up_img {
-  height: 397px;
-}
-
+// внутренний блок запишись на консультацию
 .inner_container_sign-up {
   display: flex;
   flex-direction: column;
@@ -64,42 +134,26 @@ del {
   height: 317px;
 }
 
-.sign_up_title {
-  width: 1005px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  line-height: 60.45px;
-}
+// кнопка
+.btn_sign {
+  // кнопка со скругленными углами и без бордера
+  border-radius: 12px;
+  padding: 30px 60px;
+  border-width: 0;
 
-.sign_up_title,
-.sign_up_price>p {
-  font-family: 'Gilroy';
-  font-size: 50px;
-  color: #fff;
-}
+  // стили бело-голубой кнопки
+  &_white-blue {
+    width: 454px;
+    height: 89px;
+    background-color: white;
+    box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
+  }
 
-.sign_up_price>p {
-  line-height: 29.02px;
-}
-
-.sign_up_price {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.btn_signUp_white_blue {
-  width: 454px;
-  height: 89px;
-  background-color: white;
-  box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
-
-}
-
-.btn_signUp_white_blue {
-  font-family: 'Gilroy';
-  font-size: 24px;
-  line-height: 29.02px;
-  color: $titleblue;
+  // стиль текста на бело-голубой кнопке
+  &_white-blue {
+    font-family: 'Gilroy';
+    font-size: 24px;
+    line-height: 29.02px;
+    color: $blue;
+  }
 }
