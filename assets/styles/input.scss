@@ -1,61 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+
+//colors
+$blue: #4FA7FB;
+$pink: #FF9FB7;
+$whitesmoke: #F3F3F3;
+$lightblue: #CBE5FF;
+$white: #FFFFFF;
+$black: #000000;
+
+//Screens
+$tablet: 1200px;
+$mobile: 768px;
+
+//mixins
+@mixin container {
+  max-width: 1622px;
+  margin: 0 auto;
+}
+
+@mixin tablet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin mobile-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@import "reset";
+
+
+// FONTS
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'),
+    url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: local('Coolvetica'),
+    url(../fonts/Coolvetica_400/CoolveticaRg-Regular\ 400.ttf);
+}
+
+// цвета для розовой кнопки
+$pinkShadow: #FFC8D6;
+$innerShadow: #C88D9C;
+
 .container {
   // max-width: 1622px;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-$bglightblue: #CBE5FF;
-$titleblue: #4FA7FB;
-$pinkButton: #FF9FB7;
-$pinkShadow: #FFC8D6;
-$innerShadow: #C88D9C;
-
-.btn_sign {
-  border-radius: 12px;
-  padding: 30px 60px;
-  border-width: 0;
-}
-
 // ДО/ПОСЛЕ СО СЛАЙДЕРОМ
-
-// * {
-//   box-sizing: border-box;
-// }
-
-.container_before_after {
+// стили блока, заливка фона
+.container__before_after {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 1332px;
-  background-color: $bglightblue;
+  background-color: $lightblue;
   margin: 0 auto;
 }
 
-.before_after__title {
-  font-family: 'Coolvetica';
-  font-weight: 400;
-  font-size: 120px;
-  line-height: 106.8px;
-  text-align: center;
-  color: $titleblue;
+.before_after {
+
+  // заголовок до/после
+  &__title {
+    font-family: 'Coolvetica';
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 106.8px;
+    text-align: center;
+    color: $blue;
+    margin-top: 100px;
+  }
+
+  // стили блока слайдера со всеми фото
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    // max-width: 1877.27px;
+  }
 }
 
-.before_after__title {
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
+// розовый цвет для выделения в заголовке до/после
 .pink_text {
-  color: #FF9FB7;
+  color: $pink;
 }
 
-.before_after__slider {
-  display: flex;
-  flex-direction: row;
-  margin-top: 120px;
-  // max-width: 1877.27px;
-}
-
+// размер дива каждого слайдера с фото
 .slider {
   width: 435px;
   height: 580px;
@@ -88,21 +128,17 @@ $innerShadow: #C88D9C;
   height: 100%;
 }
 
-.change1.slider_change,
-.change2.slider_change,
-.change3.slider_change {
+.slider_change {
   position: absolute;
   left: 50%;
   top: 0;
   width: 1.93px;
   height: 100%;
   z-index: 6;
-  background-color: $titleblue;
+  background-color: $blue;
 }
 
-.change1.slider_change::after,
-.change2.slider_change::after,
-.change3.slider_change::after {
+.slider_change::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -110,29 +146,40 @@ $innerShadow: #C88D9C;
   border-radius: 100%;
   width: 48.33px;
   height: 48.33px;
-  background-color: $titleblue;
+  background-color: $blue;
   transform: translate(-50%, -50%);
+  cursor: col-resize;
 }
 
-.btn_signUp_pink {
-  width: 788px;
-  height: 118px;
-  margin-top: 100px;
-  background-color: $pinkButton;
-  box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
-}
+// кнопки
+.btn_sign {
+  // все кнопки блоков со скругленными углами и без бордера
+  border-radius: 12px;
+  padding: 30px 60px;
+  border-width: 0;
 
-.btn_signUp_pink {
-  font-family: 'Gilroy';
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 58.03px;
-  color: white;
+  // стили розовой кнопки блока до/после: размер и цвета
+  &_pink {
+    width: 788px;
+    height: 118px;
+    margin-top: 100px;
+    background-color: $pink;
+    box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+  }
+
+  // стили текста на кнопке
+  &_pink {
+    font-family: 'Gilroy';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.03px;
+    color: $white;
+  }
 }
 
 
 // БЛОК С БИРЮЗОВЫМ ГРАДИЕНТОМ ЗАПИСЬ НА ОНЛАЙН КОНСУЛЬТАЦИЮ
-.container_turquoise {
+.container__turquoise {
   display: flex;
   flex-direction: row;
   height: 814px;
@@ -141,45 +188,51 @@ $innerShadow: #C88D9C;
   background-size: 60% 100%;
   background-repeat: no-repeat;
   background-position: 102%;
+
+  // блок на синем фоне: белый текст и кнопка
+  &_inner {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    width: 838px;
+  }
 }
 
+// диагональный синий блок: размеры, угол наклона
 .turquoise_gradient {
   width: 1150px;
-  background: linear-gradient(102deg, $titleblue 85%, transparent 50%);
+  background: linear-gradient(102deg, $blue 85%, transparent 50%);
 }
 
-.inner_container_turquoise {
-  display: flex;
-  flex-direction: column;
-  margin-left: 150px;
-  width: 838px;
-}
-
-.turquoise_text_block {
-  margin-top: 232px;
-}
-
+// стили текста на синем фоне
 .turquoise_text {
   font-family: 'Gilroy';
   font-size: 40px;
   line-height: 48.36px;
-  color: white;
+  color: $white;
   margin: 0 0 80px;
+
+  // верхний отступ у блока с текстом
+  &_block {
+    margin-top: 232px;
+  }
 }
 
-.btn_signUp_white_blue2 {
+// стили бело-голубой кнопки блока с диагональю: размер и цвета
+.btn_sign_white-blue2 {
   width: 585px;
   height: 96px;
-  background-color: white;
+  background-color: $white;
   box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
 }
 
-.btn_signUp_white_blue2 {
+// стили текста на бело-голубой кнопке
+.btn_sign_white-blue2 {
   font-family: 'Gilroy';
   font-size: 30px;
   font-weight: 700;
   line-height: 36.27px;
-  color: $titleblue;
+  color: $blue;
 }
 
 /*# sourceMappingURL=style.css.map */
