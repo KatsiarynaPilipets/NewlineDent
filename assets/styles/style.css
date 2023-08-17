@@ -22,4 +22,120 @@ ul {
   list-style-type: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"), url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
+  src: local("Gilroy"), url(../fonts/Gilroy_700/Gilroy-Light.ttf);
+  src: local("Gilroy"), url(../fonts/Gilroy_700/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: local("Coolvetica"), url(../fonts/Coolvetica_400/CoolveticaRg-Regular_400.ttf);
+}
+.work_cost {
+  background-color: #cbe5ff;
+}
+
+.container_work_cost {
+  max-width: 1622px;
+  margin: 0 auto;
+}
+
+.title_work_cost {
+  text-align: center;
+  color: #4fa7fb;
+  font-family: "Coolvetica";
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 89%;
+  margin-bottom: 40px;
+}
+
+.container_work_cost-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.work_cost-img {
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.container_work_cost-info {
+  font-family: "Gilroy";
+  display: flex;
+  justify-content: space-around;
+}
+
+.container_work_cost-items {
+  box-sizing: border-box;
+  border-radius: 60px;
+  height: 844px;
+  max-width: 499px;
+  margin-bottom: 59px;
+  background-color: #4fa7fb;
+  color: #ffffff;
+}
+
+.work_cost-items-title {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 35px 45px 20px 45px;
+}
+
+.work_cost-items-title_line {
+  height: 4px;
+  width: 100%;
+  margin-left: 45px;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 61.46%);
+}
+
+.work_cost-items-title-2 {
+  font-size: 24px;
+  margin-left: 45px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.work_cost-list {
+  list-style-type: disc;
+  width: 301px;
+  font-size: 18px;
+  margin-left: 65px;
+  font-weight: 300;
+}
+
+.work_cost-list-elem {
+  margin-top: 25px;
+}
+
+.work_cost-btn-1 {
+  width: 269px;
+  height: 78px;
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: #ff9fb7;
+  box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
+  color: #f7f7f7;
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 28px 0px 15px 46px;
+}
+
+.work_cost-btn-2 {
+  width: 407px;
+  height: 61px;
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: #ff9fb7;
+  box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
+  color: #f7f7f7;
+  font-family: Gilroy;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 28px 0px 15px 46px;
+}
