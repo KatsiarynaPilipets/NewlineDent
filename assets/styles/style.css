@@ -1,4 +1,66 @@
 .container {
   max-width: 1622px;
   margin: 0 auto;
+  border: 1px solid red;
+}
+/*lena*/
+.wrapper-map, .wrapper-consultation{
+  max-width: 1920px;
+  width: 100%;
+}
+.wrapper-map{
+  background-color: #CBE5FF;
+}
+.wrapper-consultation{
+  height: 330px;
+  background-color: #4FA7FB;
+  color: #FFFFFF;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.map, .consultation{
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+}
+.consultation{
+  display: flex;
+  justify-content: space-between;
+}
+.consultation_text{
+  font-size: 65px;
+  color: #FFFFFF;
+}
+.consultation_call{
+  display: flex;
+  border: 1px dotted green;
+  border-radius: 200px;
+  background-color: #FFFFFF;
+  width: 510px;
+  height: 69px;
+}
+.consultation_call-input{
+  background-color: #ffffff00;
+  width: 330px;
+  height: 59px;
+  border-radius: 200px;
+  padding:15px, 30px, 15px, 30px;
+  border: none;
+  align-self: center;
+  justify-content: center;
+}
+::placeholder{
+  color: #D9D9D9;
+  font-size: 24px;
+  text-align: center;
+}
+.consultation_call-button{
+  align-self: center;
+  width: 180px;
+  height: 69px;
+  border-radius: 200px;
+  padding:15px, 30px, 15px, 30px;
+  border: 5px solid #FFFFFF;
+  background-color: #FF9FB7;
+  color: #FFFFFF;
+  font-size: 24px;
 }
