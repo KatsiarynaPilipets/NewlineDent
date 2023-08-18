@@ -1,4 +1,36 @@
-.container {
-  max-width: 1622px;
-  margin: 0 auto;
+
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
 }
+
+//colors
+$blue: #4FA7FB;
+$pink: #FF9FB7;
+$whitesmoke: #F3F3F3;
+$lightblue: #CBE5FF;
+$white: #FFFFFF;
+$black: #000000;
+
+//Screens
+$tablet: 1200px;
+$mobile: 768px;
+
+//mixins
+@mixin container {
+  max-width: 1622px;
+    margin: 0 auto;
+  }
+
+@mixin tablet-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+@mixin mobile-container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @import "reset";
+
