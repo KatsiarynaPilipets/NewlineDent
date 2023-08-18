@@ -22,66 +22,86 @@ ul {
   list-style-type: none;
 }
 
-/*# sourceMappingURL=style.css.map */
-
 /*lena*/
-.wrapper-map, .wrapper-consultation{
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"), url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: local("Coolvetica"), url(../fonts/Coolvetica_400/CoolveticaRg-Regular\ 400.ttf);
+}
+.wrapper-map, .wrapper-consultation {
   max-width: 1920px;
   width: 100%;
+  display: flex;
 }
-.wrapper-map{
+
+.wrapper-map {
   background-color: #CBE5FF;
 }
-.wrapper-consultation{
+
+.wrapper-consultation {
   height: 330px;
   background-color: #4FA7FB;
   color: #FFFFFF;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gilroy";
+  justify-content: center;
 }
-.map, .consultation{
+
+.map, .consultation {
   display: flex;
-  max-width: 1440px;
   width: 100%;
+  max-width: 1622px;
+  margin: 0 auto;
 }
-.consultation{
-  display: flex;
+
+.consultation {
   justify-content: space-between;
+  align-self: center;
 }
-.consultation_text{
-  font-size: 65px;
+
+.consultation_text {
+  font-size: 60px;
   color: #FFFFFF;
 }
-.consultation_call{
+
+.consultation_call {
   display: flex;
-  border: 1px dotted green;
   border-radius: 200px;
   background-color: #FFFFFF;
   width: 510px;
   height: 69px;
+  align-self: end;
 }
-.consultation_call-input{
-  background-color: #ffffff00;
+
+.consultation_call-input {
+  background-color: rgba(255, 255, 255, 0);
   width: 330px;
   height: 59px;
   border-radius: 200px;
-  padding:15px, 30px, 15px, 30px;
+  padding: 15px, 30px, 15px, 30px;
   border: none;
   align-self: center;
   justify-content: center;
 }
-::placeholder{
+
+::placeholder {
   color: #D9D9D9;
   font-size: 24px;
   text-align: center;
 }
-.consultation_call-button{
+
+.consultation_call-button {
   align-self: center;
   width: 180px;
   height: 69px;
   border-radius: 200px;
-  padding:15px, 30px, 15px, 30px;
+  padding: 15px, 30px, 15px, 30px;
   border: 5px solid #FFFFFF;
   background-color: #FF9FB7;
   color: #FFFFFF;
   font-size: 24px;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -34,3 +34,79 @@ $mobile: 768px;
 
   @import "reset";
 
+
+/*lena*/
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'),
+    url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: local('Coolvetica'),
+    url(../fonts/Coolvetica_400/CoolveticaRg-Regular\ 400.ttf);
+}
+
+.wrapper-map, .wrapper-consultation{
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+}
+.wrapper-map{
+  background-color: #CBE5FF;
+}
+.wrapper-consultation{
+  height: 330px;
+  background-color: $blue;
+  color: $white;
+  font-family: 'Gilroy';
+  justify-content: center;
+}
+.map, .consultation{
+  display: flex;
+  width: 100%;
+  @include container;
+}
+.consultation{
+  justify-content: space-between;
+  align-self: center;
+}
+.consultation_text{
+  font-size: 60px;
+  color: $white;
+}
+.consultation_call{
+  display: flex;
+  border-radius: 200px;
+  background-color: $white;
+  width: 510px;
+  height: 69px;
+  align-self: end;
+}
+.consultation_call-input{
+  background-color: #ffffff00;
+  width: 330px;
+  height: 59px;
+  border-radius: 200px;
+  padding:15px, 30px, 15px, 30px;
+  border: none;
+  align-self: center;
+  justify-content: center;
+}
+::placeholder{
+  color: #D9D9D9;
+  font-size: 24px;
+  text-align: center;
+}
+.consultation_call-button{
+  align-self: center;
+  width: 180px;
+  height: 69px;
+  border-radius: 200px;
+  padding:15px, 30px, 15px, 30px;
+  border: 5px solid $white;
+  background-color: $pink;
+  color: $white;
+  font-size: 24px;
+}
