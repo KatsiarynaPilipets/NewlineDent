@@ -135,6 +135,10 @@ ul {
   line-height: 58.03px;
   color: #FFFFFF;
 }
+.btn_sign_pink:hover {
+  background-color: #FFC8D6;
+  box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+}
 
 .container__turquoise {
   display: flex;
@@ -174,13 +178,233 @@ ul {
   background-color: #FFFFFF;
   box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
 }
-
 .btn_sign_white-blue2 {
   font-family: "Gilroy";
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
   line-height: 36.27px;
   color: #4FA7FB;
+}
+.btn_sign_white-blue2:hover {
+  background-color: #CBE5FF;
+  box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
+}
+
+.container__quiz {
+  background-color: #FFFFFF;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+.quiz__title {
+  font-size: 80px;
+  line-height: 95.44px;
+  margin-top: 80px;
+}
+
+.quiz__title,
+.btn_ellipse,
+.jaw_label,
+.quiz_radio_label {
+  font-family: "Gilroy";
+  font-weight: 600;
+}
+
+.quiz_progress {
+  margin-top: 60px;
+}
+
+.btn_ellipse {
+  border-radius: 50%;
+  border-width: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.btn_ellipse {
+  font-size: 53.84px;
+  line-height: 47.92px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0;
+}
+
+.ellipse_blue {
+  background-color: #4FA7FB;
+}
+
+.ellipse_gray {
+  background-color: #D9D9D9;
+}
+
+.line {
+  width: 200px;
+  margin-bottom: 18px;
+}
+
+.quiz_question {
+  display: flex;
+  flex-direction: row;
+}
+.quiz_question1 {
+  align-items: flex-end;
+}
+
+.quiz_blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.quiz_blocks_radio1 {
+  width: 1380px;
+  height: 532.37px;
+}
+.quiz_blocks_radio2, .quiz_blocks_radio3, .quiz_blocks_radio4, .quiz_blocks_radio5, .quiz_blocks_radio6 {
+  height: 450px;
+}
+
+.jaw {
+  width: 245.21px;
+  height: 173.37px;
+}
+
+.quiz_elem_1, .quiz_elem_2, .quiz_elem_3, .quiz_elem_4, .quiz_elem_5, .quiz_elem_6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+.quiz_elem_1 {
+  width: 611.17px;
+  height: 241.18px;
+  border-radius: 43px;
+  padding-left: 38.63px;
+}
+.quiz_elem_2, .quiz_elem_3, .quiz_elem_4, .quiz_elem_5, .quiz_elem_6 {
+  width: 700px;
+  height: 200px;
+  border-radius: 30px;
+  padding-left: 60px;
+}
+
+.elem_light-blue {
+  background-color: #ADD7FF;
+}
+
+.jaw_label {
+  font-size: 45.68px;
+  line-height: 54.49px;
+  color: #FFFFFF;
+  margin-left: 30px;
+}
+
+.quiz_radio_label {
+  font-size: 50px;
+  line-height: 44.15px;
+  color: #FFFFFF;
+  margin-left: 30px;
+}
+
+.btn_gray {
+  height: 120px;
+  border-radius: 200px;
+  padding: 30px 60px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61.9px;
+}
+.btn_gray_back {
+  width: 269px;
+  background-color: transparent;
+  border-color: #D9D9D9;
+  border-width: 6px;
+  color: rgba(41, 41, 41, 0.4);
+}
+.btn_gray_next {
+  width: 271px;
+  background-color: #D9D9D9;
+  border-width: 0;
+  box-shadow: inset -4px -4px 7px rgba(166, 165, 165, 0.9);
+  color: #FFFFFF;
+}
+
+.radio {
+  border: 0px;
+  width: 63.95px;
+  height: 63.95px;
+  margin-right: 20px;
+}
+
+.quiz_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 150px;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.container__quiz {
+  z-index: 15;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s all;
+}
+
+.container__quiz.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s all;
+}
+
+.quiz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 1920px;
+  padding: 25px;
+  transition: 0.3s all;
+}
+
+.quiz.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.3s all;
+}
+
+.btn_gray_next.active, .btn_gray_back.active {
+  width: 271px;
+  height: 120px;
+  border-radius: 200px;
+  border-width: 0;
+  background-color: #FF9FB7;
+  box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+}
+.btn_gray_next:hover, .btn_gray_back:hover {
+  background-color: #FF9FB7;
+  box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+}
+.btn_gray_back:hover {
+  border-width: 0;
+}
+
+.elem_light-blue.active {
+  background-color: #4FA7FB;
 }
 
 
