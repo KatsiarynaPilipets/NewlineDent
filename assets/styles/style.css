@@ -19,6 +19,16 @@
   src: url(/assets/fonts/Roboto/Roboto-Regular.ttf);
   font-weight: 400;
 }
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto/Roboto-Medium.ttf);
+  font-weight: 500;
+}
 p {
   margin: 0;
 }
@@ -126,9 +136,11 @@ ul {
 }
 
 .section-with-man {
+  max-width: 1920px;
+  margin: 0 auto;
   background-image: url("/assets/images/main-man.png");
   background-repeat: no-repeat;
-  background-position-x: 70%;
+  background-position-x: 100%;
   background-position-y: -25px;
 }
 
@@ -297,6 +309,73 @@ ul {
   letter-spacing: 0em;
   text-align: left;
   color: #f7f7f7;
+}
+
+.section-with-conditions {
+  background-color: #cbe5ff;
+}
+
+/* Стили для заголовка h2 */
+.header2 {
+  padding-top: 100px;
+  font-family: Coolvetica;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 89px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #4fa7fb;
+}
+.header2 span {
+  color: #ff9fb7;
+}
+
+/* Стили для блока с условиями */
+.conditions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 36px;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding-bottom: 181px;
+}
+.conditions__item {
+  flex-basis: 48%;
+  padding: 33px 28px;
+  border-radius: 600px;
+  background-color: #4fa7fb;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.conditions__img {
+  max-width: 264px;
+  max-height: 264px;
+}
+.conditions__text {
+  display: flex;
+  width: 433px;
+  flex-direction: column;
+  gap: 30px;
+}
+.conditions__text h3 {
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #292929;
+}
+.conditions__text p {
+  font-family: Gilroy;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #292929;
 }
 
 /*# sourceMappingURL=style.css.map */
