@@ -21,6 +21,16 @@ $mobile: 768px;
   src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
   font-weight: 700;
 }
+@font-face {
+  font-family: "Coolvetica";
+  src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: 400;
+}
 
 //mixins
 @mixin container {
@@ -61,6 +71,9 @@ $mobile: 768px;
   text-decoration: none;
   color: $blue;
   margin-right: 257px;
+  &:hover {
+    color: $pink;
+  }
 }
 /* Стили для меню */
 .menu {
@@ -92,16 +105,19 @@ $mobile: 768px;
 /* Стили для кнопки с номером телефона */
 .phone-button {
   display: inline-block;
-  width: 209px;
-  height: 49px;
   background-color: $blue;
   box-shadow: 4px 4px 14px 0px #d0ebff66 inset;
   box-shadow: -4px -4px 10px 0px #2d536f66 inset;
   padding: 10px;
   border-radius: 12px;
+  border-color: $blue;
   text-align: center;
-  & a {
-    text-decoration: none;
+  /* Смена стиля кнопки при наведении */
+  &:hover {
+    background-color: $pink;
+    border-color: $pink;
+    box-shadow: 4px 4px 14px 0px #ffc8d6 inset;
+    box-shadow: -4px -4px 10px 0px #c88d9c inset;
   }
 }
 
@@ -117,9 +133,87 @@ $mobile: 768px;
   color: #f7f7f7;
 }
 
-/* Смена стиля кнопки при наведении */
-.phone-button:hover {
+//Стили для верхней секции с мужчиной
+
+.section-with-man {
+  background-image: url("/assets/images/main-man.png");
+  //background-size: cover; /* Масштабирование изображения */
+  background-position: center right; /* Позиционирование изображения */
+  background-repeat: no-repeat; /* Запрет повторения изображения */
+}
+
+/* Заголовок h1 */
+.main-header {
+  max-width: 1134px;
+  margin-top: 210px;
+  font-family: Coolvetica;
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 125px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $blue;
+}
+/* Кнопка с ценой */
+.price-button {
+  display: inline-block;
+  max-width: 567px;
+  margin-top: 30px;
+  padding: 30px 60px 30px 60px;
+  border-radius: 24px;
   background-color: $pink;
   box-shadow: 4px 4px 14px 0px #ffc8d6 inset;
   box-shadow: -4px -4px 10px 0px #c88d9c inset;
+  text-align: center;
+  & a {
+    text-decoration: none;
+  }
+  /* Смена стиля кнопки при наведении */
+  &:hover {
+    background-color: $blue;
+    box-shadow: 4px 4px 14px 0px #d0ebff66 inset;
+    box-shadow: -4px -4px 10px 0px #2d536f66 inset;
+  }
+}
+/* Стили для цены */
+.price {
+  font-family: Coolvetica;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 89px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f7f7f7;
+}
+/* Стили для преимуществ */
+.advantages {
+  margin-top: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+  &__img {
+    max-width: 100px;
+    width: 100%;
+  }
+  &__name {
+    display: inline-block;
+    padding: 20px 15px 20px 15px;
+    border-radius: 12px;
+    background-color: $blue;
+    & span {
+      font-family: Roboto;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $white;
+    }
+  }
 }
