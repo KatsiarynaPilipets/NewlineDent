@@ -1,8 +1,14 @@
+@charset "UTF-8";
 /*Box-sizing*/
 * {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
 p {
   margin: 0;
 }
@@ -20,6 +26,93 @@ ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.container {
+  max-width: 1622px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 63px;
+}
+
+/* Стили для логотипа */
+.logo {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: #4fa7fb;
+  margin-right: 257px;
+}
+
+/* Стили для меню */
+.menu {
+  margin-right: 168px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu li {
+  margin-right: 50px;
+}
+.menu a {
+  text-decoration: none;
+  color: #4fa7fb;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menu a:hover {
+  color: #ff9fb7;
+}
+
+/* Стили для кнопки с номером телефона */
+.phone-button {
+  display: inline-block;
+  width: 209px;
+  height: 49px;
+  background-color: #4fa7fb;
+  box-shadow: 4px 4px 14px 0px rgba(208, 235, 255, 0.4) inset;
+  box-shadow: -4px -4px 10px 0px rgba(45, 83, 111, 0.4) inset;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+.phone-button a {
+  text-decoration: none;
+}
+
+/* Стили для номера телефона */
+.phone-number {
+  display: block;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f7f7f7;
+}
+
+/* Смена стиля кнопки при наведении */
+.phone-button:hover {
+  background-color: #ff9fb7;
+  box-shadow: 4px 4px 14px 0px #ffc8d6 inset;
+  box-shadow: -4px -4px 10px 0px #c88d9c inset;
 }
 
 /*# sourceMappingURL=style.css.map */

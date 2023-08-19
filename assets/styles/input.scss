@@ -1,36 +1,125 @@
-
 /*Box-sizing*/
 * {
   box-sizing: border-box;
 }
 
 //colors
-$blue: #4FA7FB;
-$pink: #FF9FB7;
-$whitesmoke: #F3F3F3;
-$lightblue: #CBE5FF;
-$white: #FFFFFF;
+$blue: #4fa7fb;
+$pink: #ff9fb7;
+$whitesmoke: #f3f3f3;
+$lightblue: #cbe5ff;
+$white: #ffffff;
 $black: #000000;
 
 //Screens
 $tablet: 1200px;
 $mobile: 768px;
 
+//Fonts
+@font-face {
+  font-family: "Gilroy";
+  src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+
 //mixins
 @mixin container {
   max-width: 1622px;
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+}
 
 @mixin tablet-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 @mixin mobile-container {
-    max-width: 768px;
-    margin: 0 auto;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@import "reset";
+
+// Стили для header
+.container {
+  @include container;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 63px;
+}
+/* Стили для логотипа */
+.logo {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: $blue;
+  margin-right: 257px;
+}
+/* Стили для меню */
+.menu {
+  margin-right: 168px;
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
   }
+  & li {
+    margin-right: 50px;
+  }
+  & a {
+    text-decoration: none;
+    color: $blue;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 
-  @import "reset";
+    &:hover {
+      color: $pink;
+    }
+  }
+}
+/* Стили для кнопки с номером телефона */
+.phone-button {
+  display: inline-block;
+  width: 209px;
+  height: 49px;
+  background-color: $blue;
+  box-shadow: 4px 4px 14px 0px #d0ebff66 inset;
+  box-shadow: -4px -4px 10px 0px #2d536f66 inset;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  & a {
+    text-decoration: none;
+  }
+}
 
+/* Стили для номера телефона */
+.phone-number {
+  display: block;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f7f7f7;
+}
+
+/* Смена стиля кнопки при наведении */
+.phone-button:hover {
+  background-color: $pink;
+  box-shadow: 4px 4px 14px 0px #ffc8d6 inset;
+  box-shadow: -4px -4px 10px 0px #c88d9c inset;
+}
