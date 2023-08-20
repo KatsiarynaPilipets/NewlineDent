@@ -201,3 +201,99 @@ $mobile: 768px;
   color: $white;
   font-size: 24px;
 }
+footer{
+  background-color: $lightblue;
+}
+.wrapper-footer{
+  width: 100%;
+  @include container;
+  display: grid;
+  grid-template-columns: 23.74% 35.76% 23.12% 17.38%;
+  grid-template-rows: 297px;
+}
+/*Оформление бордеров футера*/
+.license, .toc, .network{
+  border-right: 1px solid #A5BFD9;
+}
+/*Оформление padding футера*/
+.toc, .network, .pay{
+  padding: 50px 100px 0px 100px;
+}
+.license{
+  padding: 50px 100px 0px 0px;
+  display: grid;
+}
+.license_company{
+  font-family: 'Gilroy';
+  font-size: 30px;
+  color: #292929;
+  text-align: center;
+}
+.license_number{
+  font-family: 'Gilroy';
+  font-size: 24px;
+  color: #292929;
+  text-align: center;
+}
+.license_picture{
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.license_link{
+  font-family: 'Gilroy';
+  font-size: 24px;
+  color: #292929;
+  justify-self: center;
+}
+.toc{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.toc_block1, .toc_block2{
+  display: grid;
+  grid-template-rows: repeat(4, 23px);
+  gap: 10px;
+}
+.toc_p{
+  outline: none;
+  text-decoration: none;
+  font-family: 'Gilroy';
+  font-size: 20px;
+  color: #29292999;
+  text-align: center;
+}
+.network{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 38px 38px 1fr;
+  grid-template-areas:
+    "magazine magazine"
+    "contacts contacts"
+    "telegram whatsapp";
+  gap: 0px;
+  justify-content: center;
+}
+.network_p1{
+  grid-area: magazine;
+  margin-bottom: 15px;
+}
+.network_p2{
+  grid-area: contacts;
+  margin-bottom: 15px;
+}
+.network_pic{
+  margin-top: 35px;
+  justify-self: center;
+}
+.pay{
+  display: flex;
+  flex-direction: column;
+}
+.pay_pic{
+  padding-bottom: 20px;
+  width: 60px;
+  height: 50px;
+  justify-self: center;
+}
