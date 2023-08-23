@@ -36,9 +36,7 @@
           <h1 class="main-header">Все зубы за 1 день на 4 имплантах</h1>
           <!-- Кнопка с ценой -->
           <div class="price-button">
-            <a href="#">
-              <span class="price">за 91 000 ₽</span>
-            </a>
+            <span class="price">за 91 000 ₽</span>
           </div>
           <div class="cover-container">
             <div>
@@ -83,9 +81,37 @@
             <!-- Блок с видео главврача -->
             <div class="video-container">
               <div class="video-section">
-                <a href="#"
-                  ><img src="/assets/images/video-card.png" alt="video"
-                /></a>
+                <img
+                  src="/assets/images/video-card.png"
+                  alt="video"
+                  id="open-button"
+                />
+                <!-- Модальное окно с видео -->
+                <div id="video-modal">
+                  <button id="close-button" aria-label="Close">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L19 19M1 19L19 1"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </button>
+                  <div id="video-modal-container">
+                    <iframe
+                      id="video-iframe"
+                      frameborder="0"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+
                 <div class="doctor">
                   <p class="doctor__name">Варданян Роман Вруйрович</p>
                   <p class="doctor__position">Главный врач</p>
