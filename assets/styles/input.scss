@@ -12,8 +12,9 @@ $white: #ffffff;
 $black: #000000;
 
 //Screens
-$tablet: 1200px;
-$mobile: 768px;
+$desktop: 1622px;
+$tablet: 1020px;
+$mobile: 388px;
 
 //Fonts
 @font-face {
@@ -49,12 +50,12 @@ $mobile: 768px;
 }
 
 @mixin tablet-container {
-  max-width: 1200px;
+  max-width: 859.68px;
   margin: 0 auto;
 }
 
 @mixin mobile-container {
-  max-width: 768px;
+  max-width: 328.39px;
   margin: 0 auto;
 }
 
@@ -63,13 +64,25 @@ $mobile: 768px;
 // Стили для header
 .container {
   @include container;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
 }
 .header {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  align-items: baseline;
   margin-top: 63px;
+  @media screen and (max-width: $desktop) {
+    margin-top: 26.55px;
+  }
+  @media screen and (max-width: $tablet) {
+    margin-top: 10.2px;
+  }
 }
 /* Стили для логотипа */
 .logo {
@@ -82,6 +95,16 @@ $mobile: 768px;
   text-decoration: none;
   color: $blue;
   margin-right: 15.8%;
+  @media screen and (max-width: $desktop) {
+    font-size: 9.56px;
+    line-height: 11.56px;
+    margin-right: 135.66px;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 3.67px;
+    line-height: 4.44px;
+    margin-right: 50.74px;
+  }
   &:hover {
     color: $pink;
   }
@@ -94,9 +117,14 @@ $mobile: 768px;
     margin: 0;
     padding: 0;
     display: flex;
-  }
-  & li {
-    margin-right: 50px;
+    justify-content: center;
+    gap: 50px;
+    @media screen and (max-width: $desktop) {
+      gap: 26.55px;
+    }
+    @media screen and (max-width: $tablet) {
+      gap: 10.2px;
+    }
   }
   & a {
     text-decoration: none;
@@ -107,6 +135,14 @@ $mobile: 768px;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+    @media screen and (max-width: $desktop) {
+      font-size: 10.62px;
+      line-height: 12.84px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 4.08px;
+      line-height: 4.93px;
+    }
 
     &:hover {
       color: $pink;
@@ -123,6 +159,16 @@ $mobile: 768px;
   border-radius: 12px;
   border-color: $blue;
   text-align: center;
+
+  @media screen and (max-width: $desktop) {
+    padding: 6px;
+    border-radius: 5px;
+  }
+  @media screen and (max-width: $tablet) {
+    padding: 2px;
+    border-radius: 2px;
+  }
+
   /* Смена стиля кнопки при наведении */
   &:hover {
     background-color: $pink;
@@ -142,6 +188,15 @@ $mobile: 768px;
   letter-spacing: 0em;
   text-align: left;
   color: #f7f7f7;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 12.74px;
+    line-height: 15.41px;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 4.9px;
+    line-height: 5.92px;
+  }
 }
 
 //Стили для верхней секции с мужчиной
@@ -153,6 +208,18 @@ $mobile: 768px;
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: -25px;
+  @media screen and (max-width: 1865px) {
+    background-position-x: 430px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    background-image: url("/assets/images/main-man-tablet.png");
+    background-position-x: 50%;
+  }
+  @media screen and (max-width: $tablet) {
+    background-image: url("/assets/images/main-man-mobile.png");
+    background-position-y: 25px;
+  }
 }
 
 /* Заголовок h1 */
@@ -166,6 +233,19 @@ $mobile: 768px;
   letter-spacing: 0em;
   text-align: left;
   color: $blue;
+
+  @media screen and (max-width: $desktop) {
+    max-width: 602.15px;
+    padding-top: 58.94px;
+    font-size: 74.34px;
+    line-height: 66.16px;
+  }
+  @media screen and (max-width: $tablet) {
+    max-width: 231.42px;
+    padding-top: 22.65 px;
+    font-size: 28.57px;
+    line-height: 25.43px;
+  }
 }
 /* Кнопка с ценой */
 .price-button {
@@ -181,6 +261,19 @@ $mobile: 768px;
   & a {
     text-decoration: none;
   }
+
+  @media screen and (max-width: $desktop) {
+    max-width: 301.72px;
+    margin-top: 16.68px;
+    padding: 16px 32px 16px 32px;
+    border-radius: 13px;
+  }
+  @media screen and (max-width: $tablet) {
+    max-width: 116.49px;
+    margin-top: 7.14px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 5px;
+  }
 }
 /* Стили для цены */
 .price {
@@ -191,13 +284,30 @@ $mobile: 768px;
   letter-spacing: 0em;
   text-align: left;
   color: #f7f7f7;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 53.1px;
+    line-height: 47.26px;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 20.41px;
+    line-height: 18.16px;
+  }
 }
 .cover-container {
   display: flex;
   flex-direction: row;
   align-items: end;
-  padding-bottom: 60px;
+  padding-bottom: 59px;
   gap: 346px;
+  @media screen and (max-width: $desktop) {
+    padding-bottom: 31.73px;
+    gap: 178.95px;
+  }
+  @media screen and (max-width: $tablet) {
+    padding-bottom: 11.96px;
+    gap: 68.78px;
+  }
 }
 /* Стили для преимуществ */
 .advantages {
@@ -205,21 +315,51 @@ $mobile: 768px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  @media screen and (max-width: $desktop) {
+    margin-top: 28.93px;
+    gap: 7.96px;
+  }
+  @media screen and (max-width: $tablet) {
+    margin-top: 11.18px;
+    gap: 3.06px;
+  }
+
   &__item {
     display: flex;
     flex-direction: row;
     gap: 24px;
     align-items: center;
+    @media screen and (max-width: $desktop) {
+      gap: 12.74px;
+    }
+    @media screen and (max-width: $tablet) {
+      gap: 4.9px;
+    }
   }
   &__img {
     max-width: 100px;
     width: 100%;
+    @media screen and (max-width: $desktop) {
+      max-width: 53.1px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 20.41px;
+    }
   }
   &__name {
     display: inline-block;
     padding: 20px 15px 20px 15px;
     border-radius: 12px;
     background-color: $blue;
+    @media screen and (max-width: $desktop) {
+      padding: 11px 8px 11px 8px;
+      border-radius: 6px;
+    }
+    @media screen and (max-width: $tablet) {
+      padding: 4px 3px 4px 3px;
+      border-radius: 2px;
+    }
+
     & span {
       font-family: Roboto;
       font-size: 30px;
@@ -228,6 +368,14 @@ $mobile: 768px;
       letter-spacing: 0em;
       text-align: left;
       color: $white;
+      @media screen and (max-width: $desktop) {
+        font-size: 15.93px;
+        line-height: 14.18px;
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 6.12px;
+        line-height: 5.45px;
+      }
     }
   }
 }
@@ -235,15 +383,38 @@ $mobile: 768px;
 .signup-button {
   margin-top: 55px;
   padding: 30px 60px 30px 60px;
+  @media screen and (max-width: $desktop) {
+    margin-top: 29.2px;
+    padding: 16px 32px 16px 32px;
+  }
+  @media screen and (max-width: $tablet) {
+    margin-top: 11.22px;
+    padding: 6px 12px 6px 12px;
+  }
 }
 /* Стили для блока с видео*/
 .video-container {
   max-width: 789px;
+  @media screen and (max-width: $desktop) {
+    max-width: 423.73px;
+  }
+  @media screen and (max-width: $tablet) {
+    max-width: 162.85px;
+  }
 }
 .video-section {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 2%;
+  &__img {
+    max-width: 285px;
+    @media screen and (max-width: $desktop) {
+      max-width: 151.33px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 58.16px;
+    }
+  }
 }
 .doctor {
   display: flex;
@@ -252,6 +423,16 @@ $mobile: 768px;
   padding: 10px 20px 10px 20px;
   border-radius: 24px;
   background-color: $white;
+  @media screen and (max-width: $desktop) {
+    gap: 10.62px;
+    padding: 5px 11px 5px 11px;
+    border-radius: 13px;
+  }
+  @media screen and (max-width: $tablet) {
+    gap: 4.08px;
+    padding: 2px 4px 2px 4px;
+    border-radius: 5px;
+  }
   &__name {
     font-family: Roboto;
     font-size: 30px;
@@ -260,6 +441,14 @@ $mobile: 768px;
     letter-spacing: 0em;
     text-align: left;
     color: #292929;
+    @media screen and (max-width: $desktop) {
+      font-size: 15.93px;
+      line-height: 14.18px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 6.12px;
+      line-height: 5.45px;
+    }
   }
   &__position {
     font-family: Roboto;
@@ -269,17 +458,39 @@ $mobile: 768px;
     letter-spacing: 0em;
     text-align: left;
     color: #292929;
+    @media screen and (max-width: $desktop) {
+      font-size: 10.62px;
+      line-height: 9.45px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 4.08px;
+      line-height: 3.63px;
+    }
   }
 }
 .experience {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  @media screen and (max-width: $desktop) {
+    gap: 10.62px;
+  }
+  @media screen and (max-width: $tablet) {
+    gap: 4.08px;
+  }
   &__item {
     display: inline-block;
     background-color: $blue;
     padding: 15px 10px 15px 10px;
     border-radius: 12px;
+    @media screen and (max-width: $desktop) {
+      padding: 8px 5px 8px 5px;
+      border-radius: 6px;
+    }
+    @media screen and (max-width: $tablet) {
+      padding: 3px 2px 3px 2px;
+      border-radius: 2px;
+    }
     & span {
       font-family: Roboto;
       font-size: 30px;
@@ -288,6 +499,14 @@ $mobile: 768px;
       letter-spacing: 0em;
       text-align: left;
       color: $white;
+      @media screen and (max-width: $desktop) {
+        font-size: 15.93px;
+        line-height: 14.18px;
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 6.12px;
+        line-height: 5.45px;
+      }
     }
   }
 }
@@ -295,6 +514,15 @@ $mobile: 768px;
   margin-top: 30px;
   background-color: $blue;
   padding: 26px 32px;
+  @media screen and (max-width: $desktop) {
+    margin-top: 15.93px;
+    padding: 13.81px 22.17px;
+  }
+  @media screen and (max-width: $tablet) {
+    margin-top: 6.12px;
+    padding: 5.31px 8.52px;
+  }
+
   & span {
     font-family: Coolvetica;
     font-size: 30px;
@@ -303,8 +531,17 @@ $mobile: 768px;
     letter-spacing: 0em;
     text-align: left;
     color: #f7f7f7;
+    @media screen and (max-width: $desktop) {
+      font-size: 15.93px;
+      line-height: 14.18px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 6.12px;
+      line-height: 5.45px;
+    }
   }
 }
+
 /* Стили для модального окна с видео */
 #video-modal {
   display: none;
@@ -313,7 +550,7 @@ $mobile: 768px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 1000;
 }
 #video-modal-container {
@@ -324,8 +561,10 @@ $mobile: 768px;
   width: 80%;
   height: 50%;
   max-width: 800px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: $white;
+  @media (max-width: $desktop) {
+    width: 90%;
+  }
 }
 #video-iframe {
   width: 100%;
@@ -334,10 +573,10 @@ $mobile: 768px;
 }
 #close-button {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.8);
   color: $white;
   border: none;
   border-radius: 50%;
@@ -346,6 +585,7 @@ $mobile: 768px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 //Стили для секции с условиями
@@ -366,6 +606,17 @@ $mobile: 768px;
   & span {
     color: $pink;
   }
+
+  @media screen and (max-width: $desktop) {
+    padding-top: 53.17px;
+    font-size: 53.17px;
+    line-height: 47.32px;
+  }
+  @media screen and (max-width: $tablet) {
+    padding-top: 20.43px;
+    font-size: 20.43px;
+    line-height: 18.19px;
+  }
 }
 /* Стили для блока с условиями */
 .conditions {
@@ -376,24 +627,60 @@ $mobile: 768px;
   justify-content: space-between;
   margin-top: 70px;
   padding-bottom: 181px;
+  @media screen and (max-width: $desktop) {
+    margin-top: 37.54px;
+    padding-bottom: 96.24px;
+    row-gap: 19.14px;
+  }
+  @media screen and (max-width: $tablet) {
+    margin-top: 14.49px;
+    padding-bottom: 36.98px;
+    row-gap: 7.36px;
+  }
   &__item {
-    flex-basis: 48%;
+    flex-basis: 40%;
     padding: 33px 28px;
     border-radius: 600px;
     background-color: $blue;
     display: flex;
     flex-direction: row;
     gap: 40px;
+    @media screen and (max-width: $desktop) {
+      padding: 17.55px 14.89px;
+      border-radius: 213px;
+      gap: 21.27px;
+    }
+    @media screen and (max-width: $tablet) {
+      padding: 6.74px 5.72px;
+      border-radius: 82px;
+      gap: 8.18px;
+    }
   }
   &__img {
     max-width: 264px;
     max-height: 264px;
+    @media screen and (max-width: $desktop) {
+      max-width: 140.37px;
+      max-height: 140.37px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 53.95px;
+      max-height: 53.95px;
+    }
   }
   &__text {
     display: flex;
     width: 433px;
     flex-direction: column;
     gap: 30px;
+    @media screen and (max-width: $desktop) {
+      width: 230.22px;
+      gap: 15.66px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 88.48px;
+      gap: 6.16px;
+    }
     & h3 {
       font-family: Gilroy;
       font-size: 40px;
@@ -402,6 +689,14 @@ $mobile: 768px;
       letter-spacing: 0em;
       text-align: left;
       color: #292929;
+      @media screen and (max-width: $desktop) {
+        font-size: 21.27px;
+        line-height: 28.54px;
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 8.17px;
+        line-height: 10.97px;
+      }
     }
     & p {
       font-family: Gilroy;
@@ -411,6 +706,14 @@ $mobile: 768px;
       letter-spacing: 0em;
       text-align: left;
       color: #292929;
+      @media screen and (max-width: $desktop) {
+        font-size: 15.95px;
+        line-height: 21.41px;
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 6.13px;
+        line-height: 8.23px;
+      }
     }
   }
 }

@@ -85,25 +85,27 @@
                   src="/assets/images/video-card.png"
                   alt="video"
                   id="open-button"
+                  class="video-section__img"
                 />
                 <!-- Модальное окно с видео -->
                 <div id="video-modal">
-                  <button id="close-button" aria-label="Close">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 1L19 19M1 19L19 1"
-                        stroke="white"
-                        stroke-width="2"
-                      />
-                    </svg>
-                  </button>
                   <div id="video-modal-container">
+                    <button id="close-button" aria-label="Close">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="white"
+                      >
+                        <path
+                          d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
+                        ></path>
+                        <path
+                          d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
+                        ></path>
+                      </svg>
+                    </button>
                     <iframe
                       id="video-iframe"
                       frameborder="0"
@@ -111,7 +113,7 @@
                     ></iframe>
                   </div>
                 </div>
-
+                <!-- Информация о главвраче -->
                 <div class="doctor">
                   <p class="doctor__name">Варданян Роман Вруйрович</p>
                   <p class="doctor__position">Главный врач</p>
