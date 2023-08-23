@@ -144,9 +144,8 @@ ul {
   display: flex;
   flex-direction: row;
   height: 814px;
-  background-image: url(/before/assets/img/before_after/turquoise_senior-man-showing-blank-phone.jpg);
+  background: url(/before/assets/img/before_after/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   background-size: 60% 100%;
-  background-repeat: no-repeat;
   background-position: 102%;
 }
 .container__turquoise_inner {
@@ -384,7 +383,15 @@ ul {
 
 .quiz.active {
   transform: translate(-50%, -50%) scale(1);
-  transition: 0.3s all;
+  transition: 0.2s all;
+}
+
+.radio:checked {
+  background-color: #4FA7FB;
+}
+
+.elem_light-blue.active {
+  background-color: #4FA7FB;
 }
 
 .btn_gray_next.active, .btn_gray_back.active {
@@ -401,10 +408,6 @@ ul {
 }
 .btn_gray_back:hover {
   border-width: 0;
-}
-
-.elem_light-blue.active {
-  background-color: #4FA7FB;
 }
 
 

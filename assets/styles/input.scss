@@ -190,11 +190,11 @@ $innerShadow: #C88D9C;
   display: flex;
   flex-direction: row;
   height: 814px;
-  background-image: url(/before/assets/img/before_after/turquoise_senior-man-showing-blank-phone.jpg);
+  background: url(/before/assets/img/before_after/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   // overflow: hidden;
   background-size: 60% 100%;
-  background-repeat: no-repeat;
   background-position: 102%;
+
 
   // блок на синем фоне: белый текст и кнопка
   &_inner {
@@ -518,9 +518,19 @@ $gray: #D9D9D9;
 // При добавлении класса 'active'
 .quiz.active {
   transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
-  transition: 0.3s all;
+  transition: 0.2s all;
 }
 
+// Радио
+.radio:checked {
+  // border-color: $blue;
+  background-color: $blue;
+}
+
+// при добавлении класса active цвет плашки меняется на синий
+.elem_light-blue.active {
+  background-color: $blue;
+}
 
 // Кнопки
 .btn_gray {
@@ -548,9 +558,6 @@ $gray: #D9D9D9;
   }
 }
 
-// при добавлении класса active цвет плашки меняется на синий
-.elem_light-blue.active {
-  background-color: $blue;
-}
+
 
 /*# sourceMappingURL=style.css.map */
