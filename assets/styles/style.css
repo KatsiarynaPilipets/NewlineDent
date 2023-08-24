@@ -25,12 +25,24 @@ ul {
 
 /*lena*/
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy"), url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
+  font-family: "Gilroy700";
+  src: local("Gilroy700"), url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
 }
 @font-face {
-  font-family: "Coolvetica";
-  src: local("Coolvetica"), url(../fonts/Coolvetica_400/CoolveticaRg-Regular\ 400.ttf);
+  font-family: "Gilroy600";
+  src: local("Gilroy600"), url(../fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gilroy500";
+  src: local("Gilroy500"), url(../fonts/Gilroy_500/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "Gilroy400";
+  src: local("Gilroy400"), url(../fonts/Gilroy_400/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Coolvetica400";
+  src: local("Coolvetica400"), url(../fonts/Coolvetica_400/CoolveticaRg-Regular_400.ttf);
 }
 .wrapper-map, .wrapper-consultation {
   max-width: 1920px;
@@ -46,7 +58,7 @@ ul {
   height: 330px;
   background-color: #4FA7FB;
   color: #FFFFFF;
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   justify-content: center;
 }
 
@@ -66,7 +78,8 @@ ul {
 
 .map_title {
   grid-area: title;
-  font-family: "Coolvetica";
+  font-family: "Coolvetica400";
+  font-weight: 400;
   font-size: 120px;
   color: #4FA7FB;
   text-align: center;
@@ -97,15 +110,16 @@ ul {
 }
 
 .map_address-paragraph {
-  font-family: "Gilroy";
+  font-family: "Gilroy600";
   font-size: 35px;
   color: #f7f7f7;
 }
 
 .map_address-workmode {
-  font-family: "Gilroy";
+  font-family: "Gilroy400";
   font-size: 35px;
   color: #f7f7f7;
+  margin-top: 30px;
 }
 
 .map_link {
@@ -121,7 +135,7 @@ ul {
 .map_link-href {
   outline: none;
   text-decoration: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy600";
   font-size: 60px;
   color: #4FA7FB;
   align-self: self-start;
@@ -131,8 +145,9 @@ ul {
 .button_call {
   width: 294px;
   height: 59px;
+  margin-top: 30px;
   padding: 15px, 30px, 15px, 30px;
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-size: 24px;
   text-align: center;
   background-color: #FF9FB7;
@@ -145,8 +160,10 @@ ul {
 .button_ordercall {
   width: 249px;
   height: 59px;
+  margin-top: 30px;
+  margin-left: 30px;
   padding: 15px, 30px, 15px, 30px;
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-size: 24px;
   text-align: center;
   background-color: #4FA7FB;
@@ -162,7 +179,7 @@ ul {
 }
 
 .consultation_text {
-  font-size: 60px;
+  font-size: 63px;
   color: #FFFFFF;
 }
 
@@ -224,7 +241,7 @@ footer {
 
 /*Оформление padding футера*/
 .toc, .network, .pay {
-  padding: 50px 100px 0px 100px;
+  padding-top: 50px;
 }
 
 .license {
@@ -233,17 +250,18 @@ footer {
 }
 
 .license_company {
-  font-family: "Gilroy";
+  font-family: "Gilroy600";
   font-size: 30px;
   color: #292929;
   text-align: center;
 }
 
 .license_number {
-  font-family: "Gilroy";
+  font-family: "Gilroy400";
   font-size: 24px;
   color: #292929;
   text-align: center;
+  margin-top: 25px;
 }
 
 .license_picture {
@@ -253,7 +271,7 @@ footer {
 }
 
 .license_link {
-  font-family: "Gilroy";
+  font-family: "Gilroy500";
   font-size: 24px;
   color: #292929;
   justify-self: center;
@@ -261,52 +279,43 @@ footer {
 
 .toc {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.toc_block1, .toc_block2 {
-  display: grid;
-  grid-template-rows: repeat(4, 23px);
-  gap: 10px;
-}
-
-.toc_p {
-  outline: none;
-  text-decoration: none;
-  font-family: "Gilroy";
-  font-size: 20px;
-  color: rgba(41, 41, 41, 0.6);
-  text-align: center;
-}
-
-.network {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 38px 38px 1fr;
-  grid-template-areas: "magazine magazine" "contacts contacts" "telegram whatsapp";
-  gap: 0px;
   justify-content: center;
 }
 
-.network_p1 {
-  grid-area: magazine;
-  margin-bottom: 15px;
+.toc_block {
+  display: grid;
+  width: 169px;
+  grid-template-rows: repeat(5, 23px);
+  gap: 30px;
 }
 
-.network_p2 {
-  grid-area: contacts;
-  margin-bottom: 15px;
+.toc_block-p {
+  outline: none;
+  text-decoration: none;
+  font-family: "Gilroy400";
+  font-size: 20px;
+  color: rgba(41, 41, 41, 0.6);
+  text-align: center;
+  justify-self: left;
+}
+
+.network {
+  display: flex;
+  justify-content: center;
 }
 
 .network_pic {
-  margin-top: 35px;
-  justify-self: center;
+  margin-top: 126px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
 }
 
 .pay {
   display: flex;
   flex-direction: column;
+  margin-left: 100px;
 }
 
 .pay_pic {
@@ -314,6 +323,59 @@ footer {
   width: 60px;
   height: 50px;
   justify-self: center;
+}
+
+.wrapper-information {
+  width: 100%;
+  max-width: 1622px;
+  margin: 0 auto;
+  height: 239px;
+}
+
+.wrapper-information_title {
+  font-family: "Gilroy600";
+  font-size: 25px;
+  margin-top: 72px;
+}
+
+.wrapper-information_text {
+  font-family: "Gilroy400";
+  font-size: 20px;
+  margin-top: 17px;
+}
+
+.upward {
+  position: fixed;
+  bottom: 190px;
+  right: 140px;
+  width: 75px;
+  height: 75px;
+  background-color: #FFB5C7;
+  border-radius: 35px;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.upward.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.upward_img {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.upward_img-pic {
+  align-self: center;
+  width: 25px;
+  height: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
