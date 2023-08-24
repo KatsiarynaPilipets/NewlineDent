@@ -91,26 +91,109 @@ openPopupButton.addEventListener('click', (e) => {
     popup.classList.add('active'); // И для самого окна
 });
 
-arrPages.forEach((page) => {
+// arrPages.forEach((page) => {
 
-    let nextButton = page.querySelector('.btn_gray_next');
+//     let nextButton = page.querySelector('.btn_gray_next');
+//     page.classList.add('active');
 
-    nextButton.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+//     nextButton.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+//         e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+//         nextButton.classList.add('active'); // Добавляем класс 'active' для цвета кнопки
+
+//         let pageClass = page.getAttribute('class');
+//         console.log(pageClass);
+
+//         page.classList.remove('active');
+//         console.log(page);
+//     });
+// });
+
+
+
+let index = 0;
+// arrButton.forEach(function (button, i) {
+//     button.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         index = i;
+//         show();
+//     });
+// });
+
+
+
+for (let page = 0; page < arrPages.length; page++) {
+    // console.log(page);
+
+    function show() {
+        // let page = arrPages[index];
+
+        page.classList.add('active');
+        document.querySelector('.btn_gray_next').classList.add('active');
+
+    }
+    // function next(i) {
+    //     let button = arrButton[button];
+    //     button.addEventListener('click', function (e) {
+    //         e.preventDefault();
+    //         index = i;
+    //         show();
+    //     });
+    // }
+
+    next();
+    back();
+
+};
+
+function next() {
+    let nextButton = document.querySelector('.btn_gray_next');
+    nextButton.addEventListener('click', function (e) { // Для каждой вешаем обработчик событий на клик
         e.preventDefault(); // Предотвращаем дефолтное поведение браузера
-        nextButton.classList.add('active'); // Добавляем класс 'active' для цвета кнопки
+        // index = 0;
+        // index = index + 1;
+        // show();
+        // console.log(document.querySelector('.quiz'));
+        // document.querySelector('.quiz.active').classList.remove('active');
+        // console.log(document.querySelector('.quiz'));
 
-        let pageClass = page.getAttribute('class');
-        console.log(pageClass);
+        // let page = arrPages[index];
+        // console.log(page);
+        // page.classList.remove('active');
+        // console.log(page);
 
-        page.classList.remove('active');
-        console.log(page);
+        let nextPage = arrPages[index + 1];
+        console.log(nextPage);
+        nextPage.classList.add('active');
 
+        index <= arrPages.length && (index = 0);
+
+        console.log(nextButton);
     });
-    page.classList.add('active');
-    console.log(page);
+};
 
-})
 
+function back() {
+    let backButton = document.querySelector('.btn_gray_back');
+    backButton.addEventListener('click', function (e) { // Для каждой вешаем обработчик событий на клик
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        // index--;
+        index < 0 && (index = arrPages.length - 1);
+        // show();
+
+        let prevPage = arrPages[index - 1];
+        console.log(prevPage);
+
+        console.log(document.querySelector('.quiz'));
+        document.querySelector('.quiz.active').classList.remove('active');
+        prevPage.classList.add('active');
+        if (prevPage < 0) {
+            document.querySelector('.quiz')[arrPages.length - 1].classList.add('active')
+        }
+        console.log(prevPage);
+
+        console.log(backButton);
+    });
+};
 
 
 document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
@@ -123,11 +206,8 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
 
 
 
-
-
 // РАБОЧИЕ РАДИОКНОПКИ: МЕНЯЮТ ФОН, ВЫВОДЯТ ЗНАЧЕНИЯ В КОНСОЛЬ
 let arrRadio = Array.from(document.querySelectorAll('.radio'));
-// console.log(arrRadio);
 
 arrRadio.forEach(radio => radio.addEventListener('change', () => {
     for (let radio of arrRadio) {
@@ -137,11 +217,11 @@ arrRadio.forEach(radio => radio.addEventListener('change', () => {
         } else if (!radio.checked) {
             radio.parentElement.classList.remove('active');
         }
+
     }
     console.log(radio.value);
+
 }));
-
-
 
 
 
