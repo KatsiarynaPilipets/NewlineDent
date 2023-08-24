@@ -10,23 +10,38 @@
   font-weight: 700;
 }
 @font-face {
+  font-family: "Gilroy";
+  src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
   font-family: "Coolvetica";
   src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(/assets/fonts/Roboto/Roboto-Regular.ttf);
+  src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
+  src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
   font-weight: 300;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(/assets/fonts/Roboto/Roboto-Medium.ttf);
+  src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
   font-weight: 500;
 }
 p {
@@ -64,6 +79,12 @@ ul {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 340px) {
+  .container {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
 
 .header {
   display: flex;
@@ -80,6 +101,11 @@ ul {
 @media screen and (max-width: 870px) {
   .header {
     margin-top: 10.2px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .header {
+    flex-wrap: wrap;
   }
 }
 
@@ -109,6 +135,11 @@ ul {
     margin-right: 50.74px;
   }
 }
+@media screen and (max-width: 340px) {
+  .logo {
+    margin-right: 5%;
+  }
+}
 .logo:hover {
   color: #ff9fb7;
 }
@@ -116,6 +147,11 @@ ul {
 /* Стили для меню */
 .menu {
   margin-right: 10%;
+}
+@media screen and (max-width: 340px) {
+  .menu {
+    margin-right: 5%;
+  }
 }
 .menu ul {
   list-style: none;
@@ -133,6 +169,11 @@ ul {
 @media screen and (max-width: 870px) {
   .menu ul {
     gap: 10.2px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .menu ul {
+    gap: 5px;
   }
 }
 .menu a {
@@ -238,7 +279,12 @@ ul {
 @media screen and (max-width: 870px) {
   .section-with-man {
     background-image: url("/assets/images/main-man-mobile.png");
-    background-position-y: 25px;
+    background-position-y: -20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .section-with-man {
+    background-image: none;
   }
 }
 
@@ -265,7 +311,7 @@ ul {
 @media screen and (max-width: 870px) {
   .main-header {
     max-width: 231.42px;
-    padding-top: 22.65 px;
+    padding-top: 22.65px;
     font-size: 28.57px;
     line-height: 25.43px;
   }
@@ -345,6 +391,12 @@ ul {
     gap: 68.78px;
   }
 }
+@media screen and (max-width: 340px) {
+  .cover-container {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+}
 
 /* Стили для преимуществ */
 .advantages {
@@ -363,6 +415,7 @@ ul {
   .advantages {
     margin-top: 11.18px;
     gap: 3.06px;
+    width: max-content;
   }
 }
 .advantages__item {
@@ -413,7 +466,7 @@ ul {
     border-radius: 2px;
   }
 }
-.advantages__name span {
+.advantages__name p {
   font-family: Roboto;
   font-size: 30px;
   font-weight: 400;
@@ -423,13 +476,13 @@ ul {
   color: #ffffff;
 }
 @media screen and (max-width: 1630px) {
-  .advantages__name span {
+  .advantages__name p {
     font-size: 15.93px;
     line-height: 14.18px;
   }
 }
 @media screen and (max-width: 870px) {
-  .advantages__name span {
+  .advantages__name p {
     font-size: 6.12px;
     line-height: 5.45px;
   }
@@ -465,6 +518,11 @@ ul {
 @media screen and (max-width: 870px) {
   .video-container {
     max-width: 162.85px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .video-container {
+    max-width: 250px;
   }
 }
 
@@ -585,7 +643,7 @@ ul {
     border-radius: 2px;
   }
 }
-.experience__item span {
+.experience__item p {
   font-family: Roboto;
   font-size: 30px;
   font-weight: 500;
@@ -595,13 +653,13 @@ ul {
   color: #ffffff;
 }
 @media screen and (max-width: 1630px) {
-  .experience__item span {
+  .experience__item p {
     font-size: 15.93px;
     line-height: 14.18px;
   }
 }
 @media screen and (max-width: 870px) {
-  .experience__item span {
+  .experience__item p {
     font-size: 6.12px;
     line-height: 5.45px;
   }
@@ -624,7 +682,7 @@ ul {
     padding: 5.31px 8.52px;
   }
 }
-.method span {
+.method p {
   font-family: Coolvetica;
   font-size: 30px;
   font-weight: 400;
@@ -634,13 +692,13 @@ ul {
   color: #f7f7f7;
 }
 @media screen and (max-width: 1630px) {
-  .method span {
+  .method p {
     font-size: 15.93px;
     line-height: 14.18px;
   }
 }
 @media screen and (max-width: 870px) {
-  .method span {
+  .method p {
     font-size: 6.12px;
     line-height: 5.45px;
   }
@@ -777,6 +835,11 @@ ul {
     gap: 8.18px;
   }
 }
+@media screen and (max-width: 340px) {
+  .conditions__item {
+    flex-basis: 100%;
+  }
+}
 .conditions__img {
   max-width: 264px;
   max-height: 264px;
@@ -811,6 +874,11 @@ ul {
     gap: 6.16px;
   }
 }
+@media screen and (max-width: 340px) {
+  .conditions__text {
+    width: 100%;
+  }
+}
 .conditions__text h3 {
   font-family: Gilroy;
   font-size: 40px;
@@ -832,6 +900,11 @@ ul {
     line-height: 10.97px;
   }
 }
+@media screen and (max-width: 340px) {
+  .conditions__text h3 {
+    font-size: 14px;
+  }
+}
 .conditions__text p {
   font-family: Gilroy;
   font-size: 30px;
@@ -851,6 +924,11 @@ ul {
   .conditions__text p {
     font-size: 6.13px;
     line-height: 8.23px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .conditions__text p {
+    font-size: 10px;
   }
 }
 

@@ -23,23 +23,38 @@ $mobile: 340px;
   font-weight: 700;
 }
 @font-face {
+  font-family: "Gilroy";
+  src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
   font-family: "Coolvetica";
   src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(/assets/fonts/Roboto/Roboto-Regular.ttf);
+  src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
+  src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
   font-weight: 300;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(/assets/fonts/Roboto/Roboto-Medium.ttf);
+  src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
   font-weight: 500;
 }
 
@@ -70,6 +85,10 @@ $mobile: 340px;
   @media screen and (max-width: $tablet) {
     @include mobile-container;
   }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
 }
 .header {
   display: flex;
@@ -82,6 +101,9 @@ $mobile: 340px;
   }
   @media screen and (max-width: $tablet) {
     margin-top: 10.2px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-wrap: wrap;
   }
 }
 /* Стили для логотипа */
@@ -105,6 +127,9 @@ $mobile: 340px;
     line-height: 4.44px;
     margin-right: 50.74px;
   }
+  @media screen and (max-width: $mobile) {
+    margin-right: 5%;
+  }
   &:hover {
     color: $pink;
   }
@@ -112,6 +137,9 @@ $mobile: 340px;
 /* Стили для меню */
 .menu {
   margin-right: 10%;
+  @media screen and (max-width: $mobile) {
+    margin-right: 5%;
+  }
   & ul {
     list-style: none;
     margin: 0;
@@ -124,6 +152,9 @@ $mobile: 340px;
     }
     @media screen and (max-width: $tablet) {
       gap: 10.2px;
+    }
+    @media screen and (max-width: $mobile) {
+      gap: 5px;
     }
   }
   & a {
@@ -218,7 +249,10 @@ $mobile: 340px;
   }
   @media screen and (max-width: $tablet) {
     background-image: url("/assets/images/main-man-mobile.png");
-    background-position-y: 25px;
+    background-position-y: -20px;
+  }
+  @media screen and (max-width: $mobile) {
+    background-image: none;
   }
 }
 
@@ -242,7 +276,7 @@ $mobile: 340px;
   }
   @media screen and (max-width: $tablet) {
     max-width: 231.42px;
-    padding-top: 22.65 px;
+    padding-top: 22.65px;
     font-size: 28.57px;
     line-height: 25.43px;
   }
@@ -308,6 +342,10 @@ $mobile: 340px;
     padding-bottom: 11.96px;
     gap: 68.78px;
   }
+  @media screen and (max-width: $mobile) {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
 }
 /* Стили для преимуществ */
 .advantages {
@@ -322,6 +360,7 @@ $mobile: 340px;
   @media screen and (max-width: $tablet) {
     margin-top: 11.18px;
     gap: 3.06px;
+    width: max-content;
   }
 
   &__item {
@@ -360,7 +399,7 @@ $mobile: 340px;
       border-radius: 2px;
     }
 
-    & span {
+    & p {
       font-family: Roboto;
       font-size: 30px;
       font-weight: 400;
@@ -400,6 +439,9 @@ $mobile: 340px;
   }
   @media screen and (max-width: $tablet) {
     max-width: 162.85px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 250px;
   }
 }
 .video-section {
@@ -491,7 +533,7 @@ $mobile: 340px;
       padding: 3px 2px 3px 2px;
       border-radius: 2px;
     }
-    & span {
+    & p {
       font-family: Roboto;
       font-size: 30px;
       font-weight: 500;
@@ -523,7 +565,7 @@ $mobile: 340px;
     padding: 5.31px 8.52px;
   }
 
-  & span {
+  & p {
     font-family: Coolvetica;
     font-size: 30px;
     font-weight: 400;
@@ -655,6 +697,9 @@ $mobile: 340px;
       border-radius: 82px;
       gap: 8.18px;
     }
+    @media screen and (max-width: $mobile) {
+      flex-basis: 100%;
+    }
   }
   &__img {
     max-width: 264px;
@@ -681,6 +726,9 @@ $mobile: 340px;
       width: 88.48px;
       gap: 6.16px;
     }
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
     & h3 {
       font-family: Gilroy;
       font-size: 40px;
@@ -696,6 +744,9 @@ $mobile: 340px;
       @media screen and (max-width: $tablet) {
         font-size: 8.17px;
         line-height: 10.97px;
+      }
+      @media screen and (max-width: $mobile) {
+        font-size: 14px;
       }
     }
     & p {
@@ -713,6 +764,9 @@ $mobile: 340px;
       @media screen and (max-width: $tablet) {
         font-size: 6.13px;
         line-height: 8.23px;
+      }
+      @media screen and (max-width: $mobile) {
+        font-size: 10px;
       }
     }
   }
