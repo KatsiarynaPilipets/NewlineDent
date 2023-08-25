@@ -34,3 +34,312 @@ $mobile: 768px;
 
   @import "reset";
 
+  //fonts
+  @font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'), url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
+    src: local("Gilroy"), url(../fonts/Gilroy_700/Gilroy-Light.ttf);
+    src: local("Gilroy"), url(../fonts/Gilroy_700/Gilroy-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Coolvetica';
+    src: local('Coolvetica'),
+      url(../fonts/Coolvetica_400/CoolveticaRg-Regular\ 400.ttf);
+  }
+
+
+  $fC: 'Coolvetica';
+  $fG: 'Gilroy';
+
+  // Стили для блока "Наши врачи"
+  .title{
+    font-family: $fC;
+    font-size: 120px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $blue;
+}
+.doctors-title{
+  justify-self: center;
+  grid-column: 1/5;
+}
+.doctors-container{
+  @include container;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  grid-template-columns: 387px 387px 387px 387px;
+  grid-template-rows: 0.1fr 558px 0.5fr;
+  column-gap: 30px; 
+}
+.doctors-frame{
+  display: grid;
+  justify-content: center;
+  align-content: end;
+  height: 558px;
+  top: 327px;
+  left: 150px;
+  margin-top: 50px;
+    &__background-circle{
+    width: 375px;
+    height: 375px;
+    border-radius: 50%;
+    background: #CBE5FF;
+    box-shadow: 0px -202px 90px 0px #FFFFFF4A inset;
+}
+    &__doctors-name{
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    width: 338px;
+    height: 125px;
+    background: #88C4FF;
+    border-radius: 24px;
+    box-shadow: 8px 8px 20px 0px #FFFFFF6B inset;
+    box-shadow: -8px -8px 30px 0px #5F8EBE inset;
+    font-family: fG;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    padding: 24px;
+    text-align: center;
+    justify-content: center;
+}
+    &__doctors-image{
+    position: relative;
+    top: 370px;
+    left: 50px; 
+}
+}
+//Кнопка "Записаться на консультацию"
+.callback-btn{
+  display: block;
+  grid-column: 1/5;
+  margin: 100px auto;
+  width: 788px;
+  height: 118px;
+  padding: 30px 60px 30px 60px;
+  border-radius: 12px;
+  border: none;
+  gap: 10px;
+  background: #FF9FB7;
+  box-shadow: 4px 4px 14px 0px #FFC8D6 inset;
+  box-shadow: -4px -4px 10px 0px #C88D9C inset;
+  font-family: $fG;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #F7F7F7;
+  cursor: pointer;
+}
+//Стили для модального окна
+.modal {
+  position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    top: -1000px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding: 60px 15px;
+    &__content {
+      width: 100%;
+      max-width: 50%;
+      padding: 50px;
+      background:#F3F3F3;
+      border-radius: 3px;
+      position: relative;
+      box-shadow: 0 5px 15px black;
+      text-align: center;
+      font-family: $fG;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0em;
+    }
+    &__close-button {
+      background: #ff0000;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: none;
+      cursor: pointer;
+      transition: .3s;
+      outline: none;
+        &__hover{
+          transition: .3s;
+        }
+    }
+
+}
+.modal_active {
+  position: fixed;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
+}
+//Стили для формы
+.contact-form{
+  font-family: $fG;
+  &__tel{
+    width: 55%;
+    height: 75px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 106px;
+    border: 0.5px solid #292929;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 60px;
+    padding-left: 30px;
+//Стили для невалидных полей
+      &:invalid {
+        border-color: black;
+        background-color: $whitesmoke;
+        border: 2px solid black;
+      }
+      
+      &:focus:invalid {
+        outline: none;
+      }
+  }
+  &__title {
+    font-family: $fC;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+  &__checkbox-label{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &__info{
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+//Стили для кастомных сообщений
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 90%;
+  color: #8a0c2b;
+  
+  border-radius: 0 0 5px 5px;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+.policy-link{
+  color:#292929;
+}
+.submit-btn{
+  width: 55%;
+  height: 76px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 106px;
+  border: none;
+  gap: 5px;
+  background: #FF9FB7;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  margin: 20px;
+  cursor: pointer;
+}
+//Блок "Этапы имплантации"
+.stage-container{
+  @include container;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 0.1fr 0.1fr 1142px;
+  background: $lightblue;
+  column-gap: 60px;
+  padding-bottom: 100px;
+}
+.stage-title{
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  
+}
+.stage-subtitle{
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  font-family: $fC;;
+  font-size: 89px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $blue;
+}
+.stage{
+  display: grid;
+  grid-row: 3/4;
+  border-radius: 60px;
+  padding-left: 45px;
+  padding-right: 45px;
+  color: #F7F7F7;
+  background: $blue;
+  align-items: start;
+    &__description{
+    font-family: $fG;
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em; 
+    }
+    &__image-container{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 410px;
+      height: 370px;
+      background-color:#CBE5FF;
+      border-radius: 36px;
+      margin-top: 60px;
+  }
+    &__gradient-line{
+      background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 124.79%);
+      height: 4px;
+      border: none;
+      width: 410px;
+      top: 640px;
+      margin-top: 45px;
+  }
+    &__text{
+    font-family: $fG;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F7F7F7;
+    margin: 45px 0;
+    }
+}
