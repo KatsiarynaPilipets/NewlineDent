@@ -12,9 +12,11 @@ $white: #FFFFFF;
 $black: #000000;
 
 //Screens
-$tablet: 1200px;
-$mobile: 768px;
+$desktop: 1630px;
+$tablet: 870px;
+$mobile: 340px;
 
+//mixins
 //mixins
 @mixin container {
   max-width: 1622px;
@@ -22,12 +24,12 @@ $mobile: 768px;
 }
 
 @mixin tablet-container {
-  max-width: 1200px;
+  max-width: 859.68px;
   margin: 0 auto;
 }
 
 @mixin mobile-container {
-  max-width: 768px;
+  max-width: 328.39px;
   margin: 0 auto;
 }
 
@@ -44,7 +46,7 @@ $mobile: 768px;
 @font-face {
   font-family: 'Coolvetica';
   src: local('Coolvetica'),
-    url(../fonts/Coolvetica_400/CoolveticaRg-Regular\ 400.ttf);
+    url(../fonts/Coolvetica_400/CoolveticaRg-Regular_400.ttf);
 }
 
 .container {
@@ -58,16 +60,40 @@ $mobile: 768px;
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(/before/assets/img/before_after/sign_up_block.jpg);
-  overflow: hidden;
+  background-image: url(../img/sign_up_free/sign_up_block.jpg);
   background-repeat: no-repeat;
-  background-position: 115%;
-  background-size: 57% 100%;
+  overflow: hidden;
+  background-position-x: 115%;
+  background-size: 56% 100%;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    height: 211px;
+    background-image: url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-position-x: 120%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    height: 81.09px;
+  }
 }
 
 // диагональный синий блок: размеры, угол наклона
 .blue_gradient {
   background: linear-gradient(125deg, $blue 80%, transparent 50%);
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    background: linear-gradient(125deg, $blue 79%, transparent 50%);
+    margin: 0;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    background: linear-gradient(125deg, $blue 80%, transparent 50%);
+    margin: 0;
+  }
 }
 
 // .sign_up_price>p {
@@ -87,14 +113,46 @@ del {
   &_arrow {
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    width: 64px;
-    margin-top: 10px;
+    margin: 10px 20px;
+    margin-top: 13px;
+
+    // размер стрелки
+    img {
+      width: 64px;
+    }
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      margin: 10px;
+
+      img {
+        width: 34px;
+      }
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      margin: 0 10px;
+
+      img {
+        width: 13px;
+      }
+    }
   }
 
   // высота картинки
   &_img {
     height: 397px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      height: 313.97px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      height: 120.66px;
+    }
   }
 
   // стили блока заголовка
@@ -103,6 +161,22 @@ del {
     margin-top: 40px;
     margin-bottom: 20px;
     line-height: 60.45px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      width: 533.91px;
+      margin-top: 21.25px;
+      margin-bottom: 10px;
+      line-height: 32.88px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      width: 205.19px;
+      margin-top: 8.17px;
+      margin-bottom: 10px;
+      line-height: 12.64px;
+    }
   }
 
   // стили текста заголовка и цены
@@ -111,10 +185,31 @@ del {
     font-family: 'Gilroy';
     font-size: 50px;
     color: #fff;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      font-size: 26.56px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      font-size: 10.21px;
+    }
   }
 
   &_price>p {
     line-height: 29.02px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      line-height: 32.88px;
+      margin: 0;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      line-height: 12.64px;
+    }
   }
 
   // стили блока с ценами
@@ -123,6 +218,16 @@ del {
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      margin: 10px 0;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      margin-left: 0;
+    }
   }
 }
 
@@ -132,14 +237,29 @@ del {
   flex-direction: column;
   margin: 10px 150px;
   height: 317px;
+  gap: 5px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    margin: 20px 40px;
+    height: 317px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    margin: 8px 15px;
+    height: 93.5px;
+    gap: 3px;
+  }
 }
 
 // кнопка
 .btn_sign {
   // кнопка со скругленными углами и без бордера
   border-radius: 12px;
-  padding: 30px 60px;
+  padding: 0;
   border-width: 0;
+  margin: 0;
 
   // стили бело-голубой кнопки
   &_white-blue {
@@ -155,5 +275,45 @@ del {
     font-size: 24px;
     line-height: 29.02px;
     color: $blue;
+  }
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    border-radius: 6px;
+    border-width: 0;
+    margin: 0;
+
+    // стили бело-голубой кнопки
+    &_white-blue {
+      width: 241.75px;
+      height: 46.88px;
+      box-shadow: inset -2px -2px 4px rgba(79, 167, 251, 0.4);
+    }
+
+    // стиль текста на бело-голубой кнопке
+    &_white-blue {
+      font-size: 12.75px;
+      line-height: 15.78px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    border-radius: 2px;
+    border-width: 0;
+    margin: 0;
+
+    // стили бело-голубой кнопки
+    &_white-blue {
+      width: 93.5px;
+      height: 18.25px;
+      box-shadow: inset -0.8px -0.8px 2px rgba(79, 167, 251, 0.4);
+    }
+
+    // стиль текста на бело-голубой кнопке
+    &_white-blue {
+      font-size: 4.9px;
+      line-height: 6.07px;
+    }
   }
 }
