@@ -73,6 +73,12 @@ $innerShadow: #C88D9C;
     @include tablet-container;
     height: 708px;
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    // height: 390px;
+    height: 290px;
+  }
 }
 
 .before_after {
@@ -93,6 +99,13 @@ $innerShadow: #C88D9C;
       font-size: 63.75px;
       line-height: 56.74px;
     }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      margin-top: 20.42px;
+      font-size: 24.5px;
+      line-height: 21.81px;
+    }
   }
 
   // стили блока слайдера со всеми фото
@@ -106,6 +119,12 @@ $innerShadow: #C88D9C;
       @include tablet-container;
       margin-top: 53.12px;
       margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      margin-top: 20.42px;
+      margin-bottom: 20.42px;
     }
   }
 }
@@ -126,6 +145,13 @@ $innerShadow: #C88D9C;
     width: 231.09px;
     height: 308.13px;
     margin: 0 20px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 88.81px;
+    height: 118.42px;
+    margin: 0 8px;
   }
 }
 
@@ -181,6 +207,12 @@ $innerShadow: #C88D9C;
     width: 25.68px;
     height: 25.68px;
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 10px;
+    height: 10px;
+  }
 }
 
 // кнопки
@@ -231,6 +263,24 @@ $innerShadow: #C88D9C;
       line-height: 31.57px;
     }
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    border-radius: 2px;
+    padding: 6px 12px;
+
+    // стили розовой кнопки блока до/после: размер и цвета
+    &_pink {
+      width: 161.5px;
+      height: 24.25px;
+    }
+
+    // стили текста на кнопке
+    &_pink {
+      font-size: 9.8px;
+      line-height: 12.13px;
+    }
+  }
 }
 
 
@@ -264,6 +314,20 @@ $innerShadow: #C88D9C;
       width: 445.19px;
     }
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    height: 166.03px;
+    background: url(/NewlineDent/assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
+    background-position-x: 104%;
+    background-size: 60% 100%;
+
+    // блок на синем фоне: белый текст и кнопка
+    &_inner {
+      margin-left: 17px;
+      width: 169px;
+    }
+  }
 }
 
 // диагональный синий блок: размеры, угол наклона
@@ -273,6 +337,11 @@ $innerShadow: #C88D9C;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
+    background: linear-gradient(102deg, $blue 55%, transparent 50%);
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
     background: linear-gradient(102deg, $blue 55%, transparent 50%);
   }
 }
@@ -299,6 +368,17 @@ $innerShadow: #C88D9C;
     // верхний отступ у блока с текстом
     &_block {
       margin-top: 123.25px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 8.17px;
+    line-height: 10.11px;
+
+    // верхний отступ у блока с текстом
+    &_block {
+      margin-top: 47px;
     }
   }
 }
@@ -349,6 +429,29 @@ $innerShadow: #C88D9C;
       box-shadow: inset -2px -2px 4px rgba(79, 167, 251, 0.4);
     }
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+
+    // размер и цвета
+    &_white-blue2 {
+      // width: 310.75px;
+      width: 119.5px;
+      height: 19.25px;
+      margin-top: 20px;
+      box-shadow: inset -0.8px -0.8px 2px rgba(79, 167, 251, 0.4);
+    }
+
+    // стили текста на бело-голубой кнопке
+    &_white-blue2 {
+      font-size: 6.13px;
+      line-height: 7.58px;
+    }
+
+    &_white-blue2:hover {
+      box-shadow: inset -0.8px -0.8px 2px rgba(79, 167, 251, 0.4);
+    }
+  }
 }
 
 
@@ -366,6 +469,11 @@ $gray: #D9D9D9;
     // height: 561px;
     width: 1020px;
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 390px;
+  }
 }
 
 // стили контейнера
@@ -373,12 +481,18 @@ $gray: #D9D9D9;
   display: flex;
   flex-direction: column;
   padding: 80px 100px;
-  border: 4px solid red;
+  // border: 4px solid red;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     padding: 30px 20px;
-    border: 4px solid red;
+    // border: 4px solid red;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    padding: 15px 10px;
+    // border: 4px solid red;
   }
 }
 
@@ -392,6 +506,13 @@ $gray: #D9D9D9;
     font-size: 40px;
     line-height: 50.73px;
     margin-left: 10px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 16.33px;
+    line-height: 19.49px;
+    margin-left: 5px;
   }
 }
 
@@ -414,6 +535,13 @@ $gray: #D9D9D9;
     margin-bottom: 20px;
     margin-left: 0;
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
 }
 
 // стили круглых кнопок прогресса
@@ -427,6 +555,12 @@ $gray: #D9D9D9;
     @include tablet-container;
     width: 53.15px;
     height: 53.15px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 20.42px;
+    height: 20.42px;
   }
 }
 
@@ -442,6 +576,12 @@ $gray: #D9D9D9;
     @include tablet-container;
     font-size: 28.62px;
     line-height: 25.47px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 10.99px;
+    line-height: 9.78px;
   }
 }
 
@@ -464,6 +604,12 @@ $gray: #D9D9D9;
     width: 88px;
     margin-bottom: 5px;
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 30px;
+    margin-bottom: 3px;
+  }
 }
 
 .quiz_question {
@@ -472,6 +618,7 @@ $gray: #D9D9D9;
 
   &1 {
     align-items: flex-end;
+    // width: 390px;
   }
 }
 
@@ -494,6 +641,13 @@ $gray: #D9D9D9;
       height: 282.97px;
       margin-left: 0;
     }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      width: 259px;
+      height: 108.69px;
+      margin-left: 0;
+    }
   }
 
   // страницы после 2й
@@ -511,6 +665,13 @@ $gray: #D9D9D9;
       height: 239.19px;
       margin-left: 0;
     }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      width: 296.03px;
+      height: 91.87px;
+      margin-left: 0;
+    }
   }
 }
 
@@ -523,6 +684,12 @@ $gray: #D9D9D9;
     @include tablet-container;
     width: 130px;
     height: 92.22px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 50.28px;
+    height: 35.55px;
   }
 }
 
@@ -546,6 +713,12 @@ $gray: #D9D9D9;
       margin-bottom: 25px;
       margin-right: 20px;
     }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
   }
 }
 
@@ -565,6 +738,14 @@ $gray: #D9D9D9;
       height: 128.2px;
       border-radius: 23px;
       padding-left: 14px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      width: 124.78px;
+      height: 49.24px;
+      border-radius: 9px;
+      padding-left: 10px;
     }
   }
 
@@ -588,6 +769,14 @@ $gray: #D9D9D9;
         border-radius: 16px;
         padding-left: 30px;
       }
+
+      @media screen and (max-width: $tablet) {
+        @include mobile-container;
+        width: 142.91px;
+        height: 40.83px;
+        border-radius: 6px;
+        padding-left: 10px;
+      }
     }
 
   }
@@ -610,6 +799,12 @@ $gray: #D9D9D9;
     font-size: 24.28px;
     line-height: 28.96px;
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 9.33px;
+    line-height: 11.13px;
+  }
 }
 
 .quiz_radio_label {
@@ -623,6 +818,13 @@ $gray: #D9D9D9;
     font-size: 26.58px;
     line-height: 31.71px;
     margin-left: 15px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 10.21px;
+    line-height: 12.18px;
+    margin-left: 8px;
   }
 }
 
@@ -676,6 +878,28 @@ $gray: #D9D9D9;
       box-shadow: inset -2px -2px 4px rgba(166, 165, 165, 0.9);
     }
   }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    height: 24.25px;
+    border-radius: 41px;
+    padding: 6px 12px;
+    // стили шрифта
+    font-size: 10.21px;
+    line-height: 12.64px;
+
+    // кнопка назад стили
+    &_back {
+      width: 55.5px;
+      border-width: 1px;
+    }
+
+    // кнопка вперед стили
+    &_next {
+      width: 55.5px;
+      box-shadow: inset -0.8px -0.8px 2px rgba(166, 165, 165, 0.9);
+    }
+  }
 }
 
 // стили радио переключателей
@@ -690,6 +914,13 @@ $gray: #D9D9D9;
     @include tablet-container;
     width: 34.01px;
     height: 34.01px;
+    margin: 0px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 13.07px;
+    height: 13.07px;
     margin: 0px;
   }
 }
@@ -707,6 +938,11 @@ $gray: #D9D9D9;
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     margin-right: 40px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    margin-right: 15px;
   }
 }
 
@@ -752,6 +988,11 @@ $gray: #D9D9D9;
     padding: 10px;
   }
 
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 390px;
+    padding: 5px;
+  }
 }
 
 // При добавлении класса 'active'
