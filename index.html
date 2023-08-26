@@ -100,25 +100,24 @@
         <!--12. Лена -->
         <section class="wrapper-map">
             <div class="container map">
-                <h2 class="map_title">Клиника в Санкт-Петербурге <br>
-                    рядом с метро</h2>
-                <div class="map_content">
-                    <iframe class="map_content-iframe" src="https://yandex.ru/map-widget/v1/?ll=30.407090%2C59.928554&mode=search&o&ol=biz&z=18"
+                <h2 class="map__title">Клиника в Санкт-Петербурге рядом с метро</h2>
+                <div class="map__content">
+                    <iframe class="map__content-iframe" src="https://yandex.ru/map-widget/v1/?ll=30.407090%2C59.928554&mode=search&o&ol=biz&z=18"
                     frameborder="0">
                     </iframe>
                 </div>
-                <div  class="map_address">
-                    <p class="map_address-paragraph">м.Новочеркасская</p>
-                    <p class="map_address-paragraph">ст.м. "Новочеркасская"</p>
-                    <p class="map_address-paragraph">ул. Стахановцев, д. 6</p>
-                    <p class="map_address-workmode">режим работы: пн-вс: 9:00 — 21:00</p>
-                    <button class="button_call">Позвонить в клинику</button>
-                    <button class="button_ordercall">Заказать звонок</button>
+                <div  class="map__address">
+                    <p class="map__address-paragraph">м.Новочеркасская</p>
+                    <p class="map__address-paragraph">ст.м. "Новочеркасская"</p>
+                    <p class="map__address-paragraph">ул. Стахановцев, д. 6</p>
+                    <p class="map__address-workmode">режим работы: пн-вс: 9:00 — 21:00</p>
+                    <button class="button__call">Позвонить в клинику</button>
+                    <button class="button__ordercall">Заказать звонок</button>
                         <!--/*не забудь тег<address></address>-->
                 </div>
-                <div class="map_link">
-                    <img  class="map_link-img" src="./assets/img_route/image 38.png" alt="yandex_icon">
-                    <a class="map_link-href" href="https://yandex.ru/maps/?rtext=~59.928746, 30.406790">
+                <div class="map__link">
+                    <img  class="map__link-img" src="./assets/img_route/image 38.png" alt="yandex_icon">
+                    <a class="map__link-href" href="https://yandex.ru/maps/?rtext=~59.928746, 30.406790">
                      Маршрут в Яндекс картах</a>
                 </div>
             </div>
@@ -126,12 +125,12 @@
         <!--13. Лена -->
         <section class="wrapper-consultation">
             <div class="container consultation">
-                 <p class="consultation_text">
+                 <p class="consultation__text">
                     Получите бесплатную консультацию Элины, эксперта All-on-4
                 </p>
-                <div class="consultation_call">
-                    <input class="consultation_call-input" type="text" placeholder="Введите номер телефона">
-                    <button class="consultation_call-button"> Отправить</button>
+                <div class="consultation__call">
+                    <input class="consultation__call-input" type="text" placeholder="Введите номер телефона">
+                    <button class="consultation__call-button"> Отправить</button>
                 </div>
             </div>
         </section>
@@ -140,38 +139,49 @@
     <footer>
         <div class="container wrapper-footer">
             <div class="license">
-                <p class="license_company">ООО “Newlinedent”</p>
-                <p class="license_number">Лицензия ЛО-78-011553</p>
-                <div class="license_picture">
-                    <img class="license_picture-1" src="./assets/img_route/license1.jpeg" alt="license_page1">
-                    <img class="license_picture-2" src="./assets/img_route/license2.jpeg" alt="license_page2">
+                <p class="license__company">ООО “Newlinedent”</p>
+                <p class="license__number">Лицензия ЛО-78-011553</p>
+                <div class="license__picture">
+                    <img id="license1" class="minimized" src="./assets/img_route/license1.jpeg" alt="license_page1" onclick="displayModal(this);">
+                    <img id="license2" class="minimized" src="./assets/img_route/license2.jpeg" alt="license_page2" onclick="displayModal(this);">
                 </div>
-                <a class="license_link" href="">Положение о гарантии</a>
+
+                <div class="license__link" onclick="displayWarranty(this);">
+                    Положение о гарантии
+                    <div id="warranty-modal" class="warranty-modal" onclick="hideModalWarranty();">
+                        <span class="close">&times;</span>
+                        <div class="warranty-modal__content">
+                          <img id="warranty-modal__image" class="minimized" src="./assets/img_route/warranty.jpeg" alt="warranty">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="toc">
-                <div class="toc_block">
-                    <a class="toc_block-p toc_p" href="">Стоимость</a>
-                    <a class="toc_block-p toc_p" href="">Отзывы</a>
-                    <a class="toc_block-p toc_p" href="">До и После</a>
-                    <a class="toc_block-p toc_p" href="">Этапы лечения</a>
-                    <a class="toc_block-p toc_p" href="">Как добраться</a>
+                <div class="toc__block">
+                    <a class="toc__block-p toc__p" href="">Стоимость</a>
+                    <a class="toc__block-p toc__p" href="">Отзывы</a>
+                    <a class="toc__block-p toc__p" href="">До и После</a>
+                    <a class="toc__block-p toc__p" href="">Этапы лечения</a>
+                    <a class="toc__block-p toc__p" href="">Как добраться</a>
                 </div>
             </div>
             <div class="network">
-                <img class="network_pic" src="./assets/img_route/logo_telegram.png" alt="telegram">
-                <img class="network_pic" src="./assets/img_route/logo_whatsapp.png" alt="whatsapp">
+                <a title="telegram" href="https://telegram.me/+79112421777">
+                    <img class="network__pic" src="./assets/img_route/logo_telegram.png" alt="telegram"></a>
+                <a title="whatsapp" href="https://wa.me/79112421777">
+                    <img class="network__pic" src="./assets/img_route/logo_whatsapp.png" alt="whatsapp"></a>
             </div>
             <div class="pay">
-                <img class="pay_pic" src="./assets/img_route/visa.png" alt="visa">
-                <img class="pay_pic" src="./assets/img_route/mastercard.png" alt="mastercard">
-                <img class="pay_pic" src="./assets/img_route/maestro.png" alt="maestro">
-                <img class="pay_pic" src="./assets/img_route/mir.png" alt="mir">
+                <img class="pay__pic" src="./assets/img_route/visa.png" alt="visa">
+                <img class="pay__pic" src="./assets/img_route/mastercard.png" alt="mastercard">
+                <img class="pay__pic" src="./assets/img_route/maestro.png" alt="maestro">
+                <img class="pay__pic" src="./assets/img_route/mir.png" alt="mir">
             </div>
         </div>
         <div class="container wrapper-information">
-            <p class="wrapper-information_title">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА
+            <p class="wrapper-information__title">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА
             </p>
-            <p  class="wrapper-information_text">Обращаем ваше внимание на то, что данный Интернет - сайт
+            <p  class="wrapper-information__text">Обращаем ваше внимание на то, что данный Интернет - сайт
                  носит исключительно информационный характер
                  и ни при <br> каких условиях не является публичной офертой,
                  определяемой положениями Статьи 437 Гражданского кодекса РФ.
@@ -179,12 +189,18 @@
         </div>
 
             <div class="upward" onclick="scrollTopTop()">
-                <div class="upward_img">
-                    <img class="upward_img-pic" src="./assets/img_route/Arrow.svg" alt="up">
+                <div class="upward__img">
+                    <img class="upward__img-pic" src="./assets/img_route/Arrow.svg" alt="up">
                 </div>
             </div>
-
     </footer>
+    <!-- Модальное окно с лицензией -->
+    <div id="license-modal" class="license-modal" onclick="hideModalLicense();">
+        <span class="close">&times;</span>
+        <div class="license-modal__content">
+          <img id="license-modal__image">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

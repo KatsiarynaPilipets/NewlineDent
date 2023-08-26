@@ -62,21 +62,17 @@ ul {
   justify-content: center;
 }
 
-.map, .consultation {
+.map {
   width: 100%;
   max-width: 1622px;
   margin: 0 auto;
-}
-
-.map {
   display: grid;
   grid-template-columns: 920px 700px;
   grid-template-rows: 460px 472px 193px;
   grid-template-areas: "title title" "map address" "link .";
   gap: 10px;
 }
-
-.map_title {
+.map__title {
   grid-area: title;
   font-family: "Coolvetica400";
   font-weight: 400;
@@ -85,21 +81,18 @@ ul {
   text-align: center;
   align-self: center;
 }
-
-.map_content {
+.map__content {
   grid-area: map;
   width: 920px;
   height: 388px;
   border-radius: 30px;
 }
-
-.map_content-iframe {
+.map__content-iframe {
   border-radius: 30px;
   width: 920px;
   height: 388px;
 }
-
-.map_address {
+.map__address {
   grid-area: address;
   width: 680px;
   height: 388px;
@@ -108,31 +101,32 @@ ul {
   background-color: #4FA7FB;
   padding: 50px;
 }
-
-.map_address-paragraph {
+.map__address-paragraph {
   font-family: "Gilroy600";
   font-size: 35px;
   color: #f7f7f7;
 }
-
-.map_address-workmode {
+.map__address-workmode {
   font-family: "Gilroy400";
   font-size: 35px;
   color: #f7f7f7;
   margin-top: 30px;
 }
-
-.map_link {
+.map__address-workmode {
+  font-family: "Gilroy400";
+  font-size: 35px;
+  color: #f7f7f7;
+  margin-top: 30px;
+}
+.map__link {
   grid-area: link;
   display: flex;
 }
-
-.map_link-img {
+.map__link-img {
   width: 100px;
   height: 100px;
 }
-
-.map_link-href {
+.map__link-href {
   outline: none;
   text-decoration: none;
   font-family: "Gilroy600";
@@ -142,7 +136,7 @@ ul {
   padding-top: 25px;
 }
 
-.button_call {
+.button__call {
   width: 294px;
   height: 59px;
   margin-top: 30px;
@@ -157,7 +151,7 @@ ul {
   box-shadow: inset 4px 4px 14px 0px #FFC8D6, inset -4px -4px 10px 0px #C88D9C;
 }
 
-.button_ordercall {
+.button__ordercall {
   width: 249px;
   height: 59px;
   margin-top: 30px;
@@ -173,17 +167,18 @@ ul {
 }
 
 .consultation {
+  width: 100%;
+  max-width: 1622px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-self: center;
 }
-
-.consultation_text {
+.consultation__text {
   font-size: 63px;
   color: #FFFFFF;
 }
-
-.consultation_call {
+.consultation__call {
   display: flex;
   border-radius: 200px;
   background-color: #FFFFFF;
@@ -191,8 +186,7 @@ ul {
   height: 69px;
   align-self: end;
 }
-
-.consultation_call-input {
+.consultation__call-input {
   background-color: rgba(255, 255, 255, 0);
   width: 330px;
   height: 59px;
@@ -202,14 +196,7 @@ ul {
   align-self: center;
   justify-content: center;
 }
-
-::placeholder {
-  color: #D9D9D9;
-  font-size: 24px;
-  text-align: center;
-}
-
-.consultation_call-button {
+.consultation__call-button {
   align-self: center;
   width: 180px;
   height: 69px;
@@ -219,6 +206,12 @@ ul {
   background-color: #FF9FB7;
   color: #FFFFFF;
   font-size: 24px;
+}
+
+::placeholder {
+  color: #D9D9D9;
+  font-size: 24px;
+  text-align: center;
 }
 
 footer {
@@ -248,29 +241,25 @@ footer {
   padding: 50px 100px 0px 0px;
   display: grid;
 }
-
-.license_company {
+.license__company {
   font-family: "Gilroy600";
   font-size: 30px;
   color: #292929;
   text-align: center;
 }
-
-.license_number {
+.license__number {
   font-family: "Gilroy400";
   font-size: 24px;
   color: #292929;
   text-align: center;
   margin-top: 25px;
 }
-
-.license_picture {
+.license__picture {
   height: 100px;
   display: flex;
   justify-content: space-around;
 }
-
-.license_link {
+.license__link {
   font-family: "Gilroy500";
   font-size: 24px;
   color: #292929;
@@ -281,15 +270,13 @@ footer {
   display: grid;
   justify-content: center;
 }
-
-.toc_block {
+.toc__block {
   display: grid;
   width: 169px;
   grid-template-rows: repeat(5, 23px);
   gap: 30px;
 }
-
-.toc_block-p {
+.toc__block-p {
   outline: none;
   text-decoration: none;
   font-family: "Gilroy400";
@@ -303,8 +290,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-
-.network_pic {
+.network__pic {
   margin-top: 126px;
   margin-left: 15px;
   margin-right: 15px;
@@ -317,8 +303,7 @@ footer {
   flex-direction: column;
   margin-left: 100px;
 }
-
-.pay_pic {
+.pay__pic {
   padding-bottom: 20px;
   width: 60px;
   height: 50px;
@@ -331,14 +316,12 @@ footer {
   margin: 0 auto;
   height: 239px;
 }
-
-.wrapper-information_title {
+.wrapper-information__title {
   font-family: "Gilroy600";
   font-size: 25px;
   margin-top: 72px;
 }
-
-.wrapper-information_text {
+.wrapper-information__text {
   font-family: "Gilroy400";
   font-size: 20px;
   margin-top: 17px;
@@ -359,23 +342,81 @@ footer {
   opacity: 0;
   transition: 0.5s;
 }
+.upward__img {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+}
+.upward__img-pic {
+  align-self: center;
+  width: 25px;
+  height: 25px;
+}
 
 .upward.active {
   visibility: visible;
   opacity: 1;
 }
 
-.upward_img {
-  width: 75px;
-  height: 75px;
-  display: flex;
-  justify-content: center;
+/* Стили для модального окна с лицензией*/
+.license-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.upward_img-pic {
-  align-self: center;
-  width: 25px;
-  height: 25px;
+.license-modal__content {
+  margin: auto;
+  display: block;
+  width: 30%;
+  max-width: 700px;
+}
+
+.license-modal__content img {
+  width: 100%;
+  height: auto;
+}
+
+/* Стили для изображения */
+.minimized {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.minimized:hover {
+  opacity: 0.7;
+}
+
+/* Стили для модального окна с гарантией*/
+.warranty-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.warranty-modal__content {
+  margin: auto;
+  display: block;
+  width: 30%;
+  max-width: 700px;
+}
+
+.warranty-modal__content img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
