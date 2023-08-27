@@ -1,10 +1,11 @@
-//Первые два блока
 document.addEventListener('DOMContentLoaded', function () {
+    //кнопка с номером телефона
     const callButton = document.getElementById('callButton');
     callButton.addEventListener('click', function () {
         window.location.href = 'tel:+78126226242';
     });
 
+    //видео на заставке с мужиком
     const openButton = document.getElementById('open-button');
     const closeButton = document.getElementById('close-button');
     const videoModal = document.getElementById('video-modal');
@@ -27,36 +28,46 @@ document.addEventListener('DOMContentLoaded', function () {
             videoModal.style.display = 'none';
         }
     });
-});
+    // карусель с отзывами
+    const carouselContainer = document.querySelector('.carousel-container');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const dots = document.querySelectorAll('.dot');
 
-//Отзывы
+    let currentIndex = 0;
 
-const openButton = document.getElementById('open-button');
-const closeButton = document.getElementById('close-button');
-const videoItems = document.getElementById('video-section')
-const videoModal = document.getElementById('video-modal');
-const videoIframe = document.getElementById('video-iframe');
+    function updateCarousel() {
+        carouselContainer.style.transform = `translateX(-${currentIndex * 900}px)`;
 
-videoItems.forEach(function(item) {
-   const video = item.querySelector('video');
-   video.addEventListener('click', function() {
-   });
- });
-
-openButton.addEventListener('click', function () {
-    const videoId = 'fkse3SatzAM'; // Замените на фактический идентификатор видео, указанный в URL видео после "v="
-    videoIframe.src = 'https://www.youtube.com/embed/' + videoId;
-    videoModal.style.display = 'block';
-});
-
-closeButton.addEventListener('click', function () {
-    videoIframe.src = '';
-    videoModal.style.display = 'none';
-});
-
-videoModal.addEventListener('click', function (event) {
-    if (event.target === videoModal) {
-        videoIframe.src = '';
-        videoModal.style.display = 'none';
+        dots.forEach((dot, index) => {
+            if (index === currentIndex) {
+                dot.classList.add('active-dot');
+            } else {
+                dot.classList.remove('active-dot');
+            }
+        });
     }
+
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < 5) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
+
 });
+

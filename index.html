@@ -16,7 +16,7 @@
           <nav class="menu">
             <ul>
               <li><a href="#">Стоимость</a></li>
-              <li><a href="#">Отзывы</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
               <li><a href="#">До и После</a></li>
               <li><a href="#">Этапы лечения</a></li>
               <li><a href="#">Как добраться</a></li>
@@ -220,146 +220,43 @@
           <h2>Стоимость под ключ</h2>
         </div>
       </section>
-      <!-- Katya -->
-      <section>
-        <div class="container">
-          <h1 class="title">Отзывы наших пациентов</h1>
-          <div class="video-container">
-              <div id="video-section">
-                <img
-                  src="/reviews/Frame21.png"
-                  alt="video"
-                  id="open-button"
-                  class="video-section__img"
-                />
-                <!-- Модальное окно с видео -->
-                <div id="video-modal">
-                  <div id="video-modal-container">
-                    <button id="close-button" aria-label="Close">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="white"
-                      >
-                        <path
-                          d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
-                        ></path>
-                        <path
-                          d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <iframe
-                      id="video-iframe"
-                      frameborder="0"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-                <div class="video-container">
-                  <div id="video-section">
-                    <img
-                      src="/reviews/Frame21.png"
-                      alt="video"
-                      id="open-button"
-                      class="video-section__img"
-                    />
-                    <!-- Модальное окно с видео -->
-                    <div id="video-modal">
-                      <div id="video-modal-container">
-                        <button id="close-button" aria-label="Close">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 32 32"
-                            fill="white"
-                          >
-                            <path
-                              d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
-                            ></path>
-                            <path
-                              d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
-                            ></path>
-                          </svg>
-                        </button>
-                        <iframe
-                          id="video-iframe"
-                          frameborder="0"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
-                    </div>
-                    <div class="video-container">
-                      <div id="video-section">
-                        <img
-                          src="/reviews/Frame21.png"
-                          alt="video"
-                          id="open-button"
-                          class="video-section__img"
-                        />
-                        <!-- Модальное окно с видео -->
-                        <div id="video-modal">
-                          <div id="video-modal-container">
-                            <button id="close-button" aria-label="Close">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="32"
-                                height="32"
-                                viewBox="0 0 32 32"
-                                fill="white"
-                              >
-                                <path
-                                  d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
-                                ></path>
-                                <path
-                                  d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
-                                ></path>
-                              </svg>
-                            </button>
-                            <iframe
-                              id="video-iframe"
-                              frameborder="0"
-                              allowfullscreen
-                            ></iframe>
-                          </div>
-                        </div>
-                        <div class="video-container">
-                          <div id="video-section">
-                            <img
-                              src="/reviews/Frame21.png"
-                              alt="video"
-                              id="open-button"
-                              class="video-section__img"
-                            />
-                            <!-- Модальное окно с видео -->
-                            <div id="video-modal">
-                              <div id="video-modal-container">
-                                <button id="close-button" aria-label="Close">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="32"
-                                    height="32"
-                                    viewBox="0 0 32 32"
-                                    fill="white"
-                                  >
-                                    <path
-                                      d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
-                                    ></path>
-                                    <path
-                                      d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
-                                    ></path>
-                                  </svg>
-                                </button>
-                                <iframe
-                                  id="video-iframe"
-                                  frameborder="0"
-                                  allowfullscreen
-                                ></iframe>
-                              </div>
-                            </div>
+      <!-- Отзывы наших пациентов -->
+      <section id="reviews" class="container">
+        <h2 class="reviews__header2">Отзывы наших пациентов</h2>
+        <div class="carousel">
+          <div class="carousel-container">
+            <div class="carousel-item">
+              <img
+                src="/assets/images/review1.jpg"
+                alt="review video 1"
+                id="open-button-1"
+                class="carousel-item__img"
+              />
+              <div class="carousel-item__name">
+                <h3>Вера Павловна</h3>
+                <button>
+                  <img
+                    src="/assets/images/review-play-button.png"
+                    alt="play button"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">2</div>
+            <div class="carousel-item">3</div>
+            <div class="carousel-item">4</div>
+          </div>
+          <div class="carousel-dots">
+            <button class="carousel-arrow prev">
+              <img src="/assets/images/arrow-prev.png" alt="prev arrow" />
+            </button>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <button class="carousel-arrow next">
+              <img src="/assets/images/arrow-next.png" alt="next arrow" />
+            </button>
+          </div>
         </div>
       </section>
       <!--7. Аня -->
