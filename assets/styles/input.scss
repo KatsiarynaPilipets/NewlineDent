@@ -406,7 +406,7 @@ footer{
 .warranty-modal{
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
@@ -417,10 +417,10 @@ footer{
 .warranty-modal__content{
     margin: auto;
     display: block;
-    width: 30%;
-    max-width: 700px;
+    width: 100%;
+    max-width: 1280px;
 }
-.warranty-modal__content img{
+#warranty-modal__image{
     width: 100%;
     height: auto;
 }

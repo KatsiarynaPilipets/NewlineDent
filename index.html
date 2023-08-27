@@ -146,13 +146,13 @@
                     <img id="license2" class="minimized" src="./assets/img_route/license2.jpeg" alt="license_page2" onclick="displayModal(this);">
                 </div>
 
-                <div class="license__link" onclick="displayWarranty(this);">
+                <div class="license__link" onclick="displayWarranty();">
                     Положение о гарантии
-                    <div id="warranty-modal" class="warranty-modal" onclick="hideModalWarranty();">
-                        <span class="close">&times;</span>
-                        <div class="warranty-modal__content">
-                          <img id="warranty-modal__image" class="minimized" src="./assets/img_route/warranty.jpeg" alt="warranty">
-                        </div>
+                </div>
+                <div id="warranty-modal" class="warranty-modal" onclick="hideModalWarranty(event);">
+                    <span class="close">&times;</span>
+                    <div class="warranty-modal__content">
+                      <img id="warranty-modal__image" class="minimized" src="./assets/img_route/warranty.jpeg" alt="warranty">
                     </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@
             </div>
     </footer>
     <!-- Модальное окно с лицензией -->
-    <div id="license-modal" class="license-modal" onclick="hideModalLicense();">
+    <div id="license-modal" class="license-modal" onclick="hideModalLicense(event);">
         <span class="close">&times;</span>
         <div class="license-modal__content">
           <img id="license-modal__image">

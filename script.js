@@ -22,7 +22,7 @@ function scrollTopTop() {
  }
 
  // Скрываем содержимое модального окна, если пользователь кликнул вне его
- function hideModalLicense()
+ function hideModalLicense(event)
  {
      if (event.target == modalLicense) {
         modalLicense.style.display = "none";
@@ -38,7 +38,7 @@ function scrollTopTop() {
     modalImageWarranty.src = img.src;
  }
 
-function hideModalWarranty()
+function hideModalWarranty(event)
  {
      if (event.target == modalWarranty) {
         modalWarranty.style.display = "none";
