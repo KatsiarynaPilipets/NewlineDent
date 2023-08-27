@@ -19,42 +19,42 @@ $mobile: 340px;
 
 //Fonts
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
   font-weight: 600;
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: "Coolvetica";
+  font-family: "Coolvetica", sans-serif;
   src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
   font-weight: 300;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
   font-weight: 500;
 }
@@ -818,7 +818,7 @@ $mobile: 340px;
   margin-top: 100px;
   padding-top: 10px;
 
-  @media screen and (max-width: 1865px) {
+  @media screen and (max-width: $desktop) {
     width: 300px;
     height: 60.72px;
     font-weight: 300;
@@ -855,7 +855,7 @@ $mobile: 340px;
   width: 800px;
   height: 400px;
 
-  @media screen and (max-width: 1865px) {
+  @media screen and (max-width: $desktop) {
     width: 600px;
   }
 
@@ -878,7 +878,7 @@ $mobile: 340px;
   border-radius: 48px;
   border: 3px solid $blue;
   
-  @media screen and (max-width: 1865px) {
+  @media screen and (max-width: $desktop) {
     width: 392.56px;
     height: 238.63px;
     border-radius: 26px;
@@ -903,7 +903,7 @@ $mobile: 340px;
   margin-top: 220px;
   margin-left: 50px;
 
-  @media screen and (max-width: 1865px) {
+  @media screen and (max-width: $desktop) {
   width: 700px;
   height: 171px;
   margin-top: 110px;
@@ -931,7 +931,7 @@ $mobile: 340px;
   color: $dark;
   letter-spacing: 3%;
 
-  @media screen and (max-width: 1865px) {
+  @media screen and (max-width: $desktop) {
     font-weight: 400;
     font-size: 12.78;
     line-height: 19.18px;
