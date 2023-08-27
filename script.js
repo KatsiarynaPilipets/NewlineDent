@@ -37,7 +37,18 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
 
     function updateCarousel() {
-        carouselContainer.style.transform = `translateX(-${currentIndex * 900}px)`;
+        const totalItems = dots.length;
+        const itemsPerPage = 1; // Всегда показываем один слайд
+
+        const availableSpace = carouselContainer.offsetWidth / 1.6;
+        const singleSlideWidth = availableSpace / itemsPerPage;
+
+        const minIndex = 0;
+        const maxIndex = totalItems - itemsPerPage;
+        currentIndex = Math.max(minIndex, Math.min(maxIndex, currentIndex));
+
+        const translateValue = -currentIndex * singleSlideWidth;
+        carouselContainer.style.transform = `translateX(${translateValue}px)`
 
         dots.forEach((dot, index) => {
             if (index === currentIndex) {
@@ -56,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     nextButton.addEventListener('click', () => {
-        if (currentIndex < 5) {
+        if (currentIndex < 4) {
             currentIndex++;
             updateCarousel();
         }
@@ -68,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             updateCarousel();
         });
     });
+    window.addEventListener('resize', updateCarousel);
 
 });
 
