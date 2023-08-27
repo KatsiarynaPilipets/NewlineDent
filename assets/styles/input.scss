@@ -772,39 +772,226 @@ $mobile: 340px;
   }
 }
 
-//Стили для отзывов
-#video-modal {
+//Стили для фортуны
+
+.banner-container {
+  @include container;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+}
+
+.banner {
+  width: 1500px;
+  height: 800px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $whitesmoke;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   display: none;
+
+  @media screen and (max-width: 1865px) {
+    width: 1300px;
+    height: 600px;
+    background-size: 26%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 840px;
+    height: 600px;
+
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 300px;
+    height: 600px;
+
+  }
+}
+
+.title {
+width: 300px;
+height: 89px;
+color: $blue;
+font-family: Coolvetica;
+font-weight: 600;
+font-size: 50px;
+line-height: 70px;
+margin-left: 100px;
+margin-top: 15px;
+
+@media screen and (max-width: 1865px) {
+margin-left: 80px;
+font-size: 45px;
+line-height: 65px;
+}
+
+@media screen and (max-width: $tablet) {
+margin-left: 30px;
+font-size: 39px;
+line-height: 65px;
+}
+
+@media screen and (max-width: $mobile) {
+  width: 50px;
+  margin-left: 25px;
+  font-size: 15px;
+  line-height: 15px;
+  }
+
+}
+
+
+.title-menu {
+  display: flex;
+}
+
+.date {
+  width: 208.17px;
+  height: 66.09px;
+  border-radius: 201px;
+  border: 6px solid $blue;
+}
+
+.left {
+  width: 200px;
+  height: 66.09;
+  border-radius: 201px;
+  border: none;
+  background-color: $blue;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Стили для затемнения фона */
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
 }
-#video-modal-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 50%;
-  max-width: 800px;
-  background-color: $white;
-  @media (max-width: $desktop) {
-    width: 90%;
-  }
+
+.bluetext,
+.bluetext1 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 55px;
+  color: $blue;
+
+  @media screen and (max-width: 1865px) {
+    font-size: 45px;
+    line-height: 50px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 35px;
+      line-height: 40px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: 15px;
+        line-height: 15px;
+        }
 }
-#video-iframe {
-  width: 100%;
-  height: 100%;
-  position: relative;
+
+.text {
+  width: 932px;
+  height: 180px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: 1865px) {
+    width: 925px;
+    height: 120px;
+    margin-left: 80px;
+    font-size: 45px;
+    line-height: 45px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 470px;
+      height: 160px;
+      margin-left: 30px;
+      font-size: 35px;
+      line-height: 45px;
+      margin-top: 60px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        width: 110px;
+        height: 20px;
+        margin-left: 25px;
+        font-size: 15px;
+        line-height: 15px;
+        }
 }
+
+.text1 {
+  width: 1070px;
+  height: 60px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 1865px) {
+    height: 40px;
+    margin-left: 80px;
+    font-size: 33px;
+    line-height: 40px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 500px;
+      height: 40px;
+      margin-left: 30px;
+      font-size: 30px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        width: 100px;
+        height: 20px;
+        margin-left: 25px;
+        font-size: 10px;
+        }
+}
+
 #close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 20px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.8);
   color: $white;
@@ -816,4 +1003,186 @@ $mobile: 340px;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+
+  @media screen and (max-width: $mobile) {
+  right: 5px;
+    }
+}
+
+.phone-input {
+  position: relative;
+  display: inline-block;
+}
+
+.phone-input-input {
+  width: 780px;
+  padding-right: 100px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 106px;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  margin-left: 120px;
+
+  @media screen and (max-width: 1865px) {
+    margin-left: 100px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 450px;
+    margin-left: 30px;
+    }
+}
+
+.phone-input-button {
+  position: absolute;
+  left: 643px;
+  top: 3px;
+  bottom: 0;
+  width: 250px;
+  height: 80%;
+  background-color: $pink;
+  color: white;
+  border: none;
+  border-radius: 106px;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 31.94px;
+  line-height: 38.6px;
+
+  @media screen and (max-width: 1865px) {
+    left: 623px;
+    }
+
+    @media screen and (max-width: 1865px) {
+      width: 170px;
+      left: 303px;
+      top: 5px;
+      font-size: 25px;
+      }
+}
+
+.wheel {
+  width: 100px;
+  height: 100px;
+  transform-origin: center center;
+  transition: transform 2s linear;
+  margin: 0 auto;
+  animation-name: rotate-2;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-iteration-count: 1;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+}
+
+@keyframes wheel-rotate-1 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(60deg);
+}
+}
+
+.wheel {
+animation-name: rotate-2;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-iteration-count: 1;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+}
+
+@keyframes wheel-rotate-2 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(120deg);
+}
+}
+
+.wheel {
+animation-name: rotate-3;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-iteration-count: 1;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+}
+
+@keyframes wheel-rotate-3 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(180deg);
+}
+}
+
+.wheel {
+animation-name: rotate-4;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-iteration-count: 1;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+}
+
+@keyframes wheel-rotate-4 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(240deg);
+}
+}
+
+.wheel {
+animation-name: rotate-5;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-iteration-count: 1;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+}
+
+@keyframes wheel-rotate-5 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(300deg);
+}
+}
+
+.wheel {
+animation-name: rotate-6;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-iteration-count: 1;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+}
+
+@keyframes wheel-rotate-6 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+.hidden-input {
+  display: none;
 }

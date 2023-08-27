@@ -222,145 +222,7 @@
       </section>
       <!-- Katya -->
       <section>
-        <div class="container">
-          <h1 class="title">Отзывы наших пациентов</h1>
-          <div class="video-container">
-              <div id="video-section">
-                <img
-                  src="/reviews/Frame21.png"
-                  alt="video"
-                  id="open-button"
-                  class="video-section__img"
-                />
-                <!-- Модальное окно с видео -->
-                <div id="video-modal">
-                  <div id="video-modal-container">
-                    <button id="close-button" aria-label="Close">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 32 32"
-                        fill="white"
-                      >
-                        <path
-                          d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
-                        ></path>
-                        <path
-                          d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <iframe
-                      id="video-iframe"
-                      frameborder="0"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-                <div class="video-container">
-                  <div id="video-section">
-                    <img
-                      src="/reviews/Frame21.png"
-                      alt="video"
-                      id="open-button"
-                      class="video-section__img"
-                    />
-                    <!-- Модальное окно с видео -->
-                    <div id="video-modal">
-                      <div id="video-modal-container">
-                        <button id="close-button" aria-label="Close">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 32 32"
-                            fill="white"
-                          >
-                            <path
-                              d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
-                            ></path>
-                            <path
-                              d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
-                            ></path>
-                          </svg>
-                        </button>
-                        <iframe
-                          id="video-iframe"
-                          frameborder="0"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
-                    </div>
-                    <div class="video-container">
-                      <div id="video-section">
-                        <img
-                          src="/reviews/Frame21.png"
-                          alt="video"
-                          id="open-button"
-                          class="video-section__img"
-                        />
-                        <!-- Модальное окно с видео -->
-                        <div id="video-modal">
-                          <div id="video-modal-container">
-                            <button id="close-button" aria-label="Close">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="32"
-                                height="32"
-                                viewBox="0 0 32 32"
-                                fill="white"
-                              >
-                                <path
-                                  d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
-                                ></path>
-                                <path
-                                  d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
-                                ></path>
-                              </svg>
-                            </button>
-                            <iframe
-                              id="video-iframe"
-                              frameborder="0"
-                              allowfullscreen
-                            ></iframe>
-                          </div>
-                        </div>
-                        <div class="video-container">
-                          <div id="video-section">
-                            <img
-                              src="/reviews/Frame21.png"
-                              alt="video"
-                              id="open-button"
-                              class="video-section__img"
-                            />
-                            <!-- Модальное окно с видео -->
-                            <div id="video-modal">
-                              <div id="video-modal-container">
-                                <button id="close-button" aria-label="Close">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="32"
-                                    height="32"
-                                    viewBox="0 0 32 32"
-                                    fill="white"
-                                  >
-                                    <path
-                                      d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
-                                    ></path>
-                                    <path
-                                      d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
-                                    ></path>
-                                  </svg>
-                                </button>
-                                <iframe
-                                  id="video-iframe"
-                                  frameborder="0"
-                                  allowfullscreen
-                                ></iframe>
-                              </div>
-                            </div>
-        </div>
+
       </section>
       <!--7. Аня -->
       <section class="before_after">
@@ -420,6 +282,53 @@
       </div>
     </footer>
 
+    <!--Фортуна-->
+
+    <div class="banner-container">
+      <div class="overlay"></div>
+    <div class="banner">
+      <h2 class="title">Только до</h2>
+      <button class="date" id="date"></button>
+      <button class="left">Осталось 3 All-on-4 в подарок</button>
+      <p class="text">Разыгрываем<span class="bluetext">имплантацию зубов ALL-on-4 в подарок</span>и 5 других подарков</p>
+      <p class="text1">Выигрывает каждый участвующий!</p>
+      <div class="wheel">
+        <img src="/assets/images/wheel.png" alt="">
+        <input type="hidden" id="result" class="hidden-input">
+      </div>
+      <div>
+        <img src="/assets/images/arrow.png" class="link" onclick="spinWheel()">
+      </div>
+      <form class="form">
+        <div class="phone-input">
+          <input type="tel" class="phone-input-input" placeholder="Введите номер телефона" style="font-size: 2vw;">
+          <button class="phone-input-button">Отправить</button>
+        </div>
+        <button id="close-button" aria-label="Close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="white"
+          >
+            <path
+              d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
+            ></path>
+            <path
+              d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
+            ></path>
+          </svg>
+        </button>
+        <iframe
+        id="banner-iframe"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      </form>
+      </div>
+    </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
