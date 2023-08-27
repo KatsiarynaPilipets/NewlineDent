@@ -5,42 +5,42 @@
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
   font-weight: 600;
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: "Coolvetica";
+  font-family: "Coolvetica", sans-serif;
   src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
   font-weight: 300;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
   font-weight: 500;
 }
@@ -932,4 +932,193 @@ ul {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+.aboutt-technology {
+  max-width: 1622px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1630px) {
+  .aboutt-technology {
+    max-width: 859.68px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 870px) {
+  .aboutt-technology {
+    max-width: 328.39px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 340px) {
+  .aboutt-technology {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 870px) {
+  .about {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+.about-title {
+  position: relative;
+  background: #4fa7fb;
+  color: #ececec;
+  width: 596px;
+  height: 114px;
+  text-align: center;
+  font-family: "Coolvetica";
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 71.2px;
+  margin-left: 42px;
+  margin-top: 100px;
+  padding-top: 10px;
+}
+@media screen and (max-width: 1630px) {
+  .about-title {
+    width: 300px;
+    height: 60.72px;
+    font-weight: 300;
+    font-size: 42.61px;
+    line-height: 37.92px;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding-top: 7px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .about-title {
+    width: 100px;
+    height: 25px;
+    font-weight: 300;
+    font-size: 16.38px;
+    line-height: 14.58px;
+    margin-left: 35px;
+    margin-top: 15px;
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .about-title {
+    width: 230px;
+    height: 23.34px;
+    font-size: 16.38px;
+    line-height: 14.58px;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-top: 5px;
+  }
+}
+
+.about-left {
+  width: 800px;
+  height: 400px;
+}
+@media screen and (max-width: 1630px) {
+  .about-left {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .about-left {
+    width: 200px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .about-left {
+    height: 200px;
+  }
+}
+
+.about-img {
+  width: 737px;
+  height: 448px;
+  position: absolute;
+  border-radius: 48px;
+  border: 3px solid #4fa7fb;
+}
+@media screen and (max-width: 1630px) {
+  .about-img {
+    width: 392.56px;
+    height: 238.63px;
+    border-radius: 26px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .about-img {
+    width: 150px;
+    height: 100px;
+    border-radius: 26px;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .about-img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+.about-right {
+  width: 771px;
+  height: 324px;
+  margin-top: 220px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 1630px) {
+  .about-right {
+    width: 700px;
+    height: 171px;
+    margin-top: 110px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .about-right {
+    width: 200px;
+    height: 130px;
+    margin-top: 50px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .about-right {
+    width: 230px;
+    margin-left: 15px;
+    margin-top: 0;
+  }
+}
+
+.about-content {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #292929;
+  letter-spacing: 3%;
+}
+@media screen and (max-width: 1630px) {
+  .about-content {
+    font-weight: 400;
+    font-size: 12.78;
+    line-height: 19.18px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .about-content {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
