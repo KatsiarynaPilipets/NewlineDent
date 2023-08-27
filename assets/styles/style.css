@@ -958,11 +958,11 @@ ul {
 .about {
   display: flex;
   flex-direction: row;
-  height: 873px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 870px) {
   .about {
-    height: 465px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 340px) {
