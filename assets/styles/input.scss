@@ -188,6 +188,16 @@ $innerShadow: #C88D9C;
   height: 100%;
   z-index: 6;
   background-color: $blue;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 1.03px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 0.39px;
+  }
 }
 
 .slider_change::after {
