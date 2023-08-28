@@ -828,7 +828,7 @@ $mobile: 340px;
     margin-top: 50px;
     padding-top: 7px;
   }
-  
+
   @media screen and (max-width: $tablet) {
     width: 100px;
     height: 25px;
@@ -866,7 +866,7 @@ $mobile: 340px;
 
   @media screen and (max-width: $mobile) {
     height: 200px;
-    
+
   }
 
 }
@@ -877,7 +877,7 @@ $mobile: 340px;
   position: absolute;
   border-radius: 48px;
   border: 3px solid $blue;
-  
+
   @media screen and (max-width: $desktop) {
     width: 392.56px;
     height: 238.63px;
@@ -936,7 +936,7 @@ $mobile: 340px;
     font-size: 12.78;
     line-height: 19.18px;
   }
-  
+
   @media screen and (max-width: $tablet) {
     font-size: 10px;
     line-height: 10px;
@@ -945,6 +945,8 @@ $mobile: 340px;
 
 
 /*lena*/
+/*Стили для блока с картой*/
+/*шрифты*/
 @font-face {
   font-family: 'Gilroy700';
   src: local('Gilroy700'),
@@ -971,23 +973,24 @@ $mobile: 340px;
 @font-face {
   font-family: 'Coolvetica400';
   src: local('Coolvetica400'),
-    url(../fonts/Coolvetica_400/CoolveticaRg-Regular_400.ttf);
+    url(../fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
 }
 
-.wrapper-map, .wrapper-consultation{
+.wrapper-map{
   max-width: 1920px;
   width: 100%;
   display: flex;
-}
-.wrapper-map{
   background-color: #CBE5FF;
-}
-.wrapper-consultation{
-  height: 330px;
-  background-color: $blue;
-  color: $white;
-  font-family: 'Gilroy700';
-  justify-content: center;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
 }
 .map{
   width: 100%;
@@ -1000,7 +1003,31 @@ $mobile: 340px;
     "map address"
     "link .";
   gap: 10px;
-
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    display: grid;
+    grid-template-columns: 490px 362px;
+    grid-template-rows: 245px 207px 147px;
+    gap: 10px;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    grid-template-columns: 188px 139px;
+    grid-template-rows: 94px 80px 56px;
+    gap: 5px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+    grid-template-columns: 240px;
+    grid-template-rows: 50px 60px 50px 30px;
+    grid-template-areas:
+    "title"
+    "map"
+    "address"
+    "link";
+    gap: 2px;
+  }
   &__title{
     grid-area: title;
     font-family: 'Coolvetica400';
@@ -1009,51 +1036,148 @@ $mobile: 340px;
     color: $blue;
     text-align: center;
     align-self: center;
+    @media screen and (max-width: $desktop) {
+      font-size: 64px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 15px;
+    }
   }
   &__content{
     grid-area: map;
     width: 920px;
     height: 388px;
-    border-radius: 30px
+    border-radius: 30px;
+    @media screen and (max-width: $desktop) {
+      width: 490px;
+      height: 207px;
+      border-radius: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 188px;
+      height: 79px;
+      border-radius: 6px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 200px;
+      height: 60px;
+      border-radius: 3px;
+      justify-self: center;
+    }
+
   }
   &__content-iframe{
     border-radius: 30px;
     width: 920px;
     height: 388px;
+    @media screen and (max-width: $desktop) {
+      width: 490px;
+      height: 207px;
+      border-radius: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 188px;
+      height: 79px;
+      border-radius: 6px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 200px;
+      height: 60px;
+      border-radius: 3px;
+    }
   }
   &__address{
     grid-area: address;
     width: 680px;
     height: 388px;
-    padding: 30px;
     border-radius: 30px;
     background-color: $blue;
     padding: 50px;
+    @media screen and (max-width: $desktop) {
+      width: 362px;
+      height: 207px;
+      border-radius: 16px;
+      padding: 26px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 139px;
+      height: 79px;
+      border-radius: 6px;
+      padding: 10px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 200px;
+      height: 60px;
+      border-radius: 3px;
+      padding: 3px;
+      justify-self: center;
+    }
   }
   &__address-paragraph{
     font-family: 'Gilroy600';
     font-size: 35px;
     color: #f7f7f7;
+    @media screen and (max-width: $desktop) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 8px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 6px;
+    }
   }
   &__address-workmode{
     font-family: 'Gilroy400';
     font-size: 35px;
     color: #f7f7f7;
     margin-top: 30px;
-  }
-  &__address-workmode{
-    font-family: 'Gilroy400';
-    font-size: 35px;
-    color: #f7f7f7;
-    margin-top: 30px;
+    @media screen and (max-width: $desktop) {
+      font-size: 18px;
+      margin-top: 18px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 7px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 5px;
+      margin-top: 3px;
+    }
   }
   &__link{
     grid-area: link;
     display: flex;
+
+    @media screen and (max-width: $desktop) {
+      margin-top: 25px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin-top: 6px;
+    }
+    @media screen and (max-width: $mobile) {
+      margin-top: 6px;
+      justify-self: center;
+    }
   }
   &__link-img{
     width: 100px;
     height: 100px;
+    @media screen and (max-width: $desktop) {
+      width: 53px;
+      height: 53px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 20.46px;
+      height: 20.46px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 15px;
+      height: 15px;
+    }
   }
   &__link-href{
     outline: none;
@@ -1063,6 +1187,18 @@ $mobile: 340px;
     color: $blue;
     align-self: self-start;
     padding-top: 25px;
+    @media screen and (max-width: $desktop) {
+      font-size: 32px;
+      padding-top: 14px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 12px;
+      padding-top: 7px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 8px;
+      padding-top: 5px;
+    }
   }
 }
 .button__call{
@@ -1079,6 +1215,30 @@ $mobile: 340px;
   border: none;
   box-shadow: inset 4px 4px 14px 0px #FFC8D6,
               inset -4px -4px 10px 0px #C88D9C;
+  @media screen and (max-width: $desktop) {
+    width: 157px;
+    height: 31px;
+    margin-top: 15px;
+    padding: 7px, 16px, 8px, 16px;
+    font-size: 12px;
+    border-radius: 6px;
+    box-shadow: inset 2px 2px 7.5px 0px #FFC8D6,
+                inset -2px -2px 5px 0px #C88D9C;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 60.28px;
+      height: 12.14px;
+      margin-top: 5px;
+      padding: 3px, 6px, 3px, 6px;
+      font-size: 4.91px;
+      border-radius: 2px;
+      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 2.864797592163086px 0px #FFC8D6;
+      box-shadow: inset -0.8185136914253235px -0.8185136914253235px 2.0462841987609863px 0px #C88D9C;
+    }
+    @media screen and (max-width: $mobile) {
+      padding: 1px, 3px, 1px, 3px;
+      font-size: 4.5px;
+    }
 }
 .button__ordercall{
   width: 249px;
@@ -1093,6 +1253,50 @@ $mobile: 340px;
   color: $pink;
   border-radius: 12px;
   border: 6px solid $pink;
+  @media screen and (max-width: $desktop) {
+    width: 133px;
+    height: 31px;
+    margin-top: 15px;
+    padding: 7px, 16px, 8px, 16px;
+    margin-left: 16px;
+    font-size: 13px;
+    border-radius: 6px;
+    border: 3px solid $pink;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 52.28px;
+    height: 12.14px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 3px, 6px, 3px, 6px;
+    border-radius: 2px;
+    border: 1px solid $pink;
+    font-size: 4.91px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.5px;
+  }
+}
+/*Оформление блока с консультацией Элины*/
+.wrapper-consultation{
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  height: 330px;
+  background-color: $blue;
+  color: $white;
+  font-family: 'Gilroy700';
+  justify-content: center;
+  @media screen and (max-width: $desktop) {
+    max-width: 1630px;
+    height: 176px;
+  }
+  @media screen and (max-width: $tablet) {
+    height: 67.64px;
+  }
+  @media screen and (max-width: $mobile) {
+    height: 50px;
+  }
 }
 .consultation{
   width: 100%;
@@ -1100,10 +1304,29 @@ $mobile: 340px;
   display: flex;
   justify-content: space-between;
   align-self: center;
-
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
   &__text{
     font-size: 63px;
     color: $white;
+    @media screen and (max-width: $desktop) {
+      font-size: 33px;
+      font-weight: 700;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 9px;
+    }
   }
   &__call{
     display: flex;
@@ -1112,16 +1335,50 @@ $mobile: 340px;
     width: 510px;
     height: 69px;
     align-self: end;
+    @media screen and (max-width: $desktop) {
+      border-radius: 107px;
+      width: 276px;
+      height: 37px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 107.52px;
+      height: 14.2px;
+      border-radius: 40.9940071105957px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 120px;
+      height: 10px;
+      border-radius: 25;
+    }
   }
   &__call-input{
     background-color: #ffffff00;
     width: 330px;
     height: 59px;
     border-radius: 200px;
-    padding:15px, 30px, 15px, 30px;
+    padding: 15px, 30px, 15px, 30px;
     border: none;
     align-self: center;
     justify-content: center;
+    @media screen and (max-width: $desktop) {
+      width: 230px;
+      height: 31px;
+      border-radius: 107px;
+      padding: 8px, 16px, 8px, 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 69.22px;
+      height: 14.22px;
+      border-radius: 40.9940071105957px;
+      padding: 1px, 1px, 1px, 6px;
+
+    }
+    @media screen and (max-width: $mobile) {
+      width: 80px;
+      height: 10px;
+      border-radius: 20px;
+      padding: 1px, 1px, 1px, 6px;
+    }
   }
   &__call-button{
     align-self: center;
@@ -1133,13 +1390,47 @@ $mobile: 340px;
     background-color: $pink;
     color: $white;
     font-size: 24px;
+    @media screen and (max-width: $desktop) {
+      width: 98px;
+      height: 37px;
+      border-radius: 107px;
+      padding:8px, 16px, 8px, 16px;
+      border: 3px solid $white;
+      font-size: 12px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 38.3px;
+      height: 13.22px;
+      border-radius: 41px;
+      padding:3px, 6px, 3px, 6px;
+      border: 1px solid $white;
+      font-size: 4.92px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 40px;
+      height: 10px;
+      border-radius: 20px;
+      padding: 1px, 1px, 1px, 6px;
+      font-size: 3.5px;
+    }
   }
 }
 ::placeholder{
   color: #D9D9D9;
   font-size: 24px;
   text-align: center;
+  font-family: 'Gilroy700';
+  @media screen and (max-width: $desktop) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 4.92px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.5px;
+  }
 }
+/*Стили футера*/
 footer{
   background-color: $lightblue;
 }
@@ -1149,6 +1440,18 @@ footer{
   display: grid;
   grid-template-columns: 23.74% 35.76% 23.12% 17.38%;
   grid-template-rows: 297px;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    grid-template-rows: 159px;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    grid-template-rows: 67px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
 }
 /*Оформление бордеров футера*/
 .license, .toc, .network{
@@ -1157,16 +1460,42 @@ footer{
 /*Оформление padding футера*/
 .toc, .network, .pay{
   padding-top: 50px;
+  @media screen and (max-width: $desktop) {
+    padding-top: 27px;
+  }
+  @media screen and (max-width: $tablet) {
+    padding-top: 10.16px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding-top: 6px;
+  }
 }
 .license{
   padding: 50px 100px 0px 0px;
   display: grid;
-
+  @media screen and (max-width: $desktop) {
+    padding: 27px 53px 0px 0px;
+  }
+  @media screen and (max-width: $tablet) {
+    padding: 10.17px 15px 0px 0px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 6px 5px 0px 0px;
+  }
   &__company{
     font-family: 'Gilroy600';
     font-size: 30px;
     color: #292929;
     text-align: center;
+    @media screen and (max-width: $desktop) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 6.5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 5px;
+    }
   }
   &__number{
     font-family: 'Gilroy400';
@@ -1174,17 +1503,50 @@ footer{
     color: #292929;
     text-align: center;
     margin-top: 25px;
+    @media screen and (max-width: $desktop) {
+      font-size: 12px;
+      margin-top: 13px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 5.65px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 4.5px;
+    }
   }
   &__picture{
     height: 100px;
     display: flex;
     justify-content: space-around;
+    @media screen and (max-width: $desktop) {
+      height: 53px;
+    }
+    @media screen and (max-width: $tablet) {
+      height: 20.31px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      height: 15px;
+    }
   }
   &__link{
     font-family: 'Gilroy500';
     font-size: 24px;
     color: #292929;
     justify-self: center;
+    text-decoration-line: underline;
+    cursor: pointer;
+    @media screen and (max-width: $desktop) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 4.87px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 4px;
+    }
   }
 }
 .toc{
@@ -1196,6 +1558,19 @@ footer{
     width: 169px;
     grid-template-rows: repeat(5, 23px);
     gap: 30px;
+    @media screen and (max-width: $desktop) {
+      width: 80px;
+      grid-template-rows: repeat(5, 12px);
+      gap: 15px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 29px;
+      grid-template-rows: repeat(5, 7px);
+      gap: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      grid-template-rows: repeat(5, 5px);
+    }
   }
   &__block-p{
     outline: none;
@@ -1205,52 +1580,134 @@ footer{
     color: #29292999;
     text-align: center;
     justify-self: left;
+    @media screen and (max-width: $desktop) {
+      font-size: 11px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 4.06px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 4px;
+    }
   }
+}
+.toc__block-p:hover {
+  text-decoration: underline;
 }
 .network{
   display: flex;
   justify-content: center;
-
   &__pic{
     margin-top: 126px;
     margin-left: 15px;
     margin-right: 15px;
     width: 50px;
     height: 50px;
+    @media screen and (max-width: $desktop) {
+      margin-top: 66px;
+      width: 27px;
+      height: 27px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin-top: 30px;
+      margin-left: 3px;
+      margin-right: 3px;
+      width: 10.16px;
+      height: 10.16px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 7px;
+      height: 7px;
+      margin-top: 25px;
+    }
   }
 }
 .pay{
   display: flex;
   flex-direction: column;
   margin-left: 100px;
-
+  @media screen and (max-width: $desktop) {
+    margin-left: 50px;
+  }
+  @media screen and (max-width: $tablet) {
+    margin-left: 40%;
+  }
   &__pic{
     padding-bottom: 20px;
     width: 60px;
     height: 50px;
     justify-self: center;
+    @media screen and (max-width: $desktop) {
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+      width: 32px;
+      height: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      padding-bottom: 0px;
+      margin-bottom: 5px;
+      width: 12.19px;
+      height: 6.09px;
+    }
   }
 }
 .wrapper-information{
   width: 100%;
   @include container;
   height: 239px;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    height: 99px;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    height: 39px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+    height: 25px;
+  }
 
   &__title{
     font-family: 'Gilroy600';
     font-size: 25px;
     margin-top: 72px;
+    @media screen and (max-width: $desktop) {
+      font-size: 13px;
+      margin-top: 29px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 5.08px;
+      margin-top: 15px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 3px;
+      margin-top: 7px;
+    }
   }
   &__text{
     font-family: 'Gilroy400';
     font-size: 20px;
     margin-top: 17px;
+    @media screen and (max-width: $desktop) {
+      font-size: 10px;
+      margin-top: 9px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 4.06px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 2.5px;
+      margin-top: 3px;
+    }
   }
 }
 .upward{
   position: fixed;
   bottom: 190px;
-  right: 140px;
+  right: calc((101% - $desktop)/2);
   width: 75px;
   height: 75px;
   background-color: #FFB5C7;
@@ -1261,17 +1718,58 @@ footer{
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
-
+  @media screen and (max-width: $desktop) {
+    width: 40px;
+    height: 40px;
+    right: calc((100% - $tablet)/2);
+    bottom: 75px;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 15.23px;
+    height: 15.23px;
+    right: calc((100% - $mobile)/2);
+    bottom: 25px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 10px;
+    height: 10px;
+    right: calc((100% - 240px)/2);
+    bottom: 20px;
+  }
   &__img{
     width: 75px;
     height: 75px;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: $desktop) {
+      width: 40px;
+      height: 40px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 15.23px;
+      height: 15.23px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 10px;
+      height: 10px;
+    }
   }
   &__img-pic{
     align-self: center;
     width: 25px;
     height: 25px;
+    @media screen and (max-width: $desktop) {
+      width: 13px;
+      height: 13px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 5.08px;
+      height: 5.08px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 4px;
+      height: 4px;
+    }
   }
 }
 .upward.active{
@@ -1290,12 +1788,31 @@ footer{
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
+  @media screen and (max-width: $desktop) {
+
+  }
+  @media screen and (max-width: $tablet) {
+
+  }
+  @media screen and (max-width: $mobile) {
+
+  }
 }
 .license-modal__content{
     margin: auto;
     display: block;
     width: 30%;
     max-width: 700px;
+    @media screen and (max-width: $desktop) {
+      width: 50%;
+      max-width: 700px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 340px;
+    }
+    @media screen and (max-width: $mobile) {
+      max-width: 240px;
+    }
 }
 .license-modal__content img{
     width: 100%;
@@ -1328,6 +1845,15 @@ footer{
     display: block;
     width: 100%;
     max-width: 1280px;
+    @media screen and (max-width: $desktop) {
+      max-width: 870px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 340px;
+    }
+    @media screen and (max-width: $mobile) {
+      max-width: 240px;
+    }
 }
 #warranty-modal__image{
     width: 100%;
