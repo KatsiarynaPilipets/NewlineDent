@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const videoModal = document.getElementById('video-modal');
     const videoIframe = document.getElementById('video-iframe');
 
+    const videoId = '3be_6eG4E9w'; // Замените на фактический идентификатор видео, указанный в URL видео после "v="
+
     openButton.addEventListener('click', function () {
-        const videoId = '3be_6eG4E9w'; // Замените на фактический идентификатор видео, указанный в URL видео после "v="
-        videoIframe.src = 'https://www.youtube.com/embed/' + videoId;
-        videoModal.style.display = 'block';
+        playVideo(videoId);
     });
 
     closeButton.addEventListener('click', function () {
@@ -30,17 +30,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     // карусель с отзывами
     const carouselContainer = document.querySelector('.carousel-container');
+    const carouselItems = document.querySelectorAll('.carousel-item');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
     const dots = document.querySelectorAll('.dot');
+    const videoIds = ['fkse3SatzAM', 'egms3mr1VXs', 'lUEezBRnMNc', 'bCa19uOKvWA']; // массив идентификаторов видео-отзывов, указанных в URL видео после "v="
 
     let currentIndex = 0;
 
     function updateCarousel() {
         const totalItems = dots.length;
-        const itemsPerPage = 1; // Всегда показываем один слайд
+        const itemsPerPage = 1.5; // Всегда показываем полтора слайда
 
-        const availableSpace = carouselContainer.offsetWidth / 1.6;
+        const availableSpace = carouselContainer.offsetWidth;
         const singleSlideWidth = availableSpace / itemsPerPage;
 
         const minIndex = 0;
@@ -79,7 +81,18 @@ document.addEventListener('DOMContentLoaded', function () {
             updateCarousel();
         });
     });
-    window.addEventListener('resize', updateCarousel);
+    //ставим слушатели на слайдеры
+    carouselItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            playVideo(videoIds[index]);
+        })
+    })
 
+
+    //функция, открывающая окно с видео с заданным идентификатором
+    function playVideo(videoId) {
+        videoIframe.src = 'https://www.youtube.com/embed/' + videoId;
+        videoModal.style.display = 'block';
+    }
 });
 
