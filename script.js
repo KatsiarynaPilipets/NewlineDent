@@ -51,11 +51,16 @@ contactForm.addEventListener("submit", function (event) {
 function showError() {
   if (tel.validity.valueMissing) {
     telError.textContent = "Пожалуйста, заполните поле!";
+  } else if (tel.validity.tooShort) {
+    telError.textContent = "Вы ввели номер не полностью.";
   } else if (tel.validity.patternMismatch) {
     telError.textContent = "Введите номер в правильном формате.";
-
   }
 
   // Стилизация
   telError.className = "error active";
 }
+
+//Патерны:
+//\+?[0-9\s\-\(\)]+
+//\[0-9\]

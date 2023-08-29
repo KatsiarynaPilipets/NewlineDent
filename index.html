@@ -80,26 +80,26 @@
             </div>
         </section>
         <!--9. Настя -->
-        <section>
+        <section class="doctors">
             <div class="container doctors-container">
                     <div class="title doctors-title"><h2>Наши врачи</h2></div>
                     <div class="doctors-frame">
-                        <div class="doctors-frame__doctors-image"><img src="../assets/images/image-doctors/photo_Karbishev.png"></div>
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Karbishev.png"></div>
                         <div class="doctors-frame__background-circle"></div>
                         <div class="doctors-frame__doctors-name">Карбышев Михаил Алексеевич</div>
                     </div>
                     <div class="doctors-frame">
-                        <div class="doctors-frame__doctors-image"><img src="../assets/images/image-doctors/photo_Egiazaryan.png" ></div>
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Egiazaryan.png" ></div>
                         <div class="doctors-frame__background-circle"></div>
                         <div class="doctors-frame__doctors-name">Егиазарян Рафаэль Араикович</div>
                     </div>
                     <div class="doctors-frame">
-                        <div class="doctors-frame__doctors-image"><img src="../assets/images/image-doctors/photo_Vardanyan.png"></div>
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Vardanyan.png"></div>
                         <div class="doctors-frame__background-circle"></div>
                         <div class="doctors-frame__doctors-name">Варданян Роман Вруйрович</div>
                     </div>
                     <div class="doctors-frame">
-                        <div class="doctors-frame__doctors-image"><img src="../assets/images/image-doctors/photo_Savostikov.png"></div>
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Savostikov.png"></div>
                         <div class="doctors-frame__background-circle"></div>
                         <div class="doctors-frame__doctors-name">Савостиков Роман Андреевич</div>
                     </div>
@@ -113,12 +113,8 @@
                     <h2 class="contact-form__title">Укажите свой номер телефона</h2>
                     <p>свяжемся с вами и разберем вашу ситуацию</p>
                     <div class="contact-form__input-box">
-                        <input type="tel" id="phone" class="contact-form__tel" name="phone" pattern="/^\+?[78]\d{10}$/" minlength="10" required /></div>
+                        <input type="tel" id="phone" class="contact-form__tel" name="phone" pattern="\+?[0-9\s\-\(\)]+" minlength="10" required /></div>
                         <span class="error" aria-live="polite"></span>
-                   <div class="contact-form__input-box">
-                        <input type="checkbox" name="agreement" class="contact-form__checkbox" id="agreement" required >
-                        <label for="agreement" class="contact-form__checkbox-label">Я согласен с <a class="policy-link" href="#">политикой конфиденциальности</a></label>
-                        <div class="contact-form__error_agreement"></div>
                     <div class="contact-form__input-box">
                         <button type="submit" class="submit-btn">Получить БЕСПЛАТНУЮ консультацию</button></div>
                     <div class="contact-form__info"><p>c 10:00 до 21:00<br>Понедельник-Суббота<br>+7 (812) 66-57-332</p></div>
@@ -129,27 +125,27 @@
             
         </section>
         <!--10. Настя -->
-        <section>
+        <section class="stages">
             <div class="container stage-container">
                 <div class ="title stage-title"><h2>Этапы имплантации:</h2></div>
-                <div class ="stage-subtitle"><h3>I Этап</h3></div>=
+                <div class ="stage-subtitle"><h3>I Этап</h3></div>
                 <div class = "stage">
-                    <h4 class ="stage__description">Консультация и диагностика</h4>
+                    <div class ="stage__description"><h4>Консультация и диагностика</h4></div>
                     <div class = "stage__image-container"><img class = "stage-image" src="../assets/images/image-stage/image 32.png" alt="" /></div>
                     <hr class ="stage__gradient-line">
                     <p class="stage__text">Бесплатно сделаем КТ-снимок. Проведем полное обследование полости ртаю Подберем индивидуальный план лечения под вашу ситуацию.</p>
                 </div>
                 <div class = "stage">
-                    <h4 class ="stage__description">Установка протеза</h4>
+                    <div class ="stage__description"><h4>Установка протеза</h4></div>
                     <div class = "stage__image-container"><img class = "stage-image" src="../assets/images/image-stage/image 34.png" alt=""  /></div>
                     <hr class ="stage__gradient-line">
                     <p class="stage__text">Мы сделаем протез в своей зуботехнической лаборатории, что позволит сэкономить ваши деньги. Ваш протез, после установки, не будет отличаться от своих зубов ни по виду, ни по ощущениям.</p>
                 </div>
                 <div class = "stage">
-                     <h4 class ="stage__description">Установка 4 имплантов</h4>
-                     <div class = "stage__image-container"><img class = "stage-image" src="../assets/images/image-stage/image 33.png" alt="" /></div>
-                     <hr class ="stage__gradient-line">
-                     <p class="stage__text">Врач предложит вам несколько имплантов на выбор и расскажет про преимущества конкретной фирмы. Установка 4 или 6 имплантов в зависимости от клинической ситуации.</p>
+                    <div class ="stage__description">Установка 4 имплантов</h4></div>
+                    <div class = "stage__image-container"><img class = "stage-image" src="../assets/images/image-stage/image 33.png" alt="" /></div>
+                    <hr class ="stage__gradient-line">
+                    <p class="stage__text">Врач предложит вам несколько имплантов на выбор и расскажет про преимущества конкретной фирмы. Установка 4 или 6 имплантов в зависимости от клинической ситуации.</p>
                 </div>
             </div>
         </section>
