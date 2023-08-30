@@ -283,8 +283,8 @@
                     <p class="map__address-paragraph">ст.м. "Новочеркасская"</p>
                     <p class="map__address-paragraph">ул. Стахановцев, д. 6</p>
                     <p class="map__address-workmode">режим работы: пн-вс: 9:00 — 21:00</p>
-                    <button class="button__call">Позвонить в клинику</button>
-                    <button class="button__ordercall">Заказать звонок</button>
+                    <button id="callClinic" class="button__call">Позвонить в клинику</button>
+                    <button class="button__ordercall ordercall" id="ordercall">Заказать звонок</button>
                         <!--/*не забудь тег<address></address>-->
                 </div>
                 <div class="map__link">
@@ -330,11 +330,11 @@
             </div>
             <div class="toc">
                 <div class="toc__block">
-                    <a class="toc__block-p toc__p" href="">Стоимость</a>
-                    <a class="toc__block-p toc__p" href="">Отзывы</a>
-                    <a class="toc__block-p toc__p" href="">До и После</a>
-                    <a class="toc__block-p toc__p" href="">Этапы лечения</a>
-                    <a class="toc__block-p toc__p" href="">Как добраться</a>
+                    <a class="toc__block-p toc__p" href="#">Стоимость</a>
+                    <a class="toc__block-p toc__p" href="#">Отзывы</a>
+                    <a class="toc__block-p toc__p" href="#">До и После</a>
+                    <a class="toc__block-p toc__p" href="#">Этапы лечения</a>
+                    <a class="toc__block-p toc__p" href="#">Как добраться</a>
                 </div>
             </div>
             <div class="network">
@@ -360,11 +360,16 @@
             </p>
         </div>
 
-            <div class="upward" onclick="scrollTopTop()">
-                <div class="upward__img">
-                    <img class="upward__img-pic" src="./assets/img_route/Arrow.svg" alt="up">
-                </div>
+        <div class="upward" onclick="scrollTopTop()">
+            <div class="upward__img">
+                <img class="upward__img-pic" src="./assets/img_route/Arrow.svg" alt="up">
             </div>
+        </div>
+        <div class="pinkphone ordercall">
+          <div class="pinkphone__img">
+              <img class="pinkphone__img-pic" src="./assets/img_route/pinkphone.png" alt="pinkphone">
+          </div>
+      </div>
     </footer>
     <!-- Модальное окно с лицензией -->
     <div id="license-modal" class="license-modal" onclick="hideModalLicense(event);">
@@ -373,6 +378,28 @@
           <img id="license-modal__image">
         </div>
     </div>
+    <!-- Модальное окно обратный звонок -->
+    <div class="modal ordercall-modal" id="ordercall-modal">
+      <div class="modal__content">
+          <button class="modal__close-button"><img src="../assets/images/modal/close-cross-button.png"
+                  width="24" alt=""></button>
+          <form class="contact-form" novalidate>
+              <h2 class="contact-form__title">Укажите свой номер телефона</h2>
+              <p class="contact-form__p">и наш специалист перезвонит Вам</p>
+              <div class="contact-form__input-box">
+                  <input type="tel" id="phone" class="contact-form__tel" name="phone"
+                      pattern="\+?[0-9\s\-\(\)]+" minlength="10" required placeholder="Введите Ваш номер"/>
+              </div>
+              <span class="error" aria-live="polite"></span>
+              <div class="contact-form__input-box">
+                  <button type="submit" class="submit-btn">Заказать обратный звонок</button>
+              </div>
+              <div class="contact-form__info">
+                  <p>c 10:00 до 21:00<br>Понедельник-Суббота<br>+7 (812) 66-57-332</p>
+              </div>
+          </form>
+      </div>
+  </div>
 
     <script src="script.js"></script>
   </body>

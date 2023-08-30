@@ -27,11 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-// Button "Up"
+
+ // Кнопка "Позвонить в клинику"
+ const callClinic = document.getElementById('callClinic');
+ callClinic.addEventListener('click', function () {
+     window.location.href = 'tel:+78126226242';
+ });
+
+// Button "Up". Кнопка "Стрелочка вверх"
 window.addEventListener('scroll', function ()
 {
     let scroll = document.querySelector('.upward');
-    scroll.classList.toggle("active", window.scrollY>500)
+    scroll.classList.toggle("active", window.scrollY>350)
 })
 function scrollTopTop() {
     window.scrollTo({
@@ -39,6 +46,8 @@ function scrollTopTop() {
         behavior: 'smooth'
     })
 }
+
+//Модальное окно с выводом лицензии
  // Получаем элементы модального окна и изображения
  const modalLicense = document.getElementById("license-modal");
  const modalImageLicense = document.getElementById("license-modal__image");
@@ -57,19 +66,88 @@ function scrollTopTop() {
         modalLicense.style.display = "none";
      }
  }
+ //Модальное окно с выводом положения о гарантии
 // Получаем элементы модального окна и изображения
  const modalWarranty = document.getElementById("warranty-modal");
  const modalImageWarranty = document.getElementById("warranty-modal__image");
 
+ // Отображаем модальное окно и устанавливаем источник изображения
  function displayWarranty(img)
  {
     modalWarranty.style.display = "block";
     modalImageWarranty.src = img.src;
  }
 
+ // Скрываем содержимое модального окна, если пользователь кликнул вне его
 function hideModalWarranty(event)
  {
      if (event.target == modalWarranty) {
         modalWarranty.style.display = "none";
      }
  }
+
+ // Модальное окно "Обратный звонок"
+
+ document.addEventListener('DOMContentLoaded', function () {
+
+    let modalOrderCall = document.getElementById('ordercall-modal');
+    let closeButtonSign = modalOrderCall.getElementsByClassName('modal__close-button')[0];
+    let tagBody = document.getElementsByTagName('body');
+    const buttonsOrdercalls = document.querySelectorAll('.ordercall');
+//Перебор кнопок на клик
+    buttonsOrdercalls.forEach(button => {
+        button.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalOrderCall.classList.add('modal_active');
+        tagBody.classList.add('hidden');
+        })
+    })
+//Закрытие модального окна
+    closeButtonSign.onclick = function (e) {
+        e.preventDefault();
+        modalOrderCall.classList.remove('modal_active');
+        tagBody.classList.remove('hidden');
+    }
+//Скрытие формы
+    modalOrderCall.onmousedown = function (e) {
+        let target = e.target;
+        let modalContent = modalOrderCall.getElementsByClassName('modal__content')[0];
+        if (target.closest('.' + modalContent.className) === null) {
+            this.classList.remove('modal_active');
+            tagBody.classList.remove('hidden');
+        }
+    };
+//Валидация номера --- убрать после слияния Настиного блока?
+    const contactForm = document.querySelector('.contact-form');
+    const tel = document.getElementById("phone");
+    const telError = document.querySelector("span.error");
+
+    tel.addEventListener("input", function (event) {
+        if (tel.validity.valid) {
+            telError.textContent = "";
+            telError.className = "error";
+        } else {
+            showError();
+        }
+});
+//вызов ошибки  --- убрать после слияния Настиного блока?
+contactForm.addEventListener("submit", function (event) {
+    if (!tel.validity.valid) {
+        showError();
+        event.preventDefault();
+    }
+});
+//Ошибки --- убрать после слияния Настиного блока?
+function showError() {
+    if (tel.validity.valueMissing) {
+        telError.textContent = "Пожалуйста, заполните поле!";
+    } else if (tel.validity.tooShort) {
+        telError.textContent = "Вы ввели номер не полностью.";
+    } else if (tel.validity.patternMismatch) {
+        telError.textContent = "Введите номер в правильном формате.";
+    }
+
+    // Стилизация  --- убрать после слияния Настиного блока?
+    telError.className = "error active";
+}
+});
