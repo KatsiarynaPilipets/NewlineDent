@@ -956,8 +956,8 @@ ul {
 }
 
 .banner {
-  width: 1500px;
-  height: 800px;
+  width: 95%;
+  height: 95%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -967,42 +967,24 @@ ul {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   display: none;
 }
-@media screen and (max-width: 1865px) {
-  .banner {
-    width: 1300px;
-    height: 600px;
-    background-size: 26%;
-  }
-}
-@media screen and (max-width: 870px) {
-  .banner {
-    width: 840px;
-    height: 600px;
-  }
-}
-@media screen and (max-width: 870px) {
-  .banner {
-    width: 300px;
-    height: 600px;
-  }
-}
 
 .title {
-  width: 300px;
-  height: 89px;
+  width: 275px;
+  height: 54px;
   color: #4fa7fb;
   font-family: Coolvetica;
   font-weight: 600;
-  font-size: 50px;
-  line-height: 70px;
+  font-size: 60.17px;
+  line-height: 53.56px;
   margin-left: 100px;
-  margin-top: 15px;
+  margin-top: 70px;
 }
-@media screen and (max-width: 1865px) {
+@media screen and (max-width: 1630px) {
   .title {
-    margin-left: 80px;
-    font-size: 45px;
-    line-height: 65px;
+    width: 215px;
+    margin-left: 60px;
+    font-size: 42px;
+    line-height: 55px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -1028,21 +1010,44 @@ ul {
 .date {
   width: 208.17px;
   height: 66.09px;
+  margin-top: 70px;
+  margin-left: 35px;
   border-radius: 201px;
   border: 6px solid #4fa7fb;
+  color: #4fa7fb;
+}
+@media screen and (max-width: 1630px) {
+  .date {
+    width: 110.97px;
+    height: 34.98px;
+    border-radius: 107px;
+    border: 3px solid #4fa7fb;
+    margin-top: 30px;
+  }
 }
 
 .left {
-  width: 200px;
+  width: 531.17px;
   height: 66.09;
+  margin-top: 70px;
+  margin-left: 40px;
+  color: #ffffff;
   border-radius: 201px;
   border: none;
   background-color: #4fa7fb;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 30.09px;
+  line-height: 36.38px;
 }
-
-.form {
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width: 1630px) {
+  .left {
+    width: 240px;
+    height: 34.98px;
+    border-radius: 107px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
 }
 
 .form {
@@ -1061,54 +1066,41 @@ ul {
   display: none;
 }
 
-.bluetext,
-.bluetext1 {
+.bluetext {
   font-family: Gilroy;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 55px;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
   color: #4fa7fb;
 }
-@media screen and (max-width: 1865px) {
-  .bluetext,
-  .bluetext1 {
-    font-size: 45px;
-    line-height: 50px;
-  }
-}
-@media screen and (max-width: 870px) {
-  .bluetext,
-  .bluetext1 {
-    font-size: 35px;
-    line-height: 40px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .bluetext,
-  .bluetext1 {
-    font-size: 15px;
-    line-height: 15px;
+@media screen and (max-width: 1630px) {
+  .bluetext {
+    width: 404.92px;
+    height: 96px;
+    font-size: 28px;
+    line-height: 35px;
   }
 }
 
 .text {
-  width: 932px;
-  height: 180px;
+  width: 762.21px;
+  height: 183px;
   font-family: Gilroy;
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 50px;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
+  margin-top: 50px;
   margin-left: 100px;
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 70px;
 }
-@media screen and (max-width: 1865px) {
+@media screen and (max-width: 1630px) {
   .text {
-    width: 925px;
-    height: 120px;
-    margin-left: 80px;
-    font-size: 45px;
-    line-height: 45px;
+    width: 404.92px;
+    height: 96px;
+    margin-left: 60px;
+    font-size: 28px;
+    line-height: 35px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -1132,38 +1124,43 @@ ul {
 }
 
 .text1 {
-  width: 1070px;
-  height: 60px;
+  width: 845px;
+  height: 61px;
   font-family: Gilroy;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 50px;
+  font-size: 50.15px;
+  line-height: 60.63px;
   margin-left: 100px;
   color: #000000;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1630px) {
+  .text1 {
+    width: 449px;
+    height: 32px;
+    font-size: 26.64px;
+    line-height: 32.21px;
+    margin-left: 60px;
+  }
+}
+
+.put {
+  width: 374px;
+  height: 21px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 18.05px;
+  line-height: 21.25px;
+  margin-left: 100px;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 1865px) {
-  .text1 {
-    height: 40px;
-    margin-left: 80px;
-    font-size: 33px;
-    line-height: 40px;
-  }
-}
-@media screen and (max-width: 870px) {
-  .text1 {
-    width: 500px;
-    height: 40px;
-    margin-left: 30px;
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .text1 {
-    width: 100px;
-    height: 20px;
-    margin-left: 25px;
-    font-size: 10px;
+@media screen and (max-width: 1630px) {
+  .put {
+    width: 199px;
+    height: 11px;
+    font-size: 9.59px;
+    line-height: 11.29px;
+    margin-left: 60px;
   }
 }
 
@@ -1190,20 +1187,22 @@ ul {
 }
 
 .phone-input {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .phone-input-input {
-  width: 780px;
-  padding-right: 100px;
-  height: 50px;
+  width: 782.27px;
+  height: 93.06px;
   border: 1px solid #ccc;
-  border-radius: 106px;
+  border-radius: 201px;
   outline: none;
-  font-size: 14px;
-  padding: 5px;
-  margin-left: 120px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 60.17px;
+  line-height: 72.75px;
+  margin-left: 100px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 1865px) {
   .phone-input-input {
@@ -1218,42 +1217,39 @@ ul {
 }
 
 .phone-input-button {
-  position: absolute;
-  left: 643px;
-  top: 3px;
-  bottom: 0;
-  width: 250px;
-  height: 80%;
+  width: 772.24px;
+  height: 103.09px;
   background-color: #ff9fb7;
   color: white;
   border: none;
-  border-radius: 106px;
+  border-radius: 201px;
   cursor: pointer;
   font-family: Gilroy;
   font-weight: 700;
-  font-size: 31.94px;
-  line-height: 38.6px;
+  font-size: 60.17px;
+  line-height: 72.75px;
+  text-align: center;
+  margin-left: 100px;
 }
-@media screen and (max-width: 1865px) {
-  .phone-input-button {
-    left: 623px;
-  }
+
+.wheel-container {
+  position: relative;
+  top: -645px;
+  left: 1078px;
 }
-@media screen and (max-width: 1865px) {
-  .phone-input-button {
-    width: 170px;
-    left: 303px;
-    top: 5px;
-    font-size: 25px;
-  }
+
+.arrow {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 230px;
+  left: 237px;
 }
 
 .wheel {
-  width: 100px;
-  height: 100px;
-  transform-origin: center center;
+  width: 650px;
+  height: 650px;
   transition: transform 2s linear;
-  margin: 0 auto;
   animation-name: rotate-2;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
@@ -1261,6 +1257,12 @@ ul {
   animation-iteration-count: 1;
   animation-direction: alternate;
   animation-fill-mode: forwards;
+}
+@media screen and (max-width: 1630px) {
+  .wheel {
+    top: -300px;
+    left: 772.69px;
+  }
 }
 
 @keyframes wheel-rotate-1 {
@@ -1271,16 +1273,6 @@ ul {
     transform: rotate(60deg);
   }
 }
-.wheel {
-  animation-name: rotate-2;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-}
-
 @keyframes wheel-rotate-2 {
   0% {
     transform: rotate(0deg);
@@ -1289,16 +1281,6 @@ ul {
     transform: rotate(120deg);
   }
 }
-.wheel {
-  animation-name: rotate-3;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-}
-
 @keyframes wheel-rotate-3 {
   0% {
     transform: rotate(0deg);
@@ -1307,16 +1289,6 @@ ul {
     transform: rotate(180deg);
   }
 }
-.wheel {
-  animation-name: rotate-4;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-}
-
 @keyframes wheel-rotate-4 {
   0% {
     transform: rotate(0deg);
@@ -1325,16 +1297,6 @@ ul {
     transform: rotate(240deg);
   }
 }
-.wheel {
-  animation-name: rotate-5;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-}
-
 @keyframes wheel-rotate-5 {
   0% {
     transform: rotate(0deg);
@@ -1343,16 +1305,6 @@ ul {
     transform: rotate(300deg);
   }
 }
-.wheel {
-  animation-name: rotate-6;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-}
-
 @keyframes wheel-rotate-6 {
   0% {
     transform: rotate(0deg);
@@ -1364,3 +1316,5 @@ ul {
 .hidden-input {
   display: none;
 }
+
+/*# sourceMappingURL=style.css.map */

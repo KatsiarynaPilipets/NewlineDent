@@ -10,6 +10,7 @@ $whitesmoke: #f3f3f3;
 $lightblue: #cbe5ff;
 $white: #ffffff;
 $black: #000000;
+$gray: #B1B1B1;
 
 //Screens
 $desktop: 1630px;
@@ -790,8 +791,8 @@ $mobile: 340px;
 }
 
 .banner {
-  width: 1500px;
-  height: 800px;
+  width: 95%;
+  height: 95%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -801,41 +802,24 @@ $mobile: 340px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   display: none;
-
-  @media screen and (max-width: 1865px) {
-    width: 1300px;
-    height: 600px;
-    background-size: 26%;
-  }
-
-  @media screen and (max-width: $tablet) {
-    width: 840px;
-    height: 600px;
-
-  }
-
-  @media screen and (max-width: $tablet) {
-    width: 300px;
-    height: 600px;
-
-  }
 }
 
 .title {
-width: 300px;
-height: 89px;
+width: 275px;
+height: 54px;
 color: $blue;
 font-family: Coolvetica;
 font-weight: 600;
-font-size: 50px;
-line-height: 70px;
+font-size: 60.17px;
+line-height: 53.56px;
 margin-left: 100px;
-margin-top: 15px;
+margin-top: 70px;
 
-@media screen and (max-width: 1865px) {
-margin-left: 80px;
-font-size: 45px;
-line-height: 65px;
+@media screen and (max-width: $desktop) {
+width: 215px;
+margin-left: 60px;
+font-size: 42px;
+line-height: 55px;
 }
 
 @media screen and (max-width: $tablet) {
@@ -853,7 +837,6 @@ line-height: 65px;
 
 }
 
-
 .title-menu {
   display: flex;
 }
@@ -861,23 +844,44 @@ line-height: 65px;
 .date {
   width: 208.17px;
   height: 66.09px;
+  margin-top: 70px;
+  margin-left: 35px;
   border-radius: 201px;
   border: 6px solid $blue;
+  color: $blue;
+
+  @media screen and (max-width: $desktop) {
+    width: 110.97px;
+    height: 34.98px;
+    border-radius: 107px;
+    border: 3px solid $blue;
+    margin-top: 30px;
+  }
+
 }
 
 .left {
-  width: 200px;
+  width: 531.17px;
   height: 66.09;
+  margin-top: 70px;
+  margin-left: 40px;
+  color: $white;
   border-radius: 201px;
   border: none;
   background-color: $blue;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-}
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 30.09px;
+  line-height: 36.38px;
 
-
+  @media screen and (max-width: $desktop) {
+    width: 240px;
+    height: 34.98px;
+    border-radius: 107px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -894,47 +898,39 @@ line-height: 65px;
   display: none;
 }
 
-.bluetext,
-.bluetext1 {
+.bluetext {
   font-family: Gilroy;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 55px;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
   color: $blue;
 
-  @media screen and (max-width: 1865px) {
-    font-size: 45px;
-    line-height: 50px;
+  @media screen and (max-width: $desktop) {
+    width: 404.92px;
+    height: 96px;
+    font-size: 28px;
+    line-height: 35px;
     }
-
-    @media screen and (max-width: $tablet) {
-      font-size: 35px;
-      line-height: 40px;
-      }
-
-      @media screen and (max-width: $mobile) {
-        font-size: 15px;
-        line-height: 15px;
-        }
-}
+  }
 
 .text {
-  width: 932px;
-  height: 180px;
+  width: 762.21px;
+  height: 183px;
   font-family: Gilroy;
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 50px;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
+  margin-top: 50px;
   margin-left: 100px;
   color: $black;
-  margin-bottom: 15px;
+  margin-bottom: 70px;
 
-  @media screen and (max-width: 1865px) {
-    width: 925px;
-    height: 120px;
-    margin-left: 80px;
-    font-size: 45px;
-    line-height: 45px;
+  @media screen and (max-width: $desktop) {
+    width: 404.92px;
+    height: 96px;
+    margin-left: 60px;
+    font-size: 28px;
+    line-height: 35px;
     }
 
     @media screen and (max-width: $tablet) {
@@ -956,36 +952,42 @@ line-height: 65px;
 }
 
 .text1 {
-  width: 1070px;
-  height: 60px;
+  width: 845px;
+  height: 61px;
   font-family: Gilroy;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 50px;
+  font-size: 50.15px;
+  line-height: 60.63px;
   margin-left: 100px;
   color: $black;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: $desktop) {
+    width: 449px;
+    height: 32px;
+    font-size: 26.64px;
+    line-height: 32.21px;
+    margin-left: 60px;
+    }
+}
+
+.put {
+  width: 374px;
+  height: 21px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 18.05px;
+  line-height: 21.25px;
+  margin-left: 100px;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 1865px) {
-    height: 40px;
-    margin-left: 80px;
-    font-size: 33px;
-    line-height: 40px;
+  @media screen and (max-width: $desktop) {
+    width: 199px;
+    height: 11px;
+    font-size: 9.59px;
+    line-height: 11.29px;
+    margin-left: 60px;
     }
-
-    @media screen and (max-width: $tablet) {
-      width: 500px;
-      height: 40px;
-      margin-left: 30px;
-      font-size: 30px;
-      }
-
-      @media screen and (max-width: $mobile) {
-        width: 100px;
-        height: 20px;
-        margin-left: 25px;
-        font-size: 10px;
-        }
 }
 
 #close-button {
@@ -1010,20 +1012,22 @@ line-height: 65px;
 }
 
 .phone-input {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .phone-input-input {
-  width: 780px;
-  padding-right: 100px;
-  height: 50px;
+  width: 782.27px;
+  height: 93.06px;
   border: 1px solid #ccc;
-  border-radius: 106px;
+  border-radius: 201px;
   outline: none;
-  font-size: 14px;
-  padding: 5px;
-  margin-left: 120px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 60.17px;
+  line-height: 72.75px;
+  margin-left: 100px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 1865px) {
     margin-left: 100px;
@@ -1036,47 +1040,51 @@ line-height: 65px;
 }
 
 .phone-input-button {
-  position: absolute;
-  left: 643px;
-  top: 3px;
-  bottom: 0;
-  width: 250px;
-  height: 80%;
+  width: 772.24px;
+  height: 103.09px;
   background-color: $pink;
   color: white;
   border: none;
-  border-radius: 106px;
+  border-radius: 201px;
   cursor: pointer;
   font-family: Gilroy;
   font-weight: 700;
-  font-size: 31.94px;
-  line-height: 38.6px;
+  font-size: 60.17px;
+  line-height: 72.75px;
+  text-align: center;
+  margin-left: 100px;
+}
 
-  @media screen and (max-width: 1865px) {
-    left: 623px;
-    }
+.wheel-container {
+  position: relative;
+  top: -645px;
+  left: 1078px;
+}
 
-    @media screen and (max-width: 1865px) {
-      width: 170px;
-      left: 303px;
-      top: 5px;
-      font-size: 25px;
-      }
+.arrow {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 230px;
+  left: 237px;
 }
 
 .wheel {
-  width: 100px;
-  height: 100px;
-  transform-origin: center center;
+  width: 650px;
+  height: 650px;
   transition: transform 2s linear;
-  margin: 0 auto;
   animation-name: rotate-2;
-animation-duration: 3s;
-animation-timing-function: ease-in-out;
-animation-delay: 0s;
-animation-iteration-count: 1;
-animation-direction: alternate;
-animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+
+  @media screen and (max-width: $desktop) {
+    top: -300px;
+    left: 772.69px;
+    }
 }
 
 @keyframes wheel-rotate-1 {
@@ -1088,16 +1096,6 @@ transform: rotate(60deg);
 }
 }
 
-.wheel {
-animation-name: rotate-2;
-animation-duration: 3s;
-animation-timing-function: ease-in-out;
-animation-delay: 0s;
-animation-iteration-count: 1;
-animation-direction: alternate;
-animation-fill-mode: forwards;
-}
-
 @keyframes wheel-rotate-2 {
 0% {
 transform: rotate(0deg);
@@ -1105,16 +1103,6 @@ transform: rotate(0deg);
 100% {
 transform: rotate(120deg);
 }
-}
-
-.wheel {
-animation-name: rotate-3;
-animation-duration: 3s;
-animation-timing-function: ease-in-out;
-animation-delay: 0s;
-animation-iteration-count: 1;
-animation-direction: alternate;
-animation-fill-mode: forwards;
 }
 
 @keyframes wheel-rotate-3 {
@@ -1126,16 +1114,6 @@ transform: rotate(180deg);
 }
 }
 
-.wheel {
-animation-name: rotate-4;
-animation-duration: 3s;
-animation-timing-function: ease-in-out;
-animation-delay: 0s;
-animation-iteration-count: 1;
-animation-direction: alternate;
-animation-fill-mode: forwards;
-}
-
 @keyframes wheel-rotate-4 {
 0% {
 transform: rotate(0deg);
@@ -1145,16 +1123,6 @@ transform: rotate(240deg);
 }
 }
 
-.wheel {
-animation-name: rotate-5;
-animation-duration: 3s;
-animation-timing-function: ease-in-out;
-animation-delay: 0s;
-animation-iteration-count: 1;
-animation-direction: alternate;
-animation-fill-mode: forwards;
-}
-
 @keyframes wheel-rotate-5 {
 0% {
 transform: rotate(0deg);
@@ -1162,16 +1130,6 @@ transform: rotate(0deg);
 100% {
 transform: rotate(300deg);
 }
-}
-
-.wheel {
-animation-name: rotate-6;
-animation-duration: 3s;
-animation-timing-function: ease-in-out;
-animation-delay: 0s;
-animation-iteration-count: 1;
-animation-direction: alternate;
-animation-fill-mode: forwards;
 }
 
 @keyframes wheel-rotate-6 {

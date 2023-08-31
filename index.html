@@ -287,22 +287,25 @@
     <div class="banner-container">
       <div class="overlay"></div>
     <div class="banner">
+      <div class="title-menu">
       <h2 class="title">Только до</h2>
       <button class="date" id="date"></button>
       <button class="left">Осталось 3 All-on-4 в подарок</button>
-      <p class="text">Разыгрываем<span class="bluetext">имплантацию зубов ALL-on-4 в подарок</span>и 5 других подарков</p>
-      <p class="text1">Выигрывает каждый участвующий!</p>
-      <div class="wheel">
-        <img src="/assets/images/wheel.png" alt="">
-        <input type="hidden" id="result" class="hidden-input">
       </div>
+      <p class="text">Разыгрываем <span class="bluetext">имплантацию зубов ALL-on-4 в подарок</span> и 5 других подарков</p>
+      <p class="text1">Выигрывает каждый участвующий!</p>
+      <p class="put">Ввдите номер телефона и испытайте удачу:</p>
       <div>
-        <img src="/assets/images/arrow.png" class="link" onclick="spinWheel()">
       </div>
       <form class="form">
         <div class="phone-input">
-          <input type="tel" class="phone-input-input" placeholder="Введите номер телефона" style="font-size: 2vw;">
-          <button class="phone-input-button">Отправить</button>
+          <input type="phone" class="phone-input-input" placeholder="+ 7 (999) 999 99 99" style="font-size: 3vw;" pattern="\+?[0-9\s\-\(\)]+">
+          <button class="phone-input-button">Забрать подарок</button>
+        </div>
+        <div class="wheel-container">
+          <img src="/assets/images/wheel.png" alt="wheel" id="wheel" class="wheel">
+          <input type="hidden" id="result" class="hidden-input">
+          <img src="/assets/images/arrow.png" id="arrow" class="arrow">
         </div>
         <button id="close-button" aria-label="Close">
           <svg
