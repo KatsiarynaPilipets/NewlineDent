@@ -1023,9 +1023,10 @@ line-height: 18px;
   @media screen and (max-width: $mobile) {
     width: 154.82px;
     height: 36px;
-    margin-left: 50px;
-    font-size: 18px;
-    line-height: 17px;
+    margin-left: 20px;
+    font-size: 10.19px;
+    line-height: 12.31px;
+    margin-bottom: 20px;
     }
 }
 
@@ -1044,6 +1045,11 @@ line-height: 18px;
   @media screen and (max-width: $tablet) {
     font-size: 18px;
     line-height: 17px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 10.19px;
+    line-height: 12.31px;
     }
   }
 
@@ -1074,6 +1080,15 @@ line-height: 18px;
     margin-left: 50px;
     margin-bottom: 20px;
     }
+
+  @media screen and (max-width: $mobile) {
+    width: 130px;
+    height: 12px;
+    font-size: 10.19px;
+    line-height: 12.31px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    }
 }
 
 .put {
@@ -1094,14 +1109,23 @@ line-height: 18px;
     margin-left: 80px;
     }
 
-    @media screen and (max-width: $tablet) {
-      width: 130px;
-      height: 4px;
-      font-size: 5.67px;
-      line-height: 8px;
-      margin-left: 50px;
-      margin-bottom: 17px;
-      }
+  @media screen and (max-width: $tablet) {
+    width: 130px;
+    height: 4px;
+    font-size: 5.67px;
+    line-height: 8px;
+    margin-left: 50px;
+    margin-bottom: 17px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 76px;
+    height: 4px;
+    font-size: 3.67px;
+    line-height: 4.32px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    }
 }
 
 .phone-input {
@@ -1140,6 +1164,11 @@ line-height: 18px;
     font-size: 12.22px;
     line-height: 14.78px;
     }
+
+  @media screen and (max-width: $mobile) {
+    width: 100px;
+    margin-left: 20px;
+    }
 }
 
 .phone-input-button {
@@ -1174,6 +1203,12 @@ line-height: 18px;
     font-size: 12.22px;
     line-height: 14.78px;
     }
+
+  @media screen and (max-width: $mobile) {
+    width: 100px;
+    margin-left: 20px;
+    font-size: 8px;
+    }
 }
 
 .wheel-container {
@@ -1196,7 +1231,7 @@ line-height: 18px;
   @media screen and (max-width: $mobile) {
     @include mobile-container;
     top: -150px;
-    left: 100px;
+    left: 60px;
   }
 }
 
@@ -1220,6 +1255,11 @@ line-height: 18px;
   @media screen and (max-width: $tablet) {
     width: 370px;
     height: 370px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 190px;
+    height: 190px;
     }
 }
 
@@ -1300,5 +1340,12 @@ position: absolute;
     height: 100px;
     top: 132px;
     left: 135px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 80px;
+    height: 80px;
+    top: 57px;
+    left: 56px;
     }
 }
