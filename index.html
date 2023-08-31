@@ -201,6 +201,7 @@
             </div>
           </div>
         </section>
+      </div>
         <!-- 3.  -->
         <section>
             <div class="container">
@@ -238,6 +239,7 @@
             <div class="container">
                 <p>Запишись на консультацию с бесплатной компьютерной томографией</p>
             </div>
+        </section>
         <section>
             <div class="container">
                 <h2>
@@ -274,8 +276,7 @@
             <div class="container map">
                 <h2 class="map__title">Клиника в Санкт-Петербурге рядом с метро</h2>
                 <div class="map__content">
-                    <iframe class="map__content-iframe" src="https://yandex.ru/map-widget/v1/?ll=30.407010%2C59.928794&mode=search&o&ol=biz&z=17"
-                    frameborder="0">
+                    <iframe class="map__content-iframe" src="https://yandex.ru/map-widget/v1/?ll=30.407010%2C59.928794&mode=search&o&ol=biz&z=17">
                     </iframe>
                 </div>
                 <div  class="map__address">
@@ -284,12 +285,12 @@
                     <p class="map__address-paragraph">ул. Стахановцев, д. 6</p>
                     <p class="map__address-workmode">режим работы: пн-вс: 9:00 — 21:00</p>
                     <button id="callClinic" class="button__call">Позвонить в клинику</button>
-                    <button class="button__ordercall ordercall" id="ordercall">Заказать звонок</button>
+                    <button class="button__ordercall ordercall">Заказать звонок</button>
                         <!--/*не забудь тег<address></address>-->
                 </div>
                 <div class="map__link">
-                    <img  class="map__link-img" src="./assets/img_route/image 38.png" alt="yandex_icon">
-                    <a class="map__link-href" href="https://yandex.ru/maps/?rtext=~59.928746, 30.406790">
+                    <img  class="map__link-img" src="./assets/img_route/Yandex.png" alt="yandex_icon">
+                    <a class="map__link-href" href="https://yandex.ru/maps/?rtext=~59.928746,30.406790">
                      Маршрут в Яндекс картах</a>
                 </div>
             </div>
@@ -301,8 +302,8 @@
                     Получите бесплатную консультацию Элины, эксперта All-on-4
                 </p>
                 <div class="consultation__call">
-                    <input class="consultation__call-input" type="text" placeholder="Введите номер телефона">
-                    <button class="consultation__call-button"> Отправить</button>
+                    <input class="consultation__call-input orderconsultation" type="tel" placeholder="Введите номер телефона">
+                    <button class="consultation__call-button orderconsultation"> Отправить</button>
                 </div>
             </div>
         </section>
@@ -371,36 +372,59 @@
           </div>
       </div>
     </footer>
-    <!-- Модальное окно с лицензией -->
+    <!-- Модальное окно с лицензией. Лена -->
     <div id="license-modal" class="license-modal" onclick="hideModalLicense(event);">
         <span class="close">&times;</span>
         <div class="license-modal__content">
-          <img id="license-modal__image">
+          <img id="license-modal__image" src="" alt="license">
         </div>
     </div>
-    <!-- Модальное окно обратный звонок -->
-    <div class="modal ordercall-modal" id="ordercall-modal">
-      <div class="modal__content">
-          <button class="modal__close-button"><img src="../assets/images/modal/close-cross-button.png"
+    <!-- Модальное окно обратный звонок. Лена -->
+    <div class="ordercall-modal" id="ordercall-modal">
+      <div class="ordercall-modal__content">
+          <button class="ordercall-modal__close-button"><img src="./assets/img_route/close_button.png"
                   width="24" alt=""></button>
-          <form class="contact-form" novalidate>
-              <h2 class="contact-form__title">Укажите свой номер телефона</h2>
-              <p class="contact-form__p">и наш специалист перезвонит Вам</p>
-              <div class="contact-form__input-box">
-                  <input type="tel" id="phone" class="contact-form__tel" name="phone"
-                      pattern="\+?[0-9\s\-\(\)]+" minlength="10" required placeholder="Введите Ваш номер"/>
+          <form class="ordercall-form" novalidate>
+              <h2 class="ordercall-form__title">Укажите свой номер телефона</h2>
+              <p class="ordercall-form__p">и наш специалист перезвонит Вам</p>
+              <div class="ordercall-form__input-box">
+                  <input type="tel" id="phoneOrderCall" class="ordercall-form__tel" name="phone"
+                      pattern="+7\[0-9]{3}\[0-9]{3}[0-9]{2}[0-9]{2}" minlength="12" required placeholder="Телефон в формате +7"/>
               </div>
-              <span class="error" aria-live="polite"></span>
-              <div class="contact-form__input-box">
-                  <button type="submit" class="submit-btn">Заказать обратный звонок</button>
+              <span class="ordercall-error" aria-live="polite"></span>
+              <div class="ordercall-form__input-box">
+                  <button type="submit" class="ordercall__submit-btn">Заказать обратный звонок</button>
               </div>
-              <div class="contact-form__info">
-                  <p>c 10:00 до 21:00<br>Понедельник-Суббота<br>+7 (812) 66-57-332</p>
+              <div class="ordercall-form__info">
+                <p>c 10:00 до 21:00</p>
+                <p>Понедельник-Суббота</p>
+                <p>+7 (812) 66-57-332</p>
               </div>
-          </form>
+            </form>
+        </div>
+    </div>
+  <!-- Модальное окно Получить БЕСПЛАТНУЮ консультацию. Лена-->
+  <div class="consultation-modal" id="consultation-modal">
+    <div class="consultation-modal__content">
+        <button class="consultation-modal__close-button"><img src="./assets/img_route/close_button.png" width="24" alt=""></button>
+        <form class ="consultation-form" novalidate>
+          <h2 class="consultation-form__title">Укажите свой номер телефона</h2>
+          <p class="consultation-form__p">свяжемся с вами и разберем вашу ситуацию</p>
+          <div class="consultation-form__input-box">
+              <input type="tel" id="phoneConsultation" class="consultation-form__tel" name="phone"
+              pattern="+7\[0-9]{3}\[0-9]{3}[0-9]{2}[0-9]{2}" minlength="12" required placeholder="Телефон в формате +7"/>
+          </div>
+              <span class="consultation-error" aria-live="polite"></span>
+          <div class="consultation-form__input-box">
+              <button type="submit" class="consultation__submit-btn">Получить БЕСПЛАТНУЮ консультацию</button></div>
+          <div class="consultation-form__info">
+            <p>c 10:00 до 21:00</p>
+            <p>Понедельник-Суббота</p>
+            <p>+7 (812) 66-57-332</p>
+          </div>
+        </form>
       </div>
   </div>
-
     <script src="script.js"></script>
   </body>
 </html>

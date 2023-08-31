@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
- // Кнопка "Позвонить в клинику"
+ // Кнопка "Позвонить в клинику" (Лена)
  const callClinic = document.getElementById('callClinic');
  callClinic.addEventListener('click', function () {
      window.location.href = 'tel:+78126226242';
  });
 
-// Button "Up". Кнопка "Стрелочка вверх"
+// Button "Up". Кнопка "Стрелочка вверх" (Лена)
 window.addEventListener('scroll', function ()
 {
     let scroll = document.querySelector('.upward');
@@ -47,18 +47,17 @@ function scrollTopTop() {
     })
 }
 
-//Модальное окно с выводом лицензии
+//Модальное окно с выводом лицензии (Лена)
+
  // Получаем элементы модального окна и изображения
  const modalLicense = document.getElementById("license-modal");
  const modalImageLicense = document.getElementById("license-modal__image");
-
  // Отображаем модальное окно и устанавливаем источник изображения
  function displayModal(img)
  {
     modalLicense.style.display = "block";
     modalImageLicense.src = img.src;
  }
-
  // Скрываем содержимое модального окна, если пользователь кликнул вне его
  function hideModalLicense(event)
  {
@@ -66,18 +65,17 @@ function scrollTopTop() {
         modalLicense.style.display = "none";
      }
  }
- //Модальное окно с выводом положения о гарантии
+
+ //Модальное окно с выводом положения о гарантии (Лена)
 // Получаем элементы модального окна и изображения
  const modalWarranty = document.getElementById("warranty-modal");
  const modalImageWarranty = document.getElementById("warranty-modal__image");
-
  // Отображаем модальное окно и устанавливаем источник изображения
  function displayWarranty(img)
  {
     modalWarranty.style.display = "block";
     modalImageWarranty.src = img.src;
  }
-
  // Скрываем содержимое модального окна, если пользователь кликнул вне его
 function hideModalWarranty(event)
  {
@@ -86,68 +84,133 @@ function hideModalWarranty(event)
      }
  }
 
- // Модальное окно "Обратный звонок"
-
- document.addEventListener('DOMContentLoaded', function () {
+// Модальное окно "Обратный звонок" (Лена)
+document.addEventListener('DOMContentLoaded', function () {
 
     let modalOrderCall = document.getElementById('ordercall-modal');
-    let closeButtonSign = modalOrderCall.getElementsByClassName('modal__close-button')[0];
-    let tagBody = document.getElementsByTagName('body');
-    const buttonsOrdercalls = document.querySelectorAll('.ordercall');
+    let closemodalOrderCall = modalOrderCall.getElementsByClassName('ordercall-modal__close-button')[0];
+    let tagBodyCall = document.getElementsByTagName('body');
+    const ButtonOrderCalls = document.querySelectorAll('.ordercall');
 //Перебор кнопок на клик
-    buttonsOrdercalls.forEach(button => {
+    ButtonOrderCalls.forEach(button => {
         button.addEventListener('click', (e) => {
         e.preventDefault();
-        modalOrderCall.classList.add('modal_active');
-        tagBody.classList.add('hidden');
+        modalOrderCall.classList.add('ordercall-modal_active');
+        tagBodyCall.classList.add('hidden');
         })
     })
 //Закрытие модального окна
-    closeButtonSign.onclick = function (e) {
+    closemodalOrderCall.onclick = function (e) {
         e.preventDefault();
-        modalOrderCall.classList.remove('modal_active');
-        tagBody.classList.remove('hidden');
+        modalOrderCall.classList.remove('ordercall-modal_active');
+        tagBodyCall.classList.remove('hidden');
     }
 //Скрытие формы
     modalOrderCall.onmousedown = function (e) {
         let target = e.target;
-        let modalContent = modalOrderCall.getElementsByClassName('modal__content')[0];
-        if (target.closest('.' + modalContent.className) === null) {
-            this.classList.remove('modal_active');
-            tagBody.classList.remove('hidden');
+        let modalOrderCallContent = modalOrderCall.getElementsByClassName('ordercall-modal__content')[0];
+        if (target.closest('.' + modalOrderCallContent.className) === null) {
+            this.classList.remove('ordercall-modal_active');
+            tagBodyCall.classList.remove('hidden');
         }
     };
-//Валидация номера --- убрать после слияния Настиного блока?
-    const contactForm = document.querySelector('.contact-form');
-    const tel = document.getElementById("phone");
-    const telError = document.querySelector("span.error");
+//Валидация номера
+    const orderCallForm = document.querySelector('.ordercall-form');
+    const telOrderCall = document.getElementById("phoneOrderCall");
+    const telOrderCallError = document.querySelector("span.ordercall-error");
 
-    tel.addEventListener("input", function (event) {
-        if (tel.validity.valid) {
-            telError.textContent = "";
-            telError.className = "error";
-        } else {
-            showError();
-        }
-});
-//вызов ошибки  --- убрать после слияния Настиного блока?
-contactForm.addEventListener("submit", function (event) {
-    if (!tel.validity.valid) {
-        showError();
+    telOrderCall.addEventListener("input", function (event) {
         event.preventDefault();
+        if (telOrderCall.validity.valid) {
+            telOrderCallError.textContent = "";
+            telOrderCallError.className = "ordercall-error";
+        } else {
+            showErrorOrderCall();
+        }
+    });
+//вызов ошибки
+    orderCallForm.addEventListener("submit", function (event) {
+        if (!telOrderCall.validity.valid) {
+            showErrorOrderCall();
+            event.preventDefault();
+        }
+    });
+//Ошибки
+    function showErrorOrderCall() {
+        if (telOrderCall.validity.valueMissing) {
+            telOrderCallError.textContent = "Пожалуйста, заполните поле!";
+        } else if (telOrderCall.validity.tooShort) {
+            telOrderCallError.textContent = "Вы ввели номер не полностью.";
+        } else if (telOrderCall.validity.patternMismatch) {
+            telOrderCallError.textContent = "Введите номер в правильном формате.";
+        }
+
+// Стилизация
+    telOrderCallError.className = "ordercall-error.active";
     }
 });
-//Ошибки --- убрать после слияния Настиного блока?
-function showError() {
-    if (tel.validity.valueMissing) {
-        telError.textContent = "Пожалуйста, заполните поле!";
-    } else if (tel.validity.tooShort) {
-        telError.textContent = "Вы ввели номер не полностью.";
-    } else if (tel.validity.patternMismatch) {
-        telError.textContent = "Введите номер в правильном формате.";
-    }
 
-    // Стилизация  --- убрать после слияния Настиного блока?
-    telError.className = "error active";
-}
+// Модальное окно "Запись на консультацию" (Лена)
+document.addEventListener('DOMContentLoaded', function () {
+
+    let modalConsultation = document.getElementById('consultation-modal');
+    let closemodalConsultation = modalConsultation.getElementsByClassName('consultation-modal__close-button')[0];
+    let tagBodyConsultation = document.getElementsByTagName('body');
+    const ButtonConsultations = document.querySelectorAll('.orderconsultation');
+//Перебор кнопок на клик
+    ButtonConsultations.forEach(button => {
+        button.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalConsultation.classList.add('consultation-modal_active');
+        tagBodyConsultation.classList.add('hidden');
+        })
+    })
+//Закрытие модального окна
+    closemodalConsultation.onclick = function (e) {
+        e.preventDefault();
+        modalConsultation.classList.remove('consultation-modal_active');
+        tagBodyConsultation.classList.remove('hidden');
+    }
+//Скрытие формы
+    modalConsultation.onmousedown = function (e) {
+        let target = e.target;
+        let modalConsultationContent = modalConsultation.getElementsByClassName('consultation-modal__content')[0];
+        if (target.closest('.' + modalConsultationContent.className) === null) {
+            this.classList.remove('consultation-modal_active');
+            tagBodyConsultation.classList.remove('hidden');
+        }
+    };
+//Валидация номера
+    const consultationForm = document.querySelector('.consultation-form');
+    const telConsultation = document.getElementById("phoneConsultation");
+    const telConsultationError = document.querySelector("span.consultation-error");
+
+    telConsultation.addEventListener("input", function (event) {
+        event.preventDefault();
+        if (telConsultation.validity.valid) {
+            telConsultationError.textContent = "";
+            telConsultationError.className = "consultation-error";
+        } else {
+            showErrorConsultation();
+        }
+    });
+//вызов ошибки
+    consultationForm.addEventListener("submit", function (event) {
+        if (!telConsultation.validity.valid) {
+            showErrorConsultation();
+            event.preventDefault();
+        }
+    });
+//Ошибки
+    function showErrorConsultation() {
+        if (telConsultation.validity.valueMissing) {
+            telConsultationError.textContent = "Пожалуйста, заполните поле!";
+        } else if (telConsultation.validity.tooShort) {
+            telConsultationError.textContent = "Вы ввели номер не полностью.";
+        } else if (telConsultation.validity.patternMismatch) {
+            telConsultationError.textContent = "Введите номер в правильном формате.";
+        }
+// Стилизация
+    telConsultationError.className = "consultation-error.active";
+    }
 });

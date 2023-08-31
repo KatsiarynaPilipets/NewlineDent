@@ -1072,6 +1072,7 @@ $mobile: 340px;
     border-radius: 30px;
     width: 920px;
     height: 388px;
+    border: none;
     @media screen and (max-width: $desktop) {
       width: 490px;
       height: 207px;
@@ -1485,7 +1486,7 @@ $mobile: 340px;
     }
   }
 }
-::placeholder{
+.consultation__call-input::placeholder{
   color: #D9D9D9;
   font-size: 24px;
   text-align: center;
@@ -2005,13 +2006,13 @@ footer{
     width: 100%;
     height: auto;
 }
-//Стили для модального окна
-.modal {
+//Стили для модальных окон "Обратный звонок" и "Запись на косультацию". Лена
+.ordercall-modal, .consultation-modal {
   position: absolute;
   visibility: hidden;
   opacity: 0;
   transition: .3s;
-  top: 10px;
+  top: 5px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -2020,33 +2021,32 @@ footer{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow-y: scroll;
   padding: 60px 15px;
 
   &__content {
-    width: 50%;
-    padding: 50px;
+    width: 70%;
+    padding: 30px;
     background: #F3F3F3;
     border-radius: 3px;
     position: relative;
     box-shadow: 0 5px 15px black;
     text-align: center;
     font-family: 'Gilroy600';
-    font-size: 36px;
     font-weight: 600;
-    line-height: 42px;
-    letter-spacing: 0em;
-
-    @media screen and (max-width: $desktop) {
-      height: 461px;
-      font-size: 24px;
+    letter-spacing: 0.1em;
+    @media screen and (max-width: $tablet) {
+      padding: 20px;
+    }
+    @media screen and (max-width: $mobile) {
+      padding: 10px;
     }
   }
-
+  //Стиль для кнопки закрытия
   &__close-button {
     height: 30px;
     width: 30px;
     display: flex;
+    border: none;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -2056,43 +2056,90 @@ footer{
     cursor: pointer;
     transition: .3s;
     outline: none;
+    @media screen and (max-width: $tablet) {
+      height: 20px;
+      width: 20px;
+    }
+    @media screen and (max-width: $mobile) {
+      height: 15px;
+      width: 15px;
+    }
     &__hover {
       transition: .3s;
     }
   }
-
 }
-
-.modal_active {
+.ordercall-modal_active, .consultation-modal_active {
   position: fixed;
   top: 0;
   visibility: visible;
   opacity: 1;
   transition: .3s;
 }
-
 //Стили для формы
-.contact-form {
+.ordercall-form, .consultation-form {
   font-family: 'Gilroy700';
 
+  &__title {
+    font-family: 'Coolvetica400';
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    font-weight: 400;
+    @media screen and (max-width: $desktop) {
+      margin: 0 0 15px;
+      font-size: 30px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin: 0 0 5px;
+      font-size: 10px;
+    }
+  }
+  &__p {
+    font-family: 'Coolvetica400';
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    @media screen and (max-width: $desktop) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: $desktop) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 8px;
+    }
+  }
   &__tel {
-    width: 55%;
-    height: 75px;
+    width: 85%;
+    height: 65px;
     padding: 8px 16px 8px 16px;
     border-radius: 106px;
     border: 0.5px solid #292929;
     color: black;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
-    margin-top: 60px;
-    padding-left: 30px;
+    margin-top: 10px;
+    text-align: center;
 
     @media screen and (max-width: $desktop) {
-      width: 50%;
       height: 50px;
-      font-size: 18px;
+      font-size: 20px;
     }
-
+    @media screen and (max-width: $tablet) {
+      height: 40px;
+      font-size: 12px;
+    }
+    @media screen and (max-width: $mobile) {
+      height: 30px;
+      font-size: 8px;
+      margin-top: 5px;
+    }
     //Стили для невалидных полей
     &:invalid {
       background-color: $whitesmoke;
@@ -2103,76 +2150,75 @@ footer{
       outline: none;
     }
   }
-
-  &__title {
-    font-family: 'Coolvetica400';
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin: 0 0 20px;
-    font-weight: 400;
-    @media screen and (max-width: $desktop) {
-      font-size: 18px;
-    }
-  }
-  &__p {
-    font-family: 'Coolvetica400';
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin: 0 0 20px;
-    font-weight: 400;
-    @media screen and (max-width: $desktop) {
-      @include container;
-      font-size: 14px;
-    }
-  }
   &__info {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
-
+    letter-spacing: 0em;
+    margin-top: 0px;
+    opacity: 0.8;
     @media screen and (max-width: $desktop) {
-      @include container;
       font-size: 16px;
-      line-height: 20px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 6px;
+    }
+    & p{
+      height: 26px;
+      @media screen and (max-width: $desktop) {
+        height: 20px;
+      }
+      @media screen and (max-width: $tablet) {
+        height: 16px;
+      }
+      @media screen and (max-width: $mobile) {
+        height: 9px;
+      }
     }
   }
-
   &__input-box {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 }
-
-//Стили для кастомных сообщений
-.error {
-  width: 100%;
-  padding: 0;
-  font-size: 90%;
-  color: $blue;
-  border-radius: 0 0 5px 5px;
-}
-
-.error.active {
-  padding: 0.3em;
-}
-
-.submit-btn {
-  width: 55%;
-  height: 76px;
+.ordercall__submit-btn, .consultation__submit-btn {
+  width: 85%;
+  height: 65px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;
   border: none;
   gap: 5px;
   background: #FF9FB7;
   color: #FFFFFF;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0em;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
-
   @media screen and (max-width: $desktop) {
-    @include container;
     height: 50px;
-    cursor: pointer;
-    font-size: 12px;
+    font-size: 20px;
   }
+  @media screen and (max-width: $tablet) {
+    height: 40px;
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media screen and (max-width: $mobile) {
+    height: 30px;
+    font-size: 8px;
+  }
+}
+//Стили для кастомных сообщений
+.ordercall-error, .consultation-error {
+  width: 100%;
+  padding: 0;
+  font-size: 90%;
+  color: $blue;
+  border-radius: 0 0 5px 5px;
+}
+.ordercall-error.active, .consultation-error.active {
+  padding: 0.3em;
 }

@@ -1266,6 +1266,7 @@ ul {
   border-radius: 30px;
   width: 920px;
   height: 388px;
+  border: none;
 }
 @media screen and (max-width: 1630px) {
   .map__content-iframe {
@@ -1781,24 +1782,24 @@ ul {
   }
 }
 
-::placeholder {
+.consultation__call-input::placeholder {
   color: #D9D9D9;
   font-size: 24px;
   text-align: center;
   font-family: "Gilroy700";
 }
 @media screen and (max-width: 1630px) {
-  ::placeholder {
+  .consultation__call-input::placeholder {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 870px) {
-  ::placeholder {
+  .consultation__call-input::placeholder {
     font-size: 4.92px;
   }
 }
 @media screen and (max-width: 340px) {
-  ::placeholder {
+  .consultation__call-input::placeholder {
     font-size: 3.5px;
   }
 }
@@ -2454,12 +2455,12 @@ footer {
   height: auto;
 }
 
-.modal {
+.ordercall-modal, .consultation-modal {
   position: absolute;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
-  top: 10px;
+  top: 5px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -2468,33 +2469,35 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow-y: scroll;
   padding: 60px 15px;
 }
-.modal__content {
-  width: 50%;
-  padding: 50px;
+.ordercall-modal__content, .consultation-modal__content {
+  width: 70%;
+  padding: 30px;
   background: #F3F3F3;
   border-radius: 3px;
   position: relative;
   box-shadow: 0 5px 15px black;
   text-align: center;
   font-family: "Gilroy600";
-  font-size: 36px;
   font-weight: 600;
-  line-height: 42px;
-  letter-spacing: 0em;
+  letter-spacing: 0.1em;
 }
-@media screen and (max-width: 1630px) {
-  .modal__content {
-    height: 461px;
-    font-size: 24px;
+@media screen and (max-width: 870px) {
+  .ordercall-modal__content, .consultation-modal__content {
+    padding: 20px;
   }
 }
-.modal__close-button {
+@media screen and (max-width: 340px) {
+  .ordercall-modal__content, .consultation-modal__content {
+    padding: 10px;
+  }
+}
+.ordercall-modal__close-button, .consultation-modal__close-button {
   height: 30px;
   width: 30px;
   display: flex;
+  border: none;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -2505,11 +2508,23 @@ footer {
   transition: 0.3s;
   outline: none;
 }
-.modal__close-button__hover {
+@media screen and (max-width: 870px) {
+  .ordercall-modal__close-button, .consultation-modal__close-button {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .ordercall-modal__close-button, .consultation-modal__close-button {
+    height: 15px;
+    width: 15px;
+  }
+}
+.ordercall-modal__close-button__hover, .consultation-modal__close-button__hover {
   transition: 0.3s;
 }
 
-.modal_active {
+.ordercall-modal_active, .consultation-modal_active {
   position: fixed;
   top: 0;
   visibility: visible;
@@ -2517,78 +2532,175 @@ footer {
   transition: 0.3s;
 }
 
-.contact-form {
+.ordercall-form, .consultation-form {
   font-family: "Gilroy700";
 }
-.contact-form__tel {
-  width: 55%;
-  height: 75px;
+.ordercall-form__title, .consultation-form__title {
+  font-family: "Coolvetica400";
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1630px) {
+  .ordercall-form__title, .consultation-form__title {
+    margin: 0 0 15px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .ordercall-form__title, .consultation-form__title {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .ordercall-form__title, .consultation-form__title {
+    margin: 0 0 5px;
+    font-size: 10px;
+  }
+}
+.ordercall-form__p, .consultation-form__p {
+  font-family: "Coolvetica400";
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (max-width: 1630px) {
+  .ordercall-form__p, .consultation-form__p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1630px) {
+  .ordercall-form__p, .consultation-form__p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .ordercall-form__p, .consultation-form__p {
+    font-size: 8px;
+  }
+}
+.ordercall-form__tel, .consultation-form__tel {
+  width: 85%;
+  height: 65px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;
   border: 0.5px solid #292929;
   color: black;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
-  margin-top: 60px;
-  padding-left: 30px;
+  margin-top: 10px;
+  text-align: center;
 }
 @media screen and (max-width: 1630px) {
-  .contact-form__tel {
-    width: 50%;
+  .ordercall-form__tel, .consultation-form__tel {
     height: 50px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
-.contact-form__tel:invalid {
+@media screen and (max-width: 870px) {
+  .ordercall-form__tel, .consultation-form__tel {
+    height: 40px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .ordercall-form__tel, .consultation-form__tel {
+    height: 30px;
+    font-size: 8px;
+    margin-top: 5px;
+  }
+}
+.ordercall-form__tel:invalid, .consultation-form__tel:invalid {
   background-color: #f3f3f3;
   border: 2px solid #4fa7fb;
 }
-.contact-form__tel:focus:invalid {
+.ordercall-form__tel:focus:invalid, .consultation-form__tel:focus:invalid {
   outline: none;
 }
-.contact-form__title {
-  font-family: "Coolvetica400";
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 0 0 20px;
-  font-weight: 400;
-}
-@media screen and (max-width: 1630px) {
-  .contact-form__title {
-    font-size: 18px;
-  }
-}
-.contact-form__p {
-  font-family: "Coolvetica400";
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 0 0 20px;
-  font-weight: 400;
-}
-@media screen and (max-width: 1630px) {
-  .contact-form__p {
-    max-width: 1622px;
-    margin: 0 auto;
-    font-size: 14px;
-  }
-}
-.contact-form__info {
-  font-size: 28px;
+.ordercall-form__info, .consultation-form__info {
+  font-size: 20px;
   font-weight: 700;
+  letter-spacing: 0em;
+  margin-top: 0px;
+  opacity: 0.8;
 }
 @media screen and (max-width: 1630px) {
-  .contact-form__info {
-    max-width: 1622px;
-    margin: 0 auto;
+  .ordercall-form__info, .consultation-form__info {
     font-size: 16px;
-    line-height: 20px;
   }
 }
-.contact-form__input-box {
-  margin: 20px 0;
+@media screen and (max-width: 870px) {
+  .ordercall-form__info, .consultation-form__info {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .ordercall-form__info, .consultation-form__info {
+    font-size: 6px;
+  }
+}
+.ordercall-form__info p, .consultation-form__info p {
+  height: 26px;
+}
+@media screen and (max-width: 1630px) {
+  .ordercall-form__info p, .consultation-form__info p {
+    height: 20px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .ordercall-form__info p, .consultation-form__info p {
+    height: 16px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .ordercall-form__info p, .consultation-form__info p {
+    height: 9px;
+  }
+}
+.ordercall-form__input-box, .consultation-form__input-box {
+  margin: 10px 0;
 }
 
-.error {
+.ordercall__submit-btn, .consultation__submit-btn {
+  width: 85%;
+  height: 65px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 106px;
+  border: none;
+  gap: 5px;
+  background: #FF9FB7;
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  margin: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1630px) {
+  .ordercall__submit-btn, .consultation__submit-btn {
+    height: 50px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .ordercall__submit-btn, .consultation__submit-btn {
+    height: 40px;
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .ordercall__submit-btn, .consultation__submit-btn {
+    height: 30px;
+    font-size: 8px;
+  }
+}
+
+.ordercall-error, .consultation-error {
   width: 100%;
   padding: 0;
   font-size: 90%;
@@ -2596,33 +2708,8 @@ footer {
   border-radius: 0 0 5px 5px;
 }
 
-.error.active {
+.ordercall-error.active, .consultation-error.active {
   padding: 0.3em;
-}
-
-.submit-btn {
-  width: 55%;
-  height: 76px;
-  padding: 8px 16px 8px 16px;
-  border-radius: 106px;
-  border: none;
-  gap: 5px;
-  background: #FF9FB7;
-  color: #FFFFFF;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 0em;
-  margin: 20px;
-  cursor: pointer;
-}
-@media screen and (max-width: 1630px) {
-  .submit-btn {
-    max-width: 1622px;
-    margin: 0 auto;
-    height: 50px;
-    cursor: pointer;
-    font-size: 12px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
