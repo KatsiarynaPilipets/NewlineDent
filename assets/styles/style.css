@@ -74,7 +74,7 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .container {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -943,7 +943,7 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .aboutt-technology {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -1140,7 +1140,7 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .container__sign_up {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 211px;
     background-image: url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
@@ -1161,7 +1161,7 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .blue_gradient {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     background: linear-gradient(125deg, #4fa7fb 79%, transparent 50%);
     margin: 0;
@@ -1178,7 +1178,7 @@ ul {
 
 del {
   text-decoration: line-through;
-  text-decoration-color: #E33434;
+  text-decoration-color: #e33434;
 }
 
 .sign_up_arrow {
@@ -1192,7 +1192,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up_arrow {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     margin: 10px;
   }
@@ -1215,7 +1215,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up_img {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 313.97px;
   }
@@ -1235,7 +1235,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up__title {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 533.91px;
     margin-top: 21.25px;
@@ -1260,7 +1260,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up__title, .sign_up_price > p {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     font-size: 26.56px;
   }
@@ -1277,7 +1277,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up_price > p {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     line-height: 32.88px;
     margin: 0;
@@ -1298,7 +1298,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up_price {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     margin: 10px 0;
   }
@@ -1320,7 +1320,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .inner_container_sign-up {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     margin: 20px 40px;
     height: 317px;
@@ -1365,7 +1365,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .btn_sign {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     border-radius: 6px;
     border-width: 0;
@@ -1420,7 +1420,7 @@ del {
 .modal__content {
   width: 50%;
   padding: 50px;
-  background: #F3F3F3;
+  background: #f3f3f3;
   border-radius: 3px;
   position: relative;
   box-shadow: 0 5px 15px black;
@@ -1546,8 +1546,8 @@ del {
   border-radius: 106px;
   border: none;
   gap: 5px;
-  background: #FF9FB7;
-  color: #FFFFFF;
+  background: #ff9fb7;
+  color: #ffffff;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0em;
@@ -1565,6 +1565,303 @@ del {
   }
 }
 
+.work_cost {
+  background-color: #cbe5ff;
+}
+
+.container_work_cost {
+  max-width: 1622px;
+  margin: 0 auto;
+  width: 100vw;
+}
+@media screen and (max-width: 870px) {
+  .container_work_cost {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100vw;
+  }
+}
+
+.title_work_cost {
+  text-align: center;
+  color: #4fa7fb;
+  font-family: "Coolvetica";
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 89%;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 870px) {
+  .title_work_cost {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 63px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .title_work_cost {
+    max-width: 328.39px;
+    margin: 0 auto;
+    font-size: 24.5px;
+  }
+}
+
+.container_work_cost-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.work_cost-img {
+  height: auto;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 870px) {
+  .work_cost-img {
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-img {
+    max-width: 328.39px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+  }
+}
+
+.container_work_cost-info {
+  font-family: "Gilroy";
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.container_work_cost-items {
+  border-radius: 60px;
+  height: 844px;
+  max-width: 499px;
+  margin-bottom: 59px;
+  background-color: #4fa7fb;
+  color: #ffffff;
+}
+@media screen and (max-width: 870px) {
+  .container_work_cost-items {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 31px;
+    height: 448px;
+    max-width: 265px;
+    width: 100vw;
+    margin-left: 8px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .container_work_cost-items {
+    max-width: 328.39px;
+    margin: 0 auto;
+    border-radius: 12px;
+    height: 172px;
+    width: 101px;
+    margin-left: 5px;
+  }
+}
+
+.work_cost-items-title {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 35px 45px 20px 45px;
+}
+@media screen and (max-width: 870px) {
+  .work_cost-items-title {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 17px;
+    padding: 18px 24px 15px 24px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-items-title {
+    max-width: 328.39px;
+    margin: 0 auto;
+    font-size: 7px;
+    padding: 9px 8px 4px 9px;
+  }
+}
+
+.work_cost-items-title_line {
+  height: 4px;
+  width: 100%;
+  margin-left: 45px;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 61.46%);
+}
+@media screen and (max-width: 870px) {
+  .work_cost-items-title_line {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    margin-left: 24px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-items-title_line {
+    max-width: 328.39px;
+    margin: 0 auto;
+    height: 1px;
+    margin-left: 10px;
+  }
+}
+
+.work_cost-items-title-2 {
+  font-size: 24px;
+  margin-left: 45px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+@media screen and (max-width: 870px) {
+  .work_cost-items-title-2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 13px;
+    margin: 14px 0px 0px 24px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-items-title-2 {
+    max-width: 328.39px;
+    margin: 0 auto;
+    font-size: 5px;
+    margin: 4px 0px 0px 15px;
+  }
+}
+
+.work_cost-list {
+  list-style-type: disc;
+  width: 301px;
+  font-size: 18px;
+  margin-left: 65px;
+  font-weight: 300;
+}
+@media screen and (max-width: 870px) {
+  .work_cost-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 160px;
+    font-size: 10px;
+    margin: 13px 0px 0px 35px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-list {
+    max-width: 328.39px;
+    margin: 0 auto;
+    width: 62px;
+    font-size: 4px;
+    margin: 0px 0px 0px 15px;
+  }
+}
+
+.work_cost-list-elem {
+  margin-top: 20px;
+}
+@media screen and (max-width: 870px) {
+  .work_cost-list-elem {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 13px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-list-elem {
+    max-width: 328.39px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+}
+
+.work_cost-btn-1 {
+  width: 269px;
+  height: 78px;
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: #ff9fb7;
+  box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
+  color: #f7f7f7;
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 28px 0px 15px 46px;
+}
+@media screen and (max-width: 870px) {
+  .work_cost-btn-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 142px;
+    height: 42px;
+    font-size: 21px;
+    border-radius: 6px;
+    margin: 16px 0px 0px 24px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-btn-1 {
+    max-width: 328.39px;
+    margin: 0 auto;
+    width: 55px;
+    height: 16px;
+    font-size: 7px;
+    white-space: nowrap;
+    border-radius: 2.45px;
+    margin: 0px 0px 0px 10px;
+  }
+}
+
+.work_cost-btn-2 {
+  max-width: 407px;
+  height: 61px;
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: #ff9fb7;
+  box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
+  color: #f7f7f7;
+  font-family: Gilroy;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 30px;
+  margin: 28px 0px 15px 46px;
+}
+@media screen and (max-width: 870px) {
+  .work_cost-btn-2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 216px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 6px;
+    padding-left: 0px;
+    margin: 10px 0px 0px 24px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-btn-2 {
+    max-width: 328.39px;
+    margin: 0 auto;
+    width: 83px;
+    height: 12px;
+    font-size: 5px;
+    border-radius: 2.45px;
+    padding-left: 0px;
+    margin: 0px 0px 0px 10px;
+  }
+}
+
 .container_advantages {
   max-width: 1622px;
   margin: 0 auto;
@@ -1572,7 +1869,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .container_advantages {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 100vw;
   }
@@ -1597,7 +1894,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .title_advantages {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     font-size: 63px;
     margin-bottom: 15px;
@@ -1634,7 +1931,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .container_advantages-items {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     border-radius: 31px;
     height: 448px;
@@ -1662,7 +1959,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .advantages-items-title {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     font-size: 17px;
     padding: 18px 24px 15px 24px;
@@ -1685,7 +1982,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .advantages-items-title_line {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 2px;
     margin-left: 24px;
@@ -1709,7 +2006,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .advantages-list {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 160px;
     font-size: 10px;
@@ -1731,7 +2028,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .advantages-list-elem {
-    max-width: 859.68px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 13px;
   }

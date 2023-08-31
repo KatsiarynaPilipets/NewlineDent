@@ -73,7 +73,7 @@ $mobile: 340px;
 }
 
 @mixin tablet-container {
-  max-width: 859.68px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -84,8 +84,8 @@ $mobile: 340px;
 
 @import "reset";
 
-$fC: 'Coolvetica';
-$fG: 'Gilroy';
+$fC: "Coolvetica";
+$fG: "Gilroy";
 
 .container {
   @include container;
@@ -929,17 +929,16 @@ $fG: 'Gilroy';
   @media screen and (max-width: $mobile) {
     flex-direction: column;
   }
-
 }
 
 .about-title {
   position: relative;
-  background: rgba($color: $blue, $alpha: 1.0);
+  background: rgba($color: $blue, $alpha: 1);
   color: #ececec;
   width: 596px;
   height: 114px;
   text-align: center;
-  font-family: 'Coolvetica';
+  font-family: "Coolvetica";
   font-weight: 400;
   font-size: 80px;
   line-height: 71.2px;
@@ -995,9 +994,7 @@ $fG: 'Gilroy';
 
   @media screen and (max-width: $mobile) {
     height: 200px;
-
   }
-
 }
 
 .about-img {
@@ -1072,8 +1069,6 @@ $fG: 'Gilroy';
   }
 }
 
-
-
 // БЛОК ЗАПИШИСЬ НА КОНСУЛЬТАЦИЮ
 // БЛОК ЗАПИШИСЬ НА КОНСУЛЬТАЦИЮ
 .container__sign_up {
@@ -1124,11 +1119,10 @@ $fG: 'Gilroy';
 
 del {
   text-decoration: line-through;
-  text-decoration-color: #E33434;
+  text-decoration-color: #e33434;
 }
 
 .sign_up {
-
   // стили блока со стрелкой
   &_arrow {
     display: flex;
@@ -1201,7 +1195,7 @@ del {
 
   // стили текста заголовка и цены
   &__title,
-  &_price>p {
+  &_price > p {
     font-family: $fG;
     font-size: 50px;
     color: #fff;
@@ -1217,7 +1211,7 @@ del {
     }
   }
 
-  &_price>p {
+  &_price > p {
     line-height: 29.02px;
 
     @media screen and (max-width: $desktop) {
@@ -1349,13 +1343,12 @@ del {
   }
 }
 
-
 //Стили для модального окна
 .modal {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
   top: -1000px;
   right: 0;
   bottom: 0;
@@ -1372,7 +1365,7 @@ del {
     width: 50%;
     //max-width: 50%;
     padding: 50px;
-    background: #F3F3F3;
+    background: #f3f3f3;
     border-radius: 3px;
     position: relative;
     box-shadow: 0 5px 15px black;
@@ -1403,14 +1396,13 @@ del {
     top: 0;
     background: none;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     outline: none;
 
     &__hover {
-      transition: .3s;
+      transition: 0.3s;
     }
   }
-
 }
 
 .modal_active {
@@ -1418,7 +1410,7 @@ del {
   top: 0;
   visibility: visible;
   opacity: 1;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 //Стили для формы
@@ -1504,8 +1496,8 @@ del {
   border-radius: 106px;
   border: none;
   gap: 5px;
-  background: #FF9FB7;
-  color: #FFFFFF;
+  background: #ff9fb7;
+  color: #ffffff;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0em;
@@ -1520,6 +1512,271 @@ del {
     font-size: 19px;
   }
 }
+
+// Стили для блока "Стоимость под ключ"
+.work_cost {
+  background-color: $lightblue;
+}
+.container_work_cost {
+  @include container;
+  width: 100vw;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    width: 100vw;
+  }
+}
+// Главный заголовок блока
+.title_work_cost {
+  text-align: center;
+  color: $blue;
+  font-family: "Coolvetica";
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 89%;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    font-size: 63px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    font-size: 24.5px;
+  }
+}
+// Основной контейнер иконок
+.container_work_cost-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.work_cost-img {
+  height: auto;
+  // width: auto;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+  }
+}
+// Контейнер для блоков с информацией
+.container_work_cost-info {
+  font-family: "Gilroy";
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+.container_work_cost-items {
+  border-radius: 60px;
+  height: 844px;
+  max-width: 499px;
+  // min-width: 266px;
+  // width: 100%;
+  margin-bottom: 59px;
+  // margin-left: 15px;
+  // gap: 15px;
+  background-color: $blue;
+  color: $white;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    border-radius: 31px;
+    height: 448px;
+    max-width: 265px;
+    width: 100vw;
+    margin-left: 8px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    border-radius: 12px;
+    height: 172px;
+    width: 101px;
+    // min-width: 100px;
+    margin-left: 5px;
+    // word-wrap: break-word;
+    // overflow: hidden;
+  }
+}
+// Заголовок внутри блока
+.work_cost-items-title {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 35px 45px 20px 45px;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    font-size: 17px;
+    padding: 18px 24px 15px 24px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    font-size: 7px;
+    padding: 9px 8px 4px 9px;
+  }
+}
+
+// Разделительная линия
+.work_cost-items-title_line {
+  height: 4px;
+  width: 100%;
+  margin-left: 45px;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 61.46%);
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    height: 2px;
+    margin-left: 24px;
+  }
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    height: 1px;
+    margin-left: 10px;
+  }
+}
+
+// Заголовок после линии
+.work_cost-items-title-2 {
+  font-size: 24px;
+  margin-left: 45px;
+  font-weight: 700;
+  margin-top: 20px;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    font-size: 13px;
+    margin: 14px 0px 0px 24px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    font-size: 5px;
+    margin: 4px 0px 0px 15px;
+  }
+}
+.work_cost-list {
+  list-style-type: disc;
+  width: 301px;
+  font-size: 18px;
+  margin-left: 65px;
+  font-weight: 300;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    width: 160px;
+    font-size: 10px;
+    margin: 13px 0px 0px 35px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    width: 62px;
+    font-size: 4px;
+    margin: 0px 0px 0px 15px;
+  }
+}
+.work_cost-list-elem {
+  margin-top: 20px;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    margin-top: 13px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    margin-top: 5px;
+    // word-wrap: break-word;
+  }
+}
+.work_cost-btn-1 {
+  width: 269px;
+  height: 78px;
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: $pink;
+  box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
+  color: #f7f7f7;
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  // padding-left: 30px;
+  margin: 28px 0px 15px 46px;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    width: 142px;
+    height: 42px;
+    font-size: 21px;
+    border-radius: 6px;
+    margin: 16px 0px 0px 24px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    width: 55px;
+    height: 16px;
+    font-size: 7px;
+    white-space: nowrap;
+    border-radius: 2.45px;
+    // padding: 0px, 6px, 0px, 0px;
+    margin: 0px 0px 0px 10px;
+  }
+}
+
+.work_cost-btn-2 {
+  max-width: 407px;
+  // width: 407px;
+  // min-width: 217px;
+  height: 61px;
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: $pink;
+  box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
+  color: #f7f7f7;
+  font-family: Gilroy;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 30px;
+  margin: 28px 0px 15px 46px;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    width: 216px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 6px;
+    padding-left: 0px;
+    margin: 10px 0px 0px 24px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    width: 83px;
+    height: 12px;
+    font-size: 5px;
+    border-radius: 2.45px;
+    padding-left: 0px;
+    margin: 0px 0px 0px 10px;
+  }
+}
+
 // Стили для блока Преимущества
 
 .container_advantages {
@@ -1676,5 +1933,3 @@ del {
     // word-wrap: break-word;
   }
 }
-
-
