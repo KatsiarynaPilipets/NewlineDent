@@ -12,11 +12,221 @@
 
 <body>
     <header>
-        <!-- <div class="container">
-            <nav>тут верстка для хэдера : логотип , меню, телефон</nav>
-        </div> -->
+        <div class="container">
+            <nav class="header">
+                <a href="#" class="logo">NEWLINEDENT</a>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">До и После</a></li>
+                        <li><a href="#">Этапы лечения</a></li>
+                        <li><a href="#">Как добраться</a></li>
+                    </ul>
+                </nav>
+                <button class="blue-button" id="callButton">
+                    <span class="blue-button-text">8-812-622-62-42</span>
+                </button>
+            </nav>
+        </div>
     </header>
     <main>
+        <!--1. верхняя секция с мужчиной - Динара -->
+        <div class="section-with-man">
+            <section class="container">
+                <!-- Основной заголовок -->
+                <h1 class="main-header">Все зубы за 1 день на 4 имплантах</h1>
+                <!-- Кнопка с ценой -->
+                <div class="price-button">
+                    <span class="price">за 91 000 ₽</span>
+                </div>
+                <div class="cover-container">
+                    <div>
+                        <!-- Блок с тремя преимуществами -->
+                        <div class="advantages">
+                            <div class="advantages__item">
+                                <img src="/assets/images/garant.png" alt="garant" class="advantages__img" />
+                                <div class="advantages__name">
+                                    <p>Пожизненная гарантия</p>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <img src="/assets/images/teeth.png" alt="garant" class="advantages__img" />
+                                <div class="advantages__name">
+                                    <p>Приживаемость 99.8%</p>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <img src="/assets/images/apple.png" alt="garant" class="advantages__img" />
+                                <div class="advantages__name">
+                                    <p>Еда без ограничений</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Кнопка 'записаться на консультацию' -->
+                        <button class="blue-button signup-button" id="signUpButton">
+                            <span class="blue-button-text">Записаться на консультацию</span>
+                        </button>
+                    </div>
+                    <!-- Блок с видео главврача -->
+                    <div class="video-container">
+                        <div class="video-section">
+                            <img src="/assets/images/video-card.png" alt="video" id="open-button"
+                                class="video-section__img" />
+                            <!-- Модальное окно с видео -->
+                            <div id="video-modal">
+                                <div id="video-modal-container">
+                                    <button id="close-button" aria-label="Close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="white">
+                                            <path d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"></path>
+                                            <path d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"></path>
+                                        </svg>
+                                    </button>
+                                    <iframe id="video-iframe" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!-- Информация о главвраче -->
+                            <div class="doctor">
+                                <p class="doctor__name">Варданян Роман Вруйрович</p>
+                                <p class="doctor__position">Главный врач</p>
+                                <div class="experience">
+                                    <div class="experience__item">
+                                        <p>8 лет стаж</p>
+                                    </div>
+                                    <div class="experience__item">
+                                        <p>10 000 операций</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <p>
+                                All-on-4 — передовой метод восстановления зубов при дефиците
+                                костной ткани
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--2. Динара  -->
+        <div class="section-with-conditions">
+            <section class="container">
+                <h2 class="header2"><span>All-on-4</span> подходит вам если:</h2>
+                <div class="conditions">
+                    <div class="conditions__item">
+                        <img src="/assets/images/conditions_img1.png" alt="conditions_img1" class="conditions__img" />
+                        <div class="conditions__text">
+                            <h3>Нет зубов</h3>
+                            <p>
+                                Множественная потеря зубов вследствии тех или иных причин, или
+                                отстутствие их вовсе.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="conditions__item">
+                        <img src="/assets/images/conditions_img2.png" alt="conditions_img1" class="conditions__img" />
+                        <div class="conditions__text">
+                            <h3>Мало зубов</h3>
+                            <p>
+                                Старые мосты и коронки пришли в негодность / было
+                                некачественное предыдущее протезирование.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="conditions__item">
+                        <img src="/assets/images/conditions_img3.png" alt="conditions_img1" class="conditions__img" />
+                        <div class="conditions__text">
+                            <h3>Съемные протезы</h3>
+                            <p>
+                                Не хотите носить съемные протезы. Снимать и оставлять зубы в
+                                стакане на ночь, утром одевать снова.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="conditions__item">
+                        <img src="/assets/images/conditions_img4.png" alt="conditions_img1" class="conditions__img" />
+                        <div class="conditions__text">
+                            <h3>Пародонтоз</h3>
+                            <p>
+                                Прогрессирующая болезнь десен. Ваши зубы шатаются и выпадают
+                                (пародонтоз, пародонтит).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Katya  -->
+        <section>
+            <div class="aboutt-technology">
+                <div class="about">
+                    <div class="about-left">
+                        <h1 class="about-title">О технологии</h1>
+                        <div>
+                            <img src="assets/images/about.png" alt="All-on-4 фото" class="about-img">
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <p class="about-content">All-on-4 — это технология протезирования, при которой полная челюсть
+                            искусственных зубов держится всего на 4-х имплантатах. Это возможно благодаря высоким
+                            технологиям на стыке IT, инженерии, стоматологии и хирургии. При помощи современного
+                            оборудования определяется оптимальное положение имплантатов в кости пациента,
+                            чтобы 4 искусственных корня могли заменить 24 естественных корня (в среднем) и выдержать
+                            полноценную жевательную нагрузку.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--4. Аня -->
+        <section class="sign_up_free">
+            <div class="container container__sign_up">
+                <div class="blue_gradient">
+                    <div class="inner_container_sign-up">
+                        <p class="sign_up__title">Запишись на консультацию с бесплатной компьютерной томографией</p>
+                        <div class="sign_up_price">
+                            <p class="price_2700"><del class="red">2700P</del></p>
+                            <div class="sign_up_arrow">
+                                <img src="./assets/img/sign_up_free/white_arrow_svg.svg" alt="arrow">
+                            </div>
+                            <p class="price_0">0P</p>
+                        </div>
+                        <div class="btn_sign">
+                            <button class="btn_sign btn_sign_white-blue">Записаться на
+                                консультацию</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модальное окно -->
+            <div class="modal" id="modal-1">
+                <div class="modal__content">
+                    <button class="modal__close-button"><img src="../assets/images/modal/close-cross-button.png"
+                            width="24" alt=""></button>
+                    <form class="contact-form" novalidate>
+                        <h2 class="contact-form__title">Укажите свой номер телефона</h2>
+                        <p>свяжемся с вами и разберем вашу ситуацию</p>
+                        <div class="contact-form__input-box">
+                            <input type="tel" id="phone" class="contact-form__tel" name="phone"
+                                pattern="\+?[0-9\s\-\(\)]+" minlength="10" required />
+                        </div>
+                        <span class="error" aria-live="polite"></span>
+                        <div class="contact-form__input-box">
+                            <button type="submit" class="submit-btn">Получить БЕСПЛАТНУЮ консультацию</button>
+                        </div>
+                        <div class="contact-form__info">
+                            <p>c 10:00 до 21:00<br>Понедельник-Суббота<br>+7 (812) 66-57-332</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
         <!-- 11. Рушана -->
         <section class="advantages">
             <div class="container_advantages">
@@ -114,15 +324,58 @@
                             функциональность данной конструкции на долгие годы</li>
                     </ul>
                 </div>
-
-
-
+        </section>
+        <!-- 6. -->
+        <section>
+            <div class="container">
+                <h2>Отзывы наших пациентов</h2>
+            </div>
+        </section>
+        <!--7. Аня -->
+        <section>
+            <div class="container">
+                <h2>
+                    Фото до и после пациентов сделавших All-on-4
+                </h2>
+            </div>
+        </section>
+        <!--8. Аня  -->
+        <section>
+            <div class="container">
+                <p>Запишись на консультацию с бесплатной компьютерной томографией</p>
+            </div>
+        </section>
+        <!--9. Настя -->
+        <section>
+            <div class="container">
+                <h2>Наши врачи</h2>
+            </div>
+        </section>
+        <!--10. Настя -->
+        <section>
+            <div class="container">
+                <h2>Этапы имплантации:</h2>
+            </div>
+        </section>
+        <!--11. Рушана -->
+        <section>
+            <div class="container">
+                <h2>Преимущества протезирования All-ON-4</h2>
+            </div>
+        </section>
+        <!--12. Лена -->
+        <section>
+            <div class="container">
+                <h2>Клиника в Санкт-Петербурге
+                    рядом с метро</h2>
+                *не забудь тег<address></address>
+            </div>
         </section>
     </main>
     <!-- Футер -->
     <footer>
-        <!-- <div class="container">тут почему-то только белая полоса в макете, но можно добавить название клиники, копирайт,
-            емэйл, телефон клиники.</div> -->
+        <div class="container">тут почему-то только белая полоса в макете, но можно добавить название клиники, копирайт,
+            емэйл, телефон клиники.</div>
     </footer>
 
     <script src="script.js"></script>
