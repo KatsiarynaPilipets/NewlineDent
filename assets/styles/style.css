@@ -265,7 +265,7 @@ ul {
 .section-with-man {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url("/assets/images/main-man.png");
+  background-image: url("/assets/img/main-man.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: -25px;
@@ -277,13 +277,13 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .section-with-man {
-    background-image: url("/assets/images/main-man-tablet.png");
+    background-image: url("/assets/img/main-man-tablet.png");
     background-position-x: 50%;
   }
 }
 @media screen and (max-width: 870px) {
   .section-with-man {
-    background-image: url("/assets/images/main-man-mobile.png");
+    background-image: url("/assets/img/main-man-mobile.png");
     background-position-y: -20px;
   }
 }
@@ -1132,7 +1132,7 @@ ul {
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(../img/sign_up_free/sign_up_block.jpg);
+  background-image: url(/assets/img/sign_up_free/sign_up_block.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-x: 120%;
@@ -1143,7 +1143,7 @@ ul {
     max-width: 1200px;
     margin: 0 auto;
     height: 211px;
-    background-image: url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-image: url(/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-position-x: 115%;
     background-size: 55% 100%;
   }
