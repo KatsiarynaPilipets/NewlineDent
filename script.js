@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateDate() {
     const dateElement = document.getElementById('date');
     const currentDate = new Date();
-    currentDate.setDate(currentDate.getDate() + 1);
+    currentDate.setDate(currentDate.getDate() + 3);
     const options = { day: 'numeric', month: 'long'};
     const formattedDate = currentDate.toLocaleDateString('ru-RU', options);
     dateElement.textContent = formattedDate;

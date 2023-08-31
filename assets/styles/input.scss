@@ -798,93 +798,24 @@ $mobile: 340px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $whitesmoke;
-
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   display: none;
-}
-
-.title {
-width: 275px;
-height: 54px;
-color: $blue;
-font-family: Coolvetica;
-font-weight: 600;
-font-size: 60.17px;
-line-height: 53.56px;
-margin-left: 100px;
-margin-top: 70px;
-
-@media screen and (max-width: $desktop) {
-width: 215px;
-margin-left: 60px;
-font-size: 42px;
-line-height: 55px;
-}
-
-@media screen and (max-width: $tablet) {
-margin-left: 30px;
-font-size: 39px;
-line-height: 65px;
-}
-
-@media screen and (max-width: $mobile) {
-  width: 50px;
-  margin-left: 25px;
-  font-size: 15px;
-  line-height: 15px;
-  }
-
-}
-
-.title-menu {
-  display: flex;
-}
-
-.date {
-  width: 208.17px;
-  height: 66.09px;
-  margin-top: 70px;
-  margin-left: 35px;
-  border-radius: 201px;
-  border: 6px solid $blue;
-  color: $blue;
 
   @media screen and (max-width: $desktop) {
-    width: 110.97px;
-    height: 34.98px;
-    border-radius: 107px;
-    border: 3px solid $blue;
-    margin-top: 30px;
+    width: 90%;
+    height: 90%;
   }
 
-}
-
-.left {
-  width: 531.17px;
-  height: 66.09;
-  margin-top: 70px;
-  margin-left: 40px;
-  color: $white;
-  border-radius: 201px;
-  border: none;
-  background-color: $blue;
-  font-family: Gilroy;
-  font-weight: 700;
-  font-size: 30.09px;
-  line-height: 36.38px;
-
-  @media screen and (max-width: $desktop) {
-    width: 240px;
-    height: 34.98px;
-    border-radius: 107px;
-    margin-top: 30px;
-    margin-left: 20px;
+  @media screen and (max-width: $tablet) {
+    width: 80%;
+    height: 80%;
   }
-}
-.form {
-  display: flex;
-  flex-direction: column;
+
+  @media screen and (max-width: $mobile) {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 /* Стили для затемнения фона */
@@ -896,98 +827,6 @@ line-height: 65px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
-}
-
-.bluetext {
-  font-family: Gilroy;
-  font-weight: 700;
-  font-size: 50.15px;
-  line-height: 60.63px;
-  color: $blue;
-
-  @media screen and (max-width: $desktop) {
-    width: 404.92px;
-    height: 96px;
-    font-size: 28px;
-    line-height: 35px;
-    }
-  }
-
-.text {
-  width: 762.21px;
-  height: 183px;
-  font-family: Gilroy;
-  font-weight: 700;
-  font-size: 50.15px;
-  line-height: 60.63px;
-  margin-top: 50px;
-  margin-left: 100px;
-  color: $black;
-  margin-bottom: 70px;
-
-  @media screen and (max-width: $desktop) {
-    width: 404.92px;
-    height: 96px;
-    margin-left: 60px;
-    font-size: 28px;
-    line-height: 35px;
-    }
-
-    @media screen and (max-width: $tablet) {
-      width: 470px;
-      height: 160px;
-      margin-left: 30px;
-      font-size: 35px;
-      line-height: 45px;
-      margin-top: 60px;
-      }
-
-      @media screen and (max-width: $mobile) {
-        width: 110px;
-        height: 20px;
-        margin-left: 25px;
-        font-size: 15px;
-        line-height: 15px;
-        }
-}
-
-.text1 {
-  width: 845px;
-  height: 61px;
-  font-family: Gilroy;
-  font-weight: 700;
-  font-size: 50.15px;
-  line-height: 60.63px;
-  margin-left: 100px;
-  color: $black;
-  margin-bottom: 50px;
-
-  @media screen and (max-width: $desktop) {
-    width: 449px;
-    height: 32px;
-    font-size: 26.64px;
-    line-height: 32.21px;
-    margin-left: 60px;
-    }
-}
-
-.put {
-  width: 374px;
-  height: 21px;
-  font-family: Gilroy;
-  font-weight: 500;
-  font-size: 18.05px;
-  line-height: 21.25px;
-  margin-left: 100px;
-  margin-bottom: 30px;
-
-  @media screen and (max-width: $desktop) {
-    width: 199px;
-    height: 11px;
-    font-size: 9.59px;
-    line-height: 11.29px;
-    margin-left: 60px;
-    }
 }
 
 #close-button {
@@ -1006,9 +845,263 @@ line-height: 65px;
   align-items: center;
   z-index: 1000;
 
+  @media screen and (max-width: $tablet) {
+  width: 40px;
+  height: 40px;
+    }
+
   @media screen and (max-width: $mobile) {
   right: 5px;
+  width: 30px;
+  height: 30px;
     }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-menu {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  
+@media screen and (max-width: $desktop) {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: $tablet) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: $mobile) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+}
+
+.title {
+color: $blue;
+font-family: Coolvetica;
+font-weight: 600;
+font-size: 60.17px;
+line-height: 53.56px;
+margin-left: 100px;
+
+@media screen and (max-width: $desktop) {
+margin-left: 80px;
+font-size: 31.97px;
+line-height: 28.45px;
+}
+
+@media screen and (max-width: $tablet) {
+margin-left: 50px;
+font-size: 20px;
+line-height: 18px;
+}
+
+@media screen and (max-width: $mobile) {
+  width: 56px;
+  margin-left: 20px;
+  font-size: 12.22px;
+  line-height: 10.88px;
+  }
+
+}
+
+.date {
+  width: 208.17px;
+  height: 66.09px;
+  margin-left: 35px;
+  border-radius: 201px;
+  border: 6px solid $blue;
+  color: $blue;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 30.09px;
+  line-height: 36.38px;
+
+  @media screen and (max-width: $desktop) {
+    width: 110.97px;
+    height: 34.98px;
+    font-size: 15.98px;
+    line-height: 19.32px;
+    border-radius: 107px;
+    border: 3px solid $blue;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 80px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 7.39px;
+    border-radius: 41px;
+    border: 1px solid $blue;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 50px;
+    height: 13.11px;
+    font-size: 6.11px;
+    line-height: 7.39px;
+    border-radius: 41px;
+    margin-left: 10px;
+  }
+}
+
+.left {
+  width: 531.17px;
+  height: 66.09;
+  margin-left: 40px;
+  color: $white;
+  border-radius: 201px;
+  border: none;
+  background-color: $blue;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 30.09px;
+  line-height: 36.38px;
+
+  @media screen and (max-width: $desktop) {
+    width: 281.97px;
+    height: 34.98px;
+    border-radius: 107px;
+    margin-left: 20px;
+    font-size: 15.98px;
+    line-height: 19.32px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 108.22px;
+    height: 22px;
+    border-radius: 41px;
+    margin-left: 20px;
+    font-size: 10px;
+    line-height: 7.5px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 108.22px;
+    height: 13.11px;
+    border-radius: 41px;
+    margin-left: 10px;
+    font-size: 6.11px;
+    line-height: 7.39px;
+  }
+}
+
+.text {
+  width: 762.21px;
+  height: 183px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 70px;
+
+  @media screen and (max-width: $desktop) {
+    width: 404.92px;
+    height: 96px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    font-size: 26.64px;
+    line-height: 32.21px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 250px;
+    height: 36px;
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 17px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 154.82px;
+    height: 36px;
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 17px;
+    }
+}
+
+.bluetext {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
+  color: $blue;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 26.64px;
+    line-height: 32.21px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    font-size: 18px;
+    line-height: 17px;
+    }
+  }
+
+.text1 {
+  width: 845px;
+  height: 61px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: $desktop) {
+    width: 449px;
+    height: 32px;
+    font-size: 26.64px;
+    line-height: 32.21px;
+    margin-left: 80px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 230px;
+    height: 12px;
+    font-size: 13px;
+    line-height: 12.31px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    }
+}
+
+.put {
+  width: 374px;
+  height: 21px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 18.05px;
+  line-height: 21.25px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $desktop) {
+    width: 199px;
+    height: 11px;
+    font-size: 9.59px;
+    line-height: 11.29px;
+    margin-left: 80px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 130px;
+      height: 4px;
+      font-size: 5.67px;
+      line-height: 8px;
+      margin-left: 50px;
+      margin-bottom: 17px;
+      }
 }
 
 .phone-input {
@@ -1029,13 +1122,23 @@ line-height: 65px;
   margin-left: 100px;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 1865px) {
-    margin-left: 100px;
+  @media screen and (max-width: $desktop) {
+    width: 415.58px;
+    height: 49.66px;
+    margin-left: 80px;
+    border-radius: 107px;
+    font-size: 31.97px;
+    line-height: 38.65px;
     }
 
   @media screen and (max-width: $tablet) {
-    width: 450px;
-    margin-left: 30px;
+    width: 158.9px;
+    height: 19.07px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border-radius: 41px;
+    font-size: 12.22px;
+    line-height: 14.78px;
     }
 }
 
@@ -1053,20 +1156,48 @@ line-height: 65px;
   line-height: 72.75px;
   text-align: center;
   margin-left: 100px;
+
+  @media screen and (max-width: $desktop) {
+    width: 410.25px;
+    height: 54.98px;
+    margin-left: 80px;
+    border-radius: 107px;
+    font-size: 31.97px;
+    line-height: 38.65px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 156.86px;
+    height: 21.11px;
+    margin-left: 50px;
+    border-radius: 41px;
+    font-size: 12.22px;
+    line-height: 14.78px;
+    }
 }
 
 .wheel-container {
   position: relative;
-  top: -645px;
+  top: -670px;
   left: 1078px;
-}
 
-.arrow {
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  top: 230px;
-  left: 237px;
+  @media screen and (max-width: $desktop) {
+    @include container;
+    top: -515px;
+    left: 320px;
+    }
+    
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    top: -230px;
+    left: 140px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    top: -150px;
+    left: 100px;
+  }
 }
 
 .wheel {
@@ -1082,8 +1213,13 @@ line-height: 65px;
   animation-fill-mode: forwards;
 
   @media screen and (max-width: $desktop) {
-    top: -300px;
-    left: 772.69px;
+    width: 570px;
+    height: 570px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 370px;
+    height: 370px;
     }
 }
 
@@ -1143,4 +1279,26 @@ transform: rotate(360deg);
 
 .hidden-input {
   display: none;
+}
+
+.arrow {
+position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 230px;
+  left: 237px;
+
+  @media screen and (max-width: $desktop) {
+    width: 165px;
+    height: 165px;
+    top: 200px;
+    left: 204px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 100px;
+    height: 100px;
+    top: 132px;
+    left: 135px;
+    }
 }
