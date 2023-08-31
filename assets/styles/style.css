@@ -1096,14 +1096,15 @@ ul {
   font-family: Gilroy;
   font-weight: 700;
   font-size: 30.09px;
-  line-height: 36.38px;
+  line-height: 46.38px;
+  text-align: center;
 }
 @media screen and (max-width: 1630px) {
   .date {
     width: 110.97px;
     height: 34.98px;
     font-size: 15.98px;
-    line-height: 19.32px;
+    line-height: 24.32px;
     border-radius: 107px;
     border: 3px solid #4fa7fb;
   }
@@ -1113,7 +1114,7 @@ ul {
     width: 80px;
     height: 22px;
     font-size: 12px;
-    line-height: 7.39px;
+    line-height: 17.39px;
     border-radius: 41px;
     border: 1px solid #4fa7fb;
   }
@@ -1123,7 +1124,7 @@ ul {
     width: 50px;
     height: 13.11px;
     font-size: 6.11px;
-    line-height: 7.39px;
+    line-height: 10.39px;
     border-radius: 41px;
     margin-left: 10px;
   }
@@ -1140,7 +1141,8 @@ ul {
   font-family: Gilroy;
   font-weight: 700;
   font-size: 30.09px;
-  line-height: 36.38px;
+  line-height: 56.38px;
+  text-align: center;
 }
 @media screen and (max-width: 1630px) {
   .left {
@@ -1149,17 +1151,17 @@ ul {
     border-radius: 107px;
     margin-left: 20px;
     font-size: 15.98px;
-    line-height: 19.32px;
+    line-height: 30.32px;
   }
 }
 @media screen and (max-width: 870px) {
   .left {
-    width: 108.22px;
+    width: 118.22px;
     height: 22px;
     border-radius: 41px;
     margin-left: 20px;
     font-size: 10px;
-    line-height: 7.5px;
+    line-height: 11.15px;
   }
 }
 @media screen and (max-width: 340px) {
@@ -1169,7 +1171,7 @@ ul {
     border-radius: 41px;
     margin-left: 10px;
     font-size: 6.11px;
-    line-height: 7.39px;
+    line-height: 12.39px;
   }
 }
 
