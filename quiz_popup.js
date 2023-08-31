@@ -27,6 +27,7 @@ openPopupButton.addEventListener('click', (e) => {
     popup.classList.add('active'); // И для самого окна
     nextButton(); //кнопки вперед
     backButton(); //кнопки назад
+    checkForm();
 });
 
 // функция листания кнопок вперед
@@ -85,23 +86,43 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
 
 // РАБОЧИЕ РАДИОКНОПКИ: МЕНЯЮТ ФОН, ВЫВОДЯТ ЗНАЧЕНИЯ В КОНСОЛЬ
 let arrRadio = Array.from(document.querySelectorAll('.radio'));
-
 arrRadio.forEach(radio => radio.addEventListener('change', () => {
     for (let radio of arrRadio) {
         if (radio.checked) {
             radio.parentElement.classList.add('active');
-            console.log(radio.parentNode);
+            // console.log(radio.parentNode);
+            checkForm();
+
         } else if (!radio.checked) {
             radio.parentElement.classList.remove('active');
         }
-
     }
-    console.log(radio.value);
-
 }));
 
+let arrForms = Array.from(document.forms);
+function checkForm() {
+    // слушаем каждую форму на странице
+    arrForms.forEach(form => form.addEventListener('change', () => {
+        // console.log(form);
+        let arrelements = Array.from(form.elements.radio); //собираем все радиокнопки в массив
+        // console.log(arrelements);
+        let formData = new FormData(form); //создаем фордату
+        for (let elem of arrelements) {
+            let radioValue = elem.value;
+            let radioQ = form.querySelector('.quiz__title').textContent;
 
-
+            if (elem.checked) {
+                formData.append(radioQ, radioValue);
+                // formData.set(radioQ, radioValue);
+                // Список пар ключ/значение
+                for (let [radioQ, radioValue] of formData) {
+                    console.log(`${radioQ}:${radioValue}`);
+                }
+            }
+        }
+        console.log(formData);
+    }))
+}
 
 
 
