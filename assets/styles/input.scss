@@ -896,6 +896,7 @@ $fG: "Gilroy";
     }
   }
 }
+
 //Стили для блока о технологиях
 .about-technology {
   @include container;
@@ -1076,16 +1077,16 @@ $fG: "Gilroy";
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(/assets/img/sign_up_free/sign_up_block.jpg);
+  background-image: url(/NewlineDent/assets/img/sign_up_free/sign_up_block.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-x: 120%;
-  background-size: 52% 100%;
+  background-size: 54% 100%;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 211px;
-    background-image: url(/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-image: url(/NewlineDent/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-position-x: 115%;
     background-size: 55% 100%;
   }
@@ -1098,7 +1099,7 @@ $fG: "Gilroy";
 
 // диагональный синий блок: размеры, угол наклона
 .blue_gradient {
-  background: linear-gradient(125deg, $blue 77%, transparent 50%);
+  background: linear-gradient(125deg, $blue 80%, transparent 50%);
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
@@ -1124,6 +1125,7 @@ del {
 }
 
 .sign_up {
+
   // стили блока со стрелкой
   &_arrow {
     display: flex;
@@ -1173,7 +1175,7 @@ del {
   // стили блока заголовка
   &__title {
     width: 1005px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
     line-height: 60.45px;
 
@@ -1196,7 +1198,7 @@ del {
 
   // стили текста заголовка и цены
   &__title,
-  &_price > p {
+  &_price>p {
     font-family: $fG;
     font-size: 50px;
     color: #fff;
@@ -1212,7 +1214,7 @@ del {
     }
   }
 
-  &_price > p {
+  &_price>p {
     line-height: 29.02px;
 
     @media screen and (max-width: $desktop) {
@@ -1250,7 +1252,7 @@ del {
 .inner_container_sign-up {
   display: flex;
   flex-direction: column;
-  margin: 10px 150px;
+  margin: 10px 100px;
   height: 317px;
   gap: 5px;
 
@@ -1518,6 +1520,7 @@ del {
 .work_cost {
   background-color: $lightblue;
 }
+
 .container_work_cost {
   @include container;
   width: 100vw;
@@ -1527,6 +1530,7 @@ del {
     width: 100vw;
   }
 }
+
 // Главный заголовок блока
 .title_work_cost {
   text-align: center;
@@ -1548,11 +1552,13 @@ del {
     font-size: 24.5px;
   }
 }
+
 // Основной контейнер иконок
 .container_work_cost-icons {
   display: flex;
   justify-content: space-around;
 }
+
 .work_cost-img {
   height: auto;
   // width: auto;
@@ -1573,6 +1579,7 @@ del {
     max-width: 100px;
   }
 }
+
 // Контейнер для блоков с информацией
 .container_work_cost-info {
   font-family: "Gilroy";
@@ -1580,6 +1587,7 @@ del {
   justify-content: space-around;
   width: 100vw;
 }
+
 .container_work_cost-items {
   border-radius: 60px;
   height: 844px;
@@ -1612,6 +1620,7 @@ del {
     // overflow: hidden;
   }
 }
+
 // Заголовок внутри блока
 .work_cost-items-title {
   font-size: 32px;
@@ -1643,6 +1652,7 @@ del {
     height: 2px;
     margin-left: 24px;
   }
+
   @media screen and (max-width: $mobile) {
     @include mobile-container();
     height: 1px;
@@ -1669,6 +1679,7 @@ del {
     margin: 4px 0px 0px 15px;
   }
 }
+
 .work_cost-list {
   list-style-type: disc;
   width: 301px;
@@ -1690,6 +1701,7 @@ del {
     margin: 0px 0px 0px 15px;
   }
 }
+
 .work_cost-list-elem {
   margin-top: 20px;
 
@@ -1704,6 +1716,7 @@ del {
     // word-wrap: break-word;
   }
 }
+
 .work_cost-btn-1 {
   width: 269px;
   height: 78px;
@@ -1789,6 +1802,7 @@ del {
       font-size: 63.75px;
       line-height: 56.74px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 24.5px;
       line-height: 21.81px;
@@ -1802,10 +1816,12 @@ del {
   margin-top: 60px;
   margin-bottom: 81px;
   overflow: hidden;
+
   @media screen and (max-width: $desktop) {
     margin-top: 31.72px;
     margin-bottom: 43px;
   }
+
   @media screen and (max-width: $tablet) {
     margin-top: 20.42px;
     margin-bottom: 16.53px;
@@ -1817,10 +1833,12 @@ del {
   gap: 200px;
   transform: translateX(350px);
   transition: transform 0.3s ease-in-out;
+
   @media screen and (max-width: $desktop) {
     gap: 106.25px;
     transform: translateX(170px);
   }
+
   @media screen and (max-width: $tablet) {
     gap: 40.83px;
     transform: translateX(70px);
@@ -1835,6 +1853,7 @@ del {
     flex: 0 0 486.63px;
     border-radius: 26px;
   }
+
   @media screen and (max-width: $tablet) {
     flex: 0 0 187.02px;
     border-radius: 10px;
@@ -1850,13 +1869,16 @@ del {
   &__img {
     max-width: 916px;
     width: 100%;
+
     @media screen and (max-width: $desktop) {
       max-width: 486.63px;
     }
+
     @media screen and (max-width: $tablet) {
       max-width: 187.02px;
     }
   }
+
   &__name {
     width: 916px;
     display: flex;
@@ -1868,6 +1890,7 @@ del {
       width: 486.63px;
       padding: 18.06px 13.28px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 187.02px;
       padding: 6.94px 5.1px;
@@ -1881,11 +1904,13 @@ del {
       line-height: 62px;
       letter-spacing: 0em;
       text-align: left;
+
       @media screen and (max-width: $desktop) {
         width: 250.75px;
         font-size: 37.19px;
         line-height: 33.1px;
       }
+
       @media screen and (max-width: $tablet) {
         width: 96.37px;
         font-size: 14.29px;
@@ -1899,13 +1924,16 @@ del {
       background-color: $lightblue;
       border: none;
       cursor: pointer;
+
       & img {
         width: 100%;
       }
+
       @media screen and (max-width: $desktop) {
         width: 53.13px;
         height: 53.13px;
       }
+
       @media screen and (max-width: $tablet) {
         width: 20.42px;
         height: 20.42px;
@@ -1919,12 +1947,15 @@ del {
   background: none;
   border: none;
   cursor: pointer;
+
   & img {
     width: 100%;
   }
+
   @media screen and (max-width: $desktop) {
     width: 63.75px;
   }
+
   @media screen and (max-width: $tablet) {
     width: 24.5px;
   }
@@ -1936,10 +1967,12 @@ del {
   align-items: center;
   margin-top: 44px;
   gap: 61px;
+
   @media screen and (max-width: $desktop) {
     gap: 32.41px;
     margin-top: 23.38px;
   }
+
   @media screen and (max-width: $tablet) {
     gap: 12.45px;
     margin-top: 8.98px;
@@ -1952,10 +1985,12 @@ del {
   background-color: $lightblue;
   border-radius: 50%;
   cursor: pointer;
+
   @media screen and (max-width: $desktop) {
     width: 15.94px;
     height: 15.94px;
   }
+
   @media screen and (max-width: $tablet) {
     width: 6.13px;
     height: 6.13px;
@@ -2006,6 +2041,7 @@ del {
     margin-bottom: 15px;
   }
 }
+
 .span_advantages {
   color: $pink;
 }
@@ -2018,6 +2054,7 @@ del {
   justify-content: space-around;
   width: auto;
 }
+
 .container_advantages-items {
   border-radius: 60px;
   height: 794px;
@@ -2080,6 +2117,7 @@ del {
     height: 2px;
     margin-left: 24px;
   }
+
   @media screen and (max-width: $mobile) {
     @include mobile-container();
     height: 1px;
@@ -2108,6 +2146,7 @@ del {
     margin: 0px 0px 0px 15px;
   }
 }
+
 .advantages-list-elem {
   margin-top: 20px;
 
@@ -2120,5 +2159,1012 @@ del {
     @include mobile-container;
     margin-top: 5px;
     // word-wrap: break-word;
+  }
+}
+
+// цвета для розовой кнопки
+$pinkShadow: #FFC8D6;
+$innerShadow: #C88D9C;
+
+// .container {
+//   max-width: 1920px;
+//   margin: 0 auto;
+// }
+
+// ДО/ПОСЛЕ СО СЛАЙДЕРОМ
+// стили блока, заливка фона
+
+.before_after {
+  background-color: $lightblue;
+}
+
+.container__before_after {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+  height: 1332px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    height: 708px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    // height: 390px;
+    height: 290px;
+  }
+}
+
+.before_after {
+
+  // заголовок до/после
+  &__title {
+    font-family: 'Coolvetica';
+    font-weight: 400;
+    text-align: center;
+    color: $blue;
+    margin-top: 100px;
+    font-size: 120px;
+    line-height: 106.8px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      margin-top: 53.12px;
+      font-size: 63.75px;
+      line-height: 56.74px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      margin-top: 20.42px;
+      font-size: 24.5px;
+      line-height: 21.81px;
+    }
+  }
+
+  // стили блока слайдера со всеми фото
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    // max-width: 1877.27px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      margin-top: 53.12px;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      margin-top: 20.42px;
+      margin-bottom: 20.42px;
+    }
+  }
+}
+
+// розовый цвет для выделения в заголовке до/после
+.pink_text {
+  color: $pink;
+}
+
+// размер дива каждого слайдера с фото
+.slider {
+  width: 435px;
+  height: 580px;
+  margin: 0 50px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 231.09px;
+    height: 308.13px;
+    margin: 0 20px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 88.81px;
+    height: 118.42px;
+    margin: 0 8px;
+  }
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.before_1,
+.before_2,
+.before_3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 3;
+  width: 50%;
+  height: 100%;
+}
+
+.slider_change {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1.93px;
+  height: 100%;
+  z-index: 6;
+  background-color: $blue;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 1.03px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 0.39px;
+  }
+}
+
+.slider_change::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 100%;
+  background-color: $blue;
+  transform: translate(-50%, -50%);
+  cursor: col-resize;
+  width: 48.33px;
+  height: 48.33px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 25.68px;
+    height: 25.68px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+// кнопки
+.btn_sign {
+  // все кнопки блоков со скругленными углами и без бордера
+  border-radius: 12px;
+  padding: 30px 60px;
+  border-width: 0;
+
+  // стили розовой кнопки блока до/после: размер и цвета
+  &_pink {
+    width: 788px;
+    height: 118px;
+    margin-top: 100px;
+    background-color: $pink;
+    box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+  }
+
+  // стили текста на кнопке
+  &_pink {
+    font-family: 'Gilroy';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.03px;
+    color: $white;
+  }
+
+  // цвет при наведении мыши
+  &_pink:hover {
+    background-color: $pinkShadow;
+    box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+  }
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    border-radius: 6px;
+    padding: 16px 32px;
+
+    // стили розовой кнопки блока до/после: размер и цвета
+    &_pink {
+      width: 418.75px;
+      height: 62.88px;
+    }
+
+    // стили текста на кнопке
+    &_pink {
+      font-size: 25.5px;
+      line-height: 31.57px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    border-radius: 2px;
+    padding: 6px 12px;
+
+    // стили розовой кнопки блока до/после: размер и цвета
+    &_pink {
+      width: 161.5px;
+      height: 24.25px;
+    }
+
+    // стили текста на кнопке
+    &_pink {
+      font-size: 9.8px;
+      line-height: 12.13px;
+    }
+  }
+}
+
+
+// БЛОК С БИРЮЗОВЫМ ГРАДИЕНТОМ ЗАПИСЬ НА ОНЛАЙН КОНСУЛЬТАЦИЮ
+.container__turquoise {
+  display: flex;
+  flex-direction: row;
+  background: url(/NewlineDent/assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
+  // overflow: hidden;
+  height: 814px;
+  background-position-x: 106%;
+  background-size: 60% 100%;
+
+  // блок на синем фоне: белый текст и кнопка
+  &_inner {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 838px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    height: 432px;
+    background: url(/NewlineDent/assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
+    background-position-x: 104%;
+    background-size: 60% 100%;
+
+    // блок на синем фоне: белый текст и кнопка
+    &_inner {
+      margin-left: 40px;
+      width: 445.19px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    height: 166.03px;
+    background: url(/NewlineDent/assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
+    background-position-x: 104%;
+    background-size: 60% 100%;
+
+    // блок на синем фоне: белый текст и кнопка
+    &_inner {
+      margin-left: 17px;
+      width: 169px;
+    }
+  }
+}
+
+// диагональный синий блок: размеры, угол наклона
+.turquoise_gradient {
+  width: 1150px;
+  background: linear-gradient(102deg, $blue 76%, transparent 50%);
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    background: linear-gradient(102deg, $blue 55%, transparent 50%);
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    background: linear-gradient(102deg, $blue 55%, transparent 50%);
+  }
+}
+
+// стили текста на синем фоне
+.turquoise_text {
+  font-family: 'Gilroy';
+  color: $white;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48.36px;
+  margin: 0 0 80px;
+
+  // верхний отступ у блока с текстом
+  &_block {
+    margin-top: 232px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    font-size: 21.25px;
+    line-height: 26.31px;
+
+    // верхний отступ у блока с текстом
+    &_block {
+      margin-top: 123.25px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 8.17px;
+    line-height: 10.11px;
+
+    // верхний отступ у блока с текстом
+    &_block {
+      margin-top: 47px;
+    }
+  }
+}
+
+// стили бело-голубой кнопки блока с диагональю
+.btn_sign {
+
+  // размер и цвета
+  &_white-blue2 {
+    width: 585px;
+    height: 96px;
+    background-color: $white;
+    box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
+  }
+
+  // стили текста на бело-голубой кнопке
+  &_white-blue2 {
+    font-family: 'Gilroy';
+    font-size: 30px;
+    line-height: 36.27px;
+    color: $blue;
+  }
+
+  &_white-blue2:hover {
+    background-color: $lightblue;
+    box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
+  }
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+
+    // размер и цвета
+    &_white-blue2 {
+      // width: 310.75px;
+      width: 311px;
+      height: 50.88px;
+      margin-top: 35px;
+      box-shadow: inset -2px -2px 4px rgba(79, 167, 251, 0.4);
+    }
+
+    // стили текста на бело-голубой кнопке
+    &_white-blue2 {
+      font-size: 15.94px;
+      line-height: 19.73px;
+    }
+
+    &_white-blue2:hover {
+      box-shadow: inset -2px -2px 4px rgba(79, 167, 251, 0.4);
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+
+    // размер и цвета
+    &_white-blue2 {
+      // width: 310.75px;
+      width: 119.5px;
+      height: 19.25px;
+      margin-top: 20px;
+      box-shadow: inset -0.8px -0.8px 2px rgba(79, 167, 251, 0.4);
+    }
+
+    // стили текста на бело-голубой кнопке
+    &_white-blue2 {
+      font-size: 6.13px;
+      line-height: 7.58px;
+    }
+
+    &_white-blue2:hover {
+      box-shadow: inset -0.8px -0.8px 2px rgba(79, 167, 251, 0.4);
+    }
+  }
+}
+
+
+// КВИЗ
+// цвета для квиза
+$gray: #D9D9D9;
+
+// размер контейнера
+.container__quiz {
+  height: 1053px;
+  background-color: $white;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    // height: 561px;
+    width: 1020px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 390px;
+  }
+}
+
+// стили контейнера
+.quiz {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 100px;
+  // border: 4px solid red;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    padding: 30px 20px;
+    // border: 4px solid red;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    padding: 15px 10px;
+    // border: 4px solid red;
+  }
+}
+
+// заголовок страницы квиза
+.quiz__title {
+  font-size: 80px;
+  line-height: 95.44px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    font-size: 40px;
+    line-height: 50.73px;
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 16.33px;
+    line-height: 19.49px;
+    margin-left: 5px;
+  }
+}
+
+//стили шрифта
+.quiz__title,
+.btn_ellipse,
+.jaw_label,
+.quiz_radio_label {
+  font-family: 'Gilroy';
+  font-weight: 600;
+}
+
+// отступ блока прогресса
+.quiz_progress {
+  margin-top: 60px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+}
+
+// стили круглых кнопок прогресса
+.btn_ellipse {
+  border-radius: 50%;
+  border-width: 0;
+  width: 100px;
+  height: 100px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 53.15px;
+    height: 53.15px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 20.42px;
+    height: 20.42px;
+  }
+}
+
+// стили текста кнопок
+.btn_ellipse {
+  font-size: 53.84px;
+  line-height: 47.92px;
+  color: $white;
+  text-align: center;
+  padding: 0;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    font-size: 28.62px;
+    line-height: 25.47px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 10.99px;
+    line-height: 9.78px;
+  }
+}
+
+// активное поле прогресса, цвет
+.ellipse_blue {
+  background-color: $blue;
+}
+
+// не активное поле прогресса, цвет
+.ellipse_gray {
+  background-color: $gray;
+}
+
+.line {
+  width: 200px;
+  margin-bottom: 18px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 88px;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 30px;
+    margin-bottom: 3px;
+  }
+}
+
+.quiz_question {
+  display: flex;
+  flex-direction: row;
+
+  &1 {
+    align-items: flex-end;
+    // width: 390px;
+  }
+}
+
+// стили блока с плашками радио
+.quiz_blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  // width: 1450px;
+
+  // 1я страница
+  &_radio1 {
+    width: 1380px;
+    height: 532.37px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      width: 670px;
+      height: 282.97px;
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      width: 259px;
+      height: 108.69px;
+      margin-left: 0;
+    }
+  }
+
+  // страницы после 2й
+  &_radio2,
+  &_radio3,
+  &_radio4,
+  &_radio5,
+  &_radio6 {
+    // width: 1450px;
+    height: 450px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      width: 770.72px;
+      height: 239.19px;
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      width: 296.03px;
+      height: 91.87px;
+      margin-left: 0;
+    }
+  }
+}
+
+// размеры img челюсти
+.jaw {
+  width: 245.21px;
+  height: 173.37px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 130px;
+    height: 92.22px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 50.28px;
+    height: 35.55px;
+  }
+}
+
+// стили голубых плашек
+.quiz {
+
+  &_elem_1,
+  &_elem_2,
+  &_elem_3,
+  &_elem_4,
+  &_elem_5,
+  &_elem_6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-right: 50px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      margin-bottom: 25px;
+      margin-right: 20px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+// размеры и отступы плашек
+.quiz {
+
+  // 1й страницы квиза
+  &_elem_1 {
+    width: 611.17px;
+    height: 241.18px;
+    border-radius: 43px;
+    padding-left: 38.63px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      width: 324.86px;
+      height: 128.2px;
+      border-radius: 23px;
+      padding-left: 14px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      width: 124.78px;
+      height: 49.24px;
+      border-radius: 9px;
+      padding-left: 10px;
+    }
+  }
+
+  // 2й,3й,41 страниц квиза
+  &_elem {
+
+    &_2,
+    &_3,
+    &_4,
+    &_5,
+    &_6 {
+      width: 700px;
+      height: 200px;
+      border-radius: 30px;
+      padding-left: 60px;
+
+      @media screen and (max-width: $desktop) {
+        @include tablet-container;
+        width: 372.07px;
+        height: 106.31px;
+        border-radius: 16px;
+        padding-left: 30px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        @include mobile-container;
+        width: 142.91px;
+        height: 40.83px;
+        border-radius: 6px;
+        padding-left: 10px;
+      }
+    }
+
+  }
+}
+
+// не активная плашка: цвет светый
+.elem_light-blue {
+  background-color: #ADD7FF;
+}
+
+// стили шрифта плашек с челюстью
+.jaw_label {
+  font-size: 45.68px;
+  line-height: 54.49px;
+  color: $white;
+  margin-left: 30px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    font-size: 24.28px;
+    line-height: 28.96px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 9.33px;
+    line-height: 11.13px;
+  }
+}
+
+.quiz_radio_label {
+  font-size: 50px;
+  line-height: 44.15px;
+  color: $white;
+  margin-left: 30px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    font-size: 26.58px;
+    line-height: 31.71px;
+    margin-left: 15px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 10.21px;
+    line-height: 12.18px;
+    margin-left: 8px;
+  }
+}
+
+// КНОПКИ КВИЗА (не активные - серые)
+.btn_gray {
+  height: 120px;
+  border-radius: 200px;
+  padding: 30px 60px;
+  // стили шрифта
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61.9px;
+
+  // кнопка назад стили
+  &_back {
+    width: 269px;
+    background-color: transparent;
+    border-color: #D9D9D9;
+    border-width: 6px;
+    color: #29292966;
+  }
+
+  // кнопка вперед стили
+  &_next {
+    width: 271px;
+    background-color: #D9D9D9;
+    border-width: 0;
+    box-shadow: inset -4px -4px 7px rgba(166, 165, 165, 0.9);
+    color: $white;
+  }
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    height: 63.89px;
+    border-radius: 106px;
+    padding: 16px 32px;
+    // стили шрифта
+    font-size: 26.58px;
+    line-height: 32.9px;
+
+    // кнопка назад стили
+    &_back {
+      width: 142.78px;
+      border-width: 6px;
+    }
+
+    // кнопка вперед стили
+    &_next {
+      width: 144.78px;
+      box-shadow: inset -2px -2px 4px rgba(166, 165, 165, 0.9);
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    height: 24.25px;
+    border-radius: 41px;
+    padding: 6px 12px;
+    // стили шрифта
+    font-size: 10.21px;
+    line-height: 12.64px;
+
+    // кнопка назад стили
+    &_back {
+      width: 55.5px;
+      border-width: 1px;
+    }
+
+    // кнопка вперед стили
+    &_next {
+      width: 55.5px;
+      box-shadow: inset -0.8px -0.8px 2px rgba(166, 165, 165, 0.9);
+    }
+  }
+}
+
+// стили радио переключателей
+.radio {
+  // background-color: #4FA7FB;
+  border: 0px;
+  width: 63.95px;
+  height: 63.95px;
+  margin-right: 20px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 34.01px;
+    height: 34.01px;
+    margin: 0px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 13.07px;
+    height: 13.07px;
+    margin: 0px;
+  }
+}
+
+// 2Я СТРАНИЦА
+// кнопки
+.quiz_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 150px;
+  margin-top: 10px;
+  gap: 20px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    margin-right: 40px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    margin-right: 15px;
+  }
+}
+
+
+
+
+// ВАЖНО стили при открытии окна попап
+.container__quiz {
+  z-index: 15;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  // background: rgba(255, 255, 255, 0.8);
+  opacity: 0; // Скрываем фон и сам попап
+  pointer-events: none; // Запрещаем ему быть целью событий
+  transition: 0.3s all;
+}
+
+// При добавлении класса 'active'
+.container__quiz.active {
+  display: flex;
+  opacity: 1; // Показываем фон и попап
+  pointer-events: all; // Возвращаем события
+  transition: 0.3s all;
+  margin: 0 auto;
+}
+
+.quiz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+  background: #fff;
+  width: 1920px;
+  padding: 0 120px 40px;
+  transition: 0.3s all;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 1020px;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 390px;
+    padding: 5px;
+  }
+}
+
+// При добавлении класса 'active'
+.quiz.active {
+  transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+  transition: 0.3s all;
+  // border: 3px solid red;
+  display: flex;
+}
+
+// Радио
+.radio:checked {
+  // border-color: $blue;
+  background-color: $blue;
+}
+
+// при добавлении класса active цвет плашки меняется на синий
+.elem_light-blue.active {
+  background-color: $blue;
+}
+
+// Кнопки
+.btn_gray {
+
+  // при добавлении класса active
+  &_next.active,
+  &_back.active {
+    width: 271px;
+    height: 120px;
+    border-radius: 200px;
+    border-width: 0;
+    background-color: $pink;
+    box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+  }
+
+  // при наведении мыши
+  &_next:hover,
+  &_back:hover {
+    background-color: $pink;
+    box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+  }
+
+  &_back:hover {
+    border-width: 0;
   }
 }
