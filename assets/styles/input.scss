@@ -119,20 +119,40 @@ $mobile: 340px;
     grid-template-columns: 205px 205px 205px 205px;
     grid-template-rows: 0.5fr 1fr 0.5fr;
     column-gap: 20px;
+  }
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    column-gap: 10px; 
+  }
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    grid-template-columns: 65px 65px 65px 65px;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    column-gap: 5px;  
   } 
 }
+//Контейнер для фото с врачом
 .doctors-frame{
   display: grid;
   justify-content: center;
   align-content: end;
   height: 558px;
-  //top: 327px;
-  //left: 150px;
   margin-top: 50px;
   @media screen and (max-width: $desktop) {
     @include container;
     height: 296px;
   }
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    height: 115px;
+  }
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    height: 100px
+  }
+  //Фоновый круг
     &__background-circle{
     width: 375px;
     height: 375px;
@@ -144,7 +164,18 @@ $mobile: 340px;
       width: 198px;
       height: 198px;
     }
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      width: 77px;
+      height: 77px;
+    }
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      width: 60px;
+      height: 60px
+    }
 }
+//Рамка с именем
     &__doctors-name{
     position: relative;
     bottom: 30px;
@@ -172,8 +203,36 @@ $mobile: 340px;
       line-height: 19px;
       padding: 16px;
       left: -1px;
+      box-shadow: 4.244817733764648px 4.244817733764648px 10.612044334411621px 0px #FFFFFF6B inset;
+      box-shadow: -4.244817733764648px -4.244817733764648px 15.918066024780273px 0px #5F8EBE inset;
+
+    }
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      bottom: 20px;
+      width: 70px;
+      height: 26px;
+      border-radius: 5px;
+      font-size: 6px;
+      line-height: 7px;
+      padding: 8px;
+      left: -1px;
+      box-shadow: 1.6455708742141724px 1.6455708742141724px 4.113927364349365px 0px #FFFFFF6B inset;
+      box-shadow: -1.6455708742141724px -1.6455708742141724px 6.1708903312683105px 0px #5F8EBE inset;
+    }
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      bottom: 16px;
+      width: 62px;
+      height: 22px;
+      border-radius: 4px;
+      font-size: 5px;
+      line-height: 6px;
+      padding: 6px;
+      left: -1px;
     }
 }
+//Фото врача
     &__doctors-image{
     position: relative;
     top: 370px;
@@ -183,11 +242,29 @@ $mobile: 340px;
       top: 175px;
       left: 20px;
     }
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      top: 65px;
+      left: 16px;
+    }
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      top: 50px;
+      left: 12px;
+    }
   }
   .doc-image{
     @media screen and (max-width: $desktop) {
       @include container;
       max-width: 90%;
+    }
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      max-width: 80%;
+    }
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      max-width: 78%;
     }
   }
 }
@@ -213,6 +290,9 @@ $mobile: 340px;
   text-align: center;
   color: #F7F7F7;
   cursor: pointer;
+  &:hover{
+    background-color: $blue;
+  }
   @media screen and (max-width: $desktop) {
     @include container;
     width: 418px;
@@ -223,6 +303,36 @@ $mobile: 340px;
     padding: 0;
     margin: 36px auto 60px auto;
     gap: 5px;
+    box-shadow: 4px 4px 14px 0px #FFC8D6 inset;
+    box-shadow: -4px -4px 10px 0px #C88D9C inset;
+
+  }
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    width: 162px;
+    height: 24px;
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 2px;
+    padding: 0;
+    margin: 6px, 12px, 6px, 12px;
+    gap: 2px;
+    cursor: none;
+    box-shadow: 2.125px 2.125px 7.4375px 0px #FFC8D6 inset;
+    box-shadow: -2.125px -2.125px 5.3125px 0px #C88D9C inset;
+
+  }
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    width: 158px;
+    height: 20px;
+    font-size: 8px;
+    line-height: 10px;
+    border-radius: 2px;
+    padding: 0;
+    margin: 6px, 12px, 6px, 12px;
+    gap: 1px;
+    cursor: none;
   }
 }
 //Стили для модального окна
@@ -258,8 +368,7 @@ $mobile: 340px;
       letter-spacing: 0em;
       @media screen and (max-width: $desktop) {
         @include container;
-        width: 1020;
-        //height: 561px;
+        width: 1020px;
         font-size: 24px;
       }
     }
@@ -277,7 +386,7 @@ $mobile: 340px;
       cursor: pointer;
       transition: .3s;
       outline: none;
-        &__hover{
+        &:hover{
           transition: .3s;
         }
     }
@@ -393,9 +502,6 @@ $mobile: 340px;
   column-gap: 60px;
     @media screen and (max-width: $desktop) {
     @include container;
-  //display: grid;
-  //justify-content: center;
-  //align-items: start;
     padding-bottom: 100px;
     grid-template-columns: 267px 267px 267px;
     grid-template-rows: 0.1fr 0.1fr 1fr;
@@ -409,7 +515,9 @@ $mobile: 340px;
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container;
-      
+      grid-template-columns: 90px 90px 90px;
+      grid-template-rows: 0.1fr 0.1fr 1fr;
+      column-gap: 5px;
     }
 }
 //Заголовок "Этапы имплантации"
@@ -455,7 +563,8 @@ $mobile: 340px;
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container();
-      
+      font-size: 16px;
+      margin-bottom: 10px;
     }
     
 }
@@ -479,7 +588,7 @@ $mobile: 340px;
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container;
-      
+      border-radius: 10px;
     }
     //Заголовок в колонке
     &__description{
@@ -512,7 +621,11 @@ $mobile: 340px;
       }
       @media screen and (max-width: $mobile) {
         @include mobile-container;
-        
+        height: 20px;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: left;
+        margin-top: 10px;
       }
     }
     //Контейнер для картинки
@@ -541,7 +654,10 @@ $mobile: 340px;
         }
         @media screen and (max-width: $mobile) {
           @include mobile-container;
-          
+          margin-top: 8px;
+          width: 78px;
+          height: 70px;
+          border-radius: 5px;
         } 
   }
   //Линия-разделитель
@@ -566,7 +682,8 @@ $mobile: 340px;
         }
         @media screen and (max-width: $mobile) {
           @include mobile-container();
-        
+          margin-top: 8px;
+          width: 76px; 
         }
   }
   //Описание этапа
@@ -596,8 +713,10 @@ $mobile: 340px;
       margin: 10px 0;
     }
     @media screen and (max-width: $mobile) {
-      @include mobile-container();
-      
+      @include mobile-container;
+      font-size: 6px;
+      line-height: 7.7px;
+      margin: 8px 0;
     }
     }
     .stage-image{
@@ -609,6 +728,10 @@ $mobile: 340px;
       }
       @media screen and (max-width: $tablet) { 
         @include tablet-container;
+        max-width: 50%;
+      }
+      @media screen and (max-width: $mobile) { 
+        @include mobile-container;
         max-width: 50%;
       }
 }

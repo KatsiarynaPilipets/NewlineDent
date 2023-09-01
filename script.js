@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
    
   });
-
+//Валидация формы
 const contactForm = document.querySelector('.contact-form');
 const tel = document.getElementById("phone");
 const telError = document.querySelector("span.error");
@@ -41,13 +41,14 @@ tel.addEventListener("input", function (event) {
   }
 });
 
+//Вызов ошибки
 contactForm.addEventListener("submit", function (event) {
   if (!tel.validity.valid) {
     showError();
     event.preventDefault();
   }
 });
-
+//Проверка на возможные ошибки
 function showError() {
   if (tel.validity.valueMissing) {
     telError.textContent = "Пожалуйста, заполните поле!";
