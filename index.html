@@ -12,23 +12,23 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav class="header">
-                <a href="#" class="logo">NEWLINEDENT</a>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">Стоимость</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">До и После</a></li>
-                        <li><a href="#">Этапы лечения</a></li>
-                        <li><a href="#">Как добраться</a></li>
-                    </ul>
-                </nav>
-                <button class="blue-button" id="callButton">
-                    <span class="blue-button-text">8-812-622-62-42</span>
-                </button>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="header">
+          <a href="#" class="logo">NEWLINEDENT</a>
+          <nav class="menu">
+            <ul>
+              <li><a href="#">Стоимость</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">До и После</a></li>
+              <li><a href="#">Этапы лечения</a></li>
+              <li><a href="#">Как добраться</a></li>
+            </ul>
+          </nav>
+          <button class="blue-button" id="callButton">
+            <span class="blue-button-text">8-812-622-62-42</span>
+          </button>
+        </nav>
+      </div>
     </header>
     <main>
         <!--1. верхняя секция с мужчиной - Динара -->
@@ -148,19 +148,23 @@
                         </div>
                     </div>
 
-                    <div class="conditions__item">
-                        <img src="/assets/img/conditions_img4.png" alt="conditions_img1" class="conditions__img" />
-                        <div class="conditions__text">
-                            <h3>Пародонтоз</h3>
-                            <p>
-                                Прогрессирующая болезнь десен. Ваши зубы шатаются и выпадают
-                                (пародонтоз, пародонтит).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+            <div class="conditions__item">
+              <img
+                src="/assets/img/conditions_img4.png"
+                alt="conditions_img1"
+                class="conditions__img"
+              />
+              <div class="conditions__text">
+                <h3>Пародонтоз</h3>
+                <p>
+                  Прогрессирующая болезнь десен. Ваши зубы шатаются и выпадают
+                  (пародонтоз, пародонтит).
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
         <!-- Katya  -->
         <section>
             <div class="about-technology">
@@ -342,39 +346,129 @@
                         Записаться на консультацию
                     </button>
                 </div>
-
-        <!-- 6. -->
-        <section>
-            <div class="container">
-                <h2>Отзывы наших пациентов</h2>
+      <!-- Отзывы наших пациентов -->
+      <section id="reviews" class="container">
+        <h2 class="reviews__header2">Отзывы наших пациентов</h2>
+        <div class="carousel">
+          <div class="carousel-container">
+            <div class="carousel-item">
+              <img
+                src="/assets/images/maksim-review.png"
+                alt="review video 1"
+                id="open-button-1"
+                class="carousel-item__img"
+              />
+              <div class="carousel-item__name">
+                <h3>Максим Бердников</h3>
+                <button>
+                  <img
+                    src="/assets/images/review-play-button.png"
+                    alt="play button"
+                  />
+                </button>
+              </div>
             </div>
-        </section>
-        <!--7. Аня -->
-        <section>
-            <div class="container">
-                <h2>
-                    Фото до и после пациентов сделавших All-on-4
-                </h2>
+            <div class="carousel-item">
+              <img
+                src="/assets/images/vera-review.png"
+                alt="review video 2"
+                id="open-button-2"
+                class="carousel-item__img"
+              />
+              <div class="carousel-item__name">
+                <h3>Вера Павловна</h3>
+                <button>
+                  <img
+                    src="/assets/images/review-play-button.png"
+                    alt="play button"
+                  />
+                </button>
+              </div>
             </div>
-        </section>
-        <!--8. Аня  -->
-        <section>
-            <div class="container">
-                <p>Запишись на консультацию с бесплатной компьютерной томографией</p>
+            <div class="carousel-item">
+              <img
+                src="/assets/images/vladimir-review.png"
+                alt="review video 3"
+                id="open-button-3"
+                class="carousel-item__img"
+              />
+              <div class="carousel-item__name">
+                <h3>Владимир Николаевич</h3>
+                <button>
+                  <img
+                    src="/assets/images/review-play-button.png"
+                    alt="play button"
+                  />
+                </button>
+              </div>
             </div>
-        </section>
-        <!--9. Настя -->
-        <section>
-            <div class="container">
-                <h2>Наши врачи</h2>
+            <div class="carousel-item">
+              <img
+                src="/assets/images/dmitriy-review.png"
+                alt="review video 4"
+                id="open-button-4"
+                class="carousel-item__img"
+              />
+              <div class="carousel-item__name">
+                <h3>Дмитрий Дмитриев</h3>
+                <button>
+                  <img
+                    src="/assets/images/review-play-button.png"
+                    alt="play button"
+                  />
+                </button>
+              </div>
             </div>
-        </section>
-        <!--10. Настя -->
-        <section>
-            <div class="container">
-                <h2>Этапы имплантации:</h2>
-            </div>
-        </section>
+          </div>
+          <div class="carousel-dots">
+            <button class="carousel-arrow prev">
+              <img src="/assets/images/arrow-prev.png" alt="prev arrow" />
+            </button>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <button class="carousel-arrow next">
+              <img src="/assets/images/arrow-next.png" alt="next arrow" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--7. Аня -->
+      <section class="before_after">
+        <div class="container">
+          <h2>Фото до и после пациентов сделавших All-on-4</h2>
+        </div>
+      </section>
+      <!--8. Аня  -->
+      <section class="turquoise">
+        <div class="container">
+          <p>Запишись на консультацию с бесплатной компьютерной томографией</p>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2>Фото до и после пациентов сделавших All-on-4</h2>
+        </div>
+      </section>
+      <!--8. Аня  -->
+      <section>
+        <div class="container">
+          <p>Запишись на консультацию с бесплатной компьютерной томографией</p>
+        </div>
+      </section>
+      <!--9. Настя -->
+      <section>
+        <div class="container">
+          <h2>Наши врачи</h2>
+        </div>
+      </section>
+      <!--10. Настя -->
+      <section>
+        <div class="container">
+          <h2>Этапы имплантации:</h2>
+        </div>
+      </section>
         <!--11. Рушана  -->
         <section class="advantages">
             <div class="container_advantages">
@@ -471,15 +565,14 @@
                     </ul>
                 </div>
         </section>
-
-        <!--12. Лена -->
-        <section>
-            <div class="container">
-                <h2>Клиника в Санкт-Петербурге
-                    рядом с метро</h2>
-                *не забудь тег<address></address>
-            </div>
-        </section>
+      <!--12. Лена -->
+      <section>
+        <div class="container">
+          <h2>Клиника в Санкт-Петербурге рядом с метро</h2>
+          *не забудь тег
+          <address></address>
+        </div>
+      </section>
     </main>
     <!-- Футер -->
     <footer>
