@@ -1437,15 +1437,14 @@ ul {
   .wheel-container {
     max-width: 328.39px;
     margin: 0 auto;
-    top: -43vh;
+    top: -40vh;
     left: 38vw;
   }
 }
 
 .wheel {
-  width: 760px;
-  height: 760px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 760px;
   height: auto;
   transition: transform 2s linear;
   animation-name: rotate-2;
@@ -1458,20 +1457,12 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .wheel {
-    width: 70%;
-    height: 70%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 870px) {
   .wheel {
-    width: 60%;
-    height: 60%;
-  }
-}
-@media screen and (max-width: 340px) {
-  .wheel {
-    width: 60%;
-    height: 60%;
+    width: 50%;
   }
 }
 
@@ -1529,35 +1520,30 @@ ul {
 
 .arrow {
   position: absolute;
-  width: 177.7px;
-  height: 190px;
-  max-width: 100%;
+  max-width: 177.7px;
+  width: 50%;
   height: auto;
   top: 30.5vh;
   left: 15.5vw;
 }
 @media screen and (max-width: 1630px) {
   .arrow {
-    width: 18%;
-    height: 25%;
-    top: 34vh;
-    left: 15.2vw;
+    width: 40%;
+    top: 31vh;
+    left: 14.3vw;
   }
 }
 @media screen and (max-width: 870px) {
   .arrow {
-    width: 30%;
-    height: 30%;
-    top: 12vh;
-    left: 16vw;
+    width: 20%;
+    top: 8.5vh;
+    left: 12.5vw;
   }
 }
 @media screen and (max-width: 340px) {
   .arrow {
-    width: 20%;
-    height: 30%;
-    top: 19.5vh;
-    left: 18vw;
+    top: 13.5vh;
+    left: 14vw;
   }
 }
 

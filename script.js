@@ -42,9 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
       overlay.style.display = 'block';
     };
 
-    // Показывать баннер и затемнение каждые 5 секунд
-    setInterval(showBanner, 5000);
-
     // Закрывать баннер и затемнение при клике вне баннера
     overlay.addEventListener('click', function() {
       banner.style.display = 'none';
@@ -133,4 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
         return "Нет таких значений";
     }
   }
+
+  window.addEventListener('beforeunload', function () {
+    showBanner ();
+  });
 });
