@@ -1215,31 +1215,33 @@ line-height: 18px;
 
 .wheel-container {
   position: relative;
-  top: -670px;
-  left: 1078px;
+  top: -77vh;
+  left: 53vw;
 
   @media screen and (max-width: $desktop) {
     @include container;
-    top: -515px;
-    left: 320px;
+    top: -72vh;
+    left: 25vw;
     }
     
   @media screen and (max-width: $tablet) {
     @include tablet-container;
-    top: -230px;
-    left: 140px;
+    top: -20vh;
+    left: 35vw;
   }
 
   @media screen and (max-width: $mobile) {
     @include mobile-container;
-    top: -150px;
-    left: 60px;
+    top: -43vh;
+    left: 38vw;
   }
 }
 
 .wheel {
-  width: 650px;
-  height: 650px;
+  width: 760px;
+  height: 760px;
+  max-width: 100%;
+  height: auto;
   transition: transform 2s linear;
   animation-name: rotate-2;
   animation-duration: 3s;
@@ -1250,18 +1252,17 @@ line-height: 18px;
   animation-fill-mode: forwards;
 
   @media screen and (max-width: $desktop) {
-    width: 570px;
-    height: 570px;
-    }
+    width: 70%;
+    height: 70%;
+  }
 
   @media screen and (max-width: $tablet) {
-    width: 370px;
-    height: 370px;
-    }
-
+    width: 60%;
+    height: 60%;
+  }
   @media screen and (max-width: $mobile) {
-    width: 190px;
-    height: 190px;
+    width: 60%;
+    height: 60%;
     }
 }
 
@@ -1325,29 +1326,31 @@ transform: rotate(360deg);
 
 .arrow {
 position: absolute;
-  width: 180px;
-  height: 180px;
-  top: 230px;
-  left: 237px;
+  width: 177.7px;
+  height: 190px;
+  max-width: 100%;
+  height: auto;
+  top: 30.5vh;
+  left: 15.5vw;
 
   @media screen and (max-width: $desktop) {
-    width: 165px;
-    height: 165px;
-    top: 200px;
-    left: 204px;
+    width: 18%;
+    height: 25%;
+    top: 34vh;
+    left: 15.2vw;
     }
 
   @media screen and (max-width: $tablet) {
-    width: 100px;
-    height: 100px;
-    top: 132px;
-    left: 135px;
+    width: 30%;
+    height: 30%;
+    top: 12vh;
+    left: 16vw;
     }
 
   @media screen and (max-width: $mobile) {
-    width: 80px;
-    height: 80px;
-    top: 57px;
-    left: 56px;
+    width: 20%;
+    height: 30%;
+    top: 19.5vh;
+    left: 18vw;
     }
 }
