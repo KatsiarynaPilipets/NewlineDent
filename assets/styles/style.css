@@ -67,14 +67,9 @@ ul {
   max-width: 1622px;
   margin: 0 auto;
 }
-
-.container {
-  max-width: 1622px;
-  margin: 0 auto;
-}
 @media screen and (max-width: 1630px) {
   .container {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
   }
 }
@@ -937,24 +932,24 @@ ul {
   }
 }
 
-.aboutt-technology {
+.about-technology {
   max-width: 1622px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1630px) {
-  .aboutt-technology {
-    max-width: 1200px;
+  .about-technology {
+    max-width: 859.68px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 870px) {
-  .aboutt-technology {
+  .about-technology {
     max-width: 328.39px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 340px) {
-  .aboutt-technology {
+  .about-technology {
     max-width: 240px;
     margin: 0 auto;
   }
@@ -963,7 +958,12 @@ ul {
 .about {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 175px;
+}
+@media screen and (max-width: 1630px) {
+  .about {
+    margin-bottom: 25px;
+  }
 }
 @media screen and (max-width: 870px) {
   .about {
@@ -973,6 +973,7 @@ ul {
 @media screen and (max-width: 340px) {
   .about {
     flex-direction: column;
+    margin-bottom: 5px;
   }
 }
 
@@ -1140,7 +1141,7 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .container__sign_up {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     height: 211px;
     background-image: url(/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
@@ -1161,7 +1162,7 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .blue_gradient {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     background: linear-gradient(125deg, #4fa7fb 79%, transparent 50%);
     margin: 0;
@@ -1192,7 +1193,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up_arrow {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     margin: 10px;
   }
@@ -1215,7 +1216,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up_img {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     height: 313.97px;
   }
@@ -1235,7 +1236,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up__title {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     width: 533.91px;
     margin-top: 21.25px;
@@ -1260,7 +1261,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up__title, .sign_up_price > p {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     font-size: 26.56px;
   }
@@ -1277,7 +1278,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up_price > p {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     line-height: 32.88px;
     margin: 0;
@@ -1298,7 +1299,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .sign_up_price {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     margin: 10px 0;
   }
@@ -1320,7 +1321,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .inner_container_sign-up {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     margin: 20px 40px;
     height: 317px;
@@ -1365,7 +1366,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .btn_sign {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     border-radius: 6px;
     border-width: 0;
@@ -1576,7 +1577,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .container_work_cost {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     width: 100vw;
   }
@@ -1594,7 +1595,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .title_work_cost {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     font-size: 63px;
   }
@@ -1652,7 +1653,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .container_work_cost-items {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     border-radius: 31px;
     height: 448px;
@@ -1679,7 +1680,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .work_cost-items-title {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     font-size: 17px;
     padding: 18px 24px 15px 24px;
@@ -1702,7 +1703,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .work_cost-items-title_line {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     height: 2px;
     margin-left: 24px;
@@ -1725,7 +1726,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .work_cost-items-title-2 {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     font-size: 13px;
     margin: 14px 0px 0px 24px;
@@ -1749,7 +1750,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .work_cost-list {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     width: 160px;
     font-size: 10px;
@@ -1771,7 +1772,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .work_cost-list-elem {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     margin-top: 13px;
   }
@@ -1800,7 +1801,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .work_cost-btn-1 {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     width: 142px;
     height: 42px;
@@ -1839,7 +1840,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .work_cost-btn-2 {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     width: 216px;
     height: 32px;
@@ -1869,7 +1870,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .container_advantages {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     width: 100vw;
   }
@@ -1894,7 +1895,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .title_advantages {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     font-size: 63px;
     margin-bottom: 15px;
@@ -1931,7 +1932,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .container_advantages-items {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     border-radius: 31px;
     height: 448px;
@@ -1959,7 +1960,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .advantages-items-title {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     font-size: 17px;
     padding: 18px 24px 15px 24px;
@@ -1982,7 +1983,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .advantages-items-title_line {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     height: 2px;
     margin-left: 24px;
@@ -2006,7 +2007,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .advantages-list {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     width: 160px;
     font-size: 10px;
@@ -2028,7 +2029,7 @@ del {
 }
 @media screen and (max-width: 870px) {
   .advantages-list-elem {
-    max-width: 1200px;
+    max-width: 859.68px;
     margin: 0 auto;
     margin-top: 13px;
   }

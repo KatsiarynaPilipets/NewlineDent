@@ -73,7 +73,7 @@ $mobile: 340px;
 }
 
 @mixin tablet-container {
-  max-width: 1200px;
+  max-width: 859.68px;
   margin: 0 auto;
 }
 
@@ -87,9 +87,7 @@ $mobile: 340px;
 $fC: "Coolvetica";
 $fG: "Gilroy";
 
-.container {
-  @include container;
-}
+// Стили для header
 
 .container {
   @include container;
@@ -900,7 +898,7 @@ $fG: "Gilroy";
 }
 
 //Стили для блока о технологиях
-.aboutt-technology {
+.about-technology {
   @include container;
 
   @media screen and (max-width: $desktop) {
@@ -920,7 +918,11 @@ $fG: "Gilroy";
 .about {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 175px;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 25px;
+  }
 
   @media screen and (max-width: $tablet) {
     margin-bottom: 10px;
@@ -928,6 +930,7 @@ $fG: "Gilroy";
 
   @media screen and (max-width: $mobile) {
     flex-direction: column;
+    margin-bottom: 5px;
   }
 }
 
@@ -1069,7 +1072,6 @@ $fG: "Gilroy";
   }
 }
 
-// БЛОК ЗАПИШИСЬ НА КОНСУЛЬТАЦИЮ
 // БЛОК ЗАПИШИСЬ НА КОНСУЛЬТАЦИЮ
 .container__sign_up {
   display: flex;
