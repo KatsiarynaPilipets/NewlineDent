@@ -1077,16 +1077,16 @@ $fG: "Gilroy";
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(/assets/img/sign_up_free/sign_up_block.jpg);
+  background-image: url(/NewlineDent/assets/img/sign_up_free/sign_up_block.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-x: 120%;
-  background-size: 52% 100%;
+  background-size: 54% 100%;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 211px;
-    background-image: url(/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-image: url(/NewlineDent/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-position-x: 115%;
     background-size: 55% 100%;
   }
@@ -1099,7 +1099,7 @@ $fG: "Gilroy";
 
 // диагональный синий блок: размеры, угол наклона
 .blue_gradient {
-  background: linear-gradient(125deg, $blue 77%, transparent 50%);
+  background: linear-gradient(125deg, $blue 80%, transparent 50%);
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
@@ -1175,7 +1175,7 @@ del {
   // стили блока заголовка
   &__title {
     width: 1005px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
     line-height: 60.45px;
 
@@ -1252,7 +1252,7 @@ del {
 .inner_container_sign-up {
   display: flex;
   flex-direction: column;
-  margin: 10px 150px;
+  margin: 10px 100px;
   height: 317px;
   gap: 5px;
 
@@ -2166,19 +2166,23 @@ del {
 $pinkShadow: #FFC8D6;
 $innerShadow: #C88D9C;
 
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-}
+// .container {
+//   max-width: 1920px;
+//   margin: 0 auto;
+// }
 
 // ДО/ПОСЛЕ СО СЛАЙДЕРОМ
 // стили блока, заливка фона
-.container__before_after {
 
+.before_after {
+  background-color: $lightblue;
+}
+
+.container__before_after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $lightblue;
+
   margin: 0 auto;
   height: 1332px;
 
@@ -2251,7 +2255,7 @@ $innerShadow: #C88D9C;
 .slider {
   width: 435px;
   height: 580px;
-  margin: 0 80px;
+  margin: 0 50px;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
@@ -2414,13 +2418,14 @@ $innerShadow: #C88D9C;
   background: url(/NewlineDent/assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   // overflow: hidden;
   height: 814px;
-  background-position-x: 103%;
+  background-position-x: 106%;
+  background-size: 60% 100%;
 
   // блок на синем фоне: белый текст и кнопка
   &_inner {
     display: flex;
     flex-direction: column;
-    margin-left: 150px;
+    margin-left: 100px;
     width: 838px;
   }
 
@@ -2456,7 +2461,7 @@ $innerShadow: #C88D9C;
 // диагональный синий блок: размеры, угол наклона
 .turquoise_gradient {
   width: 1150px;
-  background: linear-gradient(102deg, $blue 85%, transparent 50%);
+  background: linear-gradient(102deg, $blue 76%, transparent 50%);
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;

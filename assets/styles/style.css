@@ -1278,7 +1278,7 @@ ul {
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-x: 120%;
-  background-size: 52% 100%;
+  background-size: 54% 100%;
 }
 
 @media screen and (max-width: 1630px) {
@@ -1301,7 +1301,7 @@ ul {
 }
 
 .blue_gradient {
-  background: linear-gradient(125deg, #4fa7fb 77%, transparent 50%);
+  background: linear-gradient(125deg, #4fa7fb 80%, transparent 50%);
 }
 
 @media screen and (max-width: 1630px) {
@@ -1384,7 +1384,7 @@ del {
 
 .sign_up__title {
   width: 1005px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 20px;
   line-height: 60.45px;
 }
@@ -1485,7 +1485,7 @@ del {
 .inner_container_sign-up {
   display: flex;
   flex-direction: column;
-  margin: 10px 150px;
+  margin: 10px 100px;
   height: 317px;
   gap: 5px;
 }
@@ -2521,12 +2521,15 @@ del {
   }
 }
 
+.before_after {
+  background-color: #CBE5FF;
+}
 
 .container__before_after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #CBE5FF;
+
   margin: 0 auto;
   height: 1332px;
 }
@@ -2608,7 +2611,7 @@ del {
 .slider {
   width: 435px;
   height: 580px;
-  margin: 0 80px;
+  margin: 0 50px;
 }
 
 @media screen and (max-width: 1630px) {
@@ -2785,13 +2788,14 @@ del {
   flex-direction: row;
   background: url(/NewlineDent/assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   height: 814px;
-  background-position-x: 103%;
+  background-position-x: 106%;
+  background-size: 60% 100%;
 }
 
 .container__turquoise_inner {
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
+  margin-left: 100px;
   width: 838px;
 }
 
@@ -2829,7 +2833,7 @@ del {
 
 .turquoise_gradient {
   width: 1150px;
-  background: linear-gradient(102deg, #4FA7FB 85%, transparent 50%);
+  background: linear-gradient(102deg, #4FA7FB 76%, transparent 50%);
 }
 
 @media screen and (max-width: 1630px) {

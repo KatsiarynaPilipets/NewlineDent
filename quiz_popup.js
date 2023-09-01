@@ -133,10 +133,9 @@ let sendFormButton = document.querySelector('.btn_next_submit');
 sendFormButton.addEventListener('click', async function sendFormData() {
     let response = await fetch('mail.php', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json;charset=utf-8'
-        },
-        body: JSON.stringify(formData)
+        contentType: false,
+        processData: false,
+        body: formData,
     });
 
     let result = await response.json();
