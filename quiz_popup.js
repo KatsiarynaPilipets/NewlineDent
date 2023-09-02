@@ -168,6 +168,8 @@ quizForm.addEventListener('change', (e) => {
 
 
 function checkName() {
+    let userName = quizName.value;
+
     if (!quizName.validity.valid) {
         quizNameError.innerText = "Пожалуйста, заполните имя!";
     }
@@ -176,12 +178,16 @@ function checkName() {
     }
     else if (quizName.validity.valid) {
         quizNameError.innerText = "";
+
+        console.log(userName);
+        formData.append("userName", userName);
     }
 
     quizNameError.className = "error_mess active";
 }
 
 function checkquizTel() {
+    let userPhone = quizTel.value;
     if (!quizTel.validity.valid) {
         quizTelError.innerText = "Пожалуйста, заполните телефон!";
     }
@@ -193,12 +199,16 @@ function checkquizTel() {
     }
     else if (quizTel.validity.valid) {
         quizTelError.innerText = "";
+
+        console.log(userPhone);
+        formData.append("userPhone", userPhone);
     }
 
     quizTelError.className = "error_mess active";
 }
 
 function checkquizEmail() {
+    let userEmail = quizEmail.value;
     if (!quizEmail.validity.valid) {
         quizEmailError.innerText = "Пожалуйста, заполните email!";
     }
@@ -207,6 +217,9 @@ function checkquizEmail() {
     }
     else if (quizEmail.validity.valid) {
         quizEmailError.innerText = "";
+
+        console.log(userEmail);
+        formData.append("userEmail", userEmail);
     }
 
     quizEmailError.className = "error_mess active";
