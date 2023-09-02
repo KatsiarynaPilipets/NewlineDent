@@ -54,7 +54,7 @@
         <!--7. Аня -->
         <section class="before_after">
             <div class="container container__before_after">
-                <h2 class="title before_after__title">Фото до и после пациентов сделавших <span
+                <h2 class="before_after__title">Фото до и после пациентов сделавших <span
                         class="pink_text">All-on-4</span></h2>
                 <div class="before_after__slider">
                     <div class="slider slider_1">
@@ -107,7 +107,7 @@
                 </div>
         </section>
         <!-- Quiz popup -->
-        <form class="container container__quiz" id="quiz" action="nyutka_slutskaya@mail.ru">
+        <form class="container container__quiz" id="quiz" enctype="multipart/form-data" novalidate>
             <!-- 1 СТРАНИЦА -->
             <div class="quiz quiz1">
                 <h3 class="quiz__title">
@@ -130,17 +130,17 @@
                     <div class="quiz_blocks quiz_blocks_radio1">
                         <div class="quiz_elem_1 elem_light-blue">
                             <img src="./assets/img/quiz_popup/jaw_lower.png" class="jaw" alt="lower_jaw">
-                            <input type="radio" name="radio" class="radio" id="1page_1" value="Нижняя" />
+                            <input type="radio" name="question1" class="radio" id="1page_1" value="Нижняя" />
                             <label for="1page_1" class="jaw_label">Нижняя</label>
                         </div>
                         <div class="quiz_elem_1 elem_light-blue">
                             <img src="./assets/img/quiz_popup/jaw_upper.png" class="jaw" alt="upper_jaw">
-                            <input type="radio" name="radio" class="radio" id="1page_2" value="Верхняя">
+                            <input type="radio" name="question1" class="radio" id="1page_2" value="Верхняя">
                             <label for="1page_2" class="jaw_label">Верхняя</label>
                         </div>
                         <div class="quiz_elem_1 elem_light-blue">
                             <img src="./assets/img/quiz_popup//jaw_whole.png" class="jaw" alt="whole_jaw">
-                            <input type="radio" name="radio" class="radio" id="1page_3" value="Обе">
+                            <input type="radio" name="question1" class="radio" id="1page_3" value="Обе">
                             <label for="1page_3" class="jaw_label">Обе</label>
                         </div>
                     </div>
@@ -168,15 +168,16 @@
                 <div class="quiz_question quiz_question2">
                     <div class="quiz_blocks quiz_blocks_radio2">
                         <div class="quiz_elem_2 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="1page_2" value="Зубов нет" />
+                            <input type="radio" name="question2" class="radio" id="1page_2" value="Зубов нет" />
                             <label for="1page_2" class="quiz_radio_label">Зубов нет</label>
                         </div>
                         <div class="quiz_elem_2 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="2page_2" value="Нужно удалять">
+                            <input type="radio" name="question2" class="radio" id="2page_2" value="Нужно удалять">
                             <label for="2page_2" class="quiz_radio_label">Нужно удалять</label>
                         </div>
                         <div class="quiz_elem_2 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="3page_2" value="Затрудняюсь ответить">
+                            <input type="radio" name="question2" class="radio" id="3page_2"
+                                value="Затрудняюсь ответить">
                             <label for="3page_2" class="quiz_radio_label">Затрудняюсь <br>ответить</label>
                         </div>
                     </div>
@@ -207,25 +208,25 @@
                 <div class="quiz_question quiz_question3">
                     <div class="quiz_blocks quiz_blocks_radio3">
                         <div class="quiz_elem_3 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="1page_3" value="Есть компьтерная
+                            <input type="radio" name="question3" class="radio" id="1page_3" value="Есть компьтерная
                             томография" />
                             <label for="1page_3" class="quiz_radio_label">Есть компьтерная
                                 томография</label>
                         </div>
                         <div class="quiz_elem_3 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="2page_3" value="Есть
+                            <input type="radio" name="question3" class="radio" id="2page_3" value="Есть
                             Телерентгенограмма">
                             <label for="2page_3" class="quiz_radio_label">Есть
                                 Телерентгенограмма</label>
                         </div>
                         <div class="quiz_elem_3 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="3page_3" value="Есть панорамный
+                            <input type="radio" name="question3" class="radio" id="3page_3" value="Есть панорамный
                             снимок">
                             <label for="3page_3" class="quiz_radio_label">Есть панорамный
                                 снимок</label>
                         </div>
                         <div class="quiz_elem_3 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="4page_3"
+                            <input type="radio" name="question3" class="radio" id="4page_3"
                                 value="Нет снимка (Сделать в клинике)">
                             <label for="4page_3" class="quiz_radio_label">Нет снимка <br>
                                 (Сделать в клинике)</label>
@@ -258,22 +259,22 @@
                 <div class="quiz_question quiz_question4">
                     <div class="quiz_blocks quiz_blocks_radio4">
                         <div class="quiz_elem_4 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="1page_4" value="Ленмирион" />
+                            <input type="radio" name="question4" class="radio" id="1page_4" value="Ленмирион" />
                             <label for="1page_4" class="quiz_radio_label">Ленмирион<br>
                                 (Эконом)</label>
                         </div>
                         <div class="quiz_elem_4 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="2page_4" value="Дентиум">
+                            <input type="radio" name="question4" class="radio" id="2page_4" value="Дентиум">
                             <label for="2page_4" class="quiz_radio_label">Дентиум <br>
                                 (Комфорт)</label>
                         </div>
                         <div class="quiz_elem_4 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="3page_4" value="Нобель">
+                            <input type="radio" name="question4" class="radio" id="3page_4" value="Нобель">
                             <label for="3page_4" class="quiz_radio_label">Нобель <br>
                                 (Премиум)</label>
                         </div>
                         <div class="quiz_elem_4 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="4page_4" value="Нужна консультация">
+                            <input type="radio" name="question4" class="radio" id="4page_4" value="Нужна консультация">
                             <label for="4page_4" class="quiz_radio_label">Нужна консультация</label>
                         </div>
                     </div>
@@ -304,16 +305,17 @@
                 <div class="quiz_question quiz_question5">
                     <div class="quiz_blocks quiz_blocks_radio5">
                         <div class="quiz_elem_5 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="1page_5" value="В ближайшие 2 недели" />
+                            <input type="radio" name="question5" class="radio" id="1page_5"
+                                value="В ближайшие 2 недели" />
                             <label for="1page_5" class="quiz_radio_label">В ближайшие <br>
                                 2 недели</label>
                         </div>
                         <div class="quiz_elem_5 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="2page_5" value="В ближайший месяц">
+                            <input type="radio" name="question5" class="radio" id="2page_5" value="В ближайший месяц">
                             <label for="2page_5" class="quiz_radio_label">В ближайший месяц</label>
                         </div>
                         <div class="quiz_elem_5 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="3page_5" value="В ближайшие 3-5
+                            <input type="radio" name="question5" class="radio" id="3page_5" value="В ближайшие 3-5
                             месяцев">
                             <label for="3page_5" class="quiz_radio_label">В ближайшие 3 - 5
                                 месяцев</label>
@@ -346,17 +348,17 @@
                 <div class="quiz_question quiz_question6">
                     <div class="quiz_blocks quiz_blocks_radio6">
                         <div class="quiz_elem_6 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="1page_6" value="Рассрочка без
+                            <input type="radio" name="question6" class="radio" id="1page_6" value="Рассрочка без
                             процентов" />
                             <label for="1page_6" class="quiz_radio_label">Рассрочка без
                                 процентов</label>
                         </div>
                         <div class="quiz_elem_6 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="2page_6" value="Налоговый вычет 13%">
+                            <input type="radio" name="question6" class="radio" id="2page_6" value="Налоговый вычет 13%">
                             <label for="2page_6" class="quiz_radio_label">Налоговый вычет 13%</label>
                         </div>
                         <div class="quiz_elem_6 elem_light-blue">
-                            <input type="radio" name="radio" class="radio" id="3page_6" value="Спасибо, ничего
+                            <input type="radio" name="question6" class="radio" id="3page_6" value="Спасибо, ничего
                             не нужно">
                             <label for="3page_6" class="quiz_radio_label">Спасибо, ничего
                                 не нужно</label>
@@ -365,7 +367,36 @@
                 </div>
                 <div class="quiz_btn">
                     <button class="btn_gray btn_gray_back">Назад</button>
-                    <button class="btn_gray btn_gray_next btn_next_submit">Далее</button>
+                    <button class="btn_gray btn_gray_next">Далее</button>
+                </div>
+            </div>
+            <!-- 7 СТРАНИЦА -->
+            <div class="quiz quiz7">
+                <h3 class="quiz__title">
+                    Оставьте ваши данные мы вам перезвоним:
+                </h3>
+                <div class="quiz_question quiz_question7 quiz_userdata_div">
+                    <div class="quiz_userdata_name">
+                        <input type="text" id="quiz_name" class="quiz_userdata" name="user_name_quiz"
+                            placeholder="Ваше имя" minlength="2" required />
+                        <span class="error_mess error_user_name"></span>
+                    </div>
+                    <div class="quiz_userdata_tel">
+                        <input type="tel" id="quiz_tel" class="quiz_userdata" name="phone_quiz"
+                            pattern="\+?[0-9\s\-\(\)]+" minlength="10" maxlength="15" placeholder="Телефон в формате +7"
+                            required />
+                        <span class="error_mess error_tel"></span>
+                    </div>
+                    <div class="quiz_userdata_email">
+                        <input type="text" id="quiz_email" class="quiz_userdata" name="email_quiz"
+                            pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" placeholder="Ваш email" required />
+                        <span class="error_mess error_email"></span>
+                    </div>
+
+                </div>
+                <div class="quiz_btn">
+                    <button class="btn_gray btn_gray_back">Назад</button>
+                    <button type="submit" class="btn_gray btn_next_submit">Отправить</button>
                 </div>
             </div>
         </form>
