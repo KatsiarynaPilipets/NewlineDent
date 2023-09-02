@@ -170,7 +170,7 @@ quizForm.addEventListener('change', (e) => {
 function checkName() {
     let userName = quizName.value;
 
-    if (!quizName.validity.valid) {
+    if (quizName.validity.valueMissing) {
         quizNameError.innerText = "Пожалуйста, заполните имя!";
     }
     else if (quizName.validity.tooShort) {
@@ -188,13 +188,13 @@ function checkName() {
 
 function checkquizTel() {
     let userPhone = quizTel.value;
-    if (!quizTel.validity.valid) {
+    if (quizTel.validity.valueMissing) {
         quizTelError.innerText = "Пожалуйста, заполните телефон!";
     }
     else if (quizTel.validity.tooShort) {
         quizTelError.innerText = "Вы ввели номер не полностью.";
     }
-    else if (quizTel.validity.patternMismatch) {
+    else if (quizTel.validity.pattern) {
         quizTelError.innerText = "Введите номер в формате + 7";
     }
     else if (quizTel.validity.valid) {
@@ -209,10 +209,10 @@ function checkquizTel() {
 
 function checkquizEmail() {
     let userEmail = quizEmail.value;
-    if (!quizEmail.validity.valid) {
+    if (quizEmail.validity.valueMissing) {
         quizEmailError.innerText = "Пожалуйста, заполните email!";
     }
-    else if (quizEmail.validity.patternMismatch) {
+    else if (quizEmail.validity.typeMismatch) {
         quizEmailError.innerText = "Введите email в формате: name@mail.com.";
     }
     else if (quizEmail.validity.valid) {
