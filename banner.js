@@ -1,34 +1,49 @@
 document.addEventListener('DOMContentLoaded', function() {
     const banner = document.querySelector('.banner');
     const overlay = document.querySelector('.overlay');
-    const submitBtn = document.getElementById('submitBtn');
     const closeButton = document.getElementById('close-button');
-    const bannerIframe = document.getElementById('banner-iframe');
+
+    let scrollPosition = 0;
+    let bannerVisible = false;
 
     const showBanner = function() {
+      if (!bannerVisible) {
+        scrollPosition = window.scrollY || document.documentElement.scrollTop;
       banner.style.display = 'block';
       overlay.style.display = 'block';
+      bannerVisible = true;
+      }
+    };
+
+    const closeBanner = function() {
+      if (!bannerVisible) {
+      banner.style.display = 'none';
+      overlay.style.display = 'none';
+      window.scrollTo(0, scrollPosition);
+      bannerVisible = false;
+      }
     };
 
     // Показывать баннер и затемнение каждые 5 секунд
-    setInterval(showBanner, 5000);
+    setInterval(showBanner, 1000000);
 
     // Закрывать баннер и затемнение при клике вне баннера
-    overlay.addEventListener('click', function() {
+    overlay.addEventListener('click', function(e) {
       banner.style.display = 'none';
       overlay.style.display = 'none';
     });
 
 
-    closeButton.addEventListener('click', function () {
-      banner.style.display = 'none';
-      overlay.style.display = 'none';
-  });
+    closeButton.addEventListener('click', closeBanner);
 
-  var phoneInputButton = document.querySelector('.phone-input-button');
+    bannerLink.addEventListener('click', function(e) {
+      e.preventDefault();
+    });
+
+    const phoneInputButton = document.querySelector('.phone-input-button');
     phoneInputButton.addEventListener('click', function() {
-      var phoneInput = document.querySelector('.phone-input-input');
-      var phoneNumber = phoneInput.value;
+      const phoneInput = document.querySelector('.phone-input-input');
+      const phoneNumber = phoneInput.value;
     });
 
   });
