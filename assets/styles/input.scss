@@ -18,53 +18,103 @@ $tablet: 870px;
 $mobile: 340px;
 
 //Fonts
-@font-face {
+/*@font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
+  src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+  src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
+  src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
+  src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Coolvetica", sans-serif;
-  src: url(assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+  src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(assets/fonts/Roboto_400/Roboto-Regular.ttf);
+  src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(assets/fonts/Roboto_300/Roboto-Light.ttf);
+  src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(assets/fonts/Roboto_500/Roboto-Medium.ttf);
+  src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
   font-weight: 500;
+}*/
+//Шрифты Лена
+@font-face {
+  font-family: 'Gilroy700';
+  src: local('Gilroy700'),
+    url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
 }
+
+@font-face {
+  font-family: 'Gilroy600';
+  src: local('Gilroy600'),
+    url(../fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy500';
+  src: local('Gilroy500'),
+    url(../fonts/Gilroy_500/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy400';
+  src: local('Gilroy400'),
+    url(../fonts/Gilroy_400/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: 'Coolvetica400';
+  src: local('Coolvetica400'),
+    url(../fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto400';
+  src: local('Roboto400'),
+    url(../fonts/Roboto_400/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto300';
+  src: local('Roboto300'),
+    url(../fonts/Roboto_300/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto500';
+  src: local('Roboto500'),
+    url(../fonts/Roboto_500/Roboto-Medium.ttf);
+}
+//Шрифты Настя
+
+/*$fC: "Coolvetica";
+$fG: "Gilroy";*/
 
 //mixins
 @mixin container {
@@ -83,9 +133,6 @@ $mobile: 340px;
 }
 
 @import "reset";
-
-$fC: "Coolvetica";
-$fG: "Gilroy";
 
 // Стили для header
 
@@ -128,7 +175,7 @@ $fG: "Gilroy";
 
 /* Стили для логотипа */
 .logo {
-  font-family: Gilroy;
+  font-family: "Gilroy700";
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -191,7 +238,7 @@ $fG: "Gilroy";
   & a {
     text-decoration: none;
     color: $blue;
-    font-family: Gilroy;
+    font-family: "Gilroy700";
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -247,7 +294,7 @@ $fG: "Gilroy";
 /* Стили для номера телефона */
 .blue-button-text {
   display: block;
-  font-family: Gilroy;
+  font-family: "Gilroy700";
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
@@ -271,7 +318,7 @@ $fG: "Gilroy";
 .section-with-man {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url(assets/img/main/main-man.png);
+  background-image: url(/assets/img/main/main-man.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: -25px;
@@ -281,12 +328,12 @@ $fG: "Gilroy";
   }
 
   @media screen and (max-width: $desktop) {
-    background-image: url(assets/img/main/main-man-tablet.png);
+    background-image: url(/assets/img/main/main-man-tablet.png);
     background-position-x: 50%;
   }
 
   @media screen and (max-width: $tablet) {
-    background-image: url(assets/img/main/main-man-mobile.png);
+    background-image: url(/assets/img/main/main-man-mobile.png);
     background-position-y: -20px;
   }
 
@@ -299,7 +346,7 @@ $fG: "Gilroy";
 .main-header {
   max-width: 1134px;
   padding-top: 114px;
-  font-family: Coolvetica;
+  font-family: "Coolvetica400";
   font-size: 140px;
   font-weight: 400;
   line-height: 125px;
@@ -355,7 +402,7 @@ $fG: "Gilroy";
 
 /* Стили для цены */
 .price {
-  font-family: Coolvetica;
+  font-family: "Coolvetica400";
   font-size: 100px;
   font-weight: 400;
   line-height: 89px;
@@ -460,7 +507,7 @@ $fG: "Gilroy";
     }
 
     & p {
-      font-family: Roboto;
+      font-family: 'Roboto400';
       font-size: 30px;
       font-weight: 400;
       line-height: 27px;
@@ -553,7 +600,7 @@ $fG: "Gilroy";
   }
 
   &__name {
-    font-family: Roboto;
+    font-family: 'Roboto400';
     font-size: 30px;
     font-weight: 400;
     line-height: 27px;
@@ -573,7 +620,7 @@ $fG: "Gilroy";
   }
 
   &__position {
-    font-family: Roboto;
+    font-family: 'Roboto300';
     font-size: 20px;
     font-weight: 300;
     line-height: 18px;
@@ -623,7 +670,7 @@ $fG: "Gilroy";
     }
 
     & p {
-      font-family: Roboto;
+      font-family: 'Roboto500';
       font-size: 30px;
       font-weight: 500;
       line-height: 27px;
@@ -660,7 +707,7 @@ $fG: "Gilroy";
   }
 
   & p {
-    font-family: Coolvetica;
+    font-family: 'Coolvetica400';
     font-size: 30px;
     font-weight: 400;
     line-height: 27px;
@@ -739,7 +786,7 @@ $fG: "Gilroy";
 /* Стили для заголовка h2 */
 .header2 {
   padding-top: 100px;
-  font-family: Coolvetica;
+  font-family: 'Coolvetica400';
   font-size: 100px;
   font-weight: 400;
   line-height: 89px;
@@ -848,7 +895,7 @@ $fG: "Gilroy";
     }
 
     & h3 {
-      font-family: Gilroy;
+      font-family: 'Gilroy700';
       font-size: 40px;
       font-weight: 700;
       line-height: 54px;
@@ -872,7 +919,7 @@ $fG: "Gilroy";
     }
 
     & p {
-      font-family: Gilroy;
+      font-family: 'Gilroy500';
       font-size: 30px;
       font-weight: 500;
       line-height: 40px;
@@ -941,7 +988,7 @@ $fG: "Gilroy";
   width: 596px;
   height: 114px;
   text-align: center;
-  font-family: "Coolvetica";
+  font-family: 'Coolvetica400';
   font-weight: 400;
   font-size: 80px;
   line-height: 71.2px;
@@ -1053,7 +1100,7 @@ $fG: "Gilroy";
 }
 
 .about-content {
-  font-family: Gilroy;
+  font-family: 'Gilroy500';
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
@@ -1077,7 +1124,7 @@ $fG: "Gilroy";
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(assets/img/sign_up_free/sign_up_block.jpg);
+  background-image: url(/assets/img/sign_up_free/sign_up_block.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-x: 120%;
@@ -1086,7 +1133,7 @@ $fG: "Gilroy";
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 211px;
-    background-image: url(assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-image: url(/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-position-x: 115%;
     background-size: 55% 100%;
   }
@@ -1199,7 +1246,7 @@ del {
   // стили текста заголовка и цены
   &__title,
   &_price>p {
-    font-family: $fG;
+    font-family: 'Gilroy700';
     font-size: 50px;
     color: #fff;
 
@@ -1299,7 +1346,7 @@ del {
 
   // стиль текста на бело-голубой кнопке
   &_white-blue {
-    font-family: $fG;
+    font-family: 'Gilroy700';
     font-size: 24px;
     line-height: 29.02px;
     color: $blue;
@@ -1373,7 +1420,7 @@ del {
     position: relative;
     box-shadow: 0 5px 15px black;
     text-align: center;
-    font-family: $fG;
+    font-family: 'Gilroy700';
     font-size: 36px;
     font-weight: 600;
     line-height: 42px;
@@ -1418,7 +1465,7 @@ del {
 
 //Стили для формы
 .contact-form {
-  font-family: $fG;
+  font-family: 'Gilroy700';
 
   &__tel {
     width: 55%;
@@ -1451,7 +1498,7 @@ del {
   }
 
   &__title {
-    font-family: $fC;
+    font-family: 'Coolvetica400';
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0 0 20px;
@@ -1535,7 +1582,7 @@ del {
 .title_work_cost {
   text-align: center;
   color: $blue;
-  font-family: "Coolvetica";
+  font-family:'Coolvetica400';
   font-size: 120px;
   font-style: normal;
   font-weight: 400;
@@ -1548,7 +1595,7 @@ del {
   }
 
   @media screen and (max-width: $mobile) {
-    @include mobile-container();
+    @include mobile-container;
     font-size: 24.5px;
   }
 }
@@ -1572,7 +1619,7 @@ del {
   }
 
   @media screen and (max-width: $mobile) {
-    @include mobile-container();
+    @include mobile-container;
     margin-bottom: 20px;
     height: auto;
     width: 100%;
@@ -1582,7 +1629,7 @@ del {
 
 // Контейнер для блоков с информацией
 .container_work_cost-info {
-  font-family: "Gilroy";
+  font-family: 'Gilroy700';
   display: flex;
   justify-content: space-around;
   width: 100vw;
@@ -1610,7 +1657,7 @@ del {
   }
 
   @media screen and (max-width: $mobile) {
-    @include mobile-container();
+    @include mobile-container;
     border-radius: 12px;
     height: 172px;
     width: 101px;
@@ -1725,7 +1772,7 @@ del {
   background-color: $pink;
   box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
   color: #f7f7f7;
-  font-family: Gilroy;
+  font-family: 'Gilroy700';
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
@@ -1763,7 +1810,7 @@ del {
   background-color: $pink;
   box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
   color: #f7f7f7;
-  font-family: Gilroy;
+  font-family: 'Gilroy600';
   font-size: 1.5em;
   font-weight: 600;
   line-height: normal;
@@ -1898,7 +1945,7 @@ del {
 
     & h3 {
       width: 472px;
-      font-family: Coolvetica;
+      font-family: 'Coolvetica400';
       font-size: 70px;
       font-weight: 400;
       line-height: 62px;
@@ -2022,7 +2069,7 @@ del {
 .title_advantages {
   text-align: center;
   color: $blue;
-  font-family: "Coolvetica";
+  font-family: 'Coolvetica400';
   font-size: 120px;
   font-style: normal;
   font-weight: 400;
@@ -2048,7 +2095,7 @@ del {
 
 // Контейнер для блоков с информацией
 .container_advantages-info {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   display: flex;
 
   justify-content: space-around;
@@ -2202,7 +2249,7 @@ $innerShadow: #C88D9C;
 
   // заголовок до/после
   &__title {
-    font-family: 'Coolvetica';
+    font-family: 'Coolvetica400';
     font-weight: 400;
     text-align: center;
     color: $blue;
@@ -2360,7 +2407,7 @@ $innerShadow: #C88D9C;
 
   // стили текста на кнопке
   &_pink {
-    font-family: 'Gilroy';
+    font-family: 'Gilroy700';
     font-size: 48px;
     font-weight: 700;
     line-height: 58.03px;
@@ -2415,7 +2462,7 @@ $innerShadow: #C88D9C;
 .container__turquoise {
   display: flex;
   flex-direction: row;
-  background: url(assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
+  background: url(/assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   // overflow: hidden;
   height: 814px;
   background-position-x: 106%;
@@ -2432,7 +2479,7 @@ $innerShadow: #C88D9C;
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 432px;
-    background: url(assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(/assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
 
@@ -2446,7 +2493,7 @@ $innerShadow: #C88D9C;
   @media screen and (max-width: $tablet) {
     @include mobile-container;
     height: 166.03px;
-    background: url(assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(/assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
 
@@ -2476,7 +2523,7 @@ $innerShadow: #C88D9C;
 
 // стили текста на синем фоне
 .turquoise_text {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy700';
   color: $white;
   font-weight: 700;
   font-size: 40px;
@@ -2524,7 +2571,7 @@ $innerShadow: #C88D9C;
 
   // стили текста на бело-голубой кнопке
   &_white-blue2 {
-    font-family: 'Gilroy';
+    font-family: 'Gilroy700';
     font-size: 30px;
     line-height: 36.27px;
     color: $blue;
@@ -2649,7 +2696,7 @@ $gray: #D9D9D9;
 .btn_ellipse,
 .jaw_label,
 .quiz_radio_label {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy600';
   font-weight: 600;
 }
 
@@ -2962,7 +3009,7 @@ $gray: #D9D9D9;
   border-radius: 200px;
   padding: 30px 60px;
   // стили шрифта
-  font-family: 'Gilroy';
+  font-family: 'Gilroy700';
   font-weight: 700;
   font-size: 50px;
   line-height: 61.9px;
@@ -3165,7 +3212,7 @@ $gray: #D9D9D9;
     border-width: 0;
   }
 }
-
+/*
 // Стили для блока Преимущества
 
 .container_advantages {
@@ -3187,7 +3234,7 @@ $gray: #D9D9D9;
 .title_advantages {
   text-align: center;
   color: $blue;
-  font-family: "Coolvetica";
+  font-family: 'Coolvetica400';
   font-size: 120px;
   font-style: normal;
   font-weight: 400;
@@ -3212,7 +3259,7 @@ $gray: #D9D9D9;
 
 // Контейнер для блоков с информацией
 .container_advantages-info {
-  font-family: "Gilroy";
+  font-family: 'Gilroy700';
   display: flex;
 
   justify-content: space-around;
@@ -3322,51 +3369,23 @@ $gray: #D9D9D9;
     // word-wrap: break-word;
   }
 }
-
+*/
 /*lena*/
-/*шрифты*/
-@font-face {
-  font-family: 'Gilroy700';
-  src: local('Gilroy700'),
-    url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
-}
-
-@font-face {
-  font-family: 'Gilroy600';
-  src: local('Gilroy600'),
-    url(../fonts/Gilroy_600/Gilroy-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: 'Gilroy500';
-  src: local('Gilroy500'),
-    url(../fonts/Gilroy_500/Gilroy-Medium.ttf);
-}
-
-@font-face {
-  font-family: 'Gilroy400';
-  src: local('Gilroy400'),
-    url(../fonts/Gilroy_400/Gilroy-Regular.ttf);
-}
-@font-face {
-  font-family: 'Coolvetica400';
-  src: local('Coolvetica400'),
-    url(../fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
-}
 /*Стили для блока с картой*/
+
 .wrapper-map{
   max-width: 1920px;
   width: 100%;
   display: flex;
   background-color: #CBE5FF;
   @media screen and (max-width: $desktop) {
-    @include tablet-container;
+    @include container;
   }
   @media screen and (max-width: $tablet) {
-    @include mobile-container;
+    @include tablet-container;
   }
   @media screen and (max-width: $mobile) {
-    max-width: 240px;
+    @include mobile-container;
     margin: 0 auto;
   }
 }
@@ -4600,7 +4619,7 @@ footer{
 }
 .ordercall-error.active, .consultation-error.active {
   padding: 0.3em;
-=======
+}
 
 // Стили для баннера
 

@@ -4,46 +4,87 @@
   box-sizing: border-box;
 }
 
-@font-face {
+/*@font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
+  src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
   font-weight: 700;
 }
+
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+  src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
   font-weight: 600;
 }
+
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
+  src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
   font-weight: 500;
 }
+
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
+  src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Coolvetica", sans-serif;
-  src: url(assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+  src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(assets/fonts/Roboto_400/Roboto-Regular.ttf);
+  src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(assets/fonts/Roboto_300/Roboto-Light.ttf);
+  src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
   font-weight: 300;
 }
+
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(assets/fonts/Roboto_500/Roboto-Medium.ttf);
+  src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
   font-weight: 500;
+}*/
+@font-face {
+  font-family: "Gilroy700";
+  src: local("Gilroy700"), url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
 }
+@font-face {
+  font-family: "Gilroy600";
+  src: local("Gilroy600"), url(../fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gilroy500";
+  src: local("Gilroy500"), url(../fonts/Gilroy_500/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "Gilroy400";
+  src: local("Gilroy400"), url(../fonts/Gilroy_400/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Coolvetica400";
+  src: local("Coolvetica400"), url(../fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto400";
+  src: local("Roboto400"), url(../fonts/Roboto_400/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto300";
+  src: local("Roboto300"), url(../fonts/Roboto_300/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto500";
+  src: local("Roboto500"), url(../fonts/Roboto_500/Roboto-Medium.ttf);
+}
+/*$fC: "Coolvetica";
+$fG: "Gilroy";*/
 p {
   margin: 0;
 }
@@ -111,7 +152,7 @@ ul {
 
 /* Стили для логотипа */
 .logo {
-  font-family: Gilroy;
+  font-family: "Gilroy700";
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -179,7 +220,7 @@ ul {
 .menu a {
   text-decoration: none;
   color: #4fa7fb;
-  font-family: Gilroy;
+  font-family: "Gilroy700";
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -236,10 +277,13 @@ ul {
 /* Стили для номера телефона */
 .blue-button-text {
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a      \2577 \a 4935 \2502  }\a      \2502   ^\a      \2575 \a   assets\\styles\\input.scss 4935:2  root stylesheet';
+  font-family: "Gilroy700";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f7f7f7;
 }
 @media screen and (max-width: 1630px) {
   .blue-button-text {
@@ -257,7 +301,7 @@ ul {
 .section-with-man {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url(assets/img/main/main-man.png);
+  background-image: url(/assets/img/main/main-man.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: -25px;
@@ -269,13 +313,13 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .section-with-man {
-    background-image: url(assets/img/main/main-man-tablet.png);
+    background-image: url(/assets/img/main/main-man-tablet.png);
     background-position-x: 50%;
   }
 }
 @media screen and (max-width: 870px) {
   .section-with-man {
-    background-image: url(assets/img/main/main-man-mobile.png);
+    background-image: url(/assets/img/main/main-man-mobile.png);
     background-position-y: -20px;
   }
 }
@@ -289,7 +333,7 @@ ul {
 .main-header {
   max-width: 1134px;
   padding-top: 114px;
-  font-family: Coolvetica;
+  font-family: "Coolvetica400";
   font-size: 140px;
   font-weight: 400;
   line-height: 125px;
@@ -348,7 +392,7 @@ ul {
 
 /* Стили для цены */
 .price {
-  font-family: Coolvetica;
+  font-family: "Coolvetica400";
   font-size: 100px;
   font-weight: 400;
   line-height: 89px;
@@ -464,7 +508,7 @@ ul {
   }
 }
 .advantages__name p {
-  font-family: Roboto;
+  font-family: "Roboto400";
   font-size: 30px;
   font-weight: 400;
   line-height: 27px;
@@ -565,7 +609,7 @@ ul {
   }
 }
 .doctor__name {
-  font-family: Roboto;
+  font-family: "Roboto400";
   font-size: 30px;
   font-weight: 400;
   line-height: 27px;
@@ -586,7 +630,7 @@ ul {
   }
 }
 .doctor__position {
-  font-family: Roboto;
+  font-family: "Roboto300";
   font-size: 20px;
   font-weight: 300;
   line-height: 18px;
@@ -641,7 +685,7 @@ ul {
   }
 }
 .experience__item p {
-  font-family: Roboto;
+  font-family: "Roboto500";
   font-size: 30px;
   font-weight: 500;
   line-height: 27px;
@@ -680,7 +724,7 @@ ul {
   }
 }
 .method p {
-  font-family: Coolvetica;
+  font-family: "Coolvetica400";
   font-size: 30px;
   font-weight: 400;
   line-height: 27px;
@@ -759,7 +803,7 @@ ul {
 /* Стили для заголовка h2 */
 .header2, .reviews__header2 {
   padding-top: 100px;
-  font-family: Coolvetica;
+  font-family: "Coolvetica400";
   font-size: 100px;
   font-weight: 400;
   line-height: 89px;
@@ -877,7 +921,7 @@ ul {
   }
 }
 .conditions__text h3 {
-  font-family: Gilroy;
+  font-family: "Gilroy700";
   font-size: 40px;
   font-weight: 700;
   line-height: 54px;
@@ -903,7 +947,7 @@ ul {
   }
 }
 .conditions__text p {
-  font-family: Gilroy;
+  font-family: "Gilroy500";
   font-size: 30px;
   font-weight: 500;
   line-height: 40px;
@@ -981,7 +1025,7 @@ ul {
   width: 596px;
   height: 114px;
   text-align: center;
-  font-family: "Coolvetica";
+  font-family: "Coolvetica400";
   font-weight: 400;
   font-size: 80px;
   line-height: 71.2px;
@@ -1105,7 +1149,7 @@ ul {
 }
 
 .about-content {
-  font-family: Gilroy;
+  font-family: "Gilroy500";
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
@@ -1130,7 +1174,7 @@ ul {
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(assets/img/sign_up_free/sign_up_block.jpg);
+  background-image: url(/assets/img/sign_up_free/sign_up_block.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-x: 120%;
@@ -1141,7 +1185,7 @@ ul {
     max-width: 859.68px;
     margin: 0 auto;
     height: 211px;
-    background-image: url(assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-image: url(/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-position-x: 115%;
     background-size: 55% 100%;
   }
@@ -1252,7 +1296,7 @@ del {
   }
 }
 .sign_up__title, .sign_up_price > p {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-size: 50px;
   color: #fff;
 }
@@ -1356,7 +1400,7 @@ del {
   box-shadow: -4px -4px 10px 0px #c88d9c inset;
 }
 .btn_sign_white-blue {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-size: 24px;
   line-height: 29.02px;
   color: #4fa7fb;
@@ -1423,7 +1467,7 @@ del {
   position: relative;
   box-shadow: 0 5px 15px black;
   text-align: center;
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-size: 36px;
   font-weight: 600;
   line-height: 42px;
@@ -1465,7 +1509,7 @@ del {
 }
 
 .contact-form {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
 }
 .contact-form__tel {
   width: 55%;
@@ -1496,7 +1540,7 @@ del {
   outline: none;
 }
 .contact-form__title {
-  font-family: "Coolvetica";
+  font-family: "Coolvetica400";
   font-size: 2rem;
   text-transform: uppercase;
   margin: 0 0 20px;
@@ -1583,7 +1627,7 @@ del {
 .title_work_cost {
   text-align: center;
   color: #4fa7fb;
-  font-family: "Coolvetica";
+  font-family: "Coolvetica400";
   font-size: 120px;
   font-style: normal;
   font-weight: 400;
@@ -1634,7 +1678,7 @@ del {
 }
 
 .container_work_cost-info {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   display: flex;
   justify-content: space-around;
   width: 100vw;
@@ -1790,7 +1834,7 @@ del {
   background-color: #ff9fb7;
   box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
   color: #f7f7f7;
-  font-family: Gilroy;
+  font-family: "Gilroy700";
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
@@ -1828,7 +1872,7 @@ del {
   background-color: #ff9fb7;
   box-shadow: 4px 4px 14px 0px #ffc8d6 inset, -4px -4px 10px 0px #c88d9c inset;
   color: #f7f7f7;
-  font-family: Gilroy;
+  font-family: "Gilroy600";
   font-size: 1.5em;
   font-weight: 600;
   line-height: normal;
@@ -1973,7 +2017,7 @@ del {
 }
 .carousel-item__name h3 {
   width: 472px;
-  font-family: Coolvetica;
+  font-family: "Coolvetica400";
   font-size: 70px;
   font-weight: 400;
   line-height: 62px;
@@ -2104,7 +2148,7 @@ del {
 .title_advantages {
   text-align: center;
   color: #4fa7fb;
-  font-family: "Coolvetica";
+  font-family: "Coolvetica400";
   font-size: 120px;
   font-style: normal;
   font-weight: 400;
@@ -2133,7 +2177,7 @@ del {
 }
 
 .container_advantages-info {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   display: flex;
   justify-content: space-around;
   width: auto;
@@ -2287,7 +2331,7 @@ del {
 }
 
 .before_after__title {
-  font-family: "Coolvetica";
+  font-family: "Coolvetica400";
   font-weight: 400;
   text-align: center;
   color: #4fa7fb;
@@ -2454,7 +2498,7 @@ del {
   box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
 }
 .btn_sign_pink {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-size: 48px;
   font-weight: 700;
   line-height: 58.03px;
@@ -2500,7 +2544,7 @@ del {
 .container__turquoise {
   display: flex;
   flex-direction: row;
-  background: url(assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
+  background: url(/assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   height: 814px;
   background-position-x: 106%;
   background-size: 60% 100%;
@@ -2516,7 +2560,7 @@ del {
     max-width: 859.68px;
     margin: 0 auto;
     height: 432px;
-    background: url(assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(/assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
   }
@@ -2530,7 +2574,7 @@ del {
     max-width: 328.39px;
     margin: 0 auto;
     height: 166.03px;
-    background: url(assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(/assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
   }
@@ -2560,7 +2604,7 @@ del {
 }
 
 .turquoise_text {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   color: #ffffff;
   font-weight: 700;
   font-size: 40px;
@@ -2600,7 +2644,7 @@ del {
   box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
 }
 .btn_sign_white-blue2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-size: 30px;
   line-height: 36.27px;
   color: #4fa7fb;
@@ -2714,7 +2758,7 @@ del {
 .btn_ellipse,
 .jaw_label,
 .quiz_radio_label {
-  font-family: "Gilroy";
+  font-family: "Gilroy600";
   font-weight: 600;
 }
 
@@ -3028,7 +3072,7 @@ del {
   height: 120px;
   border-radius: 200px;
   padding: 30px 60px;
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-weight: 700;
   font-size: 50px;
   line-height: 61.9px;
@@ -3212,88 +3256,82 @@ del {
   border-width: 0;
 }
 
+/*
+// Стили для блока Преимущества
+
 .container_advantages {
-  max-width: 1622px;
-  margin: 0 auto;
+  @include container;
   width: 100vw;
-}
-@media screen and (max-width: 870px) {
-  .container_advantages {
-    max-width: 859.68px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
     width: 100vw;
   }
-}
-@media screen and (max-width: 340px) {
-  .container_advantages {
-    max-width: 328.39px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
     width: 100vw;
   }
 }
 
+// Главный заголовок блока
 .title_advantages {
   text-align: center;
-  color: #4fa7fb;
-  font-family: "Coolvetica";
+  color: $blue;
+  font-family: 'Coolvetica400';
   font-size: 120px;
   font-style: normal;
   font-weight: 400;
   line-height: 89%;
   margin-bottom: 40px;
-}
-@media screen and (max-width: 870px) {
-  .title_advantages {
-    max-width: 859.68px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
     font-size: 63px;
     margin-bottom: 15px;
   }
-}
-@media screen and (max-width: 340px) {
-  .title_advantages {
-    max-width: 328.39px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
     font-size: 24.5px;
     margin-bottom: 15px;
   }
 }
-
 .span_advantages {
-  color: #ff9fb7;
+  color: $pink;
 }
 
+// Контейнер для блоков с информацией
 .container_advantages-info {
-  font-family: "Gilroy";
+  font-family: 'Gilroy700';
   display: flex;
+
   justify-content: space-around;
   width: auto;
 }
-
 .container_advantages-items {
   border-radius: 60px;
   height: 794px;
   max-width: 473px;
+  // min-width: 266px;
+  // width: 100%;
   margin-bottom: 59px;
   gap: 15px;
-  background-color: #4fa7fb;
-  color: #ffffff;
-}
-@media screen and (max-width: 870px) {
-  .container_advantages-items {
-    max-width: 859.68px;
-    margin: 0 auto;
+  // margin-left: 15px;
+  background-color: $blue;
+  color: $white;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
     border-radius: 31px;
     height: 448px;
     max-width: 265px;
     width: 100vw;
     margin-left: 8px;
   }
-}
-@media screen and (max-width: 340px) {
-  .container_advantages-items {
-    max-width: 328.39px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
     justify-content: center;
     border-radius: 12px;
     height: 172px;
@@ -3302,46 +3340,39 @@ del {
   }
 }
 
+// Заголовок внутри блока
 .advantages-items-title {
   font-size: 32px;
   font-weight: 700;
   margin: 50px 0px 0px 50px;
-}
-@media screen and (max-width: 870px) {
-  .advantages-items-title {
-    max-width: 859.68px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
     font-size: 17px;
     padding: 18px 24px 15px 24px;
   }
-}
-@media screen and (max-width: 340px) {
-  .advantages-items-title {
-    max-width: 328.39px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
     font-size: 7px;
     padding: 9px 8px 4px 9px;
   }
 }
 
+// Разделительная линия
 .advantages-items-title_line {
   height: 4px;
   width: 100%;
   margin: 30px 0px 30px 45px;
   background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 61.46%);
-}
-@media screen and (max-width: 870px) {
-  .advantages-items-title_line {
-    max-width: 859.68px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
     height: 2px;
     margin-left: 24px;
   }
-}
-@media screen and (max-width: 340px) {
-  .advantages-items-title_line {
-    max-width: 328.39px;
-    margin: 0 auto;
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
     height: 1px;
     margin-left: 10px;
   }
@@ -3353,66 +3384,37 @@ del {
   font-size: 18px;
   margin: 0px 50px 0px 50px;
   font-weight: 300;
-}
-@media screen and (max-width: 870px) {
-  .advantages-list {
-    max-width: 859.68px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
     width: 160px;
     font-size: 10px;
     margin: 13px 0px 0px 35px;
   }
-}
-@media screen and (max-width: 340px) {
-  .advantages-list {
-    max-width: 328.39px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
     width: 62px;
     font-size: 4px;
     margin: 0px 0px 0px 15px;
   }
 }
-
 .advantages-list-elem {
   margin-top: 20px;
-}
-@media screen and (max-width: 870px) {
-  .advantages-list-elem {
-    max-width: 859.68px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
     margin-top: 13px;
   }
-}
-@media screen and (max-width: 340px) {
-  .advantages-list-elem {
-    max-width: 328.39px;
-    margin: 0 auto;
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
     margin-top: 5px;
+    // word-wrap: break-word;
   }
 }
-
+*/
 /*lena*/
-/*шрифты*/
-@font-face {
-  font-family: "Gilroy700";
-  src: local("Gilroy700"), url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
-}
-@font-face {
-  font-family: "Gilroy600";
-  src: local("Gilroy600"), url(../fonts/Gilroy_600/Gilroy-SemiBold.ttf);
-}
-@font-face {
-  font-family: "Gilroy500";
-  src: local("Gilroy500"), url(../fonts/Gilroy_500/Gilroy-Medium.ttf);
-}
-@font-face {
-  font-family: "Gilroy400";
-  src: local("Gilroy400"), url(../fonts/Gilroy_400/Gilroy-Regular.ttf);
-}
-@font-face {
-  font-family: "Coolvetica400";
-  src: local("Coolvetica400"), url(../fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
-}
 /*Стили для блока с картой*/
 .wrapper-map {
   max-width: 1920px;
@@ -3422,19 +3424,20 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .wrapper-map {
-    max-width: 859.68px;
+    max-width: 1622px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 870px) {
   .wrapper-map {
-    max-width: 328.39px;
+    max-width: 859.68px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 340px) {
   .wrapper-map {
-    max-width: 240px;
+    max-width: 328.39px;
+    margin: 0 auto;
     margin: 0 auto;
   }
 }
@@ -4979,7 +4982,6 @@ footer {
 .ordercall-error.active, .consultation-error.active {
   padding: 0.3em;
 }
-
 
 .banner-container {
   max-width: 1622px;
