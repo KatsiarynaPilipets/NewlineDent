@@ -89,11 +89,13 @@ $mobile: 340px;
   src: local('Gilroy400'),
     url(../fonts/Gilroy_400/Gilroy-Regular.ttf);
 }
+
 @font-face {
   font-family: 'Coolvetica400';
   src: local('Coolvetica400'),
     url(../fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
 }
+
 @font-face {
   font-family: 'Roboto400';
   src: local('Roboto400'),
@@ -111,6 +113,7 @@ $mobile: 340px;
   src: local('Roboto500'),
     url(../fonts/Roboto_500/Roboto-Medium.ttf);
 }
+
 //Шрифты Настя
 
 /*$fC: "Coolvetica";
@@ -1321,22 +1324,22 @@ del {
 .btn_sign {
   // кнопка со скругленными углами и без бордера
   border-radius: 12px;
-  padding: 0;
+  // padding: 0;
   border-width: 0;
-  margin: 0;
+  // margin: 0;
 
   // стили бело-голубой кнопки
   &_white-blue {
     width: 454px;
     height: 89px;
+    padding: 30px 60px;
+    margin-left: 0;
     background-color: white;
     box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
   }
 
-  // стили бело-голубой кнопки
+  // стили бело-голубой кнопки при наведении
   &_white-blue:hover {
-    width: 454px;
-    height: 89px;
     color: white;
     background-color: $pink;
     border-color: $pink;
@@ -1362,6 +1365,7 @@ del {
     &_white-blue {
       width: 241.75px;
       height: 46.88px;
+      padding: 16px 32px;
       box-shadow: inset -2px -2px 4px rgba(79, 167, 251, 0.4);
     }
 
@@ -1382,6 +1386,7 @@ del {
     &_white-blue {
       width: 93.5px;
       height: 18.25px;
+      padding: 6px 12px;
       box-shadow: inset -0.8px -0.8px 2px rgba(79, 167, 251, 0.4);
     }
 
@@ -1582,7 +1587,7 @@ del {
 .title_work_cost {
   text-align: center;
   color: $blue;
-  font-family:'Coolvetica400';
+  font-family: 'Coolvetica400';
   font-size: 120px;
   font-style: normal;
   font-weight: 400;
@@ -2393,7 +2398,7 @@ $innerShadow: #C88D9C;
 .btn_sign {
   // все кнопки блоков со скругленными углами и без бордера
   border-radius: 12px;
-  padding: 30px 60px;
+  // padding: 30px 60px;
   border-width: 0;
 
   // стили розовой кнопки блока до/после: размер и цвета
@@ -2401,6 +2406,7 @@ $innerShadow: #C88D9C;
     width: 788px;
     height: 118px;
     margin-top: 100px;
+    padding: 30px 60px;
     background-color: $pink;
     box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
   }
@@ -2418,17 +2424,20 @@ $innerShadow: #C88D9C;
   &_pink:hover {
     background-color: $pinkShadow;
     box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+    // background-color: $blue;
+    // box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
   }
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     border-radius: 6px;
-    padding: 16px 32px;
+    // padding: 16px 32px;
 
     // стили розовой кнопки блока до/после: размер и цвета
     &_pink {
       width: 418.75px;
       height: 62.88px;
+      padding: 16px 32px;
     }
 
     // стили текста на кнопке
@@ -2441,12 +2450,13 @@ $innerShadow: #C88D9C;
   @media screen and (max-width: $tablet) {
     @include mobile-container;
     border-radius: 2px;
-    padding: 6px 12px;
+    // padding: 6px 12px;
 
     // стили розовой кнопки блока до/после: размер и цвета
     &_pink {
       width: 161.5px;
       height: 24.25px;
+      padding: 6px 12px;
     }
 
     // стили текста на кнопке
@@ -2577,10 +2587,15 @@ $innerShadow: #C88D9C;
     color: $blue;
   }
 
+  // стили бело-голубой кнопки при наведении
   &_white-blue2:hover {
-    background-color: $lightblue;
-    box-shadow: inset -4px -4px 8px rgba(79, 167, 251, 0.4);
+    color: white;
+    background-color: $pink;
+    border-color: $pink;
+    box-shadow: 4px 4px 14px 0px #ffc8d6 inset;
+    box-shadow: -4px -4px 10px 0px #c88d9c inset;
   }
+
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
@@ -3212,6 +3227,7 @@ $gray: #D9D9D9;
     border-width: 0;
   }
 }
+
 /*
 // Стили для блока Преимущества
 
@@ -3373,23 +3389,27 @@ $gray: #D9D9D9;
 /*lena*/
 /*Стили для блока с картой*/
 
-.wrapper-map{
+.wrapper-map {
   max-width: 1920px;
   width: 100%;
   display: flex;
   background-color: #CBE5FF;
+
   @media screen and (max-width: $desktop) {
     @include container;
   }
+
   @media screen and (max-width: $tablet) {
     @include tablet-container;
   }
+
   @media screen and (max-width: $mobile) {
     @include mobile-container;
     margin: 0 auto;
   }
 }
-.map{
+
+.map {
   width: 100%;
   @include container;
   display: grid;
@@ -3400,6 +3420,7 @@ $gray: #D9D9D9;
     "map address"
     "link .";
   gap: 10px;
+
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     display: grid;
@@ -3407,25 +3428,28 @@ $gray: #D9D9D9;
     grid-template-rows: 245px 207px 147px;
     gap: 10px;
   }
+
   @media screen and (max-width: $tablet) {
     @include mobile-container;
     grid-template-columns: 188px 139px;
     grid-template-rows: 94px 80px 56px;
     gap: 5px;
   }
+
   @media screen and (max-width: $mobile) {
     max-width: 240px;
     margin: 0 auto;
     grid-template-columns: 240px;
     grid-template-rows: 50px 60px 50px 30px;
     grid-template-areas:
-    "title"
-    "map"
-    "address"
-    "link";
+      "title"
+      "map"
+      "address"
+      "link";
     gap: 2px;
   }
-  &__title{
+
+  &__title {
     grid-area: title;
     font-family: 'Coolvetica400';
     font-weight: 400;
@@ -3433,31 +3457,38 @@ $gray: #D9D9D9;
     color: $blue;
     text-align: center;
     align-self: center;
+
     @media screen and (max-width: $desktop) {
       font-size: 64px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 25px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 15px;
     }
   }
-  &__content{
+
+  &__content {
     grid-area: map;
     width: 920px;
     height: 388px;
     border-radius: 30px;
+
     @media screen and (max-width: $desktop) {
       width: 490px;
       height: 207px;
       border-radius: 16px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 188px;
       height: 79px;
       border-radius: 6px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 200px;
       height: 60px;
@@ -3466,46 +3497,54 @@ $gray: #D9D9D9;
     }
 
   }
-  &__content-iframe{
+
+  &__content-iframe {
     border-radius: 30px;
     width: 920px;
     height: 388px;
     border: none;
+
     @media screen and (max-width: $desktop) {
       width: 490px;
       height: 207px;
       border-radius: 16px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 188px;
       height: 79px;
       border-radius: 6px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 200px;
       height: 60px;
       border-radius: 3px;
     }
   }
-  &__address{
+
+  &__address {
     grid-area: address;
     width: 680px;
     height: 388px;
     border-radius: 30px;
     background-color: $blue;
     padding: 50px;
+
     @media screen and (max-width: $desktop) {
       width: 362px;
       height: 207px;
       border-radius: 16px;
       padding: 26px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 139px;
       height: 79px;
       border-radius: 6px;
       padding: 10px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 200px;
       height: 60px;
@@ -3514,70 +3553,86 @@ $gray: #D9D9D9;
       justify-self: center;
     }
   }
-  &__address-paragraph{
+
+  &__address-paragraph {
     font-family: 'Gilroy600';
     font-size: 35px;
     color: #f7f7f7;
+
     @media screen and (max-width: $desktop) {
       font-size: 18px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 8px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 6px;
     }
   }
-  &__address-workmode{
+
+  &__address-workmode {
     font-family: 'Gilroy400';
     font-size: 35px;
     color: #f7f7f7;
     margin-top: 30px;
+
     @media screen and (max-width: $desktop) {
       font-size: 18px;
       margin-top: 18px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 7px;
       margin-top: 5px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 5px;
       margin-top: 3px;
     }
   }
-  &__link{
+
+  &__link {
     grid-area: link;
     display: flex;
 
     @media screen and (max-width: $desktop) {
       margin-top: 25px;
     }
+
     @media screen and (max-width: $tablet) {
       margin-top: 6px;
     }
+
     @media screen and (max-width: $mobile) {
       margin-top: 6px;
       justify-self: center;
     }
   }
-  &__link-img{
+
+  &__link-img {
     width: 100px;
     height: 100px;
+
     @media screen and (max-width: $desktop) {
       width: 53px;
       height: 53px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 20.46px;
       height: 20.46px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 15px;
       height: 15px;
     }
   }
-  &__link-href{
+
+  &__link-href {
     outline: none;
     text-decoration: none;
     font-family: 'Gilroy600';
@@ -3585,22 +3640,26 @@ $gray: #D9D9D9;
     color: $blue;
     align-self: self-start;
     padding-top: 25px;
+
     @media screen and (max-width: $desktop) {
       font-size: 32px;
       padding-top: 14px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 12px;
       padding-top: 7px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 8px;
       padding-top: 5px;
     }
   }
 }
+
 /*Стили для кнопок в блоке с картой*/
-.button__call{
+.button__call {
   width: 294px;
   height: 59px;
   margin-top: 30px;
@@ -3614,7 +3673,8 @@ $gray: #D9D9D9;
   border: none;
   cursor: pointer;
   box-shadow: inset 4px 4px 14px 0px #FFC8D6,
-              inset -4px -4px 10px 0px #C88D9C;
+    inset -4px -4px 10px 0px #C88D9C;
+
   @media screen and (max-width: $desktop) {
     width: 157px;
     height: 31px;
@@ -3623,50 +3683,59 @@ $gray: #D9D9D9;
     font-size: 12px;
     border-radius: 6px;
     box-shadow: inset 2px 2px 7.5px 0px #FFC8D6,
-                inset -2px -2px 5px 0px #C88D9C;
-    }
-    @media screen and (max-width: $tablet) {
-      width: 60.28px;
-      height: 12.14px;
-      margin-top: 5px;
-      padding: 3px, 6px, 3px, 6px;
-      font-size: 4.91px;
-      border-radius: 2px;
-      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 2.864797592163086px 0px #FFC8D6;
-      box-shadow: inset -0.8185136914253235px -0.8185136914253235px 2.0462841987609863px 0px #C88D9C;
-    }
-    @media screen and (max-width: $mobile) {
-      padding: 1px, 3px, 1px, 3px;
-      font-size: 4.5px;
-    }
-    &:hover {
-      color: $blue;
-      background-color: $lightblue;
-      box-shadow: inset 4px 4px 14px 0px #d0ebff66,
-                  inset -4px -4px 10px 0px #2d536f66;
-      @media screen and (max-width: $desktop) {
+      inset -2px -2px 5px 0px #C88D9C;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 60.28px;
+    height: 12.14px;
+    margin-top: 5px;
+    padding: 3px, 6px, 3px, 6px;
+    font-size: 4.91px;
+    border-radius: 2px;
+    box-shadow: inset 0.8185136914253235px 0.8185136914253235px 2.864797592163086px 0px #FFC8D6;
+    box-shadow: inset -0.8185136914253235px -0.8185136914253235px 2.0462841987609863px 0px #C88D9C;
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding: 1px, 3px, 1px, 3px;
+    font-size: 4.5px;
+  }
+
+  &:hover {
+    color: $blue;
+    background-color: $lightblue;
+    box-shadow: inset 4px 4px 14px 0px #d0ebff66,
+      inset -4px -4px 10px 0px #2d536f66;
+
+    @media screen and (max-width: $desktop) {
       box-shadow: inset 2px 2px 2px 0px #d0ebff66,
-                  inset -2px -2px 2px 0px #2d536f66;
-      }
-      @media screen and (max-width: $tablet) {
+        inset -2px -2px 2px 0px #2d536f66;
+    }
+
+    @media screen and (max-width: $tablet) {
       box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #d0ebff66,
-                  inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #2d536f66;
-      }
+        inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #2d536f66;
     }
-    &:active {
-      box-shadow: inset 4px 4px 4px 0px #2d536fe5,
-                  inset -4px -4px 4px 0px #d0ebffce;
-      @media screen and (max-width: $desktop) {
+  }
+
+  &:active {
+    box-shadow: inset 4px 4px 4px 0px #2d536fe5,
+      inset -4px -4px 4px 0px #d0ebffce;
+
+    @media screen and (max-width: $desktop) {
       box-shadow: inset 2px 2px 2px 0px #2d536fe5,
-                  inset -2px -2px 2px 0px #d0ebffce;
-      }
-      @media screen and (max-width: $tablet) {
-      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #2d536fe5,
-                  inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
-      }
+        inset -2px -2px 2px 0px #d0ebffce;
     }
+
+    @media screen and (max-width: $tablet) {
+      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #2d536fe5,
+        inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
+    }
+  }
 }
-.button__ordercall{
+
+.button__ordercall {
   width: 249px;
   height: 59px;
   margin-top: 30px;
@@ -3680,6 +3749,7 @@ $gray: #D9D9D9;
   border-radius: 12px;
   border: 6px solid $pink;
   cursor: pointer;
+
   @media screen and (max-width: $desktop) {
     width: 133px;
     height: 31px;
@@ -3690,6 +3760,7 @@ $gray: #D9D9D9;
     border-radius: 6px;
     border: 3px solid $pink;
   }
+
   @media screen and (max-width: $tablet) {
     width: 52.28px;
     height: 12.14px;
@@ -3700,34 +3771,42 @@ $gray: #D9D9D9;
     border: 1px solid $pink;
     font-size: 4.91px;
   }
+
   @media screen and (max-width: $mobile) {
     font-size: 4.5px;
   }
+
   &:hover {
     color: $lightblue;
     border: 6px solid $lightblue;
+
     @media screen and (max-width: $desktop) {
       border: 3px solid $lightblue;
     }
+
     @media screen and (max-width: $tablet) {
-    border: 1px solid $lightblue;
+      border: 1px solid $lightblue;
     }
   }
+
   &:active {
     box-shadow: inset 4px 4px 4px 0px #2d536fe5,
-                inset -4px -4px 4px 0px #d0ebff70;
+      inset -4px -4px 4px 0px #d0ebff70;
+
     @media screen and (max-width: $desktop) {
       box-shadow: inset 2px 2px 2px 0px #2d536fe5,
-                  inset -2px -2px 2px 0px #d0ebffce;
+        inset -2px -2px 2px 0px #d0ebffce;
     }
+
     @media screen and (max-width: $tablet) {
       box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #2d536fe5,
-                  inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
+        inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
     }
   }
 }
+
 /*Стили блока с консультацией Элины*/
-.wrapper-consultation{
+.wrapper-consultation {
   max-width: 1920px;
   width: 100%;
   display: flex;
@@ -3736,48 +3815,60 @@ $gray: #D9D9D9;
   color: $white;
   font-family: 'Gilroy700';
   justify-content: center;
+
   @media screen and (max-width: $desktop) {
     max-width: 1630px;
     height: 176px;
   }
+
   @media screen and (max-width: $tablet) {
     height: 67.64px;
   }
+
   @media screen and (max-width: $mobile) {
     height: 50px;
   }
 }
-.consultation{
+
+.consultation {
   width: 100%;
   @include container;
   display: flex;
   justify-content: space-between;
   align-self: center;
+
   @media screen and (max-width: $desktop) {
     @include tablet-container;
   }
+
   @media screen and (max-width: $tablet) {
     @include mobile-container;
   }
+
   @media screen and (max-width: $mobile) {
     max-width: 240px;
     margin: 0 auto;
   }
-  &__text{
+
+  &__text {
     font-size: 63px;
     color: $white;
+
     @media screen and (max-width: $desktop) {
       font-size: 33px;
       font-weight: 700;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 12px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 9px;
     }
   }
-  &__call{
+
+  &__call {
     display: flex;
     border-radius: 200px;
     background-color: $white;
@@ -3785,23 +3876,27 @@ $gray: #D9D9D9;
     height: 69px;
     align-self: end;
     align-content: center;
+
     @media screen and (max-width: $desktop) {
       border-radius: 107px;
       width: 276px;
       height: 37px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 107.52px;
       height: 14.2px;
       border-radius: 40.9940071105957px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 120px;
       height: 10px;
       border-radius: 25;
     }
   }
-  &__call-input{
+
+  &__call-input {
     display: flex;
     background-color: #ffffff00;
     width: 330px;
@@ -3812,38 +3907,44 @@ $gray: #D9D9D9;
     align-self: center;
     justify-content: center;
     text-align: center;
+
     @media screen and (max-width: $desktop) {
       width: 230px;
       height: 31px;
       border-radius: 107px;
       padding-bottom: 8px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 69.22px;
       height: 14.22px;
       border-radius: 40.9940071105957px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 80px;
       height: 10px;
       border-radius: 20px;
       padding-bottom: 9px;
     }
-    &:focus{
+
+    &:focus {
       outline: white;
     }
   }
-  &__call-button{
+
+  &__call-button {
     align-self: center;
     width: 180px;
     height: 69px;
     border-radius: 200px;
-    padding:15px, 30px, 15px, 30px;
+    padding: 15px, 30px, 15px, 30px;
     border: 5px solid $white;
     background-color: $pink;
     color: $white;
     font-size: 24px;
     cursor: pointer;
+
     @media screen and (max-width: $desktop) {
       width: 98px;
       height: 37px;
@@ -3852,6 +3953,7 @@ $gray: #D9D9D9;
       border: 3px solid $white;
       font-size: 12px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 38.3px;
       height: 13.22px;
@@ -3860,6 +3962,7 @@ $gray: #D9D9D9;
       border: 1px solid $white;
       font-size: 4.92px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 40px;
       height: 10px;
@@ -3867,183 +3970,230 @@ $gray: #D9D9D9;
       padding: 1px, 1px, 1px, 6px;
       font-size: 3.5px;
     }
+
     &:hover {
       background-color: #4fa7fb;
     }
+
     &:active {
       box-shadow: inset 4px 4px 4px 0px #2d536fe5,
-                  inset -4px -4px 4px 0px #d0ebffce;
+        inset -4px -4px 4px 0px #d0ebffce;
+
       @media screen and (max-width: $desktop) {
         box-shadow: inset 2px 2px 2px 0px #2d536fe5,
-                  inset -2px -2px 2px 0px #d0ebffce;
+          inset -2px -2px 2px 0px #d0ebffce;
       }
+
       @media screen and (max-width: $tablet) {
         box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #2d536fe5,
-                    inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
+          inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
       }
     }
   }
 }
-.consultation__call-input::placeholder{
+
+.consultation__call-input::placeholder {
   color: #D9D9D9;
   font-size: 24px;
   text-align: center;
   font-family: 'Gilroy700';
+
   @media screen and (max-width: $desktop) {
     font-size: 12px;
   }
+
   @media screen and (max-width: $tablet) {
     font-size: 4.92px;
   }
+
   @media screen and (max-width: $mobile) {
     font-size: 3.5px;
   }
 }
+
 /*Стили футера*/
-footer{
+footer {
   background-color: $lightblue;
 }
-.wrapper-footer{
+
+.wrapper-footer {
   width: 100%;
   @include container;
   display: grid;
   grid-template-columns: 23.74% 35.76% 23.12% 17.38%;
   grid-template-rows: 297px;
+
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     grid-template-rows: 159px;
   }
+
   @media screen and (max-width: $tablet) {
     @include mobile-container;
     grid-template-rows: 67px;
   }
+
   @media screen and (max-width: $mobile) {
     max-width: 240px;
     margin: 0 auto;
   }
 }
+
 /*Оформление бордеров футера*/
-.license, .toc, .network{
+.license,
+.toc,
+.network {
   border-right: 1px solid #A5BFD9;
 }
+
 /*Оформление padding футера*/
-.toc, .network, .pay{
+.toc,
+.network,
+.pay {
   padding-top: 50px;
+
   @media screen and (max-width: $desktop) {
     padding-top: 27px;
   }
+
   @media screen and (max-width: $tablet) {
     padding-top: 10.16px;
   }
+
   @media screen and (max-width: $mobile) {
     padding-top: 6px;
   }
 }
+
 /*Стили для блока с лицензией и гарантией*/
-.license{
+.license {
   padding: 50px 100px 0px 0px;
   display: grid;
+
   @media screen and (max-width: $desktop) {
     padding: 27px 53px 0px 0px;
   }
+
   @media screen and (max-width: $tablet) {
     padding: 10.17px 15px 0px 0px;
   }
+
   @media screen and (max-width: $mobile) {
     padding: 6px 5px 0px 0px;
   }
-  &__company{
+
+  &__company {
     font-family: 'Gilroy600';
     font-size: 30px;
     color: #292929;
     text-align: center;
+
     @media screen and (max-width: $desktop) {
       font-size: 16px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 6.5px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 5px;
     }
   }
-  &__number{
+
+  &__number {
     font-family: 'Gilroy400';
     font-size: 24px;
     color: #292929;
     text-align: center;
     margin-top: 25px;
+
     @media screen and (max-width: $desktop) {
       font-size: 12px;
       margin-top: 13px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 5.65px;
       margin-top: 5px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 4.5px;
     }
   }
-  &__picture{
+
+  &__picture {
     height: 100px;
     display: flex;
     justify-content: space-around;
+
     @media screen and (max-width: $desktop) {
       height: 53px;
     }
+
     @media screen and (max-width: $tablet) {
       height: 20.31px;
       margin-top: 5px;
     }
+
     @media screen and (max-width: $mobile) {
       height: 15px;
     }
   }
-  &__link{
+
+  &__link {
     font-family: 'Gilroy500';
     font-size: 24px;
     color: #292929;
     justify-self: center;
     text-decoration-line: underline;
     cursor: pointer;
+
     @media screen and (max-width: $desktop) {
       font-size: 12px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 4.87px;
       margin-top: 5px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 4px;
     }
   }
 }
+
 /*Стили для блока с меню футера*/
-.toc{
+.toc {
   display: grid;
   justify-content: center;
 
-  &__block{
+  &__block {
     display: grid;
     width: 169px;
     grid-template-rows: repeat(5, 23px);
     gap: 30px;
+
     @media screen and (max-width: $desktop) {
       width: 80px;
       grid-template-rows: repeat(5, 12px);
       gap: 15px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 29px;
       grid-template-rows: repeat(5, 7px);
       gap: 5px;
     }
+
     @media screen and (max-width: $mobile) {
       grid-template-rows: repeat(5, 5px);
     }
   }
-  &__block-p{
+
+  &__block-p {
     outline: none;
     text-decoration: none;
     font-family: 'Gilroy400';
@@ -4051,36 +4201,43 @@ footer{
     color: #29292999;
     text-align: center;
     justify-self: left;
+
     @media screen and (max-width: $desktop) {
       font-size: 11px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 4.06px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 4px;
     }
   }
 }
+
 .toc__block-p:hover {
   text-decoration: underline;
 }
 
 /*Стили для блока с соцсетями*/
-.network{
+.network {
   display: flex;
   justify-content: center;
-  &__pic{
+
+  &__pic {
     margin-top: 126px;
     margin-left: 15px;
     margin-right: 15px;
     width: 50px;
     height: 50px;
+
     @media screen and (max-width: $desktop) {
       margin-top: 66px;
       width: 27px;
       height: 27px;
     }
+
     @media screen and (max-width: $tablet) {
       margin-top: 30px;
       margin-left: 3px;
@@ -4088,6 +4245,7 @@ footer{
       width: 10.16px;
       height: 10.16px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 7px;
       height: 7px;
@@ -4095,28 +4253,34 @@ footer{
     }
   }
 }
+
 /*Стили для блока с платежными системами*/
-.pay{
+.pay {
   display: flex;
   flex-direction: column;
   margin-left: 100px;
+
   @media screen and (max-width: $desktop) {
     margin-left: 50px;
   }
+
   @media screen and (max-width: $tablet) {
     margin-left: 40%;
   }
-  &__pic{
+
+  &__pic {
     padding-bottom: 20px;
     width: 60px;
     height: 50px;
     justify-self: center;
+
     @media screen and (max-width: $desktop) {
       padding-bottom: 0px;
       margin-bottom: 10px;
       width: 32px;
       height: 16px;
     }
+
     @media screen and (max-width: $tablet) {
       padding-bottom: 0px;
       margin-bottom: 5px;
@@ -4125,62 +4289,74 @@ footer{
     }
   }
 }
+
 /*Стили для блока с информацией мелким шрифтом*/
-.wrapper-information{
+.wrapper-information {
   width: 100%;
   @include container;
   height: 239px;
+
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 99px;
   }
+
   @media screen and (max-width: $tablet) {
     @include mobile-container;
     height: 39px;
   }
+
   @media screen and (max-width: $mobile) {
     max-width: 240px;
     margin: 0 auto;
     height: 25px;
   }
 
-  &__title{
+  &__title {
     font-family: 'Gilroy600';
     font-size: 25px;
     margin-top: 72px;
+
     @media screen and (max-width: $desktop) {
       font-size: 13px;
       margin-top: 29px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 5.08px;
       margin-top: 15px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 3px;
       margin-top: 7px;
     }
   }
-  &__text{
+
+  &__text {
     font-family: 'Gilroy400';
     font-size: 20px;
     margin-top: 17px;
+
     @media screen and (max-width: $desktop) {
       font-size: 10px;
       margin-top: 9px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 4.06px;
       margin-top: 5px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 2.5px;
       margin-top: 3px;
     }
   }
 }
+
 /*Стили для кнопки стрелка "Вверх"*/
-.upward{
+.upward {
   position: fixed;
   bottom: 250px;
   right: calc((101% - $desktop)/2);
@@ -4194,66 +4370,79 @@ footer{
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
+
   @media screen and (max-width: $desktop) {
     width: 40px;
     height: 40px;
     right: calc((100% - $tablet)/2);
     bottom: 135px;
   }
+
   @media screen and (max-width: $tablet) {
     width: 15.23px;
     height: 15.23px;
     right: calc((100% - $mobile)/2);
     bottom: 50px;
   }
+
   @media screen and (max-width: $mobile) {
     width: 10px;
     height: 10px;
     right: calc((100% - 240px)/2);
     bottom: 30px;
   }
-  &__img{
+
+  &__img {
     width: 75px;
     height: 75px;
     display: flex;
     justify-content: center;
+
     @media screen and (max-width: $desktop) {
       width: 40px;
       height: 40px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 15.23px;
       height: 15.23px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 10px;
       height: 10px;
     }
   }
-  &__img-pic{
+
+  &__img-pic {
     align-self: center;
     width: 25px;
     height: 25px;
+
     @media screen and (max-width: $desktop) {
       width: 13px;
       height: 13px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 5.08px;
       height: 5.08px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 4px;
       height: 4px;
     }
   }
 }
-.upward.active{
+
+.upward.active {
   visibility: visible;
   opacity: 1;
 }
+
 /*Стили для кнопки с трубкой*/
-.pinkphone{
+.pinkphone {
   position: fixed;
   bottom: 75px;
   right: calc((101% - $desktop)/2);
@@ -4265,65 +4454,78 @@ footer{
   justify-items: center;
   z-index: 1;
   cursor: pointer;
+
   @media screen and (max-width: $desktop) {
     bottom: 41px;
     right: calc((101% - $tablet)/2);
     width: 66px;
     height: 66px;
   }
+
   @media screen and (max-width: $tablet) {
     bottom: 14px;
     right: calc((101% - $mobile)/2);
     width: 25.39px;
     height: 25.39px;
   }
+
   @media screen and (max-width: $mobile) {
     bottom: 5px;
     right: calc((100% - 240px)/2);
     width: 20px;
     height: 20px;
   }
-  &__img{
+
+  &__img {
     width: 125px;
     height: 125px;
     display: flex;
     justify-content: center;
+
     @media screen and (max-width: $desktop) {
       width: 66px;
       height: 66px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 25.39px;
       height: 25.39px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 20px;
       height: 20px;
     }
   }
-  &__img-pic{
+
+  &__img-pic {
     align-self: center;
     width: 75px;
     height: 75px;
+
     @media screen and (max-width: $desktop) {
       width: 40px;
       height: 40px;
     }
+
     @media screen and (max-width: $tablet) {
       width: 15.23px;
       height: 15.23px;
     }
+
     @media screen and (max-width: $mobile) {
       width: 12px;
       height: 12px;
     }
   }
+
   &:hover {
     background: linear-gradient(146.9deg, $blue 6.95%, $lightblue 93.21%);
   }
 }
- /* Стили для модального окна с лицензией*/
- .license-modal{
+
+/* Стили для модального окна с лицензией*/
+.license-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -4333,35 +4535,37 @@ footer{
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
+
+  @media screen and (max-width: $desktop) {}
+
+  @media screen and (max-width: $tablet) {}
+
+  @media screen and (max-width: $mobile) {}
+}
+
+.license-modal__content {
+  margin: auto;
+  display: block;
+  width: 30%;
+  max-width: 700px;
+
   @media screen and (max-width: $desktop) {
-
-  }
-  @media screen and (max-width: $tablet) {
-
-  }
-  @media screen and (max-width: $mobile) {
-
-  }
-}
-.license-modal__content{
-    margin: auto;
-    display: block;
-    width: 30%;
+    width: 50%;
     max-width: 700px;
-    @media screen and (max-width: $desktop) {
-      width: 50%;
-      max-width: 700px;
-    }
-    @media screen and (max-width: $tablet) {
-      max-width: 340px;
-    }
-    @media screen and (max-width: $mobile) {
-      max-width: 240px;
-    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    max-width: 340px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+  }
 }
-.license-modal__content img{
-    width: 100%;
-    height: auto;
+
+.license-modal__content img {
+  width: 100%;
+  height: auto;
 }
 
 /* Стили для изображения лицензии*/
@@ -4369,12 +4573,13 @@ footer{
   cursor: pointer;
   transition: 0.3s;
 }
+
 .minimized:hover {
   opacity: 0.7;
 }
 
 /* Стили для модального окна с гарантией*/
-.warranty-modal{
+.warranty-modal {
   display: none;
   position: fixed;
   z-index: 10;
@@ -4385,27 +4590,34 @@ footer{
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.warranty-modal__content{
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 1280px;
-    @media screen and (max-width: $desktop) {
-      max-width: 870px;
-    }
-    @media screen and (max-width: $tablet) {
-      max-width: 340px;
-    }
-    @media screen and (max-width: $mobile) {
-      max-width: 240px;
-    }
+
+.warranty-modal__content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+
+  @media screen and (max-width: $desktop) {
+    max-width: 870px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    max-width: 340px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+  }
 }
-#warranty-modal__image{
-    width: 100%;
-    height: auto;
+
+#warranty-modal__image {
+  width: 100%;
+  height: auto;
 }
+
 //Стили для модальных окон "Обратный звонок" и "Запись на косультацию". Лена
-.ordercall-modal, .consultation-modal {
+.ordercall-modal,
+.consultation-modal {
   position: absolute;
   visibility: hidden;
   opacity: 0;
@@ -4432,13 +4644,16 @@ footer{
     font-family: 'Gilroy600';
     font-weight: 600;
     letter-spacing: 0.1em;
+
     @media screen and (max-width: $tablet) {
       padding: 20px;
     }
+
     @media screen and (max-width: $mobile) {
       padding: 10px;
     }
   }
+
   //Стиль для кнопки закрытия
   &__close-button {
     height: 30px;
@@ -4454,28 +4669,35 @@ footer{
     cursor: pointer;
     transition: .3s;
     outline: none;
+
     @media screen and (max-width: $tablet) {
       height: 20px;
       width: 20px;
     }
+
     @media screen and (max-width: $mobile) {
       height: 15px;
       width: 15px;
     }
+
     &__hover {
       transition: .3s;
     }
   }
 }
-.ordercall-modal_active, .consultation-modal_active {
+
+.ordercall-modal_active,
+.consultation-modal_active {
   position: fixed;
   top: 0;
   visibility: visible;
   opacity: 1;
   transition: .3s;
 }
+
 //Стили для формы
-.ordercall-form, .consultation-form {
+.ordercall-form,
+.consultation-form {
   font-family: 'Gilroy700';
 
   &__title {
@@ -4484,35 +4706,43 @@ footer{
     text-transform: uppercase;
     margin: 0 0 20px;
     font-weight: 400;
+
     @media screen and (max-width: $desktop) {
       margin: 0 0 15px;
       font-size: 30px;
     }
+
     @media screen and (max-width: $tablet) {
       margin: 0 0 10px;
       font-size: 20px;
     }
+
     @media screen and (max-width: $tablet) {
       margin: 0 0 5px;
       font-size: 10px;
     }
   }
+
   &__p {
     font-family: 'Coolvetica400';
     font-size: 26px;
     text-transform: uppercase;
     font-weight: 400;
     margin: 0;
+
     @media screen and (max-width: $desktop) {
       font-size: 20px;
     }
+
     @media screen and (max-width: $desktop) {
       font-size: 14px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 8px;
     }
   }
+
   &__tel {
     width: 85%;
     height: 65px;
@@ -4529,15 +4759,18 @@ footer{
       height: 50px;
       font-size: 20px;
     }
+
     @media screen and (max-width: $tablet) {
       height: 40px;
       font-size: 12px;
     }
+
     @media screen and (max-width: $mobile) {
       height: 30px;
       font-size: 8px;
       margin-top: 5px;
     }
+
     //Стили для невалидных полей
     &:invalid {
       background-color: $whitesmoke;
@@ -4548,39 +4781,50 @@ footer{
       outline: none;
     }
   }
+
   &__info {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0em;
     margin-top: 0px;
     opacity: 0.8;
+
     @media screen and (max-width: $desktop) {
       font-size: 16px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 12px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 6px;
     }
-    & p{
+
+    & p {
       height: 26px;
+
       @media screen and (max-width: $desktop) {
         height: 20px;
       }
+
       @media screen and (max-width: $tablet) {
         height: 16px;
       }
+
       @media screen and (max-width: $mobile) {
         height: 9px;
       }
     }
   }
+
   &__input-box {
     margin: 10px 0;
   }
 }
-.ordercall__submit-btn, .consultation__submit-btn {
+
+.ordercall__submit-btn,
+.consultation__submit-btn {
   width: 85%;
   height: 65px;
   padding: 8px 16px 8px 16px;
@@ -4594,30 +4838,37 @@ footer{
   letter-spacing: 0em;
   margin: 10px;
   cursor: pointer;
+
   @media screen and (max-width: $desktop) {
     height: 50px;
     font-size: 20px;
   }
+
   @media screen and (max-width: $tablet) {
     height: 40px;
     font-size: 11px;
     margin: 0px;
     padding: 0px;
   }
+
   @media screen and (max-width: $mobile) {
     height: 30px;
     font-size: 8px;
   }
 }
+
 //Стили для кастомных сообщений
-.ordercall-error, .consultation-error {
+.ordercall-error,
+.consultation-error {
   width: 100%;
   padding: 0;
   font-size: 90%;
   color: $blue;
   border-radius: 0 0 5px 5px;
 }
-.ordercall-error.active, .consultation-error.active {
+
+.ordercall-error.active,
+.consultation-error.active {
   padding: 0.3em;
 }
 
@@ -4625,12 +4876,15 @@ footer{
 
 .banner-container {
   @include container;
+
   @media screen and (max-width: $desktop) {
     @include tablet-container;
   }
+
   @media screen and (max-width: $tablet) {
     @include mobile-container;
   }
+
   @media screen and (max-width: $mobile) {
     max-width: 240px;
     margin: 0 auto;
@@ -4678,36 +4932,36 @@ footer{
 }
 
 .title {
-width: 1175px;
-height: 89px;
-color: $blue;
-font-family: Coolvetica;
-font-weight: 600;
-font-size: 50px;
-line-height: 70px;
-margin-left: 100px;
-margin-top: 55px;
+  width: 1175px;
+  height: 89px;
+  color: $blue;
+  font-family: Coolvetica;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 70px;
+  margin-left: 100px;
+  margin-top: 55px;
 
-@media screen and (max-width: $desktop) {
-margin-left: 80px;
-font-size: 45px;
-line-height: 65px;
-margin-top: 35px;
-}
+  @media screen and (max-width: $desktop) {
+    margin-left: 80px;
+    font-size: 45px;
+    line-height: 65px;
+    margin-top: 35px;
+  }
 
-@media screen and (max-width: $tablet) {
-  margin-left: 50px;
-font-size: 39px;
-line-height: 65px;
-}
+  @media screen and (max-width: $tablet) {
+    margin-left: 50px;
+    font-size: 39px;
+    line-height: 65px;
+  }
 
-@media screen and (max-width: $mobile) {
-  width: 180px;
-  height: 30px;
-  margin-left: 25px;
-  font-size: 15px;
-  line-height: 15px;
-  margin-top: 25px;
+  @media screen and (max-width: $mobile) {
+    width: 180px;
+    height: 30px;
+    margin-left: 25px;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 25px;
   }
 
 }
@@ -4739,17 +4993,17 @@ line-height: 65px;
   @media screen and (max-width: $desktop) {
     font-size: 45px;
     line-height: 50px;
-    }
+  }
 
-    @media screen and (max-width: $tablet) {
-      font-size: 35px;
-      line-height: 40px;
-      }
+  @media screen and (max-width: $tablet) {
+    font-size: 35px;
+    line-height: 40px;
+  }
 
-      @media screen and (max-width: $mobile) {
-        font-size: 15px;
-        line-height: 15px;
-        }
+  @media screen and (max-width: $mobile) {
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
 
 .text {
@@ -4769,23 +5023,23 @@ line-height: 65px;
     margin-left: 80px;
     font-size: 45px;
     line-height: 45px;
-    }
+  }
 
-    @media screen and (max-width: $tablet) {
-      width: 470px;
-      height: 160px;
-      margin-left: 50px;
-      font-size: 35px;
-      line-height: 45px;
-      }
+  @media screen and (max-width: $tablet) {
+    width: 470px;
+    height: 160px;
+    margin-left: 50px;
+    font-size: 35px;
+    line-height: 45px;
+  }
 
-      @media screen and (max-width: $mobile) {
-        width: 180px;
-        height: 20px;
-        margin-left: 25px;
-        font-size: 15px;
-        line-height: 15px;
-        }
+  @media screen and (max-width: $mobile) {
+    width: 180px;
+    height: 20px;
+    margin-left: 25px;
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
 
 .text1 {
@@ -4804,25 +5058,26 @@ line-height: 65px;
     margin-left: 80px;
     font-size: 33px;
     line-height: 40px;
-    }
+  }
 
-    @media screen and (max-width: $tablet) {
-      width: 500px;
-      height: 40px;
-      margin-left: 50px;
-      font-size: 30px;
-      margin-bottom: 35px;
-      }
+  @media screen and (max-width: $tablet) {
+    width: 500px;
+    height: 40px;
+    margin-left: 50px;
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
 
-      @media screen and (max-width: $mobile) {
-        width: 180px;
-        height: 20px;
-        margin-left: 25px;
-        font-size: 10px;
-        line-height: 20px;
-        margin-bottom: 5px;
-        }
+  @media screen and (max-width: $mobile) {
+    width: 180px;
+    height: 20px;
+    margin-left: 25px;
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
 }
+
 .ul {
   width: 1116px;
   height: 183px;
@@ -4838,7 +5093,7 @@ line-height: 65px;
     height: 130px;
     margin-left: 100px;
     margin-bottom: 25px;
-    }
+  }
 
   @media screen and (max-width: $tablet) {
     width: 450px;
@@ -4848,7 +5103,7 @@ line-height: 65px;
     line-height: 30px;
     margin-top: 50px;
     margin-bottom: 35px;
-    }
+  }
 
   @media screen and (max-width: $mobile) {
     width: 190px;
@@ -4858,7 +5113,7 @@ line-height: 65px;
     line-height: 15px;
     margin-top: 25px;
     margin-bottom: 70px;
-    }
+  }
 }
 
 #close-button {
@@ -4881,7 +5136,7 @@ line-height: 65px;
     width: 25px;
     height: 25px;
     right: 5px;
-    }
+  }
 }
 
 .phone-input {
@@ -4902,18 +5157,18 @@ line-height: 65px;
 
   @media screen and (max-width: $desktop) {
     margin-left: 80px;
-    }
+  }
 
   @media screen and (max-width: $tablet) {
     width: 450px;
     margin-left: 50px;
-    }
+  }
 
   @media screen and (max-width: $tablet) {
     width: 250px;
     height: 30px;
     margin-left: 40px;
-    }
+  }
 }
 
 .phone-input-button {
@@ -4937,19 +5192,139 @@ line-height: 65px;
     width: 170px;
     left: 685px;
     font-size: 25px;
-    }
+  }
 
   @media screen and (max-width: $tablet) {
     width: 170px;
     left: 325px;
     font-size: 25px;
-    }
-    @media screen and (max-width: $tablet) {
+  }
+
+  @media screen and (max-width: $tablet) {
     width: 100px;
     left: 185px;
     font-size: 25px;
     top: 3px;
     font-size: 15px;
     line-height: 20px;
-    }
+  }
+}
+
+// СБОР ДАННЫХ КЛИЕНТА
+.quiz_userdata_div {
+  display: flex;
+  flex-direction: column;
+  // gap: 15px;
+  margin-bottom: 15px;
+  margin-left: 450px;
+
+  @media screen and (max-width: $desktop) {
+    @include container;
+    margin: 0 auto;
+    max-width: max-content;
+  }
+}
+
+.quiz_userdata {
+  width: 55%;
+  height: 75px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 106px;
+  border: 0.5px solid #292929;
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 60px;
+  padding-left: 30px;
+
+  //Стили для невалидных полей
+  &:invalid {
+    // background-color: $whitesmoke;
+    border-color: $blue;
+    // border: 2px solid $blue;
+  }
+
+  &_name,
+  &_tel,
+  &_email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 415px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+}
+
+
+.btn_next_submit {
+  width: 360px;
+  background-color: #D9D9D9;
+  border-width: 0;
+  box-shadow: inset -4px -4px 7px rgba(166, 165, 165, 0.9);
+  color: $white;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 200px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 80px;
+  }
+}
+
+
+// кнопка отправить при добавлении класса active
+.btn_next_submit.active {
+  // height: 120px;
+  border-radius: 200px;
+  border-width: 0;
+  background-color: $pink;
+  box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+}
+
+// при наведении мыши
+.btn_next_submit:hover {
+  background-color: $pink;
+  box-shadow: inset -2px -2px 4px rgba(166, 165, 165, 0.9);
+}
+
+//Стили для error сообщений
+.error_mess {
+  width: 100%;
+  padding: 5px;
+  color: $blue;
+  border-radius: 0 0 5px 5px;
+
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 30px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 10px;
+  }
+}
+
+.error_mess.active {
+  padding: 0.3em;
 }
