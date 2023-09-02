@@ -271,7 +271,7 @@ $fG: "Gilroy";
 .section-with-man {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url("/assets/img/main-man.png");
+  background-image: url(/assets/img/main/main-man.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: -25px;
@@ -281,12 +281,12 @@ $fG: "Gilroy";
   }
 
   @media screen and (max-width: $desktop) {
-    background-image: url("/assets/img/main-man-tablet.png");
+    background-image: url(/assets/img/main/main-man-tablet.png);
     background-position-x: 50%;
   }
 
   @media screen and (max-width: $tablet) {
-    background-image: url("/assets/img/main-man-mobile.png");
+    background-image: url(/assets/img/main/main-man-mobile.png);
     background-position-y: -20px;
   }
 
@@ -1077,7 +1077,7 @@ $fG: "Gilroy";
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(/NewlineDent/assets/img/sign_up_free/sign_up_block.jpg);
+  background-image: url(/assets/img/sign_up_free/sign_up_block.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-x: 120%;
@@ -1086,7 +1086,7 @@ $fG: "Gilroy";
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 211px;
-    background-image: url(/NewlineDent/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-image: url(/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-position-x: 115%;
     background-size: 55% 100%;
   }
@@ -2415,7 +2415,7 @@ $innerShadow: #C88D9C;
 .container__turquoise {
   display: flex;
   flex-direction: row;
-  background: url(/NewlineDent/assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
+  background: url(/assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   // overflow: hidden;
   height: 814px;
   background-position-x: 106%;
@@ -2432,7 +2432,7 @@ $innerShadow: #C88D9C;
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 432px;
-    background: url(/NewlineDent/assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(/assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
 
@@ -2446,7 +2446,7 @@ $innerShadow: #C88D9C;
   @media screen and (max-width: $tablet) {
     @include mobile-container;
     height: 166.03px;
-    background: url(/NewlineDent/assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(/assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
 
@@ -3074,9 +3074,6 @@ $gray: #D9D9D9;
   }
 }
 
-
-
-
 // ВАЖНО стили при открытии окна попап
 .container__quiz {
   z-index: 15;
@@ -3167,4 +3164,493 @@ $gray: #D9D9D9;
   &_back:hover {
     border-width: 0;
   }
+}
+
+// Стили для блока Преимущества
+
+.container_advantages {
+  @include container;
+  width: 100vw;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    width: 100vw;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    width: 100vw;
+  }
+}
+
+// Главный заголовок блока
+.title_advantages {
+  text-align: center;
+  color: $blue;
+  font-family: "Coolvetica";
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 89%;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    font-size: 63px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    font-size: 24.5px;
+    margin-bottom: 15px;
+  }
+}
+.span_advantages {
+  color: $pink;
+}
+
+// Контейнер для блоков с информацией
+.container_advantages-info {
+  font-family: "Gilroy";
+  display: flex;
+
+  justify-content: space-around;
+  width: auto;
+}
+.container_advantages-items {
+  border-radius: 60px;
+  height: 794px;
+  max-width: 473px;
+  // min-width: 266px;
+  // width: 100%;
+  margin-bottom: 59px;
+  gap: 15px;
+  // margin-left: 15px;
+  background-color: $blue;
+  color: $white;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    border-radius: 31px;
+    height: 448px;
+    max-width: 265px;
+    width: 100vw;
+    margin-left: 8px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    justify-content: center;
+    border-radius: 12px;
+    height: 172px;
+    width: 101px;
+    margin-left: 5px;
+  }
+}
+
+// Заголовок внутри блока
+.advantages-items-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 50px 0px 0px 50px;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    font-size: 17px;
+    padding: 18px 24px 15px 24px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    font-size: 7px;
+    padding: 9px 8px 4px 9px;
+  }
+}
+
+// Разделительная линия
+.advantages-items-title_line {
+  height: 4px;
+  width: 100%;
+  margin: 30px 0px 30px 45px;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 61.46%);
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    height: 2px;
+    margin-left: 24px;
+  }
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    height: 1px;
+    margin-left: 10px;
+  }
+}
+
+.advantages-list {
+  list-style-type: disc;
+  width: 373px;
+  font-size: 18px;
+  margin: 0px 50px 0px 50px;
+  font-weight: 300;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    width: 160px;
+    font-size: 10px;
+    margin: 13px 0px 0px 35px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    width: 62px;
+    font-size: 4px;
+    margin: 0px 0px 0px 15px;
+  }
+}
+.advantages-list-elem {
+  margin-top: 20px;
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    margin-top: 13px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    margin-top: 5px;
+    // word-wrap: break-word;
+  }
+}
+
+// Стили для баннера
+
+.banner-container {
+  @include container;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+}
+
+.banner {
+  width: 95%;
+  height: 95%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $whitesmoke;
+  background-image: url(/assets/img/banner/banner-man.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: 26%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+
+  @media screen and (max-width: $desktop) {
+    width: 90%;
+    height: 90%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 70%;
+    height: 70%;
+    background-size: 35%;
+    background-position-y: 30%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+    height: 90%;
+    background-image: url(/assets/img/banner/banner-man-mobile.png);
+    background-position-y: 50%;
+    background-size: 30%;
+  }
+}
+
+.title {
+width: 1175px;
+height: 89px;
+color: $blue;
+font-family: Coolvetica;
+font-weight: 600;
+font-size: 50px;
+line-height: 70px;
+margin-left: 100px;
+margin-top: 55px;
+
+@media screen and (max-width: $desktop) {
+margin-left: 80px;
+font-size: 45px;
+line-height: 65px;
+margin-top: 35px;
+}
+
+@media screen and (max-width: $tablet) {
+  margin-left: 50px;
+font-size: 39px;
+line-height: 65px;
+}
+
+@media screen and (max-width: $mobile) {
+  width: 180px;
+  height: 30px;
+  margin-left: 25px;
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 25px;
+  }
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Стили для затемнения фона */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none;
+}
+
+.bluetext,
+.bluetext1 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 55px;
+  color: $blue;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 45px;
+    line-height: 50px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 35px;
+      line-height: 40px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: 15px;
+        line-height: 15px;
+        }
+}
+
+.text {
+  width: 932px;
+  height: 180px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 45px;
+
+  @media screen and (max-width: $desktop) {
+    width: 925px;
+    height: 120px;
+    margin-left: 80px;
+    font-size: 45px;
+    line-height: 45px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 470px;
+      height: 160px;
+      margin-left: 50px;
+      font-size: 35px;
+      line-height: 45px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        width: 180px;
+        height: 20px;
+        margin-left: 25px;
+        font-size: 15px;
+        line-height: 15px;
+        }
+}
+
+.text1 {
+  width: 1070px;
+  height: 60px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $desktop) {
+    height: 40px;
+    margin-left: 80px;
+    font-size: 33px;
+    line-height: 40px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 500px;
+      height: 40px;
+      margin-left: 50px;
+      font-size: 30px;
+      margin-bottom: 35px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        width: 180px;
+        height: 20px;
+        margin-left: 25px;
+        font-size: 10px;
+        line-height: 20px;
+        margin-bottom: 5px;
+        }
+}
+.ul {
+  width: 1116px;
+  height: 183px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 41.2px;
+  margin-left: 130px;
+  color: $black;
+  list-style-type: disc;
+
+  @media screen and (max-width: $desktop) {
+    height: 130px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 450px;
+    height: 130px;
+    margin-left: 70px;
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 190px;
+    height: 17px;
+    margin-left: 35px;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 25px;
+    margin-bottom: 70px;
+    }
+}
+
+#close-button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: $white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  @media screen and (max-width: $mobile) {
+    width: 25px;
+    height: 25px;
+    right: 5px;
+    }
+}
+
+.phone-input {
+  position: relative;
+  display: inline-block;
+}
+
+.phone-input-input {
+  width: 780px;
+  padding-right: 100px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 106px;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  margin-left: 120px;
+
+  @media screen and (max-width: $desktop) {
+    margin-left: 80px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 450px;
+    margin-left: 50px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 250px;
+    height: 30px;
+    margin-left: 40px;
+    }
+}
+
+.phone-input-button {
+  position: absolute;
+  left: 643px;
+  top: 5px;
+  bottom: 0;
+  width: 250px;
+  height: 80%;
+  background-color: $pink;
+  color: white;
+  border: none;
+  border-radius: 106px;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 31.94px;
+  line-height: 38.6px;
+
+  @media screen and (max-width: $desktop) {
+    width: 170px;
+    left: 685px;
+    font-size: 25px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 170px;
+    left: 325px;
+    font-size: 25px;
+    }
+    @media screen and (max-width: $tablet) {
+    width: 100px;
+    left: 185px;
+    font-size: 25px;
+    top: 3px;
+    font-size: 15px;
+    line-height: 20px;
+    }
 }
