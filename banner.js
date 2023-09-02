@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Показывать баннер и затемнение каждые 5 секунд
-    setInterval(showBanner, 1000000);
+    setInterval(showBanner, 500000);
 
     // Закрывать баннер и затемнение при клике вне баннера
     overlay.addEventListener('click', function(e) {
