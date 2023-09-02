@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
    
   });
+
 //Валидация формы
 const contactForm = document.querySelector('.contact-form');
 const tel = document.getElementById("phone");
@@ -48,6 +49,7 @@ contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
   }
 });
+
 //Проверка на возможные ошибки
 function showError() {
   if (tel.validity.valueMissing) {
@@ -58,7 +60,7 @@ function showError() {
     telError.textContent = "Введите номер в правильном формате.";
   }
 
-  // Стилизация
+//Стилизация
   telError.className = "error active";
 }
 

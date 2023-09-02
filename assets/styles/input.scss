@@ -39,42 +39,42 @@ $mobile: 340px;
   //Fonts
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
+  src: url(../assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+  src: url(../assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
   font-weight: 600;
 }
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
+  src: url(../assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
+  src: url(../assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Coolvetica", sans-serif;
-  src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+  src: url(../assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
+  src: url(../assets/fonts/Roboto_400/Roboto-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
+  src: url(../assets/fonts/Roboto_300/Roboto-Light.ttf);
   font-weight: 300;
 }
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
+  src: url(/..assets/fonts/Roboto_500/Roboto-Medium.ttf);
   font-weight: 500;
 }
 
@@ -82,30 +82,28 @@ $mobile: 340px;
   $fG: 'Gilroy';
 
   // Стили для блока "Наши врачи"
-  .title{
-    font-family: $fC;
+.doctors-title{
+  justify-self: center;
+  grid-column: 1/5;
+  font-family: $fC;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: center;
     margin-bottom: 60px;
     color: $blue;
-    font-size: 120px;
+    font-size: 100px;
     @media screen and (max-width: $desktop) {
       @include container;
-      font-size: 64px; 
+      font-size: 56px; 
     }
     @media screen and (max-width: $tablet) {
       @include tablet-container;
-      font-size: 24px; 
+      font-size: 20px; 
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container;
       font-size: 16px; 
     } 
-}
-.doctors-title{
-  justify-self: center;
-  grid-column: 1/5;
 }
 .doctors-container{
   display: grid;
@@ -346,35 +344,35 @@ $mobile: 340px;
     bottom: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     overflow-y: scroll;
     padding: 60px 15px;
     &__content {
-    width: 50%;
-      //max-width: 50%;
-      padding: 50px;
-      background:#F3F3F3;
-      border-radius: 3px;
-      position: relative;
-      box-shadow: 0 5px 15px black;
-      text-align: center;
-      font-family: $fG;
-      font-size: 36px;
-      font-weight: 600;
-      line-height: 42px;
-      letter-spacing: 0em;
-      @media screen and (max-width: $desktop) {
-        @include container;
-        width: 1020px;
-        font-size: 24px;
-      }
+        width: 45%;
+        padding: 30px;
+        background: #F3F3F3;
+        border-radius: 3px;
+        position: relative;
+        box-shadow: 0 5px 15px black;
+        text-align: center;
+        font-family: 'Gilroy600';
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        @media screen and (max-width: $tablet) {
+          padding: 20px;
+          width: 65%;
+        }
+        @media screen and (max-width: $mobile) {
+          padding: 10px;
+        }
     }
+    //Кнопка закрытия (крестик)
     &__close-button {
-      height: 30px;
       width: 30px;
+      height: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -386,6 +384,19 @@ $mobile: 340px;
       cursor: pointer;
       transition: .3s;
       outline: none;
+       
+        @media screen and (max-width: $desktop) {
+          width: 20px;
+          height: 20px;
+        }
+        @media screen and (max-width: $tablet) {
+          width: 10px;
+          height: 10px;
+        }
+        @media screen and (max-width: $mobile) {
+          width: 8px;
+          height: 8px;
+        }
         &:hover{
           transition: .3s;
         }
@@ -399,92 +410,179 @@ $mobile: 340px;
   opacity: 1;
   transition: .3s;
 }
+
 //Стили для формы
 .contact-form{
   font-family: $fG;
-  &__tel{
-    width: 55%;
-    height: 75px;
-    padding: 8px 16px 8px 16px;
-    border-radius: 106px;
-    border: 0.5px solid #292929;
-    color: black;
-    font-size: 36px;
-    font-weight: 700;
-    margin-top: 60px;
-    padding-left: 30px;
-    @media screen and (max-width: $desktop) {
-      @include container;
-      width: 415px;
-      height: 50px;
+    &__tel{
+      width: 85%;
+      height: 65px;
+      padding: 8px 16px 8px 16px;
+      border-radius: 106px;
+      border: 0.5px solid $dark;
+      color: black;
       font-size: 30px;
+      font-weight: 700;
+      margin-top: 10px;
+      text-align: center;
+
+      @media screen and (max-width: $desktop) {
+        height: 50px;
+        font-size: 20px;
+        padding: 0px;
+      }
+      @media screen and (max-width: $tablet) {
+        height: 30px;
+        font-size: 12px;
+        border-radius: 32px;
+      }
+      @media screen and (max-width: $mobile) {
+        height: 20px;
+        font-size: 8px;
+        border-radius: 26px;
+        margin-top: 5px;
+      }
+//Стили для валидных полей
+      &:valid{
+        border: 2px solid $black;
+        @media screen and (max-width: $mobile) {
+        border: 1px solid $black;
+      }
     }
 //Стили для невалидных полей
       &:invalid {
         background-color: $whitesmoke;
+        border: 3px solid $blue;
+        @media screen and (max-width: $mobile) {
         border: 2px solid $blue;
+        }
       }
       &:focus:invalid {
         outline: none;
       }
   }
   &__title {
-    font-family: $fC;
-    font-size: 2rem;
+    font-family: 'Coolvetica400';
+    font-size: 36px;
     text-transform: uppercase;
     margin: 0 0 20px;
+    font-weight: 400;
     @media screen and (max-width: $desktop) {
-      @include container;
-      font-size: 24px;
-      line-height: 28px;
+      margin: 0 0 15px;
+      font-size: 30px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    @media screen and (max-width: $mobile) {
+      margin: 0 0 5px;
+      font-size: 10px;
     }
   }
+  &__subtitle{
+      font-family: 'Coolvetica400';
+      font-size: 26px;
+      font-weight: 400;
+      margin: 0;
+      @media screen and (max-width: $desktop) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: $mobile) {
+        font-size: 8px;
+      }
+  }
   &__info{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
+    letter-spacing: 0em;
+    margin-top: 0px;
+    opacity: 0.8;
     @media screen and (max-width: $desktop) {
-      @include container;
-      font-size: 19px;
-      line-height: 24px;
+      font-size: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 10px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 4px;
     }
   }
   &__input-box{
     margin: 20px 0;
+    @media screen and (max-width: $desktop) {
+      margin: 10px 0;
+    }
+    @media screen and (max-width: $tablet) {
+      margin: 8px 0;
+    }
+    @media screen and (max-width: $mobile) {
+      margin: 6px 0;
+    }
   }
 }
 //Стили для кастомных сообщений
 .error {
   width: 100%;
   padding: 0;
-  font-size: 90%;
+  font-size: 32px;
   color: $blue;
   border-radius: 0 0 5px 5px;
+  margin-top: 0px;
+  @media screen and (max-width: $desktop) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6px;
+  }
 }
 
 .error.active {
   padding: 0.3em;
+  @media screen and (max-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .submit-btn{
-  width: 55%;
-  height: 76px;
+  width: 85%;
+  height: 65px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;
   border: none;
   gap: 5px;
   background: #FF9FB7;
   color: #FFFFFF;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0em;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
   @media screen and (max-width: $desktop) {
-    @include container;
-    width: 415px;
     height: 50px;
-    cursor: none;
-    font-size: 19px;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media screen and (max-width: $tablet) {
+    height: 30px;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 32px;
+  }
+  @media screen and (max-width: $mobile) {
+    height: 20px;
+    font-size: 6px;
+    border-radius: 26px;
+    margin: 0px;
+    padding: 0px;
   }
 }
 
@@ -500,21 +598,24 @@ $mobile: 340px;
   grid-template-columns: 500px 500px 500px;
   grid-template-rows: 0.1fr 0.1fr 1fr;
   column-gap: 60px;
+  padding: 100px 0;
     @media screen and (max-width: $desktop) {
     @include container;
-    padding-bottom: 100px;
+    padding: 80px 0;
     grid-template-columns: 267px 267px 267px;
     grid-template-rows: 0.1fr 0.1fr 1fr;
     column-gap: 32px;
   }
     @media screen and (max-width: $tablet) {
       @include tablet-container;
+      padding: 30px 0;
       grid-template-columns: 100px 100px 100px;
       grid-template-rows: 0.1fr 0.1fr 1fr;
       column-gap: 12px;
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container;
+      padding: 20px 0;
       grid-template-columns: 90px 90px 90px;
       grid-template-rows: 0.1fr 0.1fr 1fr;
       column-gap: 5px;
@@ -525,14 +626,20 @@ $mobile: 340px;
   justify-self: center;
   grid-column: 1/4;
   grid-row: 1/2;
-  font-size: 120px;
+  font-family: $fC;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 60px;
+  color: $blue;
+  font-size: 100px;
     @media screen and (max-width: $desktop) {
       @include container;
-      font-size: 64px; 
+      font-size: 56px; 
     }
     @media screen and (max-width: $tablet) {
       @include tablet-container;
-      font-size: 24px; 
+      font-size: 20px; 
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container;
@@ -568,7 +675,7 @@ $mobile: 340px;
     }
     
 }
-//Колонки
+//Голубые колонки
 .stage{
   display: grid;
   grid-row: 3/4;

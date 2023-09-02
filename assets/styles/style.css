@@ -24,78 +24,75 @@ ul {
 
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
+  src: url(../assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+  src: url(../assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
   font-weight: 600;
 }
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
+  src: url(../assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
+  src: url(../assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Coolvetica", sans-serif;
-  src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+  src: url(../assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
+  src: url(../assets/fonts/Roboto_400/Roboto-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
+  src: url(../assets/fonts/Roboto_300/Roboto-Light.ttf);
   font-weight: 300;
 }
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
+  src: url(/..assets/fonts/Roboto_500/Roboto-Medium.ttf);
   font-weight: 500;
 }
-.title {
+.doctors-title {
+  justify-self: center;
+  grid-column: 1/5;
   font-family: "Coolvetica";
   font-weight: 400;
   letter-spacing: 0em;
   text-align: center;
   margin-bottom: 60px;
   color: #4fa7fb;
-  font-size: 120px;
+  font-size: 100px;
 }
 @media screen and (max-width: 1630px) {
-  .title {
+  .doctors-title {
     max-width: 1622px;
     margin: 0 auto;
-    font-size: 64px;
+    font-size: 56px;
   }
 }
 @media screen and (max-width: 870px) {
-  .title {
+  .doctors-title {
     max-width: 859.68px;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 340px) {
-  .title {
+  .doctors-title {
     max-width: 328.39px;
     margin: 0 auto;
     font-size: 16px;
   }
-}
-
-.doctors-title {
-  justify-self: center;
-  grid-column: 1/5;
 }
 
 .doctors-container {
@@ -392,7 +389,7 @@ ul {
   bottom: 0;
   left: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -400,30 +397,31 @@ ul {
   padding: 60px 15px;
 }
 .modal__content {
-  width: 50%;
-  padding: 50px;
+  width: 45%;
+  padding: 30px;
   background: #F3F3F3;
   border-radius: 3px;
   position: relative;
   box-shadow: 0 5px 15px black;
   text-align: center;
-  font-family: "Gilroy";
-  font-size: 36px;
+  font-family: "Gilroy600";
   font-weight: 600;
-  line-height: 42px;
-  letter-spacing: 0em;
+  letter-spacing: 0.1em;
 }
-@media screen and (max-width: 1630px) {
+@media screen and (max-width: 870px) {
   .modal__content {
-    max-width: 1622px;
-    margin: 0 auto;
-    width: 1020px;
-    font-size: 24px;
+    padding: 20px;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .modal__content {
+    padding: 10px;
   }
 }
 .modal__close-button {
-  height: 30px;
   width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,6 +433,24 @@ ul {
   cursor: pointer;
   transition: 0.3s;
   outline: none;
+}
+@media screen and (max-width: 1630px) {
+  .modal__close-button {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .modal__close-button {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .modal__close-button {
+    width: 8px;
+    height: 8px;
+  }
 }
 .modal__close-button:hover {
   transition: 0.3s;
@@ -452,98 +468,218 @@ ul {
   font-family: "Gilroy";
 }
 .contact-form__tel {
-  width: 55%;
-  height: 75px;
+  width: 85%;
+  height: 65px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;
   border: 0.5px solid #292929;
   color: black;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
-  margin-top: 60px;
-  padding-left: 30px;
+  margin-top: 10px;
+  text-align: center;
 }
 @media screen and (max-width: 1630px) {
   .contact-form__tel {
-    max-width: 1622px;
-    margin: 0 auto;
-    width: 415px;
     height: 50px;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .contact-form__tel {
+    height: 30px;
+    font-size: 12px;
+    border-radius: 32px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .contact-form__tel {
+    height: 20px;
+    font-size: 8px;
+    border-radius: 26px;
+    margin-top: 5px;
+  }
+}
+.contact-form__tel:valid {
+  border: 2px solid #000000;
+}
+@media screen and (max-width: 340px) {
+  .contact-form__tel:valid {
+    border: 1px solid #000000;
   }
 }
 .contact-form__tel:invalid {
   background-color: #f3f3f3;
-  border: 2px solid #4fa7fb;
+  border: 3px solid #4fa7fb;
+}
+@media screen and (max-width: 340px) {
+  .contact-form__tel:invalid {
+    border: 2px solid #4fa7fb;
+  }
 }
 .contact-form__tel:focus:invalid {
   outline: none;
 }
 .contact-form__title {
-  font-family: "Coolvetica";
-  font-size: 2rem;
+  font-family: "Coolvetica400";
+  font-size: 36px;
   text-transform: uppercase;
   margin: 0 0 20px;
+  font-weight: 400;
 }
 @media screen and (max-width: 1630px) {
   .contact-form__title {
-    max-width: 1622px;
-    margin: 0 auto;
-    font-size: 24px;
-    line-height: 28px;
+    margin: 0 0 15px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .contact-form__title {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .contact-form__title {
+    margin: 0 0 5px;
+    font-size: 10px;
+  }
+}
+.contact-form__subtitle {
+  font-family: "Coolvetica400";
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (max-width: 1630px) {
+  .contact-form__subtitle {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .contact-form__subtitle {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .contact-form__subtitle {
+    font-size: 8px;
   }
 }
 .contact-form__info {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
+  letter-spacing: 0em;
+  margin-top: 0px;
+  opacity: 0.8;
 }
 @media screen and (max-width: 1630px) {
   .contact-form__info {
-    max-width: 1622px;
-    margin: 0 auto;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .contact-form__info {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .contact-form__info {
+    font-size: 4px;
   }
 }
 .contact-form__input-box {
   margin: 20px 0;
 }
+@media screen and (max-width: 1630px) {
+  .contact-form__input-box {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 870px) {
+  .contact-form__input-box {
+    margin: 8px 0;
+  }
+}
+@media screen and (max-width: 340px) {
+  .contact-form__input-box {
+    margin: 6px 0;
+  }
+}
 
 .error {
   width: 100%;
   padding: 0;
-  font-size: 90%;
+  font-size: 32px;
   color: #4fa7fb;
   border-radius: 0 0 5px 5px;
+  margin-top: 0px;
+}
+@media screen and (max-width: 1630px) {
+  .error {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .error {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .error {
+    font-size: 6px;
+  }
 }
 
 .error.active {
   padding: 0.3em;
 }
+@media screen and (max-width: 870px) {
+  .error.active {
+    padding: 0;
+  }
+}
 
 .submit-btn {
-  width: 55%;
-  height: 76px;
+  width: 85%;
+  height: 65px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;
   border: none;
   gap: 5px;
   background: #FF9FB7;
   color: #FFFFFF;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0em;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
 }
 @media screen and (max-width: 1630px) {
   .submit-btn {
-    max-width: 1622px;
-    margin: 0 auto;
-    width: 415px;
     height: 50px;
-    cursor: none;
-    font-size: 19px;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .submit-btn {
+    height: 30px;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 32px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .submit-btn {
+    height: 20px;
+    font-size: 6px;
+    border-radius: 26px;
+    margin: 0px;
+    padding: 0px;
   }
 }
 
@@ -558,12 +694,13 @@ ul {
   grid-template-columns: 500px 500px 500px;
   grid-template-rows: 0.1fr 0.1fr 1fr;
   column-gap: 60px;
+  padding: 100px 0;
 }
 @media screen and (max-width: 1630px) {
   .stage-container {
     max-width: 1622px;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding: 80px 0;
     grid-template-columns: 267px 267px 267px;
     grid-template-rows: 0.1fr 0.1fr 1fr;
     column-gap: 32px;
@@ -573,6 +710,7 @@ ul {
   .stage-container {
     max-width: 859.68px;
     margin: 0 auto;
+    padding: 30px 0;
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 0.1fr 0.1fr 1fr;
     column-gap: 12px;
@@ -582,6 +720,7 @@ ul {
   .stage-container {
     max-width: 328.39px;
     margin: 0 auto;
+    padding: 20px 0;
     grid-template-columns: 90px 90px 90px;
     grid-template-rows: 0.1fr 0.1fr 1fr;
     column-gap: 5px;
@@ -592,20 +731,26 @@ ul {
   justify-self: center;
   grid-column: 1/4;
   grid-row: 1/2;
-  font-size: 120px;
+  font-family: "Coolvetica";
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #4fa7fb;
+  font-size: 100px;
 }
 @media screen and (max-width: 1630px) {
   .stage-title {
     max-width: 1622px;
     margin: 0 auto;
-    font-size: 64px;
+    font-size: 56px;
   }
 }
 @media screen and (max-width: 870px) {
   .stage-title {
     max-width: 859.68px;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 340px) {
