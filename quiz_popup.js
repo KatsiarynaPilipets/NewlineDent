@@ -36,7 +36,7 @@ function nextButton() {
             let indexButton = arrButtonNext.indexOf(button);  //ищем индекс кнопки в массиве
             // console.log(indexButton);
             arrPages.forEach((page) => {
-                if (indexButton >= 0 && indexButton < 5) {
+                if (indexButton >= 0 && indexButton < 6) {
                     indexNextPage = indexButton + 1;  // индекс следующей страницы будет на 1 больше
                     // console.log(indexNextPage);
                     page.classList.remove("active");
@@ -47,7 +47,7 @@ function nextButton() {
                 }
             });
         });
-    });
+    })
 }
 
 // функция листания кнопок назад
@@ -99,7 +99,8 @@ const quizForm = document.getElementById("quiz");
 let formData = new FormData(quizForm); //создаем фордату
 
 function checkForm() {
-    quizForm.addEventListener("change", () => {    // слушаем форму на странице
+    quizForm.addEventListener("change", (e) => {    // слушаем форму на странице
+        e.preventDefault();
         arrPages.forEach(page => {
             let radioQ = page.querySelector('.quiz__title').textContent; //ищем вопрос на странице
 
@@ -122,7 +123,9 @@ function checkForm() {
                     }
                 }
             }
-        })
+        });
+
+
 
     });
 }
@@ -140,4 +143,84 @@ sendFormButton.addEventListener('click', async function sendFormData() {
 
     let result = await response.json();
     alert(result.message);
-})
+});
+
+
+
+// Сбор данных клиента валидация
+const quizName = document.getElementById("quiz_name");
+const quizTel = document.getElementById("quiz_tel");
+const quizEmail = document.getElementById("quiz_email");
+
+const quizNameError = document.querySelector(".error_user_name");
+const quizTelError = document.querySelector(".error_tel");
+const quizEmailError = document.querySelector(".error_email");
+
+const submitBtnQuiz = document.querySelector('.btn_next_submit');
+
+quizForm.addEventListener('change', (e) => {
+    e.preventDefault();
+    checkName();
+    checkquizTel();
+    checkquizEmail();
+
+});
+
+
+function checkName() {
+    let userName = quizName.value;
+
+    if (quizName.validity.valueMissing) {
+        quizNameError.innerText = "Пожалуйста, заполните имя!";
+    }
+    else if (quizName.validity.tooShort) {
+        quizNameError.innerText = "Имя должно содержать минимум 2 буквы";
+    }
+    else if (quizName.validity.valid) {
+        quizNameError.innerText = "";
+
+        console.log(userName);
+        formData.append("userName", userName);
+    }
+
+    quizNameError.className = "error_mess active";
+}
+
+function checkquizTel() {
+    let userPhone = quizTel.value;
+    if (quizTel.validity.valueMissing) {
+        quizTelError.innerText = "Пожалуйста, заполните телефон!";
+    }
+    else if (quizTel.validity.tooShort) {
+        quizTelError.innerText = "Вы ввели номер не полностью.";
+    }
+    else if (quizTel.validity.pattern) {
+        quizTelError.innerText = "Введите номер в формате + 7";
+    }
+    else if (quizTel.validity.valid) {
+        quizTelError.innerText = "";
+
+        console.log(userPhone);
+        formData.append("userPhone", userPhone);
+    }
+
+    quizTelError.className = "error_mess active";
+}
+
+function checkquizEmail() {
+    let userEmail = quizEmail.value;
+    if (quizEmail.validity.valueMissing) {
+        quizEmailError.innerText = "Пожалуйста, заполните email!";
+    }
+    else if (quizEmail.validity.typeMismatch) {
+        quizEmailError.innerText = "Введите email в формате: name@mail.com.";
+    }
+    else if (quizEmail.validity.valid) {
+        quizEmailError.innerText = "";
+
+        console.log(userEmail);
+        formData.append("userEmail", userEmail);
+    }
+
+    quizEmailError.className = "error_mess active";
+}
