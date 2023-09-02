@@ -1051,6 +1051,125 @@ $gray: #D9D9D9;
   }
 }
 
+// СБОР ДАННЫХ КЛИЕНТА
+.quiz_userdata_div {
+  display: flex;
+  flex-direction: column;
+  // gap: 15px;
+  margin-bottom: 15px;
+  margin-left: 450px;
+
+  @media screen and (max-width: $desktop) {
+    @include container;
+    margin: 0 auto;
+    max-width: max-content;
+  }
+}
+
+.quiz_userdata {
+  width: 55%;
+  height: 75px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 106px;
+  border: 0.5px solid #292929;
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 60px;
+  padding-left: 30px;
+
+  //Стили для невалидных полей
+  &:invalid {
+    // background-color: $whitesmoke;
+    border-color: $blue;
+    // border: 2px solid $blue;
+  }
+
+  &_name,
+  &_tel,
+  &_email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 415px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+}
+
+
+.btn_next_submit {
+  width: 360px;
+  background-color: #D9D9D9;
+  border-width: 0;
+  box-shadow: inset -4px -4px 7px rgba(166, 165, 165, 0.9);
+  color: $white;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    width: 200px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    width: 80px;
+  }
+}
+
+
+// кнопка отправить при добавлении класса active
+.btn_next_submit.active {
+  // height: 120px;
+  border-radius: 200px;
+  border-width: 0;
+  background-color: $pink;
+  box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
+}
+
+// при наведении мыши
+.btn_next_submit:hover {
+  background-color: $pink;
+  box-shadow: inset -2px -2px 4px rgba(166, 165, 165, 0.9);
+}
+
+//Стили для кастомных сообщений
+.error_mess {
+  width: 100%;
+  padding: 5px;
+  color: $blue;
+  border-radius: 0 0 5px 5px;
+
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 30px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    font-size: 10px;
+  }
+}
+
+.error_mess.active {
+  padding: 0.3em;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
