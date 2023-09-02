@@ -301,7 +301,7 @@ ul {
 .section-with-man {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url(../assets/img/main/main-man.png);
+  background-image: url(../img/main/main-man.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: -25px;
@@ -313,13 +313,13 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .section-with-man {
-    background-image: url(../assets/img/main/main-man-tablet.png);
+    background-image: url(../img/main/main-man-tablet.png);
     background-position-x: 50%;
   }
 }
 @media screen and (max-width: 870px) {
   .section-with-man {
-    background-image: url(../assets/img/main/main-man-mobile.png);
+    background-image: url(../img/main/main-man.png);
     background-position-y: -20px;
   }
 }
@@ -1174,7 +1174,7 @@ ul {
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(../assets/img/sign_up_free/sign_up_block.jpg);
+  background-image: url(../img/sign_up_free/sign_up_block.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-x: 120%;
@@ -1185,7 +1185,7 @@ ul {
     max-width: 859.68px;
     margin: 0 auto;
     height: 211px;
-    background-image: url(../assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-image: url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-position-x: 115%;
     background-size: 55% 100%;
   }
@@ -2544,7 +2544,7 @@ del {
 .container__turquoise {
   display: flex;
   flex-direction: row;
-  background: url(../assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
+  background: url(../img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   height: 814px;
   background-position-x: 106%;
   background-size: 60% 100%;
@@ -2560,7 +2560,7 @@ del {
     max-width: 859.68px;
     margin: 0 auto;
     height: 432px;
-    background: url(../assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(../img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
   }
@@ -2574,7 +2574,7 @@ del {
     max-width: 328.39px;
     margin: 0 auto;
     height: 166.03px;
-    background: url(../assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(../img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
   }
@@ -5014,7 +5014,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #f3f3f3;
-  background-image: url(../assets/img/banner/banner-man.png);
+  background-image: url(../img/banner/banner-man.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 100%;
@@ -5042,7 +5042,7 @@ footer {
   .banner {
     width: 90%;
     height: 90%;
-    background-image: url(../assets/img/banner/banner-man-mobile.png);
+    background-image: url(../img/banner/banner-man-mobile.png);
     background-position-y: 50%;
     background-size: 30%;
   }
