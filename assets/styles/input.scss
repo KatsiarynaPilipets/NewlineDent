@@ -20,49 +20,49 @@ $mobile: 340px;
 //Fonts
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
+  src: url(assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+  src: url(assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
+  src: url(assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
+  src: url(assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Coolvetica", sans-serif;
-  src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+  src: url(assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
+  src: url(assets/fonts/Roboto_400/Roboto-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
+  src: url(assets/fonts/Roboto_300/Roboto-Light.ttf);
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
+  src: url(assets/fonts/Roboto_500/Roboto-Medium.ttf);
   font-weight: 500;
 }
 
@@ -271,7 +271,7 @@ $fG: "Gilroy";
 .section-with-man {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url(/assets/img/main/main-man.png);
+  background-image: url(assets/img/main/main-man.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: -25px;
@@ -281,12 +281,12 @@ $fG: "Gilroy";
   }
 
   @media screen and (max-width: $desktop) {
-    background-image: url(/assets/img/main/main-man-tablet.png);
+    background-image: url(assets/img/main/main-man-tablet.png);
     background-position-x: 50%;
   }
 
   @media screen and (max-width: $tablet) {
-    background-image: url(/assets/img/main/main-man-mobile.png);
+    background-image: url(assets/img/main/main-man-mobile.png);
     background-position-y: -20px;
   }
 
@@ -1077,7 +1077,7 @@ $fG: "Gilroy";
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(/assets/img/sign_up_free/sign_up_block.jpg);
+  background-image: url(assets/img/sign_up_free/sign_up_block.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-x: 120%;
@@ -1086,7 +1086,7 @@ $fG: "Gilroy";
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 211px;
-    background-image: url(/assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-image: url(assets/img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-position-x: 115%;
     background-size: 55% 100%;
   }
@@ -2415,7 +2415,7 @@ $innerShadow: #C88D9C;
 .container__turquoise {
   display: flex;
   flex-direction: row;
-  background: url(/assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
+  background: url(assets/img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   // overflow: hidden;
   height: 814px;
   background-position-x: 106%;
@@ -2432,7 +2432,7 @@ $innerShadow: #C88D9C;
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 432px;
-    background: url(/assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(assets/img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
 
@@ -2446,7 +2446,7 @@ $innerShadow: #C88D9C;
   @media screen and (max-width: $tablet) {
     @include mobile-container;
     height: 166.03px;
-    background: url(/assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
+    background: url(assets/img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
 
@@ -3323,6 +3323,1285 @@ $gray: #D9D9D9;
   }
 }
 
+/*lena*/
+/*шрифты*/
+@font-face {
+  font-family: 'Gilroy700';
+  src: local('Gilroy700'),
+    url(../fonts/Gilroy_700/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy600';
+  src: local('Gilroy600'),
+    url(../fonts/Gilroy_600/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy500';
+  src: local('Gilroy500'),
+    url(../fonts/Gilroy_500/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy400';
+  src: local('Gilroy400'),
+    url(../fonts/Gilroy_400/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: 'Coolvetica400';
+  src: local('Coolvetica400'),
+    url(../fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+}
+/*Стили для блока с картой*/
+.wrapper-map{
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  background-color: #CBE5FF;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+.map{
+  width: 100%;
+  @include container;
+  display: grid;
+  grid-template-columns: 920px 700px;
+  grid-template-rows: 460px 472px 193px;
+  grid-template-areas:
+    "title title"
+    "map address"
+    "link .";
+  gap: 10px;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    display: grid;
+    grid-template-columns: 490px 362px;
+    grid-template-rows: 245px 207px 147px;
+    gap: 10px;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    grid-template-columns: 188px 139px;
+    grid-template-rows: 94px 80px 56px;
+    gap: 5px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+    grid-template-columns: 240px;
+    grid-template-rows: 50px 60px 50px 30px;
+    grid-template-areas:
+    "title"
+    "map"
+    "address"
+    "link";
+    gap: 2px;
+  }
+  &__title{
+    grid-area: title;
+    font-family: 'Coolvetica400';
+    font-weight: 400;
+    font-size: 120px;
+    color: $blue;
+    text-align: center;
+    align-self: center;
+    @media screen and (max-width: $desktop) {
+      font-size: 64px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 15px;
+    }
+  }
+  &__content{
+    grid-area: map;
+    width: 920px;
+    height: 388px;
+    border-radius: 30px;
+    @media screen and (max-width: $desktop) {
+      width: 490px;
+      height: 207px;
+      border-radius: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 188px;
+      height: 79px;
+      border-radius: 6px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 200px;
+      height: 60px;
+      border-radius: 3px;
+      justify-self: center;
+    }
+
+  }
+  &__content-iframe{
+    border-radius: 30px;
+    width: 920px;
+    height: 388px;
+    border: none;
+    @media screen and (max-width: $desktop) {
+      width: 490px;
+      height: 207px;
+      border-radius: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 188px;
+      height: 79px;
+      border-radius: 6px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 200px;
+      height: 60px;
+      border-radius: 3px;
+    }
+  }
+  &__address{
+    grid-area: address;
+    width: 680px;
+    height: 388px;
+    border-radius: 30px;
+    background-color: $blue;
+    padding: 50px;
+    @media screen and (max-width: $desktop) {
+      width: 362px;
+      height: 207px;
+      border-radius: 16px;
+      padding: 26px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 139px;
+      height: 79px;
+      border-radius: 6px;
+      padding: 10px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 200px;
+      height: 60px;
+      border-radius: 3px;
+      padding: 3px;
+      justify-self: center;
+    }
+  }
+  &__address-paragraph{
+    font-family: 'Gilroy600';
+    font-size: 35px;
+    color: #f7f7f7;
+    @media screen and (max-width: $desktop) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 8px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 6px;
+    }
+  }
+  &__address-workmode{
+    font-family: 'Gilroy400';
+    font-size: 35px;
+    color: #f7f7f7;
+    margin-top: 30px;
+    @media screen and (max-width: $desktop) {
+      font-size: 18px;
+      margin-top: 18px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 7px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 5px;
+      margin-top: 3px;
+    }
+  }
+  &__link{
+    grid-area: link;
+    display: flex;
+
+    @media screen and (max-width: $desktop) {
+      margin-top: 25px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin-top: 6px;
+    }
+    @media screen and (max-width: $mobile) {
+      margin-top: 6px;
+      justify-self: center;
+    }
+  }
+  &__link-img{
+    width: 100px;
+    height: 100px;
+    @media screen and (max-width: $desktop) {
+      width: 53px;
+      height: 53px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 20.46px;
+      height: 20.46px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &__link-href{
+    outline: none;
+    text-decoration: none;
+    font-family: 'Gilroy600';
+    font-size: 60px;
+    color: $blue;
+    align-self: self-start;
+    padding-top: 25px;
+    @media screen and (max-width: $desktop) {
+      font-size: 32px;
+      padding-top: 14px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 12px;
+      padding-top: 7px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 8px;
+      padding-top: 5px;
+    }
+  }
+}
+/*Стили для кнопок в блоке с картой*/
+.button__call{
+  width: 294px;
+  height: 59px;
+  margin-top: 30px;
+  padding: 15px, 30px, 15px, 30px;
+  font-family: 'Gilroy700';
+  font-size: 24px;
+  text-align: center;
+  background-color: $pink;
+  color: #f7f7f7;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 4px 4px 14px 0px #FFC8D6,
+              inset -4px -4px 10px 0px #C88D9C;
+  @media screen and (max-width: $desktop) {
+    width: 157px;
+    height: 31px;
+    margin-top: 15px;
+    padding: 7px, 16px, 8px, 16px;
+    font-size: 12px;
+    border-radius: 6px;
+    box-shadow: inset 2px 2px 7.5px 0px #FFC8D6,
+                inset -2px -2px 5px 0px #C88D9C;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 60.28px;
+      height: 12.14px;
+      margin-top: 5px;
+      padding: 3px, 6px, 3px, 6px;
+      font-size: 4.91px;
+      border-radius: 2px;
+      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 2.864797592163086px 0px #FFC8D6;
+      box-shadow: inset -0.8185136914253235px -0.8185136914253235px 2.0462841987609863px 0px #C88D9C;
+    }
+    @media screen and (max-width: $mobile) {
+      padding: 1px, 3px, 1px, 3px;
+      font-size: 4.5px;
+    }
+    &:hover {
+      color: $blue;
+      background-color: $lightblue;
+      box-shadow: inset 4px 4px 14px 0px #d0ebff66,
+                  inset -4px -4px 10px 0px #2d536f66;
+      @media screen and (max-width: $desktop) {
+      box-shadow: inset 2px 2px 2px 0px #d0ebff66,
+                  inset -2px -2px 2px 0px #2d536f66;
+      }
+      @media screen and (max-width: $tablet) {
+      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #d0ebff66,
+                  inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #2d536f66;
+      }
+    }
+    &:active {
+      box-shadow: inset 4px 4px 4px 0px #2d536fe5,
+                  inset -4px -4px 4px 0px #d0ebffce;
+      @media screen and (max-width: $desktop) {
+      box-shadow: inset 2px 2px 2px 0px #2d536fe5,
+                  inset -2px -2px 2px 0px #d0ebffce;
+      }
+      @media screen and (max-width: $tablet) {
+      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #2d536fe5,
+                  inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
+      }
+    }
+}
+.button__ordercall{
+  width: 249px;
+  height: 59px;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 15px, 30px, 15px, 30px;
+  font-family: 'Gilroy700';
+  font-size: 24px;
+  text-align: center;
+  background-color: $blue;
+  color: $pink;
+  border-radius: 12px;
+  border: 6px solid $pink;
+  cursor: pointer;
+  @media screen and (max-width: $desktop) {
+    width: 133px;
+    height: 31px;
+    margin-top: 15px;
+    padding: 7px, 16px, 8px, 16px;
+    margin-left: 16px;
+    font-size: 13px;
+    border-radius: 6px;
+    border: 3px solid $pink;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 52.28px;
+    height: 12.14px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 3px, 6px, 3px, 6px;
+    border-radius: 2px;
+    border: 1px solid $pink;
+    font-size: 4.91px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.5px;
+  }
+  &:hover {
+    color: $lightblue;
+    border: 6px solid $lightblue;
+    @media screen and (max-width: $desktop) {
+      border: 3px solid $lightblue;
+    }
+    @media screen and (max-width: $tablet) {
+    border: 1px solid $lightblue;
+    }
+  }
+  &:active {
+    box-shadow: inset 4px 4px 4px 0px #2d536fe5,
+                inset -4px -4px 4px 0px #d0ebff70;
+    @media screen and (max-width: $desktop) {
+      box-shadow: inset 2px 2px 2px 0px #2d536fe5,
+                  inset -2px -2px 2px 0px #d0ebffce;
+    }
+    @media screen and (max-width: $tablet) {
+      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #2d536fe5,
+                  inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
+    }
+  }
+}
+/*Стили блока с консультацией Элины*/
+.wrapper-consultation{
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  height: 330px;
+  background-color: $blue;
+  color: $white;
+  font-family: 'Gilroy700';
+  justify-content: center;
+  @media screen and (max-width: $desktop) {
+    max-width: 1630px;
+    height: 176px;
+  }
+  @media screen and (max-width: $tablet) {
+    height: 67.64px;
+  }
+  @media screen and (max-width: $mobile) {
+    height: 50px;
+  }
+}
+.consultation{
+  width: 100%;
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  &__text{
+    font-size: 63px;
+    color: $white;
+    @media screen and (max-width: $desktop) {
+      font-size: 33px;
+      font-weight: 700;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 9px;
+    }
+  }
+  &__call{
+    display: flex;
+    border-radius: 200px;
+    background-color: $white;
+    width: 510px;
+    height: 69px;
+    align-self: end;
+    align-content: center;
+    @media screen and (max-width: $desktop) {
+      border-radius: 107px;
+      width: 276px;
+      height: 37px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 107.52px;
+      height: 14.2px;
+      border-radius: 40.9940071105957px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 120px;
+      height: 10px;
+      border-radius: 25;
+    }
+  }
+  &__call-input{
+    display: flex;
+    background-color: #ffffff00;
+    width: 330px;
+    height: 59px;
+    border-radius: 200px;
+    padding: 15px, 30px, 15px, 30px;
+    border: none;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    @media screen and (max-width: $desktop) {
+      width: 230px;
+      height: 31px;
+      border-radius: 107px;
+      padding-bottom: 8px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 69.22px;
+      height: 14.22px;
+      border-radius: 40.9940071105957px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 80px;
+      height: 10px;
+      border-radius: 20px;
+      padding-bottom: 9px;
+    }
+    &:focus{
+      outline: white;
+    }
+  }
+  &__call-button{
+    align-self: center;
+    width: 180px;
+    height: 69px;
+    border-radius: 200px;
+    padding:15px, 30px, 15px, 30px;
+    border: 5px solid $white;
+    background-color: $pink;
+    color: $white;
+    font-size: 24px;
+    cursor: pointer;
+    @media screen and (max-width: $desktop) {
+      width: 98px;
+      height: 37px;
+      border-radius: 107px;
+      padding: 8px, 16px, 8px, 16px;
+      border: 3px solid $white;
+      font-size: 12px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 38.3px;
+      height: 13.22px;
+      border-radius: 41px;
+      padding: 3px, 6px, 3px, 6px;
+      border: 1px solid $white;
+      font-size: 4.92px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 40px;
+      height: 10px;
+      border-radius: 20px;
+      padding: 1px, 1px, 1px, 6px;
+      font-size: 3.5px;
+    }
+    &:hover {
+      background-color: #4fa7fb;
+    }
+    &:active {
+      box-shadow: inset 4px 4px 4px 0px #2d536fe5,
+                  inset -4px -4px 4px 0px #d0ebffce;
+      @media screen and (max-width: $desktop) {
+        box-shadow: inset 2px 2px 2px 0px #2d536fe5,
+                  inset -2px -2px 2px 0px #d0ebffce;
+      }
+      @media screen and (max-width: $tablet) {
+        box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #2d536fe5,
+                    inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
+      }
+    }
+  }
+}
+.consultation__call-input::placeholder{
+  color: #D9D9D9;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Gilroy700';
+  @media screen and (max-width: $desktop) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 4.92px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.5px;
+  }
+}
+/*Стили футера*/
+footer{
+  background-color: $lightblue;
+}
+.wrapper-footer{
+  width: 100%;
+  @include container;
+  display: grid;
+  grid-template-columns: 23.74% 35.76% 23.12% 17.38%;
+  grid-template-rows: 297px;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    grid-template-rows: 159px;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    grid-template-rows: 67px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+/*Оформление бордеров футера*/
+.license, .toc, .network{
+  border-right: 1px solid #A5BFD9;
+}
+/*Оформление padding футера*/
+.toc, .network, .pay{
+  padding-top: 50px;
+  @media screen and (max-width: $desktop) {
+    padding-top: 27px;
+  }
+  @media screen and (max-width: $tablet) {
+    padding-top: 10.16px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding-top: 6px;
+  }
+}
+/*Стили для блока с лицензией и гарантией*/
+.license{
+  padding: 50px 100px 0px 0px;
+  display: grid;
+  @media screen and (max-width: $desktop) {
+    padding: 27px 53px 0px 0px;
+  }
+  @media screen and (max-width: $tablet) {
+    padding: 10.17px 15px 0px 0px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 6px 5px 0px 0px;
+  }
+  &__company{
+    font-family: 'Gilroy600';
+    font-size: 30px;
+    color: #292929;
+    text-align: center;
+    @media screen and (max-width: $desktop) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 6.5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 5px;
+    }
+  }
+  &__number{
+    font-family: 'Gilroy400';
+    font-size: 24px;
+    color: #292929;
+    text-align: center;
+    margin-top: 25px;
+    @media screen and (max-width: $desktop) {
+      font-size: 12px;
+      margin-top: 13px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 5.65px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 4.5px;
+    }
+  }
+  &__picture{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: $desktop) {
+      height: 53px;
+    }
+    @media screen and (max-width: $tablet) {
+      height: 20.31px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      height: 15px;
+    }
+  }
+  &__link{
+    font-family: 'Gilroy500';
+    font-size: 24px;
+    color: #292929;
+    justify-self: center;
+    text-decoration-line: underline;
+    cursor: pointer;
+    @media screen and (max-width: $desktop) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 4.87px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 4px;
+    }
+  }
+}
+/*Стили для блока с меню футера*/
+.toc{
+  display: grid;
+  justify-content: center;
+
+  &__block{
+    display: grid;
+    width: 169px;
+    grid-template-rows: repeat(5, 23px);
+    gap: 30px;
+    @media screen and (max-width: $desktop) {
+      width: 80px;
+      grid-template-rows: repeat(5, 12px);
+      gap: 15px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 29px;
+      grid-template-rows: repeat(5, 7px);
+      gap: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      grid-template-rows: repeat(5, 5px);
+    }
+  }
+  &__block-p{
+    outline: none;
+    text-decoration: none;
+    font-family: 'Gilroy400';
+    font-size: 20px;
+    color: #29292999;
+    text-align: center;
+    justify-self: left;
+    @media screen and (max-width: $desktop) {
+      font-size: 11px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 4.06px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 4px;
+    }
+  }
+}
+.toc__block-p:hover {
+  text-decoration: underline;
+}
+
+/*Стили для блока с соцсетями*/
+.network{
+  display: flex;
+  justify-content: center;
+  &__pic{
+    margin-top: 126px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    @media screen and (max-width: $desktop) {
+      margin-top: 66px;
+      width: 27px;
+      height: 27px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin-top: 30px;
+      margin-left: 3px;
+      margin-right: 3px;
+      width: 10.16px;
+      height: 10.16px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 7px;
+      height: 7px;
+      margin-top: 25px;
+    }
+  }
+}
+/*Стили для блока с платежными системами*/
+.pay{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  @media screen and (max-width: $desktop) {
+    margin-left: 50px;
+  }
+  @media screen and (max-width: $tablet) {
+    margin-left: 40%;
+  }
+  &__pic{
+    padding-bottom: 20px;
+    width: 60px;
+    height: 50px;
+    justify-self: center;
+    @media screen and (max-width: $desktop) {
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+      width: 32px;
+      height: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      padding-bottom: 0px;
+      margin-bottom: 5px;
+      width: 12.19px;
+      height: 6.09px;
+    }
+  }
+}
+/*Стили для блока с информацией мелким шрифтом*/
+.wrapper-information{
+  width: 100%;
+  @include container;
+  height: 239px;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    height: 99px;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    height: 39px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+    height: 25px;
+  }
+
+  &__title{
+    font-family: 'Gilroy600';
+    font-size: 25px;
+    margin-top: 72px;
+    @media screen and (max-width: $desktop) {
+      font-size: 13px;
+      margin-top: 29px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 5.08px;
+      margin-top: 15px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 3px;
+      margin-top: 7px;
+    }
+  }
+  &__text{
+    font-family: 'Gilroy400';
+    font-size: 20px;
+    margin-top: 17px;
+    @media screen and (max-width: $desktop) {
+      font-size: 10px;
+      margin-top: 9px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 4.06px;
+      margin-top: 5px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 2.5px;
+      margin-top: 3px;
+    }
+  }
+}
+/*Стили для кнопки стрелка "Вверх"*/
+.upward{
+  position: fixed;
+  bottom: 250px;
+  right: calc((101% - $desktop)/2);
+  width: 75px;
+  height: 75px;
+  background-color: #FFB5C7;
+  border-radius: 35px;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  @media screen and (max-width: $desktop) {
+    width: 40px;
+    height: 40px;
+    right: calc((100% - $tablet)/2);
+    bottom: 135px;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 15.23px;
+    height: 15.23px;
+    right: calc((100% - $mobile)/2);
+    bottom: 50px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 10px;
+    height: 10px;
+    right: calc((100% - 240px)/2);
+    bottom: 30px;
+  }
+  &__img{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: $desktop) {
+      width: 40px;
+      height: 40px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 15.23px;
+      height: 15.23px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &__img-pic{
+    align-self: center;
+    width: 25px;
+    height: 25px;
+    @media screen and (max-width: $desktop) {
+      width: 13px;
+      height: 13px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 5.08px;
+      height: 5.08px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 4px;
+      height: 4px;
+    }
+  }
+}
+.upward.active{
+  visibility: visible;
+  opacity: 1;
+}
+/*Стили для кнопки с трубкой*/
+.pinkphone{
+  position: fixed;
+  bottom: 75px;
+  right: calc((101% - $desktop)/2);
+  width: 125px;
+  height: 125px;
+  background: linear-gradient(146.9deg, #FF658B 6.95%, #FFA7A2 93.21%);
+  border-radius: 65px;
+  align-items: center;
+  justify-items: center;
+  z-index: 1;
+  cursor: pointer;
+  @media screen and (max-width: $desktop) {
+    bottom: 41px;
+    right: calc((101% - $tablet)/2);
+    width: 66px;
+    height: 66px;
+  }
+  @media screen and (max-width: $tablet) {
+    bottom: 14px;
+    right: calc((101% - $mobile)/2);
+    width: 25.39px;
+    height: 25.39px;
+  }
+  @media screen and (max-width: $mobile) {
+    bottom: 5px;
+    right: calc((100% - 240px)/2);
+    width: 20px;
+    height: 20px;
+  }
+  &__img{
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: $desktop) {
+      width: 66px;
+      height: 66px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 25.39px;
+      height: 25.39px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__img-pic{
+    align-self: center;
+    width: 75px;
+    height: 75px;
+    @media screen and (max-width: $desktop) {
+      width: 40px;
+      height: 40px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 15.23px;
+      height: 15.23px;
+    }
+    @media screen and (max-width: $mobile) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &:hover {
+    background: linear-gradient(146.9deg, $blue 6.95%, $lightblue 93.21%);
+  }
+}
+ /* Стили для модального окна с лицензией*/
+ .license-modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  @media screen and (max-width: $desktop) {
+
+  }
+  @media screen and (max-width: $tablet) {
+
+  }
+  @media screen and (max-width: $mobile) {
+
+  }
+}
+.license-modal__content{
+    margin: auto;
+    display: block;
+    width: 30%;
+    max-width: 700px;
+    @media screen and (max-width: $desktop) {
+      width: 50%;
+      max-width: 700px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 340px;
+    }
+    @media screen and (max-width: $mobile) {
+      max-width: 240px;
+    }
+}
+.license-modal__content img{
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для изображения лицензии*/
+.minimized {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.minimized:hover {
+  opacity: 0.7;
+}
+
+/* Стили для модального окна с гарантией*/
+.warranty-modal{
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.warranty-modal__content{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    @media screen and (max-width: $desktop) {
+      max-width: 870px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 340px;
+    }
+    @media screen and (max-width: $mobile) {
+      max-width: 240px;
+    }
+}
+#warranty-modal__image{
+    width: 100%;
+    height: auto;
+}
+//Стили для модальных окон "Обратный звонок" и "Запись на косультацию". Лена
+.ordercall-modal, .consultation-modal {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 15px;
+
+  &__content {
+    width: 70%;
+    padding: 30px;
+    background: #F3F3F3;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 5px 15px black;
+    text-align: center;
+    font-family: 'Gilroy600';
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    @media screen and (max-width: $tablet) {
+      padding: 20px;
+    }
+    @media screen and (max-width: $mobile) {
+      padding: 10px;
+    }
+  }
+  //Стиль для кнопки закрытия
+  &__close-button {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+    @media screen and (max-width: $tablet) {
+      height: 20px;
+      width: 20px;
+    }
+    @media screen and (max-width: $mobile) {
+      height: 15px;
+      width: 15px;
+    }
+    &__hover {
+      transition: .3s;
+    }
+  }
+}
+.ordercall-modal_active, .consultation-modal_active {
+  position: fixed;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
+}
+//Стили для формы
+.ordercall-form, .consultation-form {
+  font-family: 'Gilroy700';
+
+  &__title {
+    font-family: 'Coolvetica400';
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    font-weight: 400;
+    @media screen and (max-width: $desktop) {
+      margin: 0 0 15px;
+      font-size: 30px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin: 0 0 5px;
+      font-size: 10px;
+    }
+  }
+  &__p {
+    font-family: 'Coolvetica400';
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    @media screen and (max-width: $desktop) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: $desktop) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 8px;
+    }
+  }
+  &__tel {
+    width: 85%;
+    height: 65px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 106px;
+    border: 0.5px solid #292929;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+
+    @media screen and (max-width: $desktop) {
+      height: 50px;
+      font-size: 20px;
+    }
+    @media screen and (max-width: $tablet) {
+      height: 40px;
+      font-size: 12px;
+    }
+    @media screen and (max-width: $mobile) {
+      height: 30px;
+      font-size: 8px;
+      margin-top: 5px;
+    }
+    //Стили для невалидных полей
+    &:invalid {
+      background-color: $whitesmoke;
+      border: 2px solid $blue;
+    }
+
+    &:focus:invalid {
+      outline: none;
+    }
+  }
+  &__info {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    margin-top: 0px;
+    opacity: 0.8;
+    @media screen and (max-width: $desktop) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 6px;
+    }
+    & p{
+      height: 26px;
+      @media screen and (max-width: $desktop) {
+        height: 20px;
+      }
+      @media screen and (max-width: $tablet) {
+        height: 16px;
+      }
+      @media screen and (max-width: $mobile) {
+        height: 9px;
+      }
+    }
+  }
+  &__input-box {
+    margin: 10px 0;
+  }
+}
+.ordercall__submit-btn, .consultation__submit-btn {
+  width: 85%;
+  height: 65px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 106px;
+  border: none;
+  gap: 5px;
+  background: #FF9FB7;
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  margin: 10px;
+  cursor: pointer;
+  @media screen and (max-width: $desktop) {
+    height: 50px;
+    font-size: 20px;
+  }
+  @media screen and (max-width: $tablet) {
+    height: 40px;
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media screen and (max-width: $mobile) {
+    height: 30px;
+    font-size: 8px;
+  }
+}
+//Стили для кастомных сообщений
+.ordercall-error, .consultation-error {
+  width: 100%;
+  padding: 0;
+  font-size: 90%;
+  color: $blue;
+  border-radius: 0 0 5px 5px;
+}
+.ordercall-error.active, .consultation-error.active {
+  padding: 0.3em;
+=======
+
 // Стили для баннера
 
 .banner-container {
@@ -3348,7 +4627,7 @@ $gray: #D9D9D9;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $whitesmoke;
-  background-image: url(/assets/img/banner/banner-man.png);
+  background-image: url(assets/img/banner/banner-man.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 100%;
@@ -3372,7 +4651,7 @@ $gray: #D9D9D9;
   @media screen and (max-width: $tablet) {
     width: 90%;
     height: 90%;
-    background-image: url(/assets/img/banner/banner-man-mobile.png);
+    background-image: url(assets/img/banner/banner-man-mobile.png);
     background-position-y: 50%;
     background-size: 30%;
   }
