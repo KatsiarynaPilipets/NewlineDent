@@ -50,7 +50,7 @@ contactForm.addEventListener("submit", function (event) {
   }
 });
 
-//Проверка на возможные ошибки
+//Проверка на возможные ошибки поля "номер телефона"
 function showError() {
   if (tel.validity.valueMissing) {
     telError.textContent = "Пожалуйста, заполните поле!";
@@ -59,11 +59,34 @@ function showError() {
   } else if (tel.validity.patternMismatch) {
     telError.textContent = "Введите номер в правильном формате.";
   }
-
 //Стилизация
   telError.className = "error active";
 }
 
-//Патерны:
-//\+?[0-9\s\-\(\)]+
-//\[0-9\]
+//Сбор телефонных номеров из формы
+const telInput = document.getElementById('phone');
+//function sendTelNumber(tel) {
+let telForm = document.getElementById('usertel-form');
+let dataPhones = new FormData(telForm);
+  // Добавляем файл
+  dataPhones.append('Номер', telInput.value);
+  //console.log('Номер', telInput.value);
+telInput.addEventListener('change', (event) => {
+  // Получаем файл
+  console.log('Номер:', telInput.value);
+  // Очищаем текущее значение инпута
+  event.target.value = null
+})
+//Отправка данных на сервер
+let sendTelButton = document.querySelector('.submit-btn');
+sendTelButton.addEventListener('click', async function sendFormData() {
+  let response = await fetch('mail.php', {
+      method: 'POST',
+      contentType: false,
+      processData: false,
+      body: dataPhones,
+  });
+
+  let result = await response.json();
+  alert(result.message);
+});
