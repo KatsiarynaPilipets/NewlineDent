@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     };
 
-    const closeBanner = function() {
+    const closeBanner = function(event) {
       if (!bannerVisible) {
       banner.style.display = 'none';
       overlay.style.display = 'none';
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Показывать баннер и затемнение каждые 5 секунд
-    setInterval(showBanner, 500000);
+    setInterval(showBanner, 50000000);
 
     // Закрывать баннер и затемнение при клике вне баннера
     overlay.addEventListener('click', function(e) {
@@ -34,10 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    closeButton.addEventListener('click', closeBanner);
-
-    bannerLink.addEventListener('click', function(e) {
-      e.preventDefault();
+    closeButton.addEventListener('click', function(event){
+      event.preventDefault();
+      closeBanner();
     });
 
     const phoneInputButton = document.querySelector('.phone-input-button');
