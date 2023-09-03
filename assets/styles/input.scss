@@ -3349,107 +3349,27 @@ $gray: #D9D9D9;
   }
 }
 
-
-/*Box-sizing*/
-* {
-  box-sizing: border-box;
-}
-
-//colors
-$blue: #4fa7fb;
-$pink: #ff9fb7;
-$whitesmoke: #f3f3f3;
-$lightblue: #cbe5ff;
-$white: #ffffff;
-$black: #000000;
-$dark: #292929;
-
-//Screens
-$desktop: 1630px;
-$tablet: 870px;
-$mobile: 340px;
-
-//mixins
-@mixin container {
-  max-width: 1622px;
-  margin: 0 auto;
-}
-
-@mixin tablet-container {
-  max-width: 859.68px;
-  margin: 0 auto;
-}
-
-@mixin mobile-container {
-  max-width: 328.39px;
-  margin: 0 auto;
-}
-
-@import "reset";
-
-  //Fonts
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(../assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(../assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(../assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(../assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Coolvetica", sans-serif;
-  src: url(../assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../assets/fonts/Roboto_400/Roboto-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../assets/fonts/Roboto_300/Roboto-Light.ttf);
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(/..assets/fonts/Roboto_500/Roboto-Medium.ttf);
-  font-weight: 500;
-}
-
-  $fC: 'Coolvetica';
-  $fG: 'Gilroy';
-
-  // Стили для блока "Наши врачи"
+// Стили для блока "Наши врачи"
 .doctors-title{
   justify-self: center;
   grid-column: 1/5;
-  font-family: $fC;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-bottom: 60px;
-    color: $blue;
-    font-size: 100px;
+}
+.doctors-title-text{
+  font-family: "Coolvetica400";
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-size: 120px;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  color: $blue;
     @media screen and (max-width: $desktop) {
       @include container;
-      font-size: 56px; 
+      font-size: 64px;
     }
     @media screen and (max-width: $tablet) {
       @include tablet-container;
-      font-size: 20px; 
+      font-size: 30px; 
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container;
@@ -3535,8 +3455,8 @@ $mobile: 340px;
     border-radius: 24px;
     box-shadow: 8px 8px 20px 0px #FFFFFF6B inset;
     box-shadow: -8px -8px 30px 0px #5F8EBE inset;
-    font-family: $fG;
-    font-size: 24px;
+    font-family: 'Gilroy600';
+    font-size: 28px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0em;
@@ -3550,11 +3470,10 @@ $mobile: 340px;
       border-radius: 13px;
       font-size: 16px;
       line-height: 19px;
-      padding: 16px;
+      padding: 12px;
       left: -1px;
       box-shadow: 4.244817733764648px 4.244817733764648px 10.612044334411621px 0px #FFFFFF6B inset;
       box-shadow: -4.244817733764648px -4.244817733764648px 15.918066024780273px 0px #5F8EBE inset;
-
     }
     @media screen and (max-width: $tablet) {
       @include tablet-container;
@@ -3564,7 +3483,7 @@ $mobile: 340px;
       border-radius: 5px;
       font-size: 6px;
       line-height: 7px;
-      padding: 8px;
+      padding: 6px;
       left: -1px;
       box-shadow: 1.6455708742141724px 1.6455708742141724px 4.113927364349365px 0px #FFFFFF6B inset;
       box-shadow: -1.6455708742141724px -1.6455708742141724px 6.1708903312683105px 0px #5F8EBE inset;
@@ -3631,7 +3550,7 @@ $mobile: 340px;
   background: #FF9FB7;
   box-shadow: 4px 4px 14px 0px #FFC8D6 inset;
   box-shadow: -4px -4px 10px 0px #C88D9C inset;
-  font-family: $fG;
+  font-family: 'Gilroy700';
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
@@ -3686,7 +3605,7 @@ $mobile: 340px;
 }
 //Стили для модального окна
 .modal {
-  position: absolute;
+    position: absolute;
     visibility: hidden;
     opacity: 0;
     transition: .3s;
@@ -3699,8 +3618,8 @@ $mobile: 340px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    overflow-y: scroll;
     padding: 60px 15px;
+
     &__content {
         width: 45%;
         padding: 30px;
@@ -3757,6 +3676,7 @@ $mobile: 340px;
 .modal_active {
   position: fixed;
   top: 0;
+  transform: translate(-10%, -50%) scaled(1);
   visibility: visible;
   opacity: 1;
   transition: .3s;
@@ -3764,7 +3684,7 @@ $mobile: 340px;
 
 //Стили для формы
 .contact-form{
-  font-family: $fG;
+  font-family: 'Gilroy700';
     &__tel{
       width: 65%;
       height: 65px;
@@ -3853,10 +3773,10 @@ $mobile: 340px;
     margin-top: 0px;
     opacity: 0.8;
     @media screen and (max-width: $desktop) {
-      font-size: 16px;
+      font-size: 12px;
     }
     @media screen and (max-width: $tablet) {
-      font-size: 10px;
+      font-size: 8px;
     }
     @media screen and (max-width: $mobile) {
       font-size: 4px;
@@ -3902,7 +3822,7 @@ $mobile: 340px;
 }
 
 .submit-btn{
-  width: 85%;
+  width: 65%;
   height: 65px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;
@@ -3976,37 +3896,41 @@ $mobile: 340px;
 .stage-title{
   justify-self: center;
   grid-column: 1/4;
-  grid-row: 1/2;
-  font-family: $fC;
+  grid-row: 1/2;    
+}
+.stage-title-text{
+  font-family: 'Coolvetica400';
   font-weight: 400;
   letter-spacing: 0em;
   text-align: center;
   margin-bottom: 60px;
   color: $blue;
-  font-size: 100px;
+  font-size: 120px;
     @media screen and (max-width: $desktop) {
       @include container;
-      font-size: 56px; 
+      font-size: 64px; 
     }
     @media screen and (max-width: $tablet) {
       @include tablet-container;
-      font-size: 20px; 
+      font-size: 30px; 
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container;
       font-size: 16px; 
     } 
-    
 }
 //Подзаголовок "I этап"
 .stage-subtitle{
   justify-self: center;
   grid-column: 1/4;
   grid-row: 2/3;
-  font-size: 100px;
-  font-family: $fC;
+}
+.stage-subtitle-text{
+  font-family: 'Coolvetica400';
   font-weight: 400;
   letter-spacing: 0em;
+  font-size: 89px;
+  margin-bottom: 40px;
   text-align: center;
   color: $blue;
     @media screen and (max-width: $desktop) {
@@ -4050,7 +3974,7 @@ $mobile: 340px;
     }
     //Заголовок в колонке
     &__description{
-    font-family: $fG;
+    font-family: 'Gilroy700';
     margin-top: 60px;
     height: 120px;
     font-size: 50px;
@@ -4146,7 +4070,7 @@ $mobile: 340px;
   }
   //Описание этапа
     &__text{
-    font-family: $fG;
+    font-family:'Gilroy500';
     font-weight: 500;
     padding-left: 45px;
     padding-right: 45px;

@@ -3404,97 +3404,37 @@ del {
   border-width: 0;
 }
 
-/*Box-sizing*/
-* {
-  box-sizing: border-box;
-}
-
-p {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(../assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(../assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(../assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(../assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Coolvetica", sans-serif;
-  src: url(../assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../assets/fonts/Roboto_400/Roboto-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../assets/fonts/Roboto_300/Roboto-Light.ttf);
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(/..assets/fonts/Roboto_500/Roboto-Medium.ttf);
-  font-weight: 500;
-}
 .doctors-title {
   justify-self: center;
   grid-column: 1/5;
-  font-family: "Coolvetica";
+}
+
+.doctors-title-text {
+  font-family: "Coolvetica400";
   font-weight: 400;
   letter-spacing: 0em;
+  font-size: 120px;
   text-align: center;
   margin-bottom: 60px;
+  margin-top: 60px;
   color: #4fa7fb;
-  font-size: 100px;
 }
 @media screen and (max-width: 1630px) {
-  .doctors-title {
+  .doctors-title-text {
     max-width: 1622px;
     margin: 0 auto;
-    font-size: 56px;
+    font-size: 64px;
   }
 }
 @media screen and (max-width: 870px) {
-  .doctors-title {
+  .doctors-title-text {
     max-width: 859.68px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 340px) {
-  .doctors-title {
+  .doctors-title-text {
     max-width: 328.39px;
     margin: 0 auto;
     font-size: 16px;
@@ -3606,8 +3546,8 @@ ul {
   border-radius: 24px;
   box-shadow: 8px 8px 20px 0px rgba(255, 255, 255, 0.4196078431) inset;
   box-shadow: -8px -8px 30px 0px #5F8EBE inset;
-  font-family: "Gilroy";
-  font-size: 24px;
+  font-family: "Gilroy600";
+  font-size: 28px;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -3624,7 +3564,7 @@ ul {
     border-radius: 13px;
     font-size: 16px;
     line-height: 19px;
-    padding: 16px;
+    padding: 12px;
     left: -1px;
     box-shadow: 4.2448177338px 4.2448177338px 10.6120443344px 0px rgba(255, 255, 255, 0.4196078431) inset;
     box-shadow: -4.2448177338px -4.2448177338px 15.9180660248px 0px #5F8EBE inset;
@@ -3640,7 +3580,7 @@ ul {
     border-radius: 5px;
     font-size: 6px;
     line-height: 7px;
-    padding: 8px;
+    padding: 6px;
     left: -1px;
     box-shadow: 1.6455708742px 1.6455708742px 4.1139273643px 0px rgba(255, 255, 255, 0.4196078431) inset;
     box-shadow: -1.6455708742px -1.6455708742px 6.1708903313px 0px #5F8EBE inset;
@@ -3724,7 +3664,7 @@ ul {
   background: #FF9FB7;
   box-shadow: 4px 4px 14px 0px #FFC8D6 inset;
   box-shadow: -4px -4px 10px 0px #C88D9C inset;
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
@@ -3799,7 +3739,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow-y: scroll;
   padding: 60px 15px;
 }
 .modal__content {
@@ -3865,13 +3804,14 @@ ul {
 .modal_active {
   position: fixed;
   top: 0;
+  transform: translate(-10%, -50%) scaled(1);
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
 }
 
 .contact-form {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
 }
 .contact-form__tel {
   width: 65%;
@@ -3982,12 +3922,12 @@ ul {
 }
 @media screen and (max-width: 1630px) {
   .contact-form__info {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 870px) {
   .contact-form__info {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 340px) {
@@ -4048,7 +3988,7 @@ ul {
 }
 
 .submit-btn {
-  width: 85%;
+  width: 65%;
   height: 65px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;
@@ -4137,30 +4077,33 @@ ul {
   justify-self: center;
   grid-column: 1/4;
   grid-row: 1/2;
-  font-family: "Coolvetica";
+}
+
+.stage-title-text {
+  font-family: "Coolvetica400";
   font-weight: 400;
   letter-spacing: 0em;
   text-align: center;
   margin-bottom: 60px;
   color: #4fa7fb;
-  font-size: 100px;
+  font-size: 120px;
 }
 @media screen and (max-width: 1630px) {
-  .stage-title {
+  .stage-title-text {
     max-width: 1622px;
     margin: 0 auto;
-    font-size: 56px;
+    font-size: 64px;
   }
 }
 @media screen and (max-width: 870px) {
-  .stage-title {
+  .stage-title-text {
     max-width: 859.68px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 340px) {
-  .stage-title {
+  .stage-title-text {
     max-width: 328.39px;
     margin: 0 auto;
     font-size: 16px;
@@ -4171,15 +4114,19 @@ ul {
   justify-self: center;
   grid-column: 1/4;
   grid-row: 2/3;
-  font-size: 100px;
-  font-family: "Coolvetica";
+}
+
+.stage-subtitle-text {
+  font-family: "Coolvetica400";
   font-weight: 400;
   letter-spacing: 0em;
+  font-size: 89px;
+  margin-bottom: 40px;
   text-align: center;
   color: #4fa7fb;
 }
 @media screen and (max-width: 1630px) {
-  .stage-subtitle {
+  .stage-subtitle-text {
     max-width: 1622px;
     margin: 0 auto;
     font-size: 53px;
@@ -4187,7 +4134,7 @@ ul {
   }
 }
 @media screen and (max-width: 870px) {
-  .stage-subtitle {
+  .stage-subtitle-text {
     max-width: 859.68px;
     margin: 0 auto;
     font-size: 20px;
@@ -4195,7 +4142,7 @@ ul {
   }
 }
 @media screen and (max-width: 340px) {
-  .stage-subtitle {
+  .stage-subtitle-text {
     max-width: 328.39px;
     margin: 0 auto;
     font-size: 16px;
@@ -4235,7 +4182,7 @@ ul {
   }
 }
 .stage__description {
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   margin-top: 60px;
   height: 120px;
   font-size: 50px;
@@ -4355,7 +4302,7 @@ ul {
   }
 }
 .stage__text {
-  font-family: "Gilroy";
+  font-family: "Gilroy500";
   font-weight: 500;
   padding-left: 45px;
   padding-right: 45px;
