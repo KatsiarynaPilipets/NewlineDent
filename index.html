@@ -758,15 +758,76 @@
             </div>
         </form>
         <!--9. Настя -->
-        <section>
-            <div class="container">
-                <h2>Наши врачи</h2>
+        <section class="doctors">
+            <div class="container doctors-container">
+                    <div class="doctors-title"><h2 class="doctors-title-text">Наши врачи</h2></div>
+                    <div class="doctors-frame">
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Karbishev.png"></div>
+                        <div class="doctors-frame__background-circle"></div>
+                        <div class="doctors-frame__doctors-name">Карбышев Михаил Алексеевич</div>
+                    </div>
+                    <div class="doctors-frame">
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Egiazaryan.png" ></div>
+                        <div class="doctors-frame__background-circle"></div>
+                        <div class="doctors-frame__doctors-name">Егиазарян Рафаэль Араикович</div>
+                    </div>
+                    <div class="doctors-frame">
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Vardanyan.png"></div>
+                        <div class="doctors-frame__background-circle"></div>
+                        <div class="doctors-frame__doctors-name">Варданян Роман Вруйрович</div>
+                    </div>
+                    <div class="doctors-frame">
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Savostikov.png"></div>
+                        <div class="doctors-frame__background-circle"></div>
+                        <div class="doctors-frame__doctors-name">Савостиков Роман Андреевич</div>
+                    </div>
+                    <button class="callback-btn" id="callback-btn">Записаться на консультацию</button>
             </div>
+            <!-- Модальное окно -->
+            <div class="modal" id="modal-1">
+                <div class="modal__content">
+                    <button class="modal__close-button"><img src="../assets/images/modal/close-cross-button.png" width="24" alt=""></button>
+                    <form class ="contact-form" id="usertel-form" novalidate>
+                        <h2 class="contact-form__title">Укажите свой номер телефона</h2>
+                        <p class="contact-form__subtitle">свяжемся с вами и разберем вашу ситуацию</p>
+                        <div class="contact-form__input-box">
+                            <input type="tel" id="phone" class="contact-form__tel" name="phone" pattern="\+?[0-9\s\-\(\)]+" minlength="10" maxlength="15" required /></div>
+                            <span class="error" aria-live="polite"></span>
+                        <div class="contact-form__input-box">
+                            <button type="submit" class="submit-btn">Получить БЕСПЛАТНУЮ консультацию</button></div>
+                        <div class="contact-form__info">
+                            <p>c 10:00 до 21:00<br>
+                            Понедельник-Суббота<br>
+                            +7 (812) 66-57-332</p></div>
+                        </div>
+                    </form>
+                </div>
+             </div>
+                
         </section>
         <!--10. Настя -->
-        <section>
-            <div class="container">
-                <h2>Этапы имплантации:</h2>
+        <section class="stages">
+            <div class="container stage-container">
+                <div class ="stage-title"><h2 class="stage-title-text">Этапы имплантации:</h2></div>
+                <div class ="stage-subtitle"><h3 class="stage-subtitle-text">I Этап</h3></div>
+                <div class = "stage">
+                    <div class ="stage__description"><h4>Консультация и диагностика</h4></div>
+                    <div class = "stage__image-container"><img class = "stage-image" src="../assets/images/image-stage/image 32.png" alt="" /></div>
+                    <hr class ="stage__gradient-line">
+                    <p class="stage__text">Бесплатно сделаем КТ-снимок. Проведем полное обследование полости ртаю Подберем индивидуальный план лечения под вашу ситуацию.</p>
+                </div>
+                <div class = "stage">
+                    <div class ="stage__description"><h4>Установка протеза</h4></div>
+                    <div class = "stage__image-container"><img class = "stage-image" src="../assets/images/image-stage/image 34.png" alt=""  /></div>
+                    <hr class ="stage__gradient-line">
+                    <p class="stage__text">Мы сделаем протез в своей зуботехнической лаборатории, что позволит сэкономить ваши деньги. Ваш протез, после установки, не будет отличаться от своих зубов ни по виду, ни по ощущениям.</p>
+                </div>
+                <div class = "stage">
+                    <div class ="stage__description">Установка 4 имплантов</h4></div>
+                    <div class = "stage__image-container"><img class = "stage-image" src="../assets/images/image-stage/image 33.png" alt="" /></div>
+                    <hr class ="stage__gradient-line">
+                    <p class="stage__text">Врач предложит вам несколько имплантов на выбор и расскажет про преимущества конкретной фирмы. Установка 4 или 6 имплантов в зависимости от клинической ситуации.</p>
+                </div>
             </div>
         </section>
         <!-- 11. Рушана -->
@@ -1067,6 +1128,7 @@
 <script src="script.js"></script>
 <script src="quiz_popup.js"></script>
 <script src="banner.js"></script>
+
 </body>
 
 </html>
