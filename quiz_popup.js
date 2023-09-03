@@ -132,8 +132,20 @@ function checkForm() {
 
 // кнопка для отправки формы
 let sendFormButton = document.querySelector('.btn_next_submit');
+
+const saveScrollPosition = function() {
+    localStorage.setItem('scrollPosition', window.pageYOffset);
+  };
+
+  const restoreScrollPosition = function() {
+    const scrollPosition = localStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+      window.scrollTo(0, scrollPosition);
+    }
+  };
 // слушаем кнопку
 sendFormButton.addEventListener('click', async function sendFormData() {
+    saveScrollPosition();
     let response = await fetch('mail.php', {
         method: 'POST',
         contentType: false,

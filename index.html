@@ -17,11 +17,11 @@
                 <a href="#" class="logo">NEWLINEDENT</a>
                 <nav class="menu">
                     <ul>
-                        <li><a href="#">Стоимость</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">До и После</a></li>
-                        <li><a href="#">Этапы лечения</a></li>
-                        <li><a href="#">Как добраться</a></li>
+                        <li><a href="#menu_price">Стоимость</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#menu_before_after">До и После</a></li>
+                        <li><a href="#menu_stages">Этапы лечения</a></li>
+                        <li><a href="#menu_wrapper-map">Как добраться</a></li>
                     </ul>
                 </nav>
                 <button class="blue-button" id="callButton">
@@ -229,7 +229,7 @@
         </section>
 
         <!-- 5. Рушана -->
-        <section class="work_cost">
+        <section id="menu_price" class="work_cost">
             <div class="container_work_cost">
                 <h2 class="title_work_cost">Стоимость под ключ</h2>
             </div>
@@ -344,7 +344,7 @@
                     </button>
                 </div>
         </section>
-        
+
         <!-- Отзывы наших пациентов -->
         <section id="reviews" class="container">
             <h2 class="reviews__header2">Отзывы наших пациентов</h2>
@@ -407,7 +407,7 @@
         </section>
 
         <!--7. Аня -->
-        <section class="before_after">
+        <section id="menu_before_after" class="before_after">
             <div class="container container__before_after">
                 <h2 class="before_after__title">Фото до и после пациентов сделавших <span
                         class="pink_text">All-on-4</span></h2>
@@ -762,22 +762,22 @@
             <div class="container doctors-container">
                     <div class="doctors-title"><h2 class="doctors-title-text">Наши врачи</h2></div>
                     <div class="doctors-frame">
-                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Karbishev.png"></div>
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="./assets/images/image-doctors/photo_Karbishev.png"></div>
                         <div class="doctors-frame__background-circle"></div>
                         <div class="doctors-frame__doctors-name">Карбышев Михаил Алексеевич</div>
                     </div>
                     <div class="doctors-frame">
-                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Egiazaryan.png" ></div>
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="./assets/images/image-doctors/photo_Egiazaryan.png" ></div>
                         <div class="doctors-frame__background-circle"></div>
                         <div class="doctors-frame__doctors-name">Егиазарян Рафаэль Араикович</div>
                     </div>
                     <div class="doctors-frame">
-                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Vardanyan.png"></div>
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="./assets/images/image-doctors/photo_Vardanyan.png"></div>
                         <div class="doctors-frame__background-circle"></div>
                         <div class="doctors-frame__doctors-name">Варданян Роман Вруйрович</div>
                     </div>
                     <div class="doctors-frame">
-                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="../assets/images/image-doctors/photo_Savostikov.png"></div>
+                        <div class="doctors-frame__doctors-image"><img class="doc-image" src="./assets/images/image-doctors/photo_Savostikov.png"></div>
                         <div class="doctors-frame__background-circle"></div>
                         <div class="doctors-frame__doctors-name">Савостиков Роман Андреевич</div>
                     </div>
@@ -803,10 +803,10 @@
                     </form>
                 </div>
              </div>
-                
+
         </section>
         <!--10. Настя -->
-        <section class="stages">
+        <section id="menu_stages" class="stages">
             <div class="container stage-container">
                 <div class ="stage-title"><h2 class="stage-title-text">Этапы имплантации:</h2></div>
                 <div class ="stage-subtitle"><h3 class="stage-subtitle-text">I Этап</h3></div>
@@ -929,7 +929,7 @@
                 </div>
         </section>
         <!--12. Лена -->
-        <section class="wrapper-map">
+        <section id="menu_wrapper-map" class="wrapper-map">
             <div class="container map">
                 <h2 class="map__title">Клиника в Санкт-Петербурге рядом с метро</h2>
                 <div class="map__content">
@@ -993,11 +993,11 @@
             </div>
             <div class="toc">
                 <div class="toc__block">
-                    <a class="toc__block-p toc__p" href="#">Стоимость</a>
-                    <a class="toc__block-p toc__p" href="#">Отзывы</a>
-                    <a class="toc__block-p toc__p" href="#">До и После</a>
-                    <a class="toc__block-p toc__p" href="#">Этапы лечения</a>
-                    <a class="toc__block-p toc__p" href="#">Как добраться</a>
+                    <a class="toc__block-p toc__p" href="#menu_price">Стоимость</a>
+                    <a class="toc__block-p toc__p" href="#reviews">Отзывы</a>
+                    <a class="toc__block-p toc__p" href="#menu_before_after">До и После</a>
+                    <a class="toc__block-p toc__p" href="#menu_stages">Этапы лечения</a>
+                    <a class="toc__block-p toc__p" href="#menu_wrapper-map">Как добраться</a>
                 </div>
             </div>
             <div class="network">
@@ -1096,7 +1096,8 @@
 
 </html>
 <!--Баннер-->
-<div class="banner-container">
+ <!--Баннер-->
+ <div class="banner-container">
     <div class="overlay"></div>
     <div class="banner">
         <h3 class="title">Зачем искать что-то еще?</h3>
@@ -1124,6 +1125,56 @@
         </form>
     </div>
 </div>
+
+    <!--Фортуна-->
+
+    <div class="fortune-container" id="fortune">
+      <div class="fortune-overlay"></div>
+    <div class="fortune">
+      <div class="fortune-title-menu">
+      <h2 class="fortune-title">Только до</h2>
+      <div class="date" id="date"></div>
+      <div class="fortune-left">Осталось 3 All-on-4 в подарок</div>
+      </div>
+      <p class="fortune-text">Разыгрываем <span class="fortune-bluetext">имплантацию зубов ALL-on-4 в подарок</span> и 5 других подарков</p>
+      <p class="fortune-text1">Выигрывает каждый участвующий!</p>
+      <p class="fortune-put">Ввдите номер телефона и испытайте удачу:</p>
+      <div>
+      </div>
+      <form class="fortune-form">
+        <div class="fortune-phone-input">
+          <input type="fortune-phone" class="fortune-phone-input-input" placeholder="+ 7 (999) 999 99 99" style="font-size: 2vw;" pattern="\+?[0-9\s\-\(\)]+">
+          <button class="fortune-phone-input-button">Забрать подарок</button>
+        </div>
+        <div class="wheel-container">
+          <img src="./assets/img/banner/wheel.png" alt="wheel" id="wheel" class="wheel">
+          <input type="fortune-hidden" id="fortune-result" class="fortune-hidden-input">
+          <img src="./assets/img/banner/arrow.png" id="fortune-arrow" class="fortune-arrow">
+        </div>
+        <button id="fortune-close-button" aria-label="Close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="white"
+          >
+            <path
+              d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"
+            ></path>
+            <path
+              d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"
+            ></path>
+          </svg>
+        </button>
+        <iframe
+        id="fortune-iframe"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      </form>
+      </div>
+    </div>
 
 <script src="script.js"></script>
 <script src="quiz_popup.js"></script>

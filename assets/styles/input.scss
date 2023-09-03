@@ -23,53 +23,6 @@ $tablet: 870px;
 $mobile: 340px;
 
 //Fonts
-/*@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_700/Gilroy-Bold.ttf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_600/Gilroy-SemiBold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_500/Gilroy-Medium.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Gilroy", sans-serif;
-  src: url(/assets/fonts/Gilroy_400/Gilroy-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Coolvetica", sans-serif;
-  src: url(/assets/fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_400/Roboto-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_300/Roboto-Light.ttf);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(/assets/fonts/Roboto_500/Roboto-Medium.ttf);
-  font-weight: 500;
-}*/
 //Шрифты Лена
 @font-face {
   font-family: 'Gilroy700';
@@ -118,11 +71,6 @@ $mobile: 340px;
   src: local('Roboto500'),
     url(../fonts/Roboto_500/Roboto-Medium.ttf);
 }
-
-//Шрифты Настя
-
-/*$fC: "Coolvetica";
-$fG: "Gilroy";*/
 
 //mixins
 @mixin container {
@@ -1169,11 +1117,6 @@ $fG: "Gilroy";*/
   }
 }
 
-// .sign_up_price>p {
-//   display: flex;
-//   margin: 0;
-// }
-
 del {
   text-decoration: line-through;
   text-decoration-color: #e33434;
@@ -1403,7 +1346,7 @@ del {
   }
 }
 
-///Стили для модального окна
+/*///Стили для модального окна
 .modal {
   position: absolute;
   visibility: hidden;
@@ -1578,7 +1521,7 @@ del {
     cursor: none;
     font-size: 19px;
   }
-}
+}*/
 
 // Стили для блока "Стоимость под ключ"
 .work_cost {
@@ -3376,12 +3319,12 @@ $gray: #D9D9D9;
     }
     @media screen and (max-width: $tablet) {
       @include tablet-container;
-      font-size: 30px; 
+      font-size: 30px;
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container;
-      font-size: 16px; 
-    } 
+      font-size: 16px;
+    }
 }
 .doctors-container{
   display: grid;
@@ -3400,14 +3343,14 @@ $gray: #D9D9D9;
     @include tablet-container;
     grid-template-columns: 80px 80px 80px 80px;
     grid-template-rows: 0.5fr 1fr 0.5fr;
-    column-gap: 10px; 
+    column-gap: 10px;
   }
   @media screen and (max-width: $mobile) {
     @include mobile-container;
     grid-template-columns: 65px 65px 65px 65px;
     grid-template-rows: 0.5fr 1fr 0.5fr;
-    column-gap: 5px;  
-  } 
+    column-gap: 5px;
+  }
 }
 //Контейнер для фото с врачом
 .doctors-frame{
@@ -3661,7 +3604,7 @@ $gray: #D9D9D9;
       cursor: pointer;
       transition: .3s;
       outline: none;
-       
+
         @media screen and (max-width: $desktop) {
           width: 20px;
           height: 20px;
@@ -3899,7 +3842,7 @@ $gray: #D9D9D9;
 .stage-title{
   justify-self: center;
   grid-column: 1/4;
-  grid-row: 1/2;    
+  grid-row: 1/2;
 }
 .stage-title-text{
   font-family: 'Coolvetica400';
@@ -3911,16 +3854,16 @@ $gray: #D9D9D9;
   font-size: 120px;
     @media screen and (max-width: $desktop) {
       @include container;
-      font-size: 64px; 
+      font-size: 64px;
     }
     @media screen and (max-width: $tablet) {
       @include tablet-container;
-      font-size: 30px; 
+      font-size: 30px;
     }
     @media screen and (max-width: $mobile) {
       @include mobile-container;
-      font-size: 16px; 
-    } 
+      font-size: 16px;
+    }
 }
 //Подзаголовок "I этап"
 .stage-subtitle{
@@ -3951,7 +3894,7 @@ $gray: #D9D9D9;
       font-size: 16px;
       margin-bottom: 10px;
     }
-    
+
 }
 //Голубые колонки
 .stage{
@@ -4043,7 +3986,7 @@ $gray: #D9D9D9;
           width: 78px;
           height: 70px;
           border-radius: 5px;
-        } 
+        }
   }
   //Линия-разделитель
     &__gradient-line{
@@ -4063,12 +4006,12 @@ $gray: #D9D9D9;
           @include tablet-container;
           height: 1px;
           margin-top: 10px;
-          width: 82px; 
+          width: 82px;
         }
         @media screen and (max-width: $mobile) {
           @include mobile-container();
           margin-top: 8px;
-          width: 76px; 
+          width: 76px;
         }
   }
   //Описание этапа
@@ -4111,11 +4054,11 @@ $gray: #D9D9D9;
         @include container;
         max-width: 50%;
       }
-      @media screen and (max-width: $tablet) { 
+      @media screen and (max-width: $tablet) {
         @include tablet-container;
         max-width: 50%;
       }
-      @media screen and (max-width: $mobile) { 
+      @media screen and (max-width: $mobile) {
         @include mobile-container;
         max-width: 50%;
       }
@@ -4280,6 +4223,7 @@ $gray: #D9D9D9;
   }
 }
 */
+
 /*lena*/
 /*Стили для блока с картой*/
 
@@ -5526,7 +5470,7 @@ footer {
   padding: 60px 15px;
 
   &__content {
-    width: 70%;
+    width: 45%;
     padding: 30px;
     background: #F3F3F3;
     border-radius: 3px;
@@ -5781,7 +5725,6 @@ footer {
     max-width: 240px;
     margin: 0 auto;
   }
-
 }
 
 .banner {
@@ -5817,7 +5760,7 @@ footer {
   @media screen and (max-width: $tablet) {
     width: 90%;
     height: 90%;
-    background-image: url(../img/banner/banner-man-mobile.png);
+    background-image: url(../img/banner/arrow.png);
     background-position-y: 50%;
     background-size: 30%;
   }
@@ -6101,6 +6044,917 @@ footer {
     line-height: 20px;
   }
 }
+
+
+//Стили для фортуны
+
+.fortune-container {
+  @include container;
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+}
+
+.fortune {
+  width: 95%;
+  height: 95%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 2000;
+
+  @media screen and (max-width: $desktop) {
+    width: 90%;
+    height: 90%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 80%;
+    height: 80%;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+/* Стили для затемнения фона */
+.fortune-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#fortune-close-button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: $white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  @media screen and (max-width: $tablet) {
+  width: 40px;
+  height: 40px;
+    }
+
+  @media screen and (max-width: $mobile) {
+  right: 5px;
+  width: 30px;
+  height: 30px;
+    }
+}
+
+.fortune-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fortune-title-menu {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 50px;
+
+@media screen and (max-width: $desktop) {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: $tablet) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: $mobile) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+}
+
+.fortune-title {
+color: $blue;
+font-family: Coolvetica;
+font-weight: 600;
+font-size: 60.17px;
+line-height: 53.56px;
+margin-left: 100px;
+
+@media screen and (max-width: $desktop) {
+margin-left: 80px;
+font-size: 31.97px;
+line-height: 28.45px;
+}
+
+@media screen and (max-width: $tablet) {
+margin-left: 50px;
+font-size: 20px;
+line-height: 18px;
+}
+
+@media screen and (max-width: $mobile) {
+  width: 56px;
+  margin-left: 20px;
+  font-size: 12.22px;
+  line-height: 10.88px;
+  }
+
+}
+
+.date {
+  width: 208.17px;
+  height: 66.09px;
+  margin-left: 35px;
+  border-radius: 201px;
+  border: 6px solid $blue;
+  color: $blue;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 30.09px;
+  line-height: 46.38px;
+  text-align: center;
+
+  @media screen and (max-width: $desktop) {
+    width: 110.97px;
+    height: 34.98px;
+    font-size: 15.98px;
+    line-height: 24.32px;
+    border-radius: 107px;
+    border: 3px solid $blue;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 80px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 17.39px;
+    border-radius: 41px;
+    border: 1px solid $blue;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 50px;
+    height: 13.11px;
+    font-size: 6.11px;
+    line-height: 10.39px;
+    border-radius: 41px;
+    margin-left: 10px;
+  }
+}
+
+.fortune-left {
+  width: 531.17px;
+  height: 66.09;
+  margin-left: 40px;
+  color: $white;
+  border-radius: 201px;
+  border: none;
+  background-color: $blue;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 30.09px;
+  line-height: 56.38px;
+  text-align: center;
+
+  @media screen and (max-width: $desktop) {
+    width: 281.97px;
+    height: 34.98px;
+    border-radius: 107px;
+    margin-left: 20px;
+    font-size: 15.98px;
+    line-height: 30.32px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 118.22px;
+    height: 22px;
+    border-radius: 41px;
+    margin-left: 20px;
+    font-size: 10px;
+    line-height: 11.15px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 108.22px;
+    height: 13.11px;
+    border-radius: 41px;
+    margin-left: 10px;
+    font-size: 6.11px;
+    line-height: 12.39px;
+  }
+}
+
+.fortune-text {
+  width: 762.21px;
+  height: 183px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 70px;
+
+  @media screen and (max-width: $desktop) {
+    width: 404.92px;
+    height: 96px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    font-size: 26.64px;
+    line-height: 32.21px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 250px;
+    height: 36px;
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 17px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 154.82px;
+    height: 36px;
+    margin-left: 20px;
+    font-size: 10.19px;
+    line-height: 12.31px;
+    margin-bottom: 20px;
+    }
+}
+
+.fortune-bluetext {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
+  color: $blue;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 26.64px;
+    line-height: 32.21px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    font-size: 18px;
+    line-height: 17px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 10.19px;
+    line-height: 12.31px;
+    }
+  }
+
+.fortune-text1 {
+  width: 845px;
+  height: 61px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 50.15px;
+  line-height: 60.63px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: $desktop) {
+    width: 449px;
+    height: 32px;
+    font-size: 26.64px;
+    line-height: 32.21px;
+    margin-left: 80px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 230px;
+    height: 12px;
+    font-size: 13px;
+    line-height: 12.31px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 130px;
+    height: 12px;
+    font-size: 10.19px;
+    line-height: 12.31px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    }
+}
+
+.fortune-put {
+  width: 374px;
+  height: 21px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 18.05px;
+  line-height: 21.25px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $desktop) {
+    width: 199px;
+    height: 11px;
+    font-size: 9.59px;
+    line-height: 11.29px;
+    margin-left: 80px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 130px;
+    height: 4px;
+    font-size: 5.67px;
+    line-height: 8px;
+    margin-left: 50px;
+    margin-bottom: 17px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 76px;
+    height: 4px;
+    font-size: 3.67px;
+    line-height: 4.32px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    }
+}
+
+.fortune-phone-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.fortune-phone-input-input {
+  width: 782.27px;
+  height: 93.06px;
+  border: 1px solid #ccc;
+  border-radius: 201px;
+  outline: none;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 60.17px;
+  line-height: 72.75px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $desktop) {
+    width: 415.58px;
+    height: 49.66px;
+    margin-left: 80px;
+    border-radius: 107px;
+    font-size: 31.97px;
+    line-height: 38.65px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 158.9px;
+    height: 19.07px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border-radius: 41px;
+    font-size: 12.22px;
+    line-height: 14.78px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 100px;
+    margin-left: 20px;
+    }
+}
+
+.fortune-phone-input-button {
+  width: 772.24px;
+  height: 103.09px;
+  background-color: $pink;
+  color: white;
+  border: none;
+  border-radius: 201px;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 60.17px;
+  line-height: 72.75px;
+  text-align: center;
+  margin-left: 100px;
+
+  @media screen and (max-width: $desktop) {
+    width: 410.25px;
+    height: 54.98px;
+    margin-left: 80px;
+    border-radius: 107px;
+    font-size: 31.97px;
+    line-height: 38.65px;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 156.86px;
+    height: 21.11px;
+    margin-left: 50px;
+    border-radius: 41px;
+    font-size: 12.22px;
+    line-height: 14.78px;
+    }
+
+  @media screen and (max-width: $mobile) {
+    width: 100px;
+    margin-left: 20px;
+    font-size: 8px;
+    }
+}
+
+.wheel-container {
+  position: relative;
+  top: -77vh;
+  left: 53vw;
+
+  @media screen and (max-width: $desktop) {
+    @include container;
+    top: -72vh;
+    left: 25vw;
+    }
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    top: -20vh;
+    left: 35vw;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    top: -40vh;
+    left: 38vw;
+  }
+}
+
+.wheel {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  transition: transform 2s linear;
+  animation-name: rotate-2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+
+  @media screen and (max-width: $desktop) {
+  width: 80%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 50%;
+  }
+}
+
+@keyframes wheel-rotate-1 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(60deg);
+}
+}
+
+@keyframes wheel-rotate-2 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(120deg);
+}
+}
+
+@keyframes wheel-rotate-3 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(180deg);
+}
+}
+
+@keyframes wheel-rotate-4 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(240deg);
+}
+}
+
+@keyframes wheel-rotate-5 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(300deg);
+}
+}
+
+@keyframes wheel-rotate-6 {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+.fortune-hidden-input {
+  display: none;
+}
+
+.fortune-arrow {
+position: absolute;
+  max-width: 177.7px;
+  width: 50%;
+  height: auto;
+  top: 30.5vh;
+  left: 15.5vw;
+
+  @media screen and (max-width: $desktop) {
+    width: 40%;
+    top: 31vh;
+    left: 14.3vw;
+    }
+
+  @media screen and (max-width: $tablet) {
+    width: 20%;
+    top: 8.5vh;
+    left: 12.5vw;
+    }
+
+  @media screen and (max-width: $mobile) {
+    top: 13.5vh;
+    left: 14vw;
+    }
+}
+
+// Стили для баннера
+/*
+.banner-container {
+  @include container;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
+
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+}
+
+.banner {
+  width: 95%;
+  height: 95%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $whitesmoke;
+  background-image: url(../img/banner/banner-man.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: 26%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 2000;
+
+  @media screen and (max-width: $desktop) {
+    width: 90%;
+    height: 90%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 70%;
+    height: 70%;
+    background-size: 35%;
+    background-position-y: 30%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 90%;
+    height: 90%;
+    background-image: url(../img/banner/banner-man-mobile.png);
+    background-position-y: 50%;
+    background-size: 30%;
+  }
+}
+
+.title {
+  width: 1175px;
+  height: 89px;
+  color: $blue;
+  font-family: Coolvetica;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 70px;
+  margin-left: 100px;
+  margin-top: 55px;
+
+  @media screen and (max-width: $desktop) {
+    margin-left: 80px;
+    font-size: 45px;
+    line-height: 65px;
+    margin-top: 35px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin-left: 50px;
+    font-size: 39px;
+    line-height: 65px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 180px;
+    height: 30px;
+    margin-left: 25px;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 25px;
+  }
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+*/
+/* Стили для затемнения фона */
+/*
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none;
+}
+
+.bluetext,
+.bluetext1 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 55px;
+  color: $blue;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+.text {
+  width: 932px;
+  height: 180px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 45px;
+
+  @media screen and (max-width: $desktop) {
+    width: 925px;
+    height: 120px;
+    margin-left: 80px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 470px;
+    height: 160px;
+    margin-left: 50px;
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 180px;
+    height: 20px;
+    margin-left: 25px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+.text1 {
+  width: 1070px;
+  height: 60px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  margin-left: 100px;
+  color: $black;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $desktop) {
+    height: 40px;
+    margin-left: 80px;
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 500px;
+    height: 40px;
+    margin-left: 50px;
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 180px;
+    height: 20px;
+    margin-left: 25px;
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+.ul {
+  width: 1116px;
+  height: 183px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 41.2px;
+  margin-left: 130px;
+  color: $black;
+  list-style-type: disc;
+
+  @media screen and (max-width: $desktop) {
+    height: 130px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 450px;
+    height: 130px;
+    margin-left: 70px;
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 190px;
+    height: 17px;
+    margin-left: 35px;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 25px;
+    margin-bottom: 70px;
+  }
+}
+
+#close-button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: $white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+
+  @media screen and (max-width: $mobile) {
+    width: 25px;
+    height: 25px;
+    right: 5px;
+  }
+}
+
+.phone-input {
+  position: relative;
+  display: inline-block;
+}
+
+.phone-input-input {
+  width: 780px;
+  padding-right: 100px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 106px;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  margin-left: 120px;
+
+  @media screen and (max-width: $desktop) {
+    margin-left: 80px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 450px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 250px;
+    height: 30px;
+    margin-left: 40px;
+  }
+}
+
+.phone-input-button {
+  position: absolute;
+  left: 643px;
+  top: 5px;
+  bottom: 0;
+  width: 250px;
+  height: 80%;
+  background-color: $pink;
+  color: white;
+  border: none;
+  border-radius: 106px;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 31.94px;
+  line-height: 38.6px;
+
+  @media screen and (max-width: $desktop) {
+    width: 170px;
+    left: 685px;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 170px;
+    left: 325px;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 100px;
+    left: 185px;
+    font-size: 25px;
+    top: 3px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}*/
 
 // СБОР ДАННЫХ КЛИЕНТА
 .quiz_userdata_div {
