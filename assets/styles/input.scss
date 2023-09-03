@@ -3832,8 +3832,6 @@ $gray: #D9D9D9;
     @media screen and (max-width: $desktop) {
       box-shadow: inset 2px 2px 2px 0px #d0ebff66,
         inset -2px -2px 2px 0px #2d536f66;
-    }
-
     @media screen and (max-width: $tablet) {
       box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #d0ebff66,
         inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #2d536f66;
@@ -4684,7 +4682,7 @@ footer {
   }
 }
 
-.license-modal__content img {
+ .license-modal__content img {
   width: 100%;
   height: auto;
 }
