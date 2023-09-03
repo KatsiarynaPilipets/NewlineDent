@@ -1403,7 +1403,7 @@ del {
   }
 }
 
-//Стили для модального окна
+///Стили для модального окна
 .modal {
   position: absolute;
   visibility: hidden;
@@ -1492,10 +1492,17 @@ del {
     @media screen and (max-width: $desktop) {
       @include container;
       width: 415px;
-      height: 50px;
+      height: 60px;
       font-size: 30px;
     }
-
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      height: 36px;
+    }
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      height: 24px;
+    }
     //Стили для невалидных полей
     &:invalid {
       background-color: $whitesmoke;
@@ -3676,7 +3683,7 @@ $gray: #D9D9D9;
 .modal_active {
   position: fixed;
   top: 0;
-  transform: translate(-10%, -50%) scaled(1);
+  //transform: translate(-10%, -50%) scaled(1);
   visibility: visible;
   opacity: 1;
   transition: .3s;
@@ -3708,8 +3715,7 @@ $gray: #D9D9D9;
         border-radius: 32px;
       }
       @media screen and (max-width: $mobile) {
-        height: 20px;
-        font-size: 8px;
+        font-size: 4px;
         border-radius: 26px;
         margin-top: 5px;
       }
@@ -3751,19 +3757,19 @@ $gray: #D9D9D9;
       font-size: 10px;
     }
   }
-  &__subtitle{
+    &__subtitle{
       font-family: 'Coolvetica400';
       font-size: 26px;
       font-weight: 400;
       margin: 0;
       @media screen and (max-width: $desktop) {
-        font-size: 18px;
+        font-size: 16px;
       }
       @media screen and (max-width: $tablet) {
-        font-size: 12px;
+        font-size: 10px;
       }
       @media screen and (max-width: $mobile) {
-        font-size: 8px;
+        font-size: 4px;
       }
   }
   &__info{
@@ -3779,7 +3785,7 @@ $gray: #D9D9D9;
       font-size: 8px;
     }
     @media screen and (max-width: $mobile) {
-      font-size: 4px;
+      font-size: 6px;
     }
   }
   &__input-box{
@@ -3788,10 +3794,10 @@ $gray: #D9D9D9;
       margin: 10px 0;
     }
     @media screen and (max-width: $tablet) {
-      margin: 8px 0;
+      margin: 4px 0;
     }
     @media screen and (max-width: $mobile) {
-      margin: 6px 0;
+      margin: 2px 0;
     }
   }
 }
@@ -3802,23 +3808,20 @@ $gray: #D9D9D9;
   font-size: 32px;
   color: $blue;
   border-radius: 0 0 5px 5px;
-  margin-top: 0px;
+  margin: 0px;
   @media screen and (max-width: $desktop) {
     font-size: 16px;
   }
   @media screen and (max-width: $tablet) {
-    font-size: 12px;
+    font-size: 10px;
   }
   @media screen and (max-width: $mobile) {
-    font-size: 6px;
+    font-size: 4px;
   }
 }
 
 .error.active {
   padding: 0.3em;
-  @media screen and (max-width: $tablet) {
-    padding: 0;
-  }
 }
 
 .submit-btn{
@@ -3849,7 +3852,7 @@ $gray: #D9D9D9;
     border-radius: 32px;
   }
   @media screen and (max-width: $mobile) {
-    height: 20px;
+    height: 30px;
     font-size: 6px;
     border-radius: 26px;
     margin: 0px;
@@ -4623,7 +4626,7 @@ $gray: #D9D9D9;
     }
   }
 }
-
+}
 .button__ordercall {
   width: 249px;
   height: 59px;
@@ -6216,5 +6219,4 @@ footer {
 
 .error_mess.active {
   padding: 0.3em;
-}
 }

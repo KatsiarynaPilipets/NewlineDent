@@ -493,8 +493,8 @@ document.addEventListener('DOMContentLoaded', function () {
    
   });
 
-/*//Сбор телефонных номеров из формы
-const telInput = document.getElementById('phone');
+//Сбор телефонных номеров из формы
+/*const telInput = document.getElementById('phone');
 //function sendTelNumber(tel) {
 let telForm = document.getElementById('usertel-form');
 let dataPhones = new FormData(telForm);
@@ -508,9 +508,9 @@ console.log('Номер:', telInput.value);
 event.target.value = null
 })
 */
-/*
+
 //Отправка данных на сервер
-let sendTelButton = document.querySelector('.submit-btn');
+/*let sendTelButton = document.querySelector('.submit-btn');
 sendTelButton.addEventListener('click', async function sendFormData() {
 let response = await fetch('mail.php', {
   method: 'POST',

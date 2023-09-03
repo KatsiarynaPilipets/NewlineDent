@@ -1533,8 +1533,22 @@ del {
     max-width: 1622px;
     margin: 0 auto;
     width: 415px;
-    height: 50px;
+    height: 60px;
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .contact-form__tel {
+    max-width: 328.39px;
+    margin: 0 auto;
+    height: 36px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .contact-form__tel {
+    max-width: 328.39px;
+    margin: 0 auto;
+    height: 24px;
   }
 }
 .contact-form__tel:invalid {
@@ -3804,7 +3818,6 @@ del {
 .modal_active {
   position: fixed;
   top: 0;
-  transform: translate(-10%, -50%) scaled(1);
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
@@ -3841,8 +3854,7 @@ del {
 }
 @media screen and (max-width: 340px) {
   .contact-form__tel {
-    height: 20px;
-    font-size: 8px;
+    font-size: 4px;
     border-radius: 26px;
     margin-top: 5px;
   }
@@ -3900,17 +3912,17 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .contact-form__subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 870px) {
   .contact-form__subtitle {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 340px) {
   .contact-form__subtitle {
-    font-size: 8px;
+    font-size: 4px;
   }
 }
 .contact-form__info {
@@ -3932,7 +3944,7 @@ del {
 }
 @media screen and (max-width: 340px) {
   .contact-form__info {
-    font-size: 4px;
+    font-size: 6px;
   }
 }
 .contact-form__input-box {
@@ -3945,12 +3957,12 @@ del {
 }
 @media screen and (max-width: 870px) {
   .contact-form__input-box {
-    margin: 8px 0;
+    margin: 4px 0;
   }
 }
 @media screen and (max-width: 340px) {
   .contact-form__input-box {
-    margin: 6px 0;
+    margin: 2px 0;
   }
 }
 
@@ -3960,7 +3972,7 @@ del {
   font-size: 32px;
   color: #4fa7fb;
   border-radius: 0 0 5px 5px;
-  margin-top: 0px;
+  margin: 0px;
 }
 @media screen and (max-width: 1630px) {
   .error {
@@ -3969,22 +3981,17 @@ del {
 }
 @media screen and (max-width: 870px) {
   .error {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 340px) {
   .error {
-    font-size: 6px;
+    font-size: 4px;
   }
 }
 
 .error.active {
   padding: 0.3em;
-}
-@media screen and (max-width: 870px) {
-  .error.active {
-    padding: 0;
-  }
 }
 
 .submit-btn {
@@ -4021,7 +4028,7 @@ del {
 }
 @media screen and (max-width: 340px) {
   .submit-btn {
-    height: 20px;
+    height: 30px;
     font-size: 6px;
     border-radius: 26px;
     margin: 0px;
@@ -4834,21 +4841,6 @@ del {
   border: none;
   cursor: pointer;
   box-shadow: inset 4px 4px 14px 0px #FFC8D6, inset -4px -4px 10px 0px #C88D9C;
-  /*Стили блока с консультацией Элины*/
-  /*Стили футера*/
-  /*Оформление бордеров футера*/
-  /*Оформление padding футера*/
-  /*Стили для блока с лицензией и гарантией*/
-  /*Стили для блока с меню футера*/
-  /*Стили для блока с соцсетями*/
-  /*Стили для блока с платежными системами*/
-  /*Стили для блока с информацией мелким шрифтом*/
-  /*Стили для кнопки стрелка "Вверх"*/
-  /*Стили для кнопки с трубкой*/
-  /* Стили для модального окна с лицензией*/
-  /* Стили для изображения лицензии*/
-  /* Стили для модального окна с гарантией*/
-  /* Стили для затемнения фона */
 }
 @media screen and (max-width: 1630px) {
   .button__call {
@@ -4907,7 +4899,8 @@ del {
     box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px rgba(45, 83, 111, 0.8980392157), inset -0.8185136914px -0.8185136914px 0.8185136914px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
-.button__call .button__ordercall {
+
+.button__ordercall {
   width: 249px;
   height: 59px;
   margin-top: 30px;
@@ -4923,7 +4916,7 @@ del {
   cursor: pointer;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .button__ordercall {
+  .button__ordercall {
     width: 133px;
     height: 31px;
     margin-top: 15px;
@@ -4935,7 +4928,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .button__ordercall {
+  .button__ordercall {
     width: 52.28px;
     height: 12.14px;
     margin-top: 0px;
@@ -4947,38 +4940,40 @@ del {
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .button__ordercall {
+  .button__ordercall {
     font-size: 4.5px;
   }
 }
-.button__call .button__ordercall:hover {
+.button__ordercall:hover {
   color: #cbe5ff;
   border: 6px solid #cbe5ff;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .button__ordercall:hover {
+  .button__ordercall:hover {
     border: 3px solid #cbe5ff;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .button__ordercall:hover {
+  .button__ordercall:hover {
     border: 1px solid #cbe5ff;
   }
 }
-.button__call .button__ordercall:active {
+.button__ordercall:active {
   box-shadow: inset 4px 4px 4px 0px rgba(45, 83, 111, 0.8980392157), inset -4px -4px 4px 0px rgba(208, 235, 255, 0.4392156863);
 }
 @media screen and (max-width: 1630px) {
-  .button__call .button__ordercall:active {
+  .button__ordercall:active {
     box-shadow: inset 2px 2px 2px 0px rgba(45, 83, 111, 0.8980392157), inset -2px -2px 2px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .button__ordercall:active {
+  .button__ordercall:active {
     box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px rgba(45, 83, 111, 0.8980392157), inset -0.8185136914px -0.8185136914px 0.8185136914px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
-.button__call .wrapper-consultation {
+
+/*Стили блока с консультацией Элины*/
+.wrapper-consultation {
   max-width: 1920px;
   width: 100%;
   display: flex;
@@ -4989,22 +4984,23 @@ del {
   justify-content: center;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .wrapper-consultation {
+  .wrapper-consultation {
     max-width: 1630px;
     height: 176px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .wrapper-consultation {
+  .wrapper-consultation {
     height: 67.64px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .wrapper-consultation {
+  .wrapper-consultation {
     height: 50px;
   }
 }
-.button__call .consultation {
+
+.consultation {
   width: 100%;
   max-width: 1622px;
   margin: 0 auto;
@@ -5013,44 +5009,44 @@ del {
   align-self: center;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .consultation {
+  .consultation {
     max-width: 859.68px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .consultation {
+  .consultation {
     max-width: 328.39px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .consultation {
+  .consultation {
     max-width: 240px;
     margin: 0 auto;
   }
 }
-.button__call .consultation__text {
+.consultation__text {
   font-size: 63px;
   color: #ffffff;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .consultation__text {
+  .consultation__text {
     font-size: 33px;
     font-weight: 700;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .consultation__text {
+  .consultation__text {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .consultation__text {
+  .consultation__text {
     font-size: 9px;
   }
 }
-.button__call .consultation__call {
+.consultation__call {
   display: flex;
   border-radius: 200px;
   background-color: #ffffff;
@@ -5060,27 +5056,27 @@ del {
   align-content: center;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .consultation__call {
+  .consultation__call {
     border-radius: 107px;
     width: 276px;
     height: 37px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .consultation__call {
+  .consultation__call {
     width: 107.52px;
     height: 14.2px;
     border-radius: 40.9940071106px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .consultation__call {
+  .consultation__call {
     width: 120px;
     height: 10px;
     border-radius: 25;
   }
 }
-.button__call .consultation__call-input {
+.consultation__call-input {
   display: flex;
   background-color: rgba(255, 255, 255, 0);
   width: 330px;
@@ -5093,7 +5089,7 @@ del {
   text-align: center;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .consultation__call-input {
+  .consultation__call-input {
     width: 230px;
     height: 31px;
     border-radius: 107px;
@@ -5101,24 +5097,24 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .consultation__call-input {
+  .consultation__call-input {
     width: 69.22px;
     height: 14.22px;
     border-radius: 40.9940071106px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .consultation__call-input {
+  .consultation__call-input {
     width: 80px;
     height: 10px;
     border-radius: 20px;
     padding-bottom: 9px;
   }
 }
-.button__call .consultation__call-input:focus {
+.consultation__call-input:focus {
   outline: white;
 }
-.button__call .consultation__call-button {
+.consultation__call-button {
   align-self: center;
   width: 180px;
   height: 69px;
@@ -5131,7 +5127,7 @@ del {
   cursor: pointer;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .consultation__call-button {
+  .consultation__call-button {
     width: 98px;
     height: 37px;
     border-radius: 107px;
@@ -5141,7 +5137,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .consultation__call-button {
+  .consultation__call-button {
     width: 38.3px;
     height: 13.22px;
     border-radius: 41px;
@@ -5151,7 +5147,7 @@ del {
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .consultation__call-button {
+  .consultation__call-button {
     width: 40px;
     height: 10px;
     border-radius: 20px;
@@ -5159,47 +5155,51 @@ del {
     font-size: 3.5px;
   }
 }
-.button__call .consultation__call-button:hover {
+.consultation__call-button:hover {
   background-color: #4fa7fb;
 }
-.button__call .consultation__call-button:active {
+.consultation__call-button:active {
   box-shadow: inset 4px 4px 4px 0px rgba(45, 83, 111, 0.8980392157), inset -4px -4px 4px 0px rgba(208, 235, 255, 0.8078431373);
 }
 @media screen and (max-width: 1630px) {
-  .button__call .consultation__call-button:active {
+  .consultation__call-button:active {
     box-shadow: inset 2px 2px 2px 0px rgba(45, 83, 111, 0.8980392157), inset -2px -2px 2px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .consultation__call-button:active {
+  .consultation__call-button:active {
     box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px rgba(45, 83, 111, 0.8980392157), inset -0.8185136914px -0.8185136914px 0.8185136914px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
-.button__call .consultation__call-input::placeholder {
+
+.consultation__call-input::placeholder {
   color: #D9D9D9;
   font-size: 24px;
   text-align: center;
   font-family: "Gilroy700";
 }
 @media screen and (max-width: 1630px) {
-  .button__call .consultation__call-input::placeholder {
+  .consultation__call-input::placeholder {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .consultation__call-input::placeholder {
+  .consultation__call-input::placeholder {
     font-size: 4.92px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .consultation__call-input::placeholder {
+  .consultation__call-input::placeholder {
     font-size: 3.5px;
   }
 }
-.button__call footer {
+
+/*Стили футера*/
+footer {
   background-color: #cbe5ff;
 }
-.button__call .wrapper-footer {
+
+.wrapper-footer {
   width: 100%;
   max-width: 1622px;
   margin: 0 auto;
@@ -5208,97 +5208,103 @@ del {
   grid-template-rows: 297px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .wrapper-footer {
+  .wrapper-footer {
     max-width: 859.68px;
     margin: 0 auto;
     grid-template-rows: 159px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .wrapper-footer {
+  .wrapper-footer {
     max-width: 328.39px;
     margin: 0 auto;
     grid-template-rows: 67px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .wrapper-footer {
+  .wrapper-footer {
     max-width: 240px;
     margin: 0 auto;
   }
 }
-.button__call .license,
-.button__call .toc,
-.button__call .network {
+
+/*Оформление бордеров футера*/
+.license,
+.toc,
+.network {
   border-right: 1px solid #A5BFD9;
 }
-.button__call .toc,
-.button__call .network,
-.button__call .pay {
+
+/*Оформление padding футера*/
+.toc,
+.network,
+.pay {
   padding-top: 50px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .toc,
-  .button__call .network,
-  .button__call .pay {
+  .toc,
+  .network,
+  .pay {
     padding-top: 27px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .toc,
-  .button__call .network,
-  .button__call .pay {
+  .toc,
+  .network,
+  .pay {
     padding-top: 10.16px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .toc,
-  .button__call .network,
-  .button__call .pay {
+  .toc,
+  .network,
+  .pay {
     padding-top: 6px;
   }
 }
-.button__call .license {
+
+/*Стили для блока с лицензией и гарантией*/
+.license {
   padding: 50px 100px 0px 0px;
   display: grid;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .license {
+  .license {
     padding: 27px 53px 0px 0px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .license {
+  .license {
     padding: 10.17px 15px 0px 0px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .license {
+  .license {
     padding: 6px 5px 0px 0px;
   }
 }
-.button__call .license__company {
+.license__company {
   font-family: "Gilroy600";
   font-size: 30px;
   color: #292929;
   text-align: center;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .license__company {
+  .license__company {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .license__company {
+  .license__company {
     font-size: 6.5px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .license__company {
+  .license__company {
     font-size: 5px;
   }
 }
-.button__call .license__number {
+.license__number {
   font-family: "Gilroy400";
   font-size: 24px;
   color: #292929;
@@ -5306,44 +5312,44 @@ del {
   margin-top: 25px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .license__number {
+  .license__number {
     font-size: 12px;
     margin-top: 13px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .license__number {
+  .license__number {
     font-size: 5.65px;
     margin-top: 5px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .license__number {
+  .license__number {
     font-size: 4.5px;
   }
 }
-.button__call .license__picture {
+.license__picture {
   height: 100px;
   display: flex;
   justify-content: space-around;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .license__picture {
+  .license__picture {
     height: 53px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .license__picture {
+  .license__picture {
     height: 20.31px;
     margin-top: 5px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .license__picture {
+  .license__picture {
     height: 15px;
   }
 }
-.button__call .license__link {
+.license__link {
   font-family: "Gilroy500";
   font-size: 24px;
   color: #292929;
@@ -5352,51 +5358,53 @@ del {
   cursor: pointer;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .license__link {
+  .license__link {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .license__link {
+  .license__link {
     font-size: 4.87px;
     margin-top: 5px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .license__link {
+  .license__link {
     font-size: 4px;
   }
 }
-.button__call .toc {
+
+/*Стили для блока с меню футера*/
+.toc {
   display: grid;
   justify-content: center;
 }
-.button__call .toc__block {
+.toc__block {
   display: grid;
   width: 169px;
   grid-template-rows: repeat(5, 23px);
   gap: 30px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .toc__block {
+  .toc__block {
     width: 80px;
     grid-template-rows: repeat(5, 12px);
     gap: 15px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .toc__block {
+  .toc__block {
     width: 29px;
     grid-template-rows: repeat(5, 7px);
     gap: 5px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .toc__block {
+  .toc__block {
     grid-template-rows: repeat(5, 5px);
   }
 }
-.button__call .toc__block-p {
+.toc__block-p {
   outline: none;
   text-decoration: none;
   font-family: "Gilroy400";
@@ -5406,28 +5414,31 @@ del {
   justify-self: left;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .toc__block-p {
+  .toc__block-p {
     font-size: 11px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .toc__block-p {
+  .toc__block-p {
     font-size: 4.06px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .toc__block-p {
+  .toc__block-p {
     font-size: 4px;
   }
 }
-.button__call .toc__block-p:hover {
+
+.toc__block-p:hover {
   text-decoration: underline;
 }
-.button__call .network {
+
+/*Стили для блока с соцсетями*/
+.network {
   display: flex;
   justify-content: center;
 }
-.button__call .network__pic {
+.network__pic {
   margin-top: 126px;
   margin-left: 15px;
   margin-right: 15px;
@@ -5435,14 +5446,14 @@ del {
   height: 50px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .network__pic {
+  .network__pic {
     margin-top: 66px;
     width: 27px;
     height: 27px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .network__pic {
+  .network__pic {
     margin-top: 30px;
     margin-left: 3px;
     margin-right: 3px;
@@ -5451,35 +5462,37 @@ del {
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .network__pic {
+  .network__pic {
     width: 7px;
     height: 7px;
     margin-top: 25px;
   }
 }
-.button__call .pay {
+
+/*Стили для блока с платежными системами*/
+.pay {
   display: flex;
   flex-direction: column;
   margin-left: 100px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .pay {
+  .pay {
     margin-left: 50px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .pay {
+  .pay {
     margin-left: 40%;
   }
 }
-.button__call .pay__pic {
+.pay__pic {
   padding-bottom: 20px;
   width: 60px;
   height: 50px;
   justify-self: center;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .pay__pic {
+  .pay__pic {
     padding-bottom: 0px;
     margin-bottom: 10px;
     width: 32px;
@@ -5487,87 +5500,91 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .pay__pic {
+  .pay__pic {
     padding-bottom: 0px;
     margin-bottom: 5px;
     width: 12.19px;
     height: 6.09px;
   }
 }
-.button__call .wrapper-information {
+
+/*Стили для блока с информацией мелким шрифтом*/
+.wrapper-information {
   width: 100%;
   max-width: 1622px;
   margin: 0 auto;
   height: 239px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .wrapper-information {
+  .wrapper-information {
     max-width: 859.68px;
     margin: 0 auto;
     height: 99px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .wrapper-information {
+  .wrapper-information {
     max-width: 328.39px;
     margin: 0 auto;
     height: 39px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .wrapper-information {
+  .wrapper-information {
     max-width: 240px;
     margin: 0 auto;
     height: 25px;
   }
 }
-.button__call .wrapper-information__title {
+.wrapper-information__title {
   font-family: "Gilroy600";
   font-size: 25px;
   margin-top: 72px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .wrapper-information__title {
+  .wrapper-information__title {
     font-size: 13px;
     margin-top: 29px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .wrapper-information__title {
+  .wrapper-information__title {
     font-size: 5.08px;
     margin-top: 15px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .wrapper-information__title {
+  .wrapper-information__title {
     font-size: 3px;
     margin-top: 7px;
   }
 }
-.button__call .wrapper-information__text {
+.wrapper-information__text {
   font-family: "Gilroy400";
   font-size: 20px;
   margin-top: 17px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .wrapper-information__text {
+  .wrapper-information__text {
     font-size: 10px;
     margin-top: 9px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .wrapper-information__text {
+  .wrapper-information__text {
     font-size: 4.06px;
     margin-top: 5px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .wrapper-information__text {
+  .wrapper-information__text {
     font-size: 2.5px;
     margin-top: 3px;
   }
 }
-.button__call .upward {
+
+/*Стили для кнопки стрелка "Вверх"*/
+.upward {
   position: fixed;
   bottom: 250px;
   right: calc((101% - 1630px) / 2);
@@ -5583,7 +5600,7 @@ del {
   transition: 0.5s;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .upward {
+  .upward {
     width: 40px;
     height: 40px;
     right: calc((100% - 870px) / 2);
@@ -5591,7 +5608,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .upward {
+  .upward {
     width: 15.23px;
     height: 15.23px;
     right: calc((100% - 340px) / 2);
@@ -5599,65 +5616,68 @@ del {
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .upward {
+  .upward {
     width: 10px;
     height: 10px;
     right: calc((100% - 240px) / 2);
     bottom: 30px;
   }
 }
-.button__call .upward__img {
+.upward__img {
   width: 75px;
   height: 75px;
   display: flex;
   justify-content: center;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .upward__img {
+  .upward__img {
     width: 40px;
     height: 40px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .upward__img {
+  .upward__img {
     width: 15.23px;
     height: 15.23px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .upward__img {
+  .upward__img {
     width: 10px;
     height: 10px;
   }
 }
-.button__call .upward__img-pic {
+.upward__img-pic {
   align-self: center;
   width: 25px;
   height: 25px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .upward__img-pic {
+  .upward__img-pic {
     width: 13px;
     height: 13px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .upward__img-pic {
+  .upward__img-pic {
     width: 5.08px;
     height: 5.08px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .upward__img-pic {
+  .upward__img-pic {
     width: 4px;
     height: 4px;
   }
 }
-.button__call .upward.active {
+
+.upward.active {
   visibility: visible;
   opacity: 1;
 }
-.button__call .pinkphone {
+
+/*Стили для кнопки с трубкой*/
+.pinkphone {
   position: fixed;
   bottom: 75px;
   right: calc((101% - 1630px) / 2);
@@ -5671,7 +5691,7 @@ del {
   cursor: pointer;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .pinkphone {
+  .pinkphone {
     bottom: 41px;
     right: calc((101% - 870px) / 2);
     width: 66px;
@@ -5679,7 +5699,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .pinkphone {
+  .pinkphone {
     bottom: 14px;
     right: calc((101% - 340px) / 2);
     width: 25.39px;
@@ -5687,64 +5707,66 @@ del {
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .pinkphone {
+  .pinkphone {
     bottom: 5px;
     right: calc((100% - 240px) / 2);
     width: 20px;
     height: 20px;
   }
 }
-.button__call .pinkphone__img {
+.pinkphone__img {
   width: 125px;
   height: 125px;
   display: flex;
   justify-content: center;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .pinkphone__img {
+  .pinkphone__img {
     width: 66px;
     height: 66px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .pinkphone__img {
+  .pinkphone__img {
     width: 25.39px;
     height: 25.39px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .pinkphone__img {
+  .pinkphone__img {
     width: 20px;
     height: 20px;
   }
 }
-.button__call .pinkphone__img-pic {
+.pinkphone__img-pic {
   align-self: center;
   width: 75px;
   height: 75px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .pinkphone__img-pic {
+  .pinkphone__img-pic {
     width: 40px;
     height: 40px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .pinkphone__img-pic {
+  .pinkphone__img-pic {
     width: 15.23px;
     height: 15.23px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .pinkphone__img-pic {
+  .pinkphone__img-pic {
     width: 12px;
     height: 12px;
   }
 }
-.button__call .pinkphone:hover {
+.pinkphone:hover {
   background: linear-gradient(146.9deg, #4fa7fb 6.95%, #cbe5ff 93.21%);
 }
-.button__call .license-modal {
+
+/* Стили для модального окна с лицензией*/
+.license-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -5755,40 +5777,46 @@ del {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.button__call .license-modal__content {
+.license-modal__content {
   margin: auto;
   display: block;
   width: 30%;
   max-width: 700px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .license-modal__content {
+  .license-modal__content {
     width: 50%;
     max-width: 700px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .license-modal__content {
+  .license-modal__content {
     max-width: 340px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .license-modal__content {
+  .license-modal__content {
     max-width: 240px;
   }
 }
-.button__call .license-modal__content img {
+
+.license-modal__content img {
   width: 100%;
   height: auto;
 }
-.button__call .minimized {
+
+/* Стили для изображения лицензии*/
+.minimized {
   cursor: pointer;
   transition: 0.3s;
 }
-.button__call .minimized:hover {
+
+.minimized:hover {
   opacity: 0.7;
 }
-.button__call .warranty-modal {
+
+/* Стили для модального окна с гарантией*/
+.warranty-modal {
   display: none;
   position: fixed;
   z-index: 10;
@@ -5799,33 +5827,36 @@ del {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.button__call .warranty-modal__content {
+
+.warranty-modal__content {
   margin: auto;
   display: block;
   width: 100%;
   max-width: 1280px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .warranty-modal__content {
+  .warranty-modal__content {
     max-width: 870px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .warranty-modal__content {
+  .warranty-modal__content {
     max-width: 340px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .warranty-modal__content {
+  .warranty-modal__content {
     max-width: 240px;
   }
 }
-.button__call #warranty-modal__image {
+
+#warranty-modal__image {
   width: 100%;
   height: auto;
 }
-.button__call .ordercall-modal,
-.button__call .consultation-modal {
+
+.ordercall-modal,
+.consultation-modal {
   position: absolute;
   visibility: hidden;
   opacity: 0;
@@ -5841,8 +5872,8 @@ del {
   align-items: flex-start;
   padding: 60px 15px;
 }
-.button__call .ordercall-modal__content,
-.button__call .consultation-modal__content {
+.ordercall-modal__content,
+.consultation-modal__content {
   width: 70%;
   padding: 30px;
   background: #F3F3F3;
@@ -5855,19 +5886,19 @@ del {
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 870px) {
-  .button__call .ordercall-modal__content,
-  .button__call .consultation-modal__content {
+  .ordercall-modal__content,
+  .consultation-modal__content {
     padding: 20px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .ordercall-modal__content,
-  .button__call .consultation-modal__content {
+  .ordercall-modal__content,
+  .consultation-modal__content {
     padding: 10px;
   }
 }
-.button__call .ordercall-modal__close-button,
-.button__call .consultation-modal__close-button {
+.ordercall-modal__close-button,
+.consultation-modal__close-button {
   height: 30px;
   width: 30px;
   display: flex;
@@ -5883,37 +5914,39 @@ del {
   outline: none;
 }
 @media screen and (max-width: 870px) {
-  .button__call .ordercall-modal__close-button,
-  .button__call .consultation-modal__close-button {
+  .ordercall-modal__close-button,
+  .consultation-modal__close-button {
     height: 20px;
     width: 20px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .ordercall-modal__close-button,
-  .button__call .consultation-modal__close-button {
+  .ordercall-modal__close-button,
+  .consultation-modal__close-button {
     height: 15px;
     width: 15px;
   }
 }
-.button__call .ordercall-modal__close-button__hover,
-.button__call .consultation-modal__close-button__hover {
+.ordercall-modal__close-button__hover,
+.consultation-modal__close-button__hover {
   transition: 0.3s;
 }
-.button__call .ordercall-modal_active,
-.button__call .consultation-modal_active {
+
+.ordercall-modal_active,
+.consultation-modal_active {
   position: fixed;
   top: 0;
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
 }
-.button__call .ordercall-form,
-.button__call .consultation-form {
+
+.ordercall-form,
+.consultation-form {
   font-family: "Gilroy700";
 }
-.button__call .ordercall-form__title,
-.button__call .consultation-form__title {
+.ordercall-form__title,
+.consultation-form__title {
   font-family: "Coolvetica400";
   font-size: 36px;
   text-transform: uppercase;
@@ -5921,28 +5954,28 @@ del {
   font-weight: 400;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .ordercall-form__title,
-  .button__call .consultation-form__title {
+  .ordercall-form__title,
+  .consultation-form__title {
     margin: 0 0 15px;
     font-size: 30px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .ordercall-form__title,
-  .button__call .consultation-form__title {
+  .ordercall-form__title,
+  .consultation-form__title {
     margin: 0 0 10px;
     font-size: 20px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .ordercall-form__title,
-  .button__call .consultation-form__title {
+  .ordercall-form__title,
+  .consultation-form__title {
     margin: 0 0 5px;
     font-size: 10px;
   }
 }
-.button__call .ordercall-form__p,
-.button__call .consultation-form__p {
+.ordercall-form__p,
+.consultation-form__p {
   font-family: "Coolvetica400";
   font-size: 26px;
   text-transform: uppercase;
@@ -5950,25 +5983,25 @@ del {
   margin: 0;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .ordercall-form__p,
-  .button__call .consultation-form__p {
+  .ordercall-form__p,
+  .consultation-form__p {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1630px) {
-  .button__call .ordercall-form__p,
-  .button__call .consultation-form__p {
+  .ordercall-form__p,
+  .consultation-form__p {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .ordercall-form__p,
-  .button__call .consultation-form__p {
+  .ordercall-form__p,
+  .consultation-form__p {
     font-size: 8px;
   }
 }
-.button__call .ordercall-form__tel,
-.button__call .consultation-form__tel {
+.ordercall-form__tel,
+.consultation-form__tel {
   width: 85%;
   height: 65px;
   padding: 8px 16px 8px 16px;
@@ -5981,38 +6014,38 @@ del {
   text-align: center;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .ordercall-form__tel,
-  .button__call .consultation-form__tel {
+  .ordercall-form__tel,
+  .consultation-form__tel {
     height: 50px;
     font-size: 20px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .ordercall-form__tel,
-  .button__call .consultation-form__tel {
+  .ordercall-form__tel,
+  .consultation-form__tel {
     height: 40px;
     font-size: 12px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .ordercall-form__tel,
-  .button__call .consultation-form__tel {
+  .ordercall-form__tel,
+  .consultation-form__tel {
     height: 30px;
     font-size: 8px;
     margin-top: 5px;
   }
 }
-.button__call .ordercall-form__tel:invalid,
-.button__call .consultation-form__tel:invalid {
+.ordercall-form__tel:invalid,
+.consultation-form__tel:invalid {
   background-color: #f3f3f3;
   border: 2px solid #4fa7fb;
 }
-.button__call .ordercall-form__tel:focus:invalid,
-.button__call .consultation-form__tel:focus:invalid {
+.ordercall-form__tel:focus:invalid,
+.consultation-form__tel:focus:invalid {
   outline: none;
 }
-.button__call .ordercall-form__info,
-.button__call .consultation-form__info {
+.ordercall-form__info,
+.consultation-form__info {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0em;
@@ -6020,51 +6053,52 @@ del {
   opacity: 0.8;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .ordercall-form__info,
-  .button__call .consultation-form__info {
+  .ordercall-form__info,
+  .consultation-form__info {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .ordercall-form__info,
-  .button__call .consultation-form__info {
+  .ordercall-form__info,
+  .consultation-form__info {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .ordercall-form__info,
-  .button__call .consultation-form__info {
+  .ordercall-form__info,
+  .consultation-form__info {
     font-size: 6px;
   }
 }
-.button__call .ordercall-form__info p,
-.button__call .consultation-form__info p {
+.ordercall-form__info p,
+.consultation-form__info p {
   height: 26px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .ordercall-form__info p,
-  .button__call .consultation-form__info p {
+  .ordercall-form__info p,
+  .consultation-form__info p {
     height: 20px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .ordercall-form__info p,
-  .button__call .consultation-form__info p {
+  .ordercall-form__info p,
+  .consultation-form__info p {
     height: 16px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .ordercall-form__info p,
-  .button__call .consultation-form__info p {
+  .ordercall-form__info p,
+  .consultation-form__info p {
     height: 9px;
   }
 }
-.button__call .ordercall-form__input-box,
-.button__call .consultation-form__input-box {
+.ordercall-form__input-box,
+.consultation-form__input-box {
   margin: 10px 0;
 }
-.button__call .ordercall__submit-btn,
-.button__call .consultation__submit-btn {
+
+.ordercall__submit-btn,
+.consultation__submit-btn {
   width: 85%;
   height: 65px;
   padding: 8px 16px 8px 16px;
@@ -6080,15 +6114,15 @@ del {
   cursor: pointer;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .ordercall__submit-btn,
-  .button__call .consultation__submit-btn {
+  .ordercall__submit-btn,
+  .consultation__submit-btn {
     height: 50px;
     font-size: 20px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .ordercall__submit-btn,
-  .button__call .consultation__submit-btn {
+  .ordercall__submit-btn,
+  .consultation__submit-btn {
     height: 40px;
     font-size: 11px;
     margin: 0px;
@@ -6096,47 +6130,51 @@ del {
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .ordercall__submit-btn,
-  .button__call .consultation__submit-btn {
+  .ordercall__submit-btn,
+  .consultation__submit-btn {
     height: 30px;
     font-size: 8px;
   }
 }
-.button__call .ordercall-error,
-.button__call .consultation-error {
+
+.ordercall-error,
+.consultation-error {
   width: 100%;
   padding: 0;
   font-size: 90%;
   color: #4fa7fb;
   border-radius: 0 0 5px 5px;
 }
-.button__call .ordercall-error.active,
-.button__call .consultation-error.active {
+
+.ordercall-error.active,
+.consultation-error.active {
   padding: 0.3em;
 }
-.button__call .banner-container {
+
+.banner-container {
   max-width: 1622px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .banner-container {
+  .banner-container {
     max-width: 859.68px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .banner-container {
+  .banner-container {
     max-width: 328.39px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .banner-container {
+  .banner-container {
     max-width: 240px;
     margin: 0 auto;
   }
 }
-.button__call .banner {
+
+.banner {
   width: 95%;
   height: 95%;
   position: fixed;
@@ -6155,13 +6193,13 @@ del {
   z-index: 2000;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .banner {
+  .banner {
     width: 90%;
     height: 90%;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .banner {
+  .banner {
     width: 70%;
     height: 70%;
     background-size: 35%;
@@ -6169,7 +6207,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .banner {
+  .banner {
     width: 90%;
     height: 90%;
     background-image: url(../img/banner/banner-man-mobile.png);
@@ -6177,7 +6215,8 @@ del {
     background-size: 30%;
   }
 }
-.button__call .title {
+
+.title {
   width: 1175px;
   height: 89px;
   color: #4fa7fb;
@@ -6189,7 +6228,7 @@ del {
   margin-top: 55px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .title {
+  .title {
     margin-left: 80px;
     font-size: 45px;
     line-height: 65px;
@@ -6197,14 +6236,14 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .title {
+  .title {
     margin-left: 50px;
     font-size: 39px;
     line-height: 65px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .title {
+  .title {
     width: 180px;
     height: 30px;
     margin-left: 25px;
@@ -6213,11 +6252,14 @@ del {
     margin-top: 25px;
   }
 }
-.button__call .form {
+
+.form {
   display: flex;
   flex-direction: column;
 }
-.button__call .overlay {
+
+/* Стили для затемнения фона */
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -6226,8 +6268,9 @@ del {
   background-color: rgba(255, 255, 255, 0.8);
   display: none;
 }
-.button__call .bluetext,
-.button__call .bluetext1 {
+
+.bluetext,
+.bluetext1 {
   font-family: Gilroy;
   font-weight: 600;
   font-size: 50px;
@@ -6235,27 +6278,28 @@ del {
   color: #4fa7fb;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .bluetext,
-  .button__call .bluetext1 {
+  .bluetext,
+  .bluetext1 {
     font-size: 45px;
     line-height: 50px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .bluetext,
-  .button__call .bluetext1 {
+  .bluetext,
+  .bluetext1 {
     font-size: 35px;
     line-height: 40px;
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .bluetext,
-  .button__call .bluetext1 {
+  .bluetext,
+  .bluetext1 {
     font-size: 15px;
     line-height: 15px;
   }
 }
-.button__call .text {
+
+.text {
   width: 932px;
   height: 180px;
   font-family: Gilroy;
@@ -6267,7 +6311,7 @@ del {
   margin-bottom: 45px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .text {
+  .text {
     width: 925px;
     height: 120px;
     margin-left: 80px;
@@ -6276,7 +6320,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .text {
+  .text {
     width: 470px;
     height: 160px;
     margin-left: 50px;
@@ -6285,7 +6329,7 @@ del {
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .text {
+  .text {
     width: 180px;
     height: 20px;
     margin-left: 25px;
@@ -6293,7 +6337,8 @@ del {
     line-height: 15px;
   }
 }
-.button__call .text1 {
+
+.text1 {
   width: 1070px;
   height: 60px;
   font-family: Gilroy;
@@ -6305,7 +6350,7 @@ del {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .text1 {
+  .text1 {
     height: 40px;
     margin-left: 80px;
     font-size: 33px;
@@ -6313,7 +6358,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .text1 {
+  .text1 {
     width: 500px;
     height: 40px;
     margin-left: 50px;
@@ -6322,7 +6367,7 @@ del {
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .text1 {
+  .text1 {
     width: 180px;
     height: 20px;
     margin-left: 25px;
@@ -6331,7 +6376,8 @@ del {
     margin-bottom: 5px;
   }
 }
-.button__call .ul {
+
+.ul {
   width: 1116px;
   height: 183px;
   font-family: Gilroy;
@@ -6343,14 +6389,14 @@ del {
   list-style-type: disc;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .ul {
+  .ul {
     height: 130px;
     margin-left: 100px;
     margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .ul {
+  .ul {
     width: 450px;
     height: 130px;
     margin-left: 70px;
@@ -6361,7 +6407,7 @@ del {
   }
 }
 @media screen and (max-width: 340px) {
-  .button__call .ul {
+  .ul {
     width: 190px;
     height: 17px;
     margin-left: 35px;
@@ -6371,7 +6417,8 @@ del {
     margin-bottom: 70px;
   }
 }
-.button__call #close-button {
+
+#close-button {
   position: absolute;
   top: 5px;
   right: 20px;
@@ -6388,17 +6435,19 @@ del {
   z-index: 1050;
 }
 @media screen and (max-width: 340px) {
-  .button__call #close-button {
+  #close-button {
     width: 25px;
     height: 25px;
     right: 5px;
   }
 }
-.button__call .phone-input {
+
+.phone-input {
   position: relative;
   display: inline-block;
 }
-.button__call .phone-input-input {
+
+.phone-input-input {
   width: 780px;
   padding-right: 100px;
   height: 50px;
@@ -6410,24 +6459,25 @@ del {
   margin-left: 120px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .phone-input-input {
+  .phone-input-input {
     margin-left: 80px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .phone-input-input {
+  .phone-input-input {
     width: 450px;
     margin-left: 50px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .phone-input-input {
+  .phone-input-input {
     width: 250px;
     height: 30px;
     margin-left: 40px;
   }
 }
-.button__call .phone-input-button {
+
+.phone-input-button {
   position: absolute;
   left: 643px;
   top: 5px;
@@ -6445,21 +6495,21 @@ del {
   line-height: 38.6px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .phone-input-button {
+  .phone-input-button {
     width: 170px;
     left: 685px;
     font-size: 25px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .phone-input-button {
+  .phone-input-button {
     width: 170px;
     left: 325px;
     font-size: 25px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .phone-input-button {
+  .phone-input-button {
     width: 100px;
     left: 185px;
     font-size: 25px;
@@ -6468,21 +6518,23 @@ del {
     line-height: 20px;
   }
 }
-.button__call .quiz_userdata_div {
+
+.quiz_userdata_div {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
   margin-left: 450px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .quiz_userdata_div {
+  .quiz_userdata_div {
     max-width: 1622px;
     margin: 0 auto;
     margin: 0 auto;
     max-width: max-content;
   }
 }
-.button__call .quiz_userdata {
+
+.quiz_userdata {
   width: 55%;
   height: 75px;
   padding: 8px 16px 8px 16px;
@@ -6494,15 +6546,15 @@ del {
   margin-top: 60px;
   padding-left: 30px;
 }
-.button__call .quiz_userdata:invalid {
+.quiz_userdata:invalid {
   border-color: #4fa7fb;
 }
-.button__call .quiz_userdata_name, .button__call .quiz_userdata_tel, .button__call .quiz_userdata_email {
+.quiz_userdata_name, .quiz_userdata_tel, .quiz_userdata_email {
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .quiz_userdata {
+  .quiz_userdata {
     max-width: 859.68px;
     margin: 0 auto;
     width: 415px;
@@ -6511,7 +6563,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .quiz_userdata {
+  .quiz_userdata {
     max-width: 328.39px;
     margin: 0 auto;
     width: 250px;
@@ -6520,7 +6572,8 @@ del {
     padding: 4px 8px;
   }
 }
-.button__call .btn_next_submit {
+
+.btn_next_submit {
   width: 360px;
   background-color: #D9D9D9;
   border-width: 0;
@@ -6528,30 +6581,33 @@ del {
   color: #ffffff;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .btn_next_submit {
+  .btn_next_submit {
     max-width: 859.68px;
     margin: 0 auto;
     width: 200px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .btn_next_submit {
+  .btn_next_submit {
     max-width: 328.39px;
     margin: 0 auto;
     width: 80px;
   }
 }
-.button__call .btn_next_submit.active {
+
+.btn_next_submit.active {
   border-radius: 200px;
   border-width: 0;
   background-color: #ff9fb7;
   box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
 }
-.button__call .btn_next_submit:hover {
+
+.btn_next_submit:hover {
   background-color: #ff9fb7;
   box-shadow: inset -2px -2px 4px rgba(166, 165, 165, 0.9);
 }
-.button__call .error_mess {
+
+.error_mess {
   width: 100%;
   padding: 5px;
   color: #4fa7fb;
@@ -6561,20 +6617,21 @@ del {
   font-size: 30px;
 }
 @media screen and (max-width: 1630px) {
-  .button__call .error_mess {
+  .error_mess {
     max-width: 859.68px;
     margin: 0 auto;
     font-size: 20px;
   }
 }
 @media screen and (max-width: 870px) {
-  .button__call .error_mess {
+  .error_mess {
     max-width: 328.39px;
     margin: 0 auto;
     font-size: 10px;
   }
 }
-.button__call .error_mess.active {
+
+.error_mess.active {
   padding: 0.3em;
 }
 
