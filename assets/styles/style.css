@@ -1779,6 +1779,7 @@ del {
   font-weight: 600;
   line-height: normal;
   margin: 28px 0px 15px 45px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1630px) {
   .work_cost-info__btn2 {
@@ -3477,6 +3478,8 @@ del {
 }
 .callback-btn:hover {
   background-color: #4fa7fb;
+  box-shadow: 4px 4px 14px 0px rgba(208, 235, 255, 0.4) inset;
+  box-shadow: -4px -4px 10px 0px rgba(45, 83, 111, 0.4) inset;
 }
 @media screen and (max-width: 1630px) {
   .callback-btn {
@@ -3506,7 +3509,6 @@ del {
     padding: 0;
     margin: 6px, 12px, 6px, 12px;
     gap: 2px;
-    cursor: none;
     box-shadow: 2.125px 2.125px 7.4375px 0px #FFC8D6 inset;
     box-shadow: -2.125px -2.125px 5.3125px 0px #C88D9C inset;
   }
@@ -3523,7 +3525,6 @@ del {
     padding: 0;
     margin: 6px, 12px, 6px, 12px;
     gap: 1px;
-    cursor: none;
   }
 }
 
@@ -4751,11 +4752,11 @@ del {
 }
 @media screen and (max-width: 870px) {
   .button__ordercall {
-    width: 52.28px;
+    width: 53.28px;
     height: 12.14px;
     margin-top: 0px;
     margin-left: 0px;
-    padding: 3px, 6px, 3px, 6px;
+    padding: 3px, 1px, 3px, 1px;
     border-radius: 2px;
     border: 1px solid #ff9fb7;
     font-size: 4.91px;
