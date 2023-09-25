@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const formattedDate = currentDate.toLocaleDateString('ru-RU', options);
     dateElement.textContent = formattedDate;
   }
-  /*setInterval(updateDate, 100);*/
+  /*setInterval(updateDate, 10000000);*/
 
   window.addEventListener('load', restoreScrollPosition);
 
