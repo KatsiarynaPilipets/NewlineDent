@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setTimeout(function() {
       fortuneResultInput.value = getResultMessage(randomDegrees);
-    }, 90000);
+    }, 900000);
   }
 
   fortuneArrow.addEventListener('click', spinWheel, {once:true});
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const formattedDate = currentDate.toLocaleDateString('ru-RU', options);
     dateElement.textContent = formattedDate;
   }
-  setInterval(updateDate, 100);
+  /*setInterval(updateDate, 100);*/
 
   window.addEventListener('load', restoreScrollPosition);
 
