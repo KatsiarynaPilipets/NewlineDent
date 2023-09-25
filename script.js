@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Модальное окно "укажите свой номер теоефона"
         // let callBackButton = document.getElementById('callback-btn');
-        let callButtonSign = document.querySelector('.btn_sign_white-blue'); //кнопка из блока sign_up_free
+        /*let callButtonSign = document.querySelector('.btn_sign_white-blue'); //кнопка из блока sign_up_free
         let callButtonSlider = document.querySelector('.btn_sign_pink'); //кнопка из блока before_after
 
         let modal1 = document.getElementById('modal-1');
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.classList.remove('modal_active');
                 tagBody.classList.remove('hidden');
             }
-        };
+        };*/
     });
 
 
@@ -478,7 +478,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     //Модалка Настя
-    document.addEventListener('DOMContentLoaded', () => {
+    /*document.addEventListener('DOMContentLoaded', () => {
 
       let callBackButton = document.getElementById('callback-btn');
       let modal1 = document.getElementById('modal-1');
@@ -508,7 +508,7 @@ document.addEventListener('DOMContentLoaded', function () {
       };
 
     });
-
+*/
   //Сбор телефонных номеров из формы
   /*const telInput = document.getElementById('phone');
   //function sendTelNumber(tel) {

@@ -21,12 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   setInterval(showBanner, 60000);
 
+
   const closeBanner = function() {
     banner.style.display = 'none';
     overlay.style.display = 'none';
   };
 
-  // Закрываем баннер и оверлей при щелчке вне баннера
+  // Закрываем баннер и оверлей пр и щелчке вне баннера
   overlay.addEventListener('click', function(e) {
     if (e.target === overlay) {
       closeBanner();
@@ -50,14 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const fortuneCloseButton = document.getElementById('fortune-close-button');
 
 
-  const callback = (entries, observer) => {
+  /*const callback = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         showFortune(); // Вызов функции showFortune, когда пользователь долистывает до середины страницы
       }
     });
   };
-
+*/
   const target = document.querySelector('.wrapper-map');
 
   const observer = new IntersectionObserver(callback, {
