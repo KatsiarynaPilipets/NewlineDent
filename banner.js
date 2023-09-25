@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.style.display = 'block';
   };
 
-  setInterval(showBanner, 555000);//15000
+  setInterval(showBanner, 60000);
+
 
   const closeBanner = function() {
     banner.style.display = 'none';
@@ -145,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setTimeout(function() {
       fortuneResultInput.value = getResultMessage(randomDegrees);
-    }, 3000);
+    }, 90000);
   }
 
   fortuneArrow.addEventListener('click', spinWheel, {once:true});
