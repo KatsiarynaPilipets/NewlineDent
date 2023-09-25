@@ -144,10 +144,10 @@ document.addEventListener('DOMContentLoaded', function() {
         fortuneResultInput.value = "Нет таких значений";
     }
 
-    setTimeout(function() {
+    /*setTimeout(function() {
       fortuneResultInput.value = getResultMessage(randomDegrees);
     }, 900000);
-  }
+  }*/
 
   fortuneArrow.addEventListener('click', spinWheel, {once:true});
 
