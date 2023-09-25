@@ -3340,6 +3340,7 @@ del {
   transform: translate(-50%, -50%) scale(1);
   transition: 0.3s all;
   display: flex;
+  align-items: center;
 }
 
 .radio:checked {
@@ -5948,6 +5949,33 @@ footer {
     font-size: 8px;
   }
 }
+.ordercall-form__p-quiz,
+.consultation-form__p-quiz {
+  font-family: "Coolvetica400";
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 1630px) {
+  .ordercall-form__p-quiz,
+  .consultation-form__p-quiz {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1630px) {
+  .ordercall-form__p-quiz,
+  .consultation-form__p-quiz {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .ordercall-form__p-quiz,
+  .consultation-form__p-quiz {
+    font-size: 8px;
+  }
+}
 .ordercall-form__tel,
 .consultation-form__tel {
   width: 85%;
@@ -7511,24 +7539,25 @@ footer {
 .error_mess {
   width: 100%;
   padding: 5px;
-  color: #4fa7fb;
   border-radius: 0 0 5px 5px;
-  font-family: "Gilroy";
-  font-weight: 400;
-  font-size: 30px;
+  font-family: "Gilroy700";
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  text-align: center;
 }
 @media screen and (max-width: 1630px) {
   .error_mess {
     max-width: 859.68px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 870px) {
   .error_mess {
     max-width: 328.39px;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
