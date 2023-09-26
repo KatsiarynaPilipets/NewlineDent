@@ -1,20 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const banner = document.querySelector('.banner');
   const overlay = document.querySelector('.overlay');
   const closeButton = document.getElementById('close-button');
 
-  const saveScrollPosition = function() {
+  const saveScrollPosition = function () {
     localStorage.setItem('scrollPosition', window.pageYOffset);
   };
 
-  const restoreScrollPosition = function() {
+  const restoreScrollPosition = function () {
     const scrollPosition = localStorage.getItem('scrollPosition');
     if (scrollPosition) {
       window.scrollTo(0, scrollPosition);
     }
   };
 
-  const showBanner = function() {
+  const showBanner = function () {
     banner.style.display = 'block';
     overlay.style.display = 'block';
   };
@@ -22,26 +22,26 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(showBanner, 60000);
 
 
-  const closeBanner = function() {
+  const closeBanner = function () {
     banner.style.display = 'none';
     overlay.style.display = 'none';
   };
 
   // Закрываем баннер и оверлей пр и щелчке вне баннера
-  overlay.addEventListener('click', function(e) {
+  overlay.addEventListener('click', function (e) {
     if (e.target === overlay) {
       closeBanner();
     }
   });
 
-  closeButton.addEventListener('click', function(event){
+  closeButton.addEventListener('click', function (event) {
     event.preventDefault();
     closeBanner();
     saveScrollPosition();
   });
 
   const phoneInputButton = document.querySelector('.phone-input-button');
-  phoneInputButton.addEventListener('click', function() {
+  phoneInputButton.addEventListener('click', function () {
     const phoneInput = document.querySelector('.phone-input-input');
     const phoneNumber = phoneInput.value;
   });
@@ -70,18 +70,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
   observer.observe(target);
 
-  const showFortune = function() {
+  const showFortune = function () {
     fortune.style.display = 'block';
     fortuneOverlay.style.display = 'block';
   };
 
-  const closeFortune = function() {
+  const closeFortune = function () {
     fortune.style.display = 'none';
     fortuneOverlay.style.display = 'none';
   };
 
   // Закрываем баннер удачи и оверлей при щелчке вне баннера
-  fortuneOverlay.addEventListener('click', function(e) {
+  fortuneOverlay.addEventListener('click', function (e) {
     if (e.target === fortuneOverlay) {
       closeFortune();
     }
@@ -149,18 +149,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 900000);
   }*/
 
-  fortuneArrow.addEventListener('click', spinWheel, {once:true});
+    fortuneArrow.addEventListener('click', spinWheel, { once: true });
 
-  function updateDate() {
-    const dateElement = document.getElementById('date');
-    const currentDate = new Date();
-    currentDate.setDate(currentDate.getDate() + 3);
-    const options = { day: 'numeric', month: 'long'};
-    const formattedDate = currentDate.toLocaleDateString('ru-RU', options);
-    dateElement.textContent = formattedDate;
+    function updateDate() {
+      const dateElement = document.getElementById('date');
+      const currentDate = new Date();
+      currentDate.setDate(currentDate.getDate() + 3);
+      const options = { day: 'numeric', month: 'long' };
+      const formattedDate = currentDate.toLocaleDateString('ru-RU', options);
+      dateElement.textContent = formattedDate;
+    }
+    /*setInterval(updateDate, 10000000);*/
+
+    window.addEventListener('load', restoreScrollPosition);
+
   }
-  /*setInterval(updateDate, 10000000);*/
-
-  window.addEventListener('load', restoreScrollPosition);
-
 });
