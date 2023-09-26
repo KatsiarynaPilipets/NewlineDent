@@ -114,40 +114,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Модальное окно "укажите свой номер теоефона"
     // let callBackButton = document.getElementById('callback-btn');
-    let callButtonSign = document.querySelector('.btn_sign_white-blue'); //кнопка из блока sign_up_free
+    /*let callButtonSign = document.querySelector('.btn_sign_white-blue'); //кнопка из блока sign_up_free
     let callButtonSlider = document.querySelector('.btn_sign_pink'); //кнопка из блока before_after
-
+    
     let modal1 = document.getElementById('modal-1');
     let closeButtonSign = modal1.getElementsByClassName('modal__close-button')[0];
     let tagBody = document.getElementsByTagName('body');
-
+    
     callButtonSlider.onclick = function (e) {
-        e.preventDefault();
-        modal1.classList.add('modal_active');
-        tagBody.classList.add('hidden');
+    e.preventDefault();
+    modal1.classList.add('modal_active');
+    tagBody.classList.add('hidden');
     }
-
+    
     callButtonSign.onclick = function (e) {
-        e.preventDefault();
-        modal1.classList.add('modal_active');
-        tagBody.classList.add('hidden');
+    e.preventDefault();
+    modal1.classList.add('modal_active');
+    tagBody.classList.add('hidden');
     }
-
+    
     closeButtonSign.onclick = function (e) {
-        e.preventDefault();
-        modal1.classList.remove('modal_active');
-        tagBody.classList.remove('hidden');
-        saveScrollPosition();
+    e.preventDefault();
+    modal1.classList.remove('modal_active');
+    tagBody.classList.remove('hidden');
+    saveScrollPosition();
     }
-
+    
     modal1.onmousedown = function (e) {
-        let target = e.target;
-        let modalContent = modal1.getElementsByClassName('modal__content')[0];
-        if (e.target.closest('.' + modalContent.className) === null) {
-            this.classList.remove('modal_active');
-            tagBody.classList.remove('hidden');
-        }
-    };
+    let target = e.target;
+    let modalContent = modal1.getElementsByClassName('modal__content')[0];
+    if (e.target.closest('.' + modalContent.className) === null) {
+    this.classList.remove('modal_active');
+    tagBody.classList.remove('hidden');
+    }
+    };*/
 });
 
 
@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //Модалка Настя
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
 
     let callBackButton = document.getElementById('callback-btn');
     let modal1 = document.getElementById('modal-1');
