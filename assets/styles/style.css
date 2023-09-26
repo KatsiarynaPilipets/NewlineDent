@@ -2438,7 +2438,7 @@ del {
   border-width: 0;
 }
 .btn_sign_pink {
-  width: 788px;
+  width: 820px;
   height: 118px;
   margin-top: 100px;
   padding: 30px 60px;
@@ -2447,7 +2447,7 @@ del {
 }
 .btn_sign_pink {
   font-family: "Gilroy700";
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 700;
   line-height: 58.03px;
   color: #ffffff;
@@ -2489,6 +2489,36 @@ del {
   }
 }
 
+@-moz-document url-prefix() {
+  .btn_sign_pink {
+    width: 500px;
+    height: 70px;
+    margin-top: 100px;
+  }
+  @media screen and (max-width: 1630px) {
+    .btn_sign_pink {
+      max-width: 859.68px;
+      margin: 0 auto;
+      border-radius: 6px;
+      width: 480px;
+      height: 62.88px;
+      font-size: 25.5px;
+      line-height: 31.57px;
+    }
+  }
+  @media screen and (max-width: 870px) {
+    .btn_sign_pink {
+      max-width: 328.39px;
+      margin: 0 auto;
+      border-radius: 2px;
+      width: 180px;
+      height: 24.25px;
+      padding: 6px 12px;
+      font-size: 9.8px;
+      line-height: 12.13px;
+    }
+  }
+}
 .container__turquoise {
   display: flex;
   flex-direction: row;
@@ -3181,7 +3211,6 @@ del {
   transform: translate(-50%, -50%) scale(1);
   transition: 0.3s all;
   display: flex;
-  align-items: center;
 }
 
 .radio:checked {
@@ -5854,6 +5883,10 @@ footer {
     font-size: 10px;
   }
 }
+.ordercall-form__title_quiz,
+.consultation-form__title_quiz {
+  text-align: center;
+}
 .ordercall-form__p,
 .consultation-form__p {
   font-family: "Coolvetica400";
@@ -5888,6 +5921,7 @@ footer {
   font-weight: 400;
   margin-bottom: 10px;
   letter-spacing: 0.1em;
+  text-align: center;
 }
 @media screen and (max-width: 1630px) {
   .ordercall-form__p-quiz,
@@ -6573,6 +6607,12 @@ footer {
 
 .fortune-title {
   color: #4fa7fb;
+  font-family: Coolvetica;
+  font-weight: 600;
+  font-size: 60.17px;
+  line-height: 53.56px;
+  margin-left: 100px;
+  color: #4fa7fb;
   font-family: "Coolvetica400";
   font-weight: 600;
   font-size: 60.17px;
@@ -7066,8 +7106,8 @@ footer {
 .quiz_userdata_div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
-  margin-left: 450px;
+  margin-bottom: 5px;
+  align-items: center;
 }
 @media screen and (max-width: 1630px) {
   .quiz_userdata_div {
@@ -7079,7 +7119,7 @@ footer {
 }
 
 .quiz_userdata {
-  width: 55%;
+  width: 120%;
   height: 75px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;

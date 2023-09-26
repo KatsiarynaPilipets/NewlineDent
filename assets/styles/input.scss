@@ -1414,77 +1414,28 @@ del {
 
   @media screen and (max-width: $mobile) {
     max-width: 240px;
-    margin: 0 auto;
   }
 
-}
+  &__img {
+    max-width: 312px;
+    width: 100%;
+    margin-bottom: 30px;
 
-// Главный заголовок блока
-.title_work_cost {
-  text-align: center;
-  color: $blue;
-  font-family: 'Coolvetica400';
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 89%;
-  margin-bottom: 40px;
-  padding-top: 50px;
+    @media screen and (max-width: $desktop) {
+      max-width: 185.95px;
+      margin-bottom: 20px;
+    }
 
-  @media screen and (max-width: $desktop) {
-    @include tablet-container;
-    width: 580px;
-    font-size: 50px;
-    text-align: start;
-    padding-top: 40px;
-    margin-right: 60px;
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 5px;
+      max-width: 63.78px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 3px;
+      max-width: 35px;
+    }
   }
-
-  @media screen and (max-width: $tablet) {
-    @include tablet-container;
-    font-size: 63px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    @include mobile-container;
-    font-size: 24.5px;
-    padding-top: 8px;
-    margin-bottom: 15px;
-  }
-}
-
-// Основной контейнер иконок
-.container_work_cost-icons {
-  display: flex;
-  justify-content: space-around;
-}
-
-.work_cost-img {
-  height: auto;
-  // width: auto;
-  margin-bottom: 30px;
-}
-
-&__img {
-  max-width: 312px;
-  width: 100%;
-  margin-bottom: 30px;
-
-  @media screen and (max-width: $desktop) {
-    max-width: 185.95px;
-    margin-bottom: 20px;
-  }
-
-  @media screen and (max-width: $tablet) {
-    margin-bottom: 5px;
-    max-width: 63.78px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    margin-bottom: 3px;
-    max-width: 35px;
-  }
-}
 }
 
 // Контейнер для блоков с информацией
@@ -1494,28 +1445,6 @@ del {
   display: flex;
   justify-content: space-around;
   gap: 30px;
-
-  @media screen and (max-width: $desktop) {
-    padding-bottom: 100px
-  }
-
-  @media screen and (max-width: $mobile) {
-    padding-bottom: 30px;
-    margin-left: 3px;
-  }
-}
-
-.container_work_cost-items {
-  border-radius: 60px;
-  height: 844px;
-  max-width: 499px;
-  // min-width: 266px;
-  // width: 100%;
-  margin-bottom: 59px;
-  // margin-left: 15px;
-  // gap: 15px;
-  background-color: $blue;
-  color: $white;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
@@ -2390,7 +2319,7 @@ $innerShadow: #C88D9C;
 
   // стили розовой кнопки блока до/после: размер и цвета
   &_pink {
-    width: 788px;
+    width: 820px;
     height: 118px;
     margin-top: 100px;
     padding: 30px 60px;
@@ -2401,7 +2330,7 @@ $innerShadow: #C88D9C;
   // стили текста на кнопке
   &_pink {
     font-family: 'Gilroy700';
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 700;
     line-height: 58.03px;
     color: $white;
@@ -2454,6 +2383,43 @@ $innerShadow: #C88D9C;
   }
 }
 
+// стили для браузера Firefox
+@-moz-document url-prefix() {
+  .btn_sign_pink {
+    width: 500px;
+    height: 70px;
+    margin-top: 100px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      border-radius: 6px;
+      // padding: 16px 32px;
+
+      // стили розовой кнопки блока до/после: размер и цвета
+      width: 480px;
+      height: 62.88px;
+
+      // стили текста на кнопке
+      font-size: 25.5px;
+      line-height: 31.57px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      border-radius: 2px;
+      // padding: 6px 12px;
+
+      // стили розовой кнопки блока до/после: размер и цвета
+      width: 180px;
+      height: 24.25px;
+      padding: 6px 12px;
+
+      // стили текста на кнопке
+      font-size: 9.8px;
+      line-height: 12.13px;
+    }
+  }
+}
 
 // БЛОК С БИРЮЗОВЫМ ГРАДИЕНТОМ ЗАПИСЬ НА ОНЛАЙН КОНСУЛЬТАЦИЮ
 .container__turquoise {
@@ -2671,6 +2637,8 @@ $gray: #D9D9D9;
     padding: 15px 10px;
     // border: 4px solid red;
   }
+
+
 }
 
 // заголовок страницы квиза
@@ -3176,7 +3144,7 @@ $gray: #D9D9D9;
   transition: 0.3s all;
   // border: 3px solid red;
   display: flex;
-  align-items: center;
+  // align-items: center;
 }
 
 // Радио
@@ -5658,6 +5626,10 @@ footer {
       margin: 0 0 5px;
       font-size: 10px;
     }
+
+    &_quiz {
+      text-align: center;
+    }
   }
 
   &__p {
@@ -5686,6 +5658,7 @@ footer {
       font-weight: 400;
       margin-bottom: 10px;
       letter-spacing: 0.1em;
+      text-align: center;
 
       @media screen and (max-width: $desktop) {
         font-size: 20px;
@@ -6776,8 +6749,9 @@ footer {
   display: flex;
   flex-direction: column;
   // gap: 15px;
-  margin-bottom: 15px;
-  margin-left: 450px;
+  margin-bottom: 5px;
+  // margin-left: 450px;
+  align-items: center;
 
   @media screen and (max-width: $desktop) {
     @include container;
@@ -6787,7 +6761,7 @@ footer {
 }
 
 .quiz_userdata {
-  width: 55%;
+  width: 120%;
   height: 75px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;
