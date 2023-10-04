@@ -2,11 +2,11 @@
 * {
   box-sizing: border-box;
 }
-
+/*
 body {
   overflow-x: hidden;
   overflow-y: auto;
-}
+}*/
 
 //colors
 $blue: #4fa7fb;
@@ -1026,6 +1026,7 @@ $mobile: 340px;
   @media screen and (max-width: $mobile) {
     width: 200px;
     height: 150px;
+    margin-top: 5px;
   }
 }
 
@@ -1512,24 +1513,45 @@ del {
   }
 }
 
-// Основной контейнер иконок
-.work_cost-icons {
+// Контейнер для блоков с информацией
+.work_cost-info {
   @include container;
+  font-family: 'Gilroy700';
   display: flex;
   justify-content: space-around;
+  gap: 30px;
 
-  @media screen and (max-width: $desktop) {
-    @include tablet-container;
+    @media screen and (max-width: $desktop) {
+        @include tablet-container;
+      gap: 15px;
+    }
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+           gap: 6px;
+    }
+    @media screen and (max-width: $mobile) {
+           max-width: 240px;
+      gap: 3px;
+    }
+  
+    &__icons {
+    @include container;
+    display: flex;
+    justify-content: space-around;
+  
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+    }
+  
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+    }
+  
+    @media screen and (max-width: $mobile) {
+      max-width: 240px;
+    }
   }
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-  }
-
-  @media screen and (max-width: $mobile) {
-    max-width: 240px;
-  }
-
+  
   &__img {
     max-width: 312px;
     width: 100%;
@@ -1548,33 +1570,10 @@ del {
     @media screen and (max-width: $mobile) {
       margin-bottom: 3px;
       max-width: 35px;
+      
     }
   }
-}
-
-// Контейнер для блоков с информацией
-.work_cost-info {
-  @include container;
-  font-family: 'Gilroy700';
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-
-  @media screen and (max-width: $desktop) {
-    @include tablet-container;
-    gap: 15px;
-  }
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    gap: 6px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    max-width: 240px;
-    gap: 3px;
-  }
-
+  
   &__items {
     display: flex;
     flex-direction: column;
@@ -1585,18 +1584,16 @@ del {
     margin-bottom: 59px;
     background-color: $blue;
     color: $white;
-
-    @media screen and (max-width: $desktop) {
+      
+        @media screen and (max-width: $desktop) {
       max-width: 265.09px;
       height: 448.38px;
     }
-
     @media screen and (max-width: $tablet) {
       border-radius: 12.25px;
       height: 172.32px;
       max-width: 101.88px;
     }
-
     @media screen and (max-width: $mobile) {
       border-radius: 6px;
       height: 110px;
@@ -1606,9 +1603,9 @@ del {
     }
   }
 
-  // Заголовок внутри блока
+// Заголовок внутри блока
   &__title {
-    width: 100%;
+     width: 100%;
     max-width: 450px;
     font-size: 30px;
     line-height: 38px;
@@ -1618,7 +1615,7 @@ del {
     margin-left: 0px;
 
     @media screen and (max-width: $desktop) {
-      @include tablet-container;
+        @include tablet-container;
       max-width: 217.81px;
       height: 60.59px;
       font-size: 15px;
@@ -1626,7 +1623,6 @@ del {
       padding-left: 0px;
       line-height: 20.55px;
     }
-
     @media screen and (max-width: $tablet) {
       @include mobile-container;
       max-width: 83.71px;
@@ -1635,10 +1631,9 @@ del {
       padding-top: 2px;
       line-height: 7.9px;
     }
-
     @media screen and (max-width: $mobile) {
       max-width: 65px;
-      height: 16px;
+      height: 18px;
       font-size: 3px;
       padding-top: 3px;
       line-height: 5px;
@@ -1658,8 +1653,8 @@ del {
       margin-left: 24px;
       margin-top: 7px;
     }
-
-    @media screen and (max-width: $tablet) {
+    
+     @media screen and (max-width: $tablet) {
       @include tablet-container;
       height: 2px;
       margin-left: 9.39px;
@@ -1669,10 +1664,10 @@ del {
     @media screen and (max-width: $mobile) {
       @include mobile-container();
       height: 1px;
-      margin-left: 2.5px;
+      margin-left: 5px;
     }
   }
-
+  
   // Заголовок после линии
   &__title2 {
     font-size: 24px;
@@ -1681,74 +1676,74 @@ del {
     margin-top: 20px;
     max-width: 344px;
     width: 100%;
-
-    @media screen and (max-width: $desktop) {
+    
+     @media screen and (max-width: $desktop) {
       font-size: 12.75px;
       margin-left: 24px;
       margin-top: 10px;
     }
-
-    @media screen and (max-width: $tablet) {
+    
+      @media screen and (max-width: $tablet) {
       font-size: 4.9px;
       margin-left: 9.39px;
       margin-top: 5px;
     }
-
-    @media screen and (max-width: $mobile) {
+    
+      @media screen and (max-width: $mobile) {
       font-size: 2.5px;
-      margin: 2.5px 0px 0px 2.5px;
+      margin: 2.5px 3px 0px 5px;
     }
   }
-
-  &__list {
+  
+   &__list {
     list-style-type: disc;
     max-width: 280px;
     width: 100%;
     font-family: 'Gilroy500';
     font-size: 18px;
     margin-left: 65px;
-
-    @media screen and (max-width: $desktop) {
+     
+       @media screen and (max-width: $desktop) {
       font-size: 9.56px;
       margin-left: 38px;
       max-width: 159.91px;
     }
-
-    @media screen and (max-width: $tablet) {
+     
+     @media screen and (max-width: $tablet) {
       font-size: 3.68px;
       margin-left: 13.39px;
       max-width: 57.45px;
     }
-
-    @media screen and (max-width: $mobile) {
+     
+      @media screen and (max-width: $mobile) {
       max-width: 70px;
       width: 80%;
       font-size: 2.5px;
-      margin: 0px 0px 0px 6.5px;
+      margin: 3px 0px 0px 12px;
     }
   }
-
-  &__elem {
+  
+   &__elem {
     margin-top: 20px;
 
     @media screen and (max-width: $desktop) {
       @include tablet-container;
       margin-top: 15px;
     }
-
-    @media screen and (max-width: $tablet) {
+     
+      @media screen and (max-width: $tablet) {
       @include tablet-container;
       margin-top: 5px;
     }
-
-    @media screen and (max-width: $mobile) {
+     
+      @media screen and (max-width: $mobile) {
       @include mobile-container;
       margin-top: 2px;
       // word-wrap: break-word;
     }
   }
-
-  &__btn1 {
+  
+   &__btn1 {
     width: 269px;
     height: 78px;
     border-radius: 12px;
@@ -1761,8 +1756,8 @@ del {
     font-weight: 700;
     line-height: normal;
     margin: 28px 0px 15px 46px;
-
-    @media screen and (max-width: $desktop) {
+     
+      @media screen and (max-width: $desktop) {
       @include tablet-container;
       width: 142px;
       height: 42px;
@@ -1770,8 +1765,8 @@ del {
       border-radius: 6px;
       margin: 16px 0px 0px 24px;
     }
-
-    @media screen and (max-width: $tablet) {
+     
+      @media screen and (max-width: $tablet) {
       @include tablet-container;
       width: 55.25px;
       height: 16.13px;
@@ -1782,9 +1777,9 @@ del {
       box-shadow: 2px 2px 6px 0px #ffc8d6 inset, -2px -2px 4px 0px #c88d9c inset;
       border: 1px;
     }
-
-    @media screen and (max-width: $mobile) {
-      width: 25px;
+     
+       @media screen and (max-width: $mobile) {
+      width: 35px;
       height: 12px;
       font-size: 3.5px;
       border-radius: 2px;
@@ -1793,12 +1788,13 @@ del {
       border: 1px;
     }
   }
-
-  &__btn2 {
+  
+   &__btn2 {
     //max-width: 407px;
     max-width: 407px;
     width: 100%;
-    // min-width: 217px;
+     
+        // min-width: 217px;
     height: 61px;
     border-radius: 12px;
     border-color: transparent;
@@ -1810,7 +1806,6 @@ del {
     font-weight: 600;
     line-height: normal;
     margin: 28px 0px 15px 45px;
-    cursor: pointer;
 
     @media screen and (max-width: $desktop) {
       @include tablet-container;
@@ -1821,8 +1816,8 @@ del {
       padding-left: 0px;
       margin: 10px 0px 0px 24px;
     }
-
-    @media screen and (max-width: $tablet) {
+     
+       @media screen and (max-width: $tablet) {
       @include mobile-container;
       max-width: 83.1px;
       height: 12.13px;
@@ -1832,9 +1827,9 @@ del {
       box-shadow: 2px 2px 6px 0px #ffc8d6 inset, -2px -2px 4px 0px #c88d9c inset;
       border: 1px;
     }
-
-    @media screen and (max-width: $mobile) {
-      max-width: 35px;
+     
+        @media screen and (max-width: $mobile) {
+      max-width: 55px;
       height: 10px;
       font-size: 2.5px;
       border-radius: 2px;
@@ -1844,7 +1839,7 @@ del {
     }
   }
 }
-
+ 
 // Стили для отзывов
 .reviews {
   &__header2 {
@@ -2061,187 +2056,6 @@ del {
 
 .active-dot {
   background-color: $blue;
-}
-
-// Стили для блока Преимущества
-
-.container_advantages {
-  @include container;
-
-  @media screen and (max-width: $desktop) {
-    @include tablet-container;
-  }
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-  }
-
-  @media screen and (max-width: $mobile) {
-    max-width: 240px;
-    margin: 0 auto;
-  }
-}
-
-// Главный заголовок блока
-.title_advantages {
-  text-align: center;
-  color: $blue;
-  font-family: 'Coolvetica400';
-  font-size: 120px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 89%;
-  margin-bottom: 40px;
-
-  @media screen and (max-width: $desktop) {
-    @include tablet-container;
-    font-size: 73px;
-    margin-bottom: 40px;
-  }
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    font-size: 30px;
-    margin-bottom: 15px;
-    margin-right: -250px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    font-size: 24.5px;
-    margin-bottom: 15px;
-    margin-left: -170px;
-  }
-}
-
-.span_advantages {
-  color: $pink;
-}
-
-// Контейнер для блоков с информацией
-.container_advantages-info {
-  font-family: "Gilroy700";
-  display: flex;
-  justify-content: space-around;
-  width: auto;
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    margin-left: 250px;
-    padding-bottom: 40px;
-  }
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    margin-left: 10px;
-    padding-bottom: 40px;
-  }
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    padding-bottom: 20px;
-  }
-}
-
-.container_advantages-items {
-  border-radius: 60px;
-  height: 794px;
-  max-width: 473px;
-  // min-width: 266px;
-  // width: 100%;
-  margin-bottom: 59px;
-  gap: 15px;
-  // margin-left: 15px;
-  background-color: $blue;
-  color: $white;
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    border-radius: 31px;
-    height: 550px;
-    width: 170px;
-    margin-left: 10px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    justify-content: center;
-    border-radius: 12px;
-    height: auto;
-    width: 101px;
-    margin-left: 5px;
-    padding: 10px;
-  }
-}
-
-// Заголовок внутри блока
-.advantages-items-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin: 50px 0px 0px 50px;
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    font-size: 16px;
-    padding: 18px 24px 15px 17px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    font-size: 10px;
-    padding: 9px 8px 4px 9px;
-  }
-}
-
-// Разделительная линия
-.advantages-items-title_line {
-  height: 4px;
-  width: 100%;
-  margin: 30px 0px 30px 45px;
-  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 61.46%);
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    height: 2px;
-    margin-left: 17px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    height: 1px;
-    margin-left: 10px;
-  }
-}
-
-.advantages-list {
-  list-style-type: disc;
-  width: 373px;
-  font-size: 18px;
-  margin: 0px 50px 0px 50px;
-  font-weight: 300;
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    width: 130px;
-    font-size: 10px;
-    margin: 13px 0px 0px 25px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    width: 62px;
-    font-size: 7px;
-    margin: 0px 0px 0px 15px;
-  }
-}
-
-.advantages-list-elem {
-  margin-top: 20px;
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    margin-top: 13px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    margin-top: 5px;
-    // word-wrap: break-word;
-  }
 }
 
 // цвета для розовой кнопки
@@ -3896,21 +3710,20 @@ $gray: #D9D9D9;
     column-gap: 32px;
   }
 
-  @media screen and (max-width: $tablet) {
-    @include tablet-container;
-    padding: 30px 0;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 0.1fr 0.1fr 1fr;
-    column-gap: 12px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    @include mobile-container;
-    padding: 20px 0;
-    grid-template-columns: 90px 90px 90px;
-    grid-template-rows: 0.1fr 0.1fr 1fr;
-    column-gap: 5px;
-  }
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      padding: 10px 0;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 0.1fr 0.1fr 1fr;
+      column-gap: 12px;
+    }
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      padding: 20px 0;
+      grid-template-columns: 90px 90px 90px;
+      grid-template-rows: 0.1fr 0.1fr 1fr;
+      column-gap: 5px;
+    }
 }
 
 //Заголовок "Этапы имплантации"
@@ -4114,8 +3927,64 @@ $gray: #D9D9D9;
       width: 76px;
     }
     }
- 
-
+//Контейнер для картинки
+    &__image-container{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      background-color: $lightblue;
+      width: 410px;
+      height: 370px;
+      border-radius: 36px;
+      margin-top: 60px;
+      @media screen and (max-width: $desktop) {
+        @include container;
+          margin-top: 24px;
+          width: 219px;
+          height: 198px;
+          border-radius: 19px;
+      }
+        @media screen and (max-width: $tablet) {
+          @include tablet-container;
+          margin-top: 10px;
+          width: 84px;
+          height: 76px;
+          border-radius: 7px;
+        }
+        @media screen and (max-width: $mobile) {
+          @include mobile-container;
+          margin-top: 8px;
+          width: 78px;
+          height: 70px;
+          border-radius: 5px;
+        }
+  }
+  //Линия-разделитель
+    &__gradient-line{
+      background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 124.79%);
+      border: none;
+      top: 640px;
+      margin-top: 45px;
+      height: 4px;
+      width: 370px;
+      @media screen and (max-width: $desktop) {
+        @include container;
+        margin-top: 30px;
+        height: 2px;
+        width: 219px;
+      }
+        @media screen and (max-width: $tablet) {
+          @include tablet-container;
+          height: 1px;
+          margin-top: 10px;
+          width: 82px;
+        }
+        @media screen and (max-width: $mobile) {
+          @include mobile-container;
+          margin-top: 8px;
+          width: 76px;
+        }
+  }
   //Описание этапа
   &__text {
     font-family: 'Gilroy500';
@@ -4173,165 +4042,228 @@ $gray: #D9D9D9;
   }
 }
 
-/*
+
 // Стили для блока Преимущества
 
-.container_advantages {
-  @include container;
-  width: 100vw;
+.advantages {
+  height: 1308px;
+
+  @media screen and (max-width: $desktop) {
+    @include container;
+    height: 696px;    
+  }
 
   @media screen and (max-width: $tablet) {
     @include tablet-container;
-    width: 100vw;
+    height: 375px;
   }
 
   @media screen and (max-width: $mobile) {
     @include mobile-container;
-    width: 100vw;
+    height: 300px;
   }
-}
+
+&__container {
 
 // Главный заголовок блока
-.title_advantages {
+&-title {
+  height: 254px;
+  width: 80%;
+  text-justify: center;
   text-align: center;
   color: $blue;
-  font-family: 'Coolvetica400';
-  font-size: 120px;
+  font-family: "Coolvetica400";
+  font-size: 100px;
   font-style: normal;
   font-weight: 400;
-  line-height: 89%;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  margin-left: 200px;
+
+  @media screen and (max-width: $desktop) {
+    height: 114px;
+    width: 60%;
+    font-size: 63.75px;
+    margin-bottom: 40px;
+    margin-left: 300px;
+  }
 
   @media screen and (max-width: $tablet) {
-    @include tablet-container;
-    font-size: 63px;
-    margin-bottom: 15px;
+    font-size: 24.5px;
+    height: 27.16px;
+    width: 50%;
+    margin-left: 150px;
   }
 
   @media screen and (max-width: $mobile) {
-    @include mobile-container();
-    font-size: 24.5px;
-    margin-bottom: 15px;
-  }
+    font-size: 14px;
+    height: 5px;
+    margin-top: 5px;
+    margin-left: 60px;
 }
-.span_advantages {
-  color: $pink;
 }
-
+}
+}
 // Контейнер для блоков с информацией
-.container_advantages-info {
-  font-family: 'Gilroy700';
+.advantages-info {
+  @include container;
+  font-family: "Gilroy500";
   display: flex;
-
   justify-content: space-around;
-  width: auto;
-}
-.container_advantages-items {
+  gap: 30px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    gap: 15px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+    gap: 6px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+    gap: 5px;
+  }
+
+&__items {
+  display: flex;
+  flex-direction: column;
   border-radius: 60px;
-  height: 794px;
-  max-width: 473px;
-  // min-width: 266px;
-  // width: 100%;
+  height: 870px;
+  max-width: 499px;
+  width: 100%;
   margin-bottom: 59px;
-  gap: 15px;
-  // margin-left: 15px;
   background-color: $blue;
   color: $white;
 
+  @media screen and (max-width: $desktop) {
+    max-width: 265.09px;
+    height: 448.38px;
+  }
+
   @media screen and (max-width: $tablet) {
-    @include tablet-container;
-    border-radius: 31px;
-    height: 448px;
-    max-width: 265px;
-    width: 100vw;
-    margin-left: 8px;
+    border-radius: 12.25px;
+    height: 290px;
+    max-width: 101.88px;
   }
 
   @media screen and (max-width: $mobile) {
-    @include mobile-container();
-    justify-content: center;
-    border-radius: 12px;
-    height: 172px;
-    width: 101px;
-    margin-left: 5px;
+    border-radius: 6px;
+    height: 240px;
+    max-width: 220px;
+    padding-left: -150px;
+    // word-wrap: break-word;
+    // overflow: hidden;
   }
 }
 
 // Заголовок внутри блока
-.advantages-items-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin: 50px 0px 0px 50px;
+&__title {
+  width: 100%;
+  max-width: 450px;
+  font-size: 30px;
+  line-height: 38px;
+  height: 55px;
+  padding-top: 25px;
+  padding-left: 45px;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+    max-width: 217.81px;
+    height: 25px;
+    font-size: 15px;
+    padding-top: 18.59px;
+    padding-left: 10px;
+    line-height: 20.55px;
+  }
 
   @media screen and (max-width: $tablet) {
-    @include tablet-container;
-    font-size: 17px;
-    padding: 18px 24px 15px 24px;
+    @include mobile-container;
+    max-width: 83.71px;
+    height: 12px;
+    font-size: 8px;
+    padding-top: 8px;
+    line-height: 9px;
+    padding-left: 3px;
   }
 
   @media screen and (max-width: $mobile) {
-    @include mobile-container();
-    font-size: 7px;
-    padding: 9px 8px 4px 9px;
+    max-width: 65px;
+    height: 6px;
+    font-size: 6px;
+    padding-top: 5px;
+    line-height: 5px;
+    padding-left: 2.5px;
   }
 }
 
 // Разделительная линия
-.advantages-items-title_line {
+&__line {
   height: 4px;
   width: 100%;
-  margin: 30px 0px 30px 45px;
+  margin: 30px 0px 10px 45px;
   background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 61.46%);
 
+  @media screen and (max-width: $desktop) {
+    height: 3px;
+    margin-left: 33px;
+  }
+
   @media screen and (max-width: $tablet) {
-    @include tablet-container;
     height: 2px;
-    margin-left: 24px;
-  }
-  @media screen and (max-width: $mobile) {
-    @include mobile-container();
-    height: 1px;
-    margin-left: 10px;
+    margin: 10px 0px 5px 10px;
   }
 }
 
-.advantages-list {
+&__list {
   list-style-type: disc;
-  width: 373px;
-  font-size: 18px;
-  margin: 0px 50px 0px 50px;
-  font-weight: 300;
+    max-width: 280px;
+    width: 100%;
+    font-family: 'Gilroy500';
+    font-size: 18px;
+    margin-left: 65px;
 
-  @media screen and (max-width: $tablet) {
-    @include tablet-container;
-    width: 160px;
-    font-size: 10px;
-    margin: 13px 0px 0px 35px;
+    @media screen and (max-width: $desktop) {
+      font-size: 9.56px;
+      margin-left: 38px;
+      max-width: 159.91px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 5px;
+      margin-left: 13.39px;
+      max-width: 57.45px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      max-width: 270px;
+      width: 80%;
+      font-size: 5px;
+      margin: 0px 0px 0px 12px;
+    }
   }
 
-  @media screen and (max-width: $mobile) {
-    @include mobile-container();
-    width: 62px;
-    font-size: 4px;
-    margin: 0px 0px 0px 15px;
+&__elem {
+    margin-top: 20px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      margin-top: 15px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      margin-top: 2px;
+      // word-wrap: break-word;
+    }
   }
 }
-.advantages-list-elem {
-  margin-top: 20px;
-
-  @media screen and (max-width: $tablet) {
-    @include tablet-container;
-    margin-top: 13px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    @include mobile-container;
-    margin-top: 5px;
-    // word-wrap: break-word;
-  }
-}
-*/
-
 /*lena*/
 /*Стили для блока с картой*/
 
@@ -5986,8 +5918,8 @@ footer {
   @media screen and (max-width: $tablet) {
     width: 90%;
     height: 90%;
-    background-image: url(../img/banner/arrow.png);
-    background-position-y: 50%;
+    background-image: url(../img/banner/banner-man-mobile.png);
+    background-position-y: 100%;
     background-size: 30%;
   }
 }
@@ -6228,7 +6160,7 @@ footer {
   @media screen and (max-width: $tablet) {
     width: 250px;
     height: 30px;
-    margin-left: 40px;
+    margin-left: 20px;
   }
 }
 
@@ -6263,7 +6195,7 @@ footer {
 
   @media screen and (max-width: $tablet) {
     width: 100px;
-    left: 185px;
+    left: 165px;
     font-size: 25px;
     top: 3px;
     font-size: 15px;
@@ -6290,6 +6222,12 @@ footer {
     margin: 0 auto;
   }
 
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
 }
 
 .fortune {
@@ -6719,30 +6657,36 @@ footer {
 .wheel-container {
   position: relative;
   top: -77vh;
-  left: 53vw;
+  left: 52%;
 
   @media screen and (max-width: $desktop) {
     @include container;
     top: -72vh;
-    left: 25vw;
+    left: 46%;
   }
 
   @media screen and (max-width: $tablet) {
     @include tablet-container;
     top: -20vh;
-    left: 35vw;
+    left: 54%;
   }
 
   @media screen and (max-width: $mobile) {
     @include mobile-container;
-    top: -40vh;
-    left: 38vw;
+    top: -25vh;
+    left: 47%;
   }
 }
 
+.right {
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+}
+
 .wheel {
-  width: 100%;
-  max-width: 760px;
+  width: 760px;
+  max-width: 100%;
   height: auto;
   transition: transform 2s linear;
   animation-name: rotate-2;
@@ -6754,7 +6698,7 @@ footer {
   animation-fill-mode: forwards;
 
   @media screen and (max-width: $desktop) {
-    width: 80%;
+    width: 50%;
   }
 
   @media screen and (max-width: $tablet) {
@@ -6830,27 +6774,27 @@ footer {
   position: absolute;
   max-width: 177.7px;
   width: 50%;
-  height: auto;
-  top: 30.5vh;
+  height: auto;top: 30.5vh;
   left: 15.5vw;
 
   @media screen and (max-width: $desktop) {
     width: 40%;
-    top: 31vh;
-    left: 14.3vw;
+    top: 35vh;
+    left: 18%;
   }
 
   @media screen and (max-width: $tablet) {
     width: 20%;
     top: 8.5vh;
-    left: 12.5vw;
+    left: 15%;
   }
 
   @media screen and (max-width: $mobile) {
-    top: 13.5vh;
-    left: 14vw;
+    top: 9.5vh;
+    left: 13.5vw;
   }
 }
+
 
 // СБОР ДАННЫХ КЛИЕНТА
 .quiz_userdata_div {

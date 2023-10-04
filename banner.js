@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.style.display = 'block';
   };
 
-  setInterval(showBanner, 60000);
+setInterval(showBanner, 180000);
 
 
   const closeBanner = function () {
