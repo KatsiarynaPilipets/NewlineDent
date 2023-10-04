@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         callButton.addEventListener('click', function () {
             window.location.href = 'tel:+78126226242';
         });
-    //видео на заставке с мужиком
+    /*//видео на заставке с мужиком
         const openButton = document.getElementById('open-button');
         const closeButton = document.getElementById('close-button');
         const videoModal = document.getElementById('video-modal');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 videoIframe.src = '';
                 videoModal.style.display = 'none';
             }
-        });
+        });*/
 
         // карусель с отзывами
         const carouselContainer = document.querySelector('.carousel-container');

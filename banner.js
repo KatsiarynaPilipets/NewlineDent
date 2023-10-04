@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.style.display = 'block';
   };
 
-  setInterval(showBanner, 60000);
+setInterval(showBanner, 180000);
 
   const closeBanner = function() {
     banner.style.display = 'none';
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fortuneResultInput.value = "Нет таких значений";
     }
 
-    setTimeout(function() {
+setTimeout(function() {
       fortuneResultInput.value = getResultMessage(randomDegrees);
     }, 90000);
   }
