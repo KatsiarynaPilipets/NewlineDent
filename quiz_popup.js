@@ -133,16 +133,16 @@ function checkForm() {
 // кнопка для отправки формы
 let sendFormButton = document.querySelector('.btn_next_submit');
 
-const saveScrollPosition = function() {
+const saveScrollPosition = function () {
     localStorage.setItem('scrollPosition', window.pageYOffset);
-  };
+};
 
-  const restoreScrollPosition = function() {
+const restoreScrollPosition = function () {
     const scrollPosition = localStorage.getItem('scrollPosition');
     if (scrollPosition) {
-      window.scrollTo(0, scrollPosition);
+        window.scrollTo(0, scrollPosition);
     }
-  };
+};
 // слушаем кнопку
 sendFormButton.addEventListener('click', async function sendFormData() {
     saveScrollPosition();
@@ -201,7 +201,7 @@ function checkName() {
 function checkquizTel() {
     let userPhone = quizTel.value;
     if (quizTel.validity.valueMissing) {
-        quizTelError.innerText = "Пожалуйста, заполните телефон!";
+        quizTelError.innerText = "Пожалуйста, заполните телефон.";
     }
     else if (quizTel.validity.tooShort) {
         quizTelError.innerText = "Вы ввели номер не полностью.";
@@ -222,7 +222,7 @@ function checkquizTel() {
 function checkquizEmail() {
     let userEmail = quizEmail.value;
     if (quizEmail.validity.valueMissing) {
-        quizEmailError.innerText = "Пожалуйста, заполните email!";
+        quizEmailError.innerText = "Пожалуйста, заполните email.";
     }
     else if (quizEmail.validity.typeMismatch) {
         quizEmailError.innerText = "Введите email в формате: name@mail.com.";

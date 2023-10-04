@@ -1077,22 +1077,113 @@ $mobile: 340px;
 }
 
 // БЛОК ЗАПИШИСЬ НА КОНСУЛЬТАЦИЮ
+.sign_up_free {
+  // max-width: 1920px;
+  width: 100%;
+  background-position-x: 90%;
+
+  // margin: 0 auto;
+  background: linear-gradient(125deg, $blue 60%, transparent 50%), url(../img/sign_up_free/sign_up_block.jpg);
+
+  @media screen and (max-width: 1800px) {
+    margin: 0 auto;
+    background: linear-gradient(125deg, $blue 61%, transparent 50%), url(../img/sign_up_free/sign_up_block.jpg);
+    background-position-x: 115%;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: $desktop) {
+    margin: 0 auto;
+    background: linear-gradient(125deg, $blue 58%, transparent 50%), url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    width: 100%;
+    // margin: 0;
+  }
+
+  @media screen and (max-width: 1400px) {
+    margin: 0 auto;
+    background: linear-gradient(125deg, $blue 60, transparent 50%), url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 86%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1100px) {
+    margin: 0 auto;
+    background: linear-gradient(125deg, $blue 59%, transparent 50%), url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 88%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    margin: 0 auto;
+    background: linear-gradient(125deg, $blue 61%, transparent 50%), url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    // margin: 0 auto;
+    background: linear-gradient(125deg, $blue 60%, transparent 50%), url(../img/sign_up_free/sign_up_block_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    // margin: 0 auto;
+    background: linear-gradient(125deg, $blue 60%, transparent 50%), url(../img/sign_up_free/sign_up_block_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    // margin: 0 auto;
+    background: linear-gradient(125deg, $blue 60%, transparent 50%), url(../img/sign_up_free/sign_up_block_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 400px) {
+    // margin: 0 auto;
+    background: linear-gradient(125deg, $blue 60%, transparent 50%), url(../img/sign_up_free/sign_up_block_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 350px) {
+    margin: 0 auto;
+    // background: linear-gradient(125deg, $blue 58%, transparent 50%), url(../img/sign_up_free/sign_up_block_mobile.jpg);
+    // background-repeat: no-repeat;
+    // background-position-x: 75%;
+    background: $blue;
+  }
+}
+
+
+
 .container__sign_up {
   display: flex;
   flex-direction: row;
   height: 397px;
-  background-image: url(../img/sign_up_free/sign_up_block.jpg);
-  background-repeat: no-repeat;
+  // background-image: url(../img/sign_up_free/sign_up_block.jpg);
+  // background-repeat: no-repeat;
   overflow: hidden;
-  background-position-x: 120%;
-  background-size: 54% 100%;
+  // background-position-x: 120%;
+  // background-size: 54% 100%;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
     height: 211px;
-    background-image: url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
-    background-position-x: 115%;
-    background-size: 55% 100%;
+    // background-image: url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    // background-position-x: 115%;
+    // background-size: 55% 100%;
   }
 
   @media screen and (max-width: $tablet) {
@@ -1101,22 +1192,22 @@ $mobile: 340px;
   }
 }
 
-// диагональный синий блок: размеры, угол наклона
-.blue_gradient {
-  background: linear-gradient(125deg, $blue 80%, transparent 50%);
+// // диагональный синий блок: размеры, угол наклона
+// .blue_gradient {
+//   background: linear-gradient(125deg, $blue 80%, transparent 50%);
 
-  @media screen and (max-width: $desktop) {
-    @include tablet-container;
-    background: linear-gradient(125deg, $blue 79%, transparent 50%);
-    margin: 0;
-  }
+//   @media screen and (max-width: $desktop) {
+//     @include tablet-container;
+//     background: linear-gradient(125deg, $blue 79%, transparent 50%);
+//     margin: 0;
+//   }
 
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    background: linear-gradient(125deg, $blue 80%, transparent 50%);
-    margin: 0;
-  }
-}
+//   @media screen and (max-width: $tablet) {
+//     @include mobile-container;
+//     background: linear-gradient(125deg, $blue 80%, transparent 50%);
+//     margin: 0;
+//   }
+// }
 
 del {
   text-decoration: line-through;
@@ -1267,6 +1358,12 @@ del {
     height: 93.5px;
     gap: 3px;
   }
+
+  @media screen and (max-width: 600px) {
+    margin: 8px 15px;
+    height: 93.5px;
+    gap: 3px;
+  }
 }
 
 // кнопка
@@ -1345,187 +1442,27 @@ del {
       line-height: 6.07px;
     }
   }
-}
 
-/*///Стили для модального окна
-.modal {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s;
-  top: -1000px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  overflow-y: scroll;
-  padding: 60px 15px;
+  @media screen and (max-width: 600px) {
 
-  &__content {
-    width: 50%;
-    //max-width: 50%;
-    padding: 50px;
-    background: #f3f3f3;
-    border-radius: 3px;
-    position: relative;
-    box-shadow: 0 5px 15px black;
-    text-align: center;
-    font-family: 'Gilroy700';
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 42px;
-    letter-spacing: 0em;
-
-    @media screen and (max-width: $desktop) {
-      @include container;
-      width: 1020;
-      //height: 561px;
-      font-size: 24px;
+    // стили бело-голубой кнопки
+    &_white-blue {
+      width: 93.5px;
+      height: 18.25px;
+      padding: 6px 12px;
+      box-shadow: inset -0.8px -0.8px 2px rgba(79, 167, 251, 0.4);
     }
-  }
 
-  &__close-button {
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: none;
-    cursor: pointer;
-    transition: 0.3s;
-    outline: none;
-
-    &__hover {
-      transition: 0.3s;
+    // стиль текста на бело-голубой кнопке
+    &_white-blue {
+      font-size: 4.9px;
+      line-height: 6.07px;
     }
   }
 }
-
-.modal_active {
-  position: fixed;
-  top: 0;
-  visibility: visible;
-  opacity: 1;
-  transition: 0.3s;
-}
-
-//Стили для формы
-.contact-form {
-  font-family: 'Gilroy700';
-
-  &__tel {
-    width: 55%;
-    height: 75px;
-    padding: 8px 16px 8px 16px;
-    border-radius: 106px;
-    border: 0.5px solid #292929;
-    color: black;
-    font-size: 36px;
-    font-weight: 700;
-    margin-top: 60px;
-    padding-left: 30px;
-
-    @media screen and (max-width: $desktop) {
-      @include container;
-      width: 415px;
-      height: 60px;
-      font-size: 30px;
-    }
-    @media screen and (max-width: $tablet) {
-      @include mobile-container;
-      height: 36px;
-    }
-    @media screen and (max-width: $mobile) {
-      @include mobile-container;
-      height: 24px;
-    }
-    //Стили для невалидных полей
-    &:invalid {
-      background-color: $whitesmoke;
-      border: 2px solid $blue;
-    }
-
-    &:focus:invalid {
-      outline: none;
-    }
-  }
-
-  &__title {
-    font-family: 'Coolvetica400';
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin: 0 0 20px;
-
-    @media screen and (max-width: $desktop) {
-      @include container;
-      font-size: 24px;
-      line-height: 28px;
-    }
-  }
-
-  &__info {
-    font-size: 28px;
-    font-weight: 700;
-
-    @media screen and (max-width: $desktop) {
-      @include container;
-      font-size: 19px;
-      line-height: 24px;
-    }
-  }
-
-  &__input-box {
-    margin: 20px 0;
-  }
-}
-
-//Стили для кастомных сообщений
-.error {
-  width: 100%;
-  padding: 0;
-  font-size: 90%;
-  color: $blue;
-  border-radius: 0 0 5px 5px;
-}
-
-.error.active {
-  padding: 0.3em;
-}
-
-.submit-btn {
-  width: 55%;
-  height: 76px;
-  padding: 8px 16px 8px 16px;
-  border-radius: 106px;
-  border: none;
-  gap: 5px;
-  background: #ff9fb7;
-  color: #ffffff;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 0em;
-  margin: 20px;
-  cursor: pointer;
-
-  @media screen and (max-width: $desktop) {
-    @include container;
-    width: 415px;
-    height: 50px;
-    cursor: none;
-    font-size: 19px;
-  }
-}*/
 
 // Стили для блока "Стоимость под ключ"
-.work_cost {  
+.work_cost {
   background-color: $lightblue;
   height: 1310px;
 
@@ -1584,23 +1521,20 @@ del {
   justify-content: space-around;
   gap: 30px;
 
-  @media screen and (max-width: $desktop) {
-    @include tablet-container;
-    gap: 15px;
-  }
-
-  @media screen and (max-width: $tablet) {
-    @include mobile-container;
-    gap: 6px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    flex-direction: row;
-    max-width: 240px;
-    gap: 3px;
-  }
-
-  &__icons {
+    @media screen and (max-width: $desktop) {
+        @include tablet-container;
+      gap: 15px;
+    }
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+           gap: 6px;
+    }
+    @media screen and (max-width: $mobile) {
+           max-width: 240px;
+      gap: 3px;
+    }
+  
+    &__icons {
     @include container;
     display: flex;
     justify-content: space-around;
@@ -1617,7 +1551,6 @@ del {
       max-width: 240px;
     }
   }
-
   
   &__img {
     max-width: 312px;
@@ -1640,7 +1573,7 @@ del {
       
     }
   }
-
+  
   &__items {
     display: flex;
     flex-direction: column;
@@ -1651,18 +1584,16 @@ del {
     margin-bottom: 59px;
     background-color: $blue;
     color: $white;
-
-    @media screen and (max-width: $desktop) {
+      
+        @media screen and (max-width: $desktop) {
       max-width: 265.09px;
       height: 448.38px;
     }
-
     @media screen and (max-width: $tablet) {
       border-radius: 12.25px;
       height: 172.32px;
       max-width: 101.88px;
     }
-
     @media screen and (max-width: $mobile) {
       border-radius: 6px;
       height: 110px;
@@ -1672,9 +1603,9 @@ del {
     }
   }
 
-  // Заголовок внутри блока
+// Заголовок внутри блока
   &__title {
-    width: 100%;
+     width: 100%;
     max-width: 450px;
     font-size: 30px;
     line-height: 38px;
@@ -1684,7 +1615,7 @@ del {
     margin-left: 0px;
 
     @media screen and (max-width: $desktop) {
-      @include tablet-container;
+        @include tablet-container;
       max-width: 217.81px;
       height: 60.59px;
       font-size: 15px;
@@ -1692,7 +1623,6 @@ del {
       padding-left: 0px;
       line-height: 20.55px;
     }
-
     @media screen and (max-width: $tablet) {
       @include mobile-container;
       max-width: 83.71px;
@@ -1701,7 +1631,6 @@ del {
       padding-top: 2px;
       line-height: 7.9px;
     }
-
     @media screen and (max-width: $mobile) {
       max-width: 65px;
       height: 18px;
@@ -1724,8 +1653,8 @@ del {
       margin-left: 24px;
       margin-top: 7px;
     }
-
-    @media screen and (max-width: $tablet) {
+    
+     @media screen and (max-width: $tablet) {
       @include tablet-container;
       height: 2px;
       margin-left: 9.39px;
@@ -1733,12 +1662,12 @@ del {
     }
 
     @media screen and (max-width: $mobile) {
-      @include mobile-container;
+      @include mobile-container();
       height: 1px;
       margin-left: 5px;
     }
   }
-
+  
   // Заголовок после линии
   &__title2 {
     font-size: 24px;
@@ -1747,74 +1676,74 @@ del {
     margin-top: 20px;
     max-width: 344px;
     width: 100%;
-
-    @media screen and (max-width: $desktop) {
+    
+     @media screen and (max-width: $desktop) {
       font-size: 12.75px;
       margin-left: 24px;
       margin-top: 10px;
     }
-
-    @media screen and (max-width: $tablet) {
+    
+      @media screen and (max-width: $tablet) {
       font-size: 4.9px;
       margin-left: 9.39px;
       margin-top: 5px;
     }
-
-    @media screen and (max-width: $mobile) {
+    
+      @media screen and (max-width: $mobile) {
       font-size: 2.5px;
       margin: 2.5px 3px 0px 5px;
     }
   }
-
-  &__list {
+  
+   &__list {
     list-style-type: disc;
     max-width: 280px;
     width: 100%;
     font-family: 'Gilroy500';
     font-size: 18px;
     margin-left: 65px;
-
-    @media screen and (max-width: $desktop) {
+     
+       @media screen and (max-width: $desktop) {
       font-size: 9.56px;
       margin-left: 38px;
       max-width: 159.91px;
     }
-
-    @media screen and (max-width: $tablet) {
+     
+     @media screen and (max-width: $tablet) {
       font-size: 3.68px;
       margin-left: 13.39px;
       max-width: 57.45px;
     }
-
-    @media screen and (max-width: $mobile) {
+     
+      @media screen and (max-width: $mobile) {
       max-width: 70px;
       width: 80%;
       font-size: 2.5px;
       margin: 3px 0px 0px 12px;
     }
   }
-
-  &__elem {
+  
+   &__elem {
     margin-top: 20px;
 
     @media screen and (max-width: $desktop) {
       @include tablet-container;
       margin-top: 15px;
     }
-
-    @media screen and (max-width: $tablet) {
+     
+      @media screen and (max-width: $tablet) {
       @include tablet-container;
       margin-top: 5px;
     }
-
-    @media screen and (max-width: $mobile) {
+     
+      @media screen and (max-width: $mobile) {
       @include mobile-container;
       margin-top: 2px;
       // word-wrap: break-word;
     }
   }
-
-  &__btn1 {
+  
+   &__btn1 {
     width: 269px;
     height: 78px;
     border-radius: 12px;
@@ -1827,8 +1756,8 @@ del {
     font-weight: 700;
     line-height: normal;
     margin: 28px 0px 15px 46px;
-
-    @media screen and (max-width: $desktop) {
+     
+      @media screen and (max-width: $desktop) {
       @include tablet-container;
       width: 142px;
       height: 42px;
@@ -1836,8 +1765,8 @@ del {
       border-radius: 6px;
       margin: 16px 0px 0px 24px;
     }
-
-    @media screen and (max-width: $tablet) {
+     
+      @media screen and (max-width: $tablet) {
       @include tablet-container;
       width: 55.25px;
       height: 16.13px;
@@ -1848,8 +1777,8 @@ del {
       box-shadow: 2px 2px 6px 0px #ffc8d6 inset, -2px -2px 4px 0px #c88d9c inset;
       border: 1px;
     }
-
-    @media screen and (max-width: $mobile) {
+     
+       @media screen and (max-width: $mobile) {
       width: 35px;
       height: 12px;
       font-size: 3.5px;
@@ -1859,12 +1788,13 @@ del {
       border: 1px;
     }
   }
-
-  &__btn2 {
+  
+   &__btn2 {
     //max-width: 407px;
     max-width: 407px;
     width: 100%;
-    // min-width: 217px;
+     
+        // min-width: 217px;
     height: 61px;
     border-radius: 12px;
     border-color: transparent;
@@ -1876,7 +1806,6 @@ del {
     font-weight: 600;
     line-height: normal;
     margin: 28px 0px 15px 45px;
-    cursor: pointer;
 
     @media screen and (max-width: $desktop) {
       @include tablet-container;
@@ -1887,8 +1816,8 @@ del {
       padding-left: 0px;
       margin: 10px 0px 0px 24px;
     }
-
-    @media screen and (max-width: $tablet) {
+     
+       @media screen and (max-width: $tablet) {
       @include mobile-container;
       max-width: 83.1px;
       height: 12.13px;
@@ -1898,8 +1827,8 @@ del {
       box-shadow: 2px 2px 6px 0px #ffc8d6 inset, -2px -2px 4px 0px #c88d9c inset;
       border: 1px;
     }
-
-    @media screen and (max-width: $mobile) {
+     
+        @media screen and (max-width: $mobile) {
       max-width: 55px;
       height: 10px;
       font-size: 2.5px;
@@ -1910,7 +1839,7 @@ del {
     }
   }
 }
-
+ 
 // Стили для отзывов
 .reviews {
   &__header2 {
@@ -2318,7 +2247,7 @@ $innerShadow: #C88D9C;
 
   // стили розовой кнопки блока до/после: размер и цвета
   &_pink {
-    width: 788px;
+    width: 820px;
     height: 118px;
     margin-top: 100px;
     padding: 30px 60px;
@@ -2329,7 +2258,7 @@ $innerShadow: #C88D9C;
   // стили текста на кнопке
   &_pink {
     font-family: 'Gilroy700';
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 700;
     line-height: 58.03px;
     color: $white;
@@ -2382,6 +2311,43 @@ $innerShadow: #C88D9C;
   }
 }
 
+// стили для браузера Firefox
+@-moz-document url-prefix() {
+  .btn_sign_pink {
+    width: 500px;
+    height: 70px;
+    margin-top: 100px;
+
+    @media screen and (max-width: $desktop) {
+      @include tablet-container;
+      border-radius: 6px;
+      // padding: 16px 32px;
+
+      // стили розовой кнопки блока до/после: размер и цвета
+      width: 480px;
+      height: 62.88px;
+
+      // стили текста на кнопке
+      font-size: 25.5px;
+      line-height: 31.57px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include mobile-container;
+      border-radius: 2px;
+      // padding: 6px 12px;
+
+      // стили розовой кнопки блока до/после: размер и цвета
+      width: 180px;
+      height: 24.25px;
+      padding: 6px 12px;
+
+      // стили текста на кнопке
+      font-size: 9.8px;
+      line-height: 12.13px;
+    }
+  }
+}
 
 // БЛОК С БИРЮЗОВЫМ ГРАДИЕНТОМ ЗАПИСЬ НА ОНЛАЙН КОНСУЛЬТАЦИЮ
 .container__turquoise {
@@ -2599,6 +2565,8 @@ $gray: #D9D9D9;
     padding: 15px 10px;
     // border: 4px solid red;
   }
+
+
 }
 
 // заголовок страницы квиза
@@ -3104,6 +3072,7 @@ $gray: #D9D9D9;
   transition: 0.3s all;
   // border: 3px solid red;
   display: flex;
+  // align-items: center;
 }
 
 // Радио
@@ -3144,11 +3113,12 @@ $gray: #D9D9D9;
 }
 
 // Стили для блока "Наши врачи"
-.doctors-title{
+.doctors-title {
   justify-self: center;
   grid-column: 1/5;
 }
-.doctors-title-text{
+
+.doctors-title-text {
   font-family: "Coolvetica400";
   font-weight: 400;
   letter-spacing: 0em;
@@ -3157,38 +3127,45 @@ $gray: #D9D9D9;
   margin-bottom: 60px;
   margin-top: 60px;
   color: $blue;
-    @media screen and (max-width: $desktop) {
-      @include container;
-      font-size: 64px;
-    }
-    @media screen and (max-width: $tablet) {
-      @include tablet-container;
-      font-size: 30px;
-    }
-    @media screen and (max-width: $mobile) {
-      @include mobile-container;
-      font-size: 16px;
-    }
+
+  @media screen and (max-width: $desktop) {
+    @include container;
+    font-size: 64px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    font-size: 16px;
+  }
 }
-.doctors-container{
+
+.doctors-container {
   display: grid;
   justify-content: center;
   align-items: start;
   grid-template-columns: 387px 387px 387px 387px;
   grid-template-rows: 0.5fr 1fr 0.5fr;
   column-gap: 30px;
+
   @media screen and (max-width: $desktop) {
     @include container;
     grid-template-columns: 205px 205px 205px 205px;
     grid-template-rows: 0.5fr 1fr 0.5fr;
     column-gap: 20px;
   }
+
   @media screen and (max-width: $tablet) {
     @include tablet-container;
     grid-template-columns: 80px 80px 80px 80px;
     grid-template-rows: 0.5fr 1fr 0.5fr;
     column-gap: 10px;
   }
+
   @media screen and (max-width: $mobile) {
     @include mobile-container;
     grid-template-columns: 65px 65px 65px 65px;
@@ -3196,50 +3173,59 @@ $gray: #D9D9D9;
     column-gap: 5px;
   }
 }
+
 //Контейнер для фото с врачом
-.doctors-frame{
+.doctors-frame {
   display: grid;
   justify-content: center;
   align-content: end;
   height: 558px;
   margin-top: 50px;
+
   @media screen and (max-width: $desktop) {
     @include container;
     height: 296px;
   }
+
   @media screen and (max-width: $tablet) {
     @include tablet-container;
     height: 115px;
   }
+
   @media screen and (max-width: $mobile) {
     @include mobile-container;
     height: 100px
   }
+
   //Фоновый круг
-    &__background-circle{
+  &__background-circle {
     width: 375px;
     height: 375px;
     border-radius: 50%;
     background: #CBE5FF;
     box-shadow: 0px -202px 90px 0px #FFFFFF4A inset;
+
     @media screen and (max-width: $desktop) {
       @include container;
       width: 198px;
       height: 198px;
     }
+
     @media screen and (max-width: $tablet) {
       @include tablet-container;
       width: 77px;
       height: 77px;
     }
+
     @media screen and (max-width: $mobile) {
       @include mobile-container;
       width: 60px;
       height: 60px
     }
-}
-//Рамка с именем
-    &__doctors-name{
+  }
+
+  //Рамка с именем
+  &__doctors-name {
     position: relative;
     bottom: 30px;
     left: 20px;
@@ -3257,6 +3243,7 @@ $gray: #D9D9D9;
     padding: 24px;
     text-align: center;
     justify-content: center;
+
     @media screen and (max-width: $desktop) {
       @include container;
       width: 180px;
@@ -3269,6 +3256,7 @@ $gray: #D9D9D9;
       box-shadow: 4.244817733764648px 4.244817733764648px 10.612044334411621px 0px #FFFFFF6B inset;
       box-shadow: -4.244817733764648px -4.244817733764648px 15.918066024780273px 0px #5F8EBE inset;
     }
+
     @media screen and (max-width: $tablet) {
       @include tablet-container;
       bottom: 20px;
@@ -3282,6 +3270,7 @@ $gray: #D9D9D9;
       box-shadow: 1.6455708742141724px 1.6455708742141724px 4.113927364349365px 0px #FFFFFF6B inset;
       box-shadow: -1.6455708742141724px -1.6455708742141724px 6.1708903312683105px 0px #5F8EBE inset;
     }
+
     @media screen and (max-width: $mobile) {
       @include mobile-container;
       bottom: 16px;
@@ -3293,45 +3282,53 @@ $gray: #D9D9D9;
       padding: 6px;
       left: -1px;
     }
-}
-//Фото врача
-    &__doctors-image{
+  }
+
+  //Фото врача
+  &__doctors-image {
     position: relative;
     top: 370px;
     left: 50px;
+
     @media screen and (max-width: $desktop) {
       @include container;
       top: 175px;
       left: 20px;
     }
+
     @media screen and (max-width: $tablet) {
       @include tablet-container;
       top: 65px;
       left: 16px;
     }
+
     @media screen and (max-width: $mobile) {
       @include mobile-container;
       top: 50px;
       left: 12px;
     }
   }
-  .doc-image{
+
+  .doc-image {
     @media screen and (max-width: $desktop) {
       @include container;
       max-width: 90%;
     }
+
     @media screen and (max-width: $tablet) {
       @include tablet-container;
       max-width: 80%;
     }
+
     @media screen and (max-width: $mobile) {
       @include mobile-container;
       max-width: 78%;
     }
   }
 }
+
 //Кнопка "Записаться на консультацию"
-.callback-btn{
+.callback-btn {
   display: block;
   grid-column: 1/5;
   margin: 100px auto;
@@ -3352,9 +3349,13 @@ $gray: #D9D9D9;
   text-align: center;
   color: #F7F7F7;
   cursor: pointer;
-  &:hover{
+
+  &:hover {
     background-color: $blue;
+    box-shadow: 4px 4px 14px 0px #d0ebff66 inset;
+    box-shadow: -4px -4px 10px 0px #2d536f66 inset;
   }
+
   @media screen and (max-width: $desktop) {
     @include container;
     width: 418px;
@@ -3369,6 +3370,7 @@ $gray: #D9D9D9;
     box-shadow: -4px -4px 10px 0px #C88D9C inset;
 
   }
+
   @media screen and (max-width: $tablet) {
     @include tablet-container;
     width: 162px;
@@ -3379,11 +3381,11 @@ $gray: #D9D9D9;
     padding: 0;
     margin: 6px, 12px, 6px, 12px;
     gap: 2px;
-    cursor: none;
     box-shadow: 2.125px 2.125px 7.4375px 0px #FFC8D6 inset;
     box-shadow: -2.125px -2.125px 5.3125px 0px #C88D9C inset;
 
   }
+
   @media screen and (max-width: $mobile) {
     @include mobile-container;
     width: 158px;
@@ -3394,79 +3396,86 @@ $gray: #D9D9D9;
     padding: 0;
     margin: 6px, 12px, 6px, 12px;
     gap: 1px;
-    cursor: none;
   }
 }
+
 //Стили для модального окна
 .modal {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: .3s;
-    top: -1000px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  top: -1000px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 15px;
+
+  &__content {
+    width: 45%;
+    padding: 30px;
+    background: #F3F3F3;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 5px 15px black;
+    text-align: center;
+    font-family: 'Gilroy600';
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+    @media screen and (max-width: $tablet) {
+      padding: 20px;
+      width: 45%;
+    }
+
+    @media screen and (max-width: $mobile) {
+      padding: 10px;
+    }
+  }
+
+  //Кнопка закрытия (крестик)
+  &__close-button {
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 60px 15px;
+    align-items: center;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
 
-    &__content {
-        width: 45%;
-        padding: 30px;
-        background: #F3F3F3;
-        border-radius: 3px;
-        position: relative;
-        box-shadow: 0 5px 15px black;
-        text-align: center;
-        font-family: 'Gilroy600';
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        @media screen and (max-width: $tablet) {
-          padding: 20px;
-          width: 45%;
-        }
-        @media screen and (max-width: $mobile) {
-          padding: 10px;
-        }
+    @media screen and (max-width: $desktop) {
+      width: 20px;
+      height: 20px;
     }
-    //Кнопка закрытия (крестик)
-    &__close-button {
-      width: 30px;
-      height: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      position: absolute;
-      right: 0;
-      top: 0;
-      background: none;
-      cursor: pointer;
+
+    @media screen and (max-width: $tablet) {
+      width: 10px;
+      height: 10px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 8px;
+      height: 8px;
+    }
+
+    &:hover {
       transition: .3s;
-      outline: none;
-
-        @media screen and (max-width: $desktop) {
-          width: 20px;
-          height: 20px;
-        }
-        @media screen and (max-width: $tablet) {
-          width: 10px;
-          height: 10px;
-        }
-        @media screen and (max-width: $mobile) {
-          width: 8px;
-          height: 8px;
-        }
-        &:hover{
-          transition: .3s;
-        }
     }
+  }
 
 }
+
 .modal_active {
   position: fixed;
   top: 0;
@@ -3477,117 +3486,142 @@ $gray: #D9D9D9;
 }
 
 //Стили для формы
-.contact-form{
+.contact-form {
   font-family: 'Gilroy700';
-    &__tel{
-      width: 65%;
-      height: 65px;
-      padding: 8px 16px 8px 16px;
-      border-radius: 106px;
-      border: 0.5px solid $dark;
-      color: black;
-      font-size: 30px;
-      font-weight: 700;
-      margin-top: 10px;
-      text-align: center;
 
-      @media screen and (max-width: $desktop) {
-        height: 50px;
-        font-size: 20px;
-        padding: 0px;
-      }
-      @media screen and (max-width: $tablet) {
-        height: 30px;
-        font-size: 12px;
-        border-radius: 32px;
-      }
+  &__tel {
+    width: 65%;
+    height: 65px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 106px;
+    border: 0.5px solid $dark;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+
+    @media screen and (max-width: $desktop) {
+      height: 50px;
+      font-size: 20px;
+      padding: 0px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      height: 30px;
+      font-size: 12px;
+      border-radius: 32px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      font-size: 4px;
+      border-radius: 26px;
+      margin-top: 5px;
+    }
+
+    //Стили для валидных полей
+    &:valid {
+      border: 2px solid $black;
+
       @media screen and (max-width: $mobile) {
-        font-size: 4px;
-        border-radius: 26px;
-        margin-top: 5px;
-      }
-//Стили для валидных полей
-      &:valid{
-        border: 2px solid $black;
-        @media screen and (max-width: $mobile) {
         border: 1px solid $black;
       }
     }
-//Стили для невалидных полей
-      &:invalid {
-        background-color: $whitesmoke;
-        border: 3px solid $blue;
-        @media screen and (max-width: $mobile) {
+
+    //Стили для невалидных полей
+    &:invalid {
+      background-color: $whitesmoke;
+      border: 3px solid $blue;
+
+      @media screen and (max-width: $mobile) {
         border: 2px solid $blue;
-        }
       }
-      &:focus:invalid {
-        outline: none;
-      }
+    }
+
+    &:focus:invalid {
+      outline: none;
+    }
   }
+
   &__title {
     font-family: 'Coolvetica400';
     font-size: 36px;
     text-transform: uppercase;
     margin: 0 0 20px;
     font-weight: 400;
+
     @media screen and (max-width: $desktop) {
       margin: 0 0 15px;
       font-size: 30px;
     }
+
     @media screen and (max-width: $tablet) {
       margin: 0 0 10px;
       font-size: 20px;
     }
+
     @media screen and (max-width: $mobile) {
       margin: 0 0 5px;
       font-size: 10px;
     }
   }
-    &__subtitle{
-      font-family: 'Coolvetica400';
-      font-size: 26px;
-      font-weight: 400;
-      margin: 0;
-      @media screen and (max-width: $desktop) {
-        font-size: 16px;
-      }
-      @media screen and (max-width: $tablet) {
-        font-size: 10px;
-      }
-      @media screen and (max-width: $mobile) {
-        font-size: 4px;
-      }
+
+  &__subtitle {
+    font-family: 'Coolvetica400';
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 10px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      font-size: 4px;
+    }
   }
-  &__info{
+
+  &__info {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0em;
     margin-top: 0px;
     opacity: 0.8;
+
     @media screen and (max-width: $desktop) {
       font-size: 12px;
     }
+
     @media screen and (max-width: $tablet) {
       font-size: 8px;
     }
+
     @media screen and (max-width: $mobile) {
       font-size: 6px;
     }
   }
-  &__input-box{
+
+  &__input-box {
     margin: 20px 0;
+
     @media screen and (max-width: $desktop) {
       margin: 10px 0;
     }
+
     @media screen and (max-width: $tablet) {
       margin: 4px 0;
     }
+
     @media screen and (max-width: $mobile) {
       margin: 2px 0;
     }
   }
 }
+
 //Стили для кастомных сообщений
 .error {
   width: 100%;
@@ -3596,12 +3630,15 @@ $gray: #D9D9D9;
   color: $blue;
   border-radius: 0 0 5px 5px;
   margin: 0px;
+
   @media screen and (max-width: $desktop) {
     font-size: 16px;
   }
+
   @media screen and (max-width: $tablet) {
     font-size: 10px;
   }
+
   @media screen and (max-width: $mobile) {
     font-size: 4px;
   }
@@ -3611,7 +3648,7 @@ $gray: #D9D9D9;
   padding: 0.3em;
 }
 
-.submit-btn{
+.submit-btn {
   width: 65%;
   height: 65px;
   padding: 8px 16px 8px 16px;
@@ -3625,12 +3662,14 @@ $gray: #D9D9D9;
   letter-spacing: 0em;
   margin: 10px;
   cursor: pointer;
+
   @media screen and (max-width: $desktop) {
     height: 50px;
     font-size: 18px;
     margin: 0px;
     padding: 0px;
   }
+
   @media screen and (max-width: $tablet) {
     height: 30px;
     font-size: 12px;
@@ -3638,6 +3677,7 @@ $gray: #D9D9D9;
     padding: 0px;
     border-radius: 32px;
   }
+
   @media screen and (max-width: $mobile) {
     height: 30px;
     font-size: 6px;
@@ -3648,11 +3688,12 @@ $gray: #D9D9D9;
 }
 
 //Стили для блока "Этапы имплантации"
-.stages{
+.stages {
   background: $lightblue;
 }
+
 //Контейнер для этапов
-.stage-container{
+.stage-container {
   display: grid;
   justify-content: center;
   align-items: start;
@@ -3660,13 +3701,15 @@ $gray: #D9D9D9;
   grid-template-rows: 0.1fr 0.1fr 1fr;
   column-gap: 60px;
   padding: 100px 0;
-    @media screen and (max-width: $desktop) {
+
+  @media screen and (max-width: $desktop) {
     @include container;
     padding: 80px 0;
     grid-template-columns: 267px 267px 267px;
     grid-template-rows: 0.1fr 0.1fr 1fr;
     column-gap: 32px;
   }
+
     @media screen and (max-width: $tablet) {
       @include tablet-container;
       padding: 10px 0;
@@ -3682,13 +3725,15 @@ $gray: #D9D9D9;
       column-gap: 5px;
     }
 }
+
 //Заголовок "Этапы имплантации"
-.stage-title{
+.stage-title {
   justify-self: center;
   grid-column: 1/4;
   grid-row: 1/2;
 }
-.stage-title-text{
+
+.stage-title-text {
   font-family: 'Coolvetica400';
   font-weight: 400;
   letter-spacing: 0em;
@@ -3696,26 +3741,31 @@ $gray: #D9D9D9;
   margin-bottom: 60px;
   color: $blue;
   font-size: 120px;
-    @media screen and (max-width: $desktop) {
-      @include container;
-      font-size: 64px;
-    }
-    @media screen and (max-width: $tablet) {
-      @include tablet-container;
-      font-size: 30px;
-    }
-    @media screen and (max-width: $mobile) {
-      @include mobile-container;
-      font-size: 16px;
-    }
+
+  @media screen and (max-width: $desktop) {
+    @include container;
+    font-size: 64px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    font-size: 16px;
+  }
 }
+
 //Подзаголовок "I этап"
-.stage-subtitle{
+.stage-subtitle {
   justify-self: center;
   grid-column: 1/4;
   grid-row: 2/3;
 }
-.stage-subtitle-text{
+
+.stage-subtitle-text {
   font-family: 'Coolvetica400';
   font-weight: 400;
   letter-spacing: 0em;
@@ -3723,25 +3773,29 @@ $gray: #D9D9D9;
   margin-bottom: 40px;
   text-align: center;
   color: $blue;
-    @media screen and (max-width: $desktop) {
-      @include container;
-      font-size: 53px;
-      margin-bottom: 32px;
-    }
-    @media screen and (max-width: $tablet) {
-      @include tablet-container;
-      font-size: 20px;
-      margin-bottom: 12px;
-    }
-    @media screen and (max-width: $mobile) {
-      @include mobile-container();
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
+
+  @media screen and (max-width: $desktop) {
+    @include container;
+    font-size: 53px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 
 }
+
 //Голубые колонки
-.stage{
+.stage {
   display: grid;
   grid-row: 3/4;
   border-radius: 60px;
@@ -3749,21 +3803,25 @@ $gray: #D9D9D9;
   background: $blue;
   justify-items: center;
   align-items: start;
-    @media screen and (max-width: $desktop) {
-      @include container;
-        border-radius: 32px;
-        padding: 0;
-    }
-    @media screen and (max-width: $tablet) {
-      @include tablet-container;
-      border-radius: 12px;
-    }
-    @media screen and (max-width: $mobile) {
-      @include mobile-container;
-      border-radius: 10px;
-    }
-    //Заголовок в колонке
-    &__description{
+
+  @media screen and (max-width: $desktop) {
+    @include container;
+    border-radius: 32px;
+    padding: 0;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    border-radius: 12px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    border-radius: 10px;
+  }
+
+  //Заголовок в колонке
+  &__description {
     font-family: 'Gilroy700';
     margin-top: 60px;
     height: 120px;
@@ -3774,33 +3832,102 @@ $gray: #D9D9D9;
     padding-left: 45px;
     padding-right: 45px;
     justify-content: left;
-      @media screen and (max-width: $desktop) {
-        @include container;
-        margin-top: 24px;
-        height: 70px;
-        font-size: 27px;
-        line-height: 32px;
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-      @media screen and (max-width: $tablet) {
-        @include tablet-container;
-        height: 30px;
-        font-size: 10px;
-        line-height: 12px;
-        text-align: left;
-        margin-top: 12px;
-      }
-      @media screen and (max-width: $mobile) {
-        @include mobile-container;
-        height: 20px;
-        font-size: 8px;
-        line-height: 10px;
-        text-align: left;
-        margin-top: 10px;
-      }
+
+    @media screen and (max-width: $desktop) {
+      @include container;
+      margin-top: 24px;
+      height: 70px;
+      font-size: 27px;
+      line-height: 32px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
-    //Контейнер для картинки
+
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      height: 30px;
+      font-size: 10px;
+      line-height: 12px;
+      text-align: left;
+      margin-top: 12px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      height: 20px;
+      font-size: 8px;
+      line-height: 10px;
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+
+  //Контейнер для картинки
+  &__image-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightblue;
+    width: 410px;
+    height: 370px;
+    border-radius: 36px;
+    margin-top: 60px;
+
+    @media screen and (max-width: $desktop) {
+      @include container;
+      margin-top: 24px;
+      width: 219px;
+      height: 198px;
+      border-radius: 19px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      margin-top: 10px;
+      width: 84px;
+      height: 76px;
+      border-radius: 7px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      margin-top: 8px;
+      width: 78px;
+      height: 70px;
+      border-radius: 5px;
+    }
+  }
+
+  //Линия-разделитель
+  &__gradient-line {
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 124.79%);
+    border: none;
+    top: 640px;
+    margin-top: 45px;
+    height: 4px;
+    width: 370px;
+
+    @media screen and (max-width: $desktop) {
+      @include container;
+      margin-top: 30px;
+      height: 2px;
+      width: 219px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      height: 1px;
+      margin-top: 10px;
+      width: 82px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      @include mobile-container();
+      margin-top: 8px;
+      width: 76px;
+    }
+    }
+//Контейнер для картинки
     &__image-container{
       display: grid;
       justify-content: center;
@@ -3859,8 +3986,8 @@ $gray: #D9D9D9;
         }
   }
   //Описание этапа
-    &__text{
-    font-family:'Gilroy500';
+  &__text {
+    font-family: 'Gilroy500';
     font-weight: 500;
     padding-left: 45px;
     padding-right: 45px;
@@ -3870,43 +3997,49 @@ $gray: #D9D9D9;
     letter-spacing: 0em;
     text-align: left;
     color: #F7F7F7;
+
     @media screen and (max-width: $desktop) {
       @include container;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 20px 0;
-        font-size: 19px;
-        line-height: 23px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 20px 0;
+      font-size: 19px;
+      line-height: 23px;
     }
+
     @media screen and (max-width: $tablet) {
       @include tablet-container;
       font-size: 7px;
       line-height: 8.7px;
       margin: 10px 0;
     }
+
     @media screen and (max-width: $mobile) {
       @include mobile-container;
       font-size: 6px;
       line-height: 7.7px;
       margin: 8px 0;
     }
+  }
+
+  .stage-image {
+    max-width: 100%;
+    justify-self: center;
+
+    @media screen and (max-width: $desktop) {
+      @include container;
+      max-width: 50%;
     }
-    .stage-image{
-      max-width: 100%;
-      justify-self: center;
-      @media screen and (max-width: $desktop) {
-        @include container;
-        max-width: 50%;
-      }
-      @media screen and (max-width: $tablet) {
-        @include tablet-container;
-        max-width: 50%;
-      }
-      @media screen and (max-width: $mobile) {
-        @include mobile-container;
-        max-width: 50%;
-      }
-}
+
+    @media screen and (max-width: $tablet) {
+      @include tablet-container;
+      max-width: 50%;
+    }
+    @media screen and (max-width: $mobile) {
+      @include mobile-container;
+      max-width: 50%;
+    }
+  }
 }
 
 
@@ -4194,6 +4327,11 @@ $gray: #D9D9D9;
     gap: 2px;
   }
 
+  @media screen and (max-width: 240px) {
+    max-width: 140px;
+    grid-template-columns: 140px;
+  }
+
   &__title {
     grid-area: title;
     font-family: 'Coolvetica400';
@@ -4213,6 +4351,10 @@ $gray: #D9D9D9;
 
     @media screen and (max-width: $mobile) {
       font-size: 15px;
+    }
+
+    @media screen and (max-width: 240px) {
+      font-size: 11px;
     }
   }
 
@@ -4241,6 +4383,9 @@ $gray: #D9D9D9;
       justify-self: center;
     }
 
+    @media screen and (max-width: 240px) {
+      width: 140px;
+    }
   }
 
   &__content-iframe {
@@ -4266,7 +4411,13 @@ $gray: #D9D9D9;
       height: 60px;
       border-radius: 3px;
     }
+
+    @media screen and (max-width: 240px) {
+      max-width: 140px;
+      width: 100%;
+    }
   }
+
 
   &__address {
     grid-area: address;
@@ -4296,6 +4447,11 @@ $gray: #D9D9D9;
       border-radius: 3px;
       padding: 3px;
       justify-self: center;
+    }
+
+    @media screen and (max-width: 240px) {
+      max-width: 140px;
+      width: 100%;
     }
   }
 
@@ -4354,6 +4510,11 @@ $gray: #D9D9D9;
     @media screen and (max-width: $mobile) {
       margin-top: 6px;
       justify-self: center;
+    }
+
+    @media screen and (max-width: 240px) {
+      max-width: 140px;
+      width: 100%;
     }
   }
 
@@ -4456,28 +4617,30 @@ $gray: #D9D9D9;
     @media screen and (max-width: $desktop) {
       box-shadow: inset 2px 2px 2px 0px #d0ebff66,
         inset -2px -2px 2px 0px #2d536f66;
-    @media screen and (max-width: $tablet) {
-      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #d0ebff66,
-        inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #2d536f66;
-    }
-  }
 
-  &:active {
-    box-shadow: inset 4px 4px 4px 0px #2d536fe5,
-      inset -4px -4px 4px 0px #d0ebffce;
-
-    @media screen and (max-width: $desktop) {
-      box-shadow: inset 2px 2px 2px 0px #2d536fe5,
-        inset -2px -2px 2px 0px #d0ebffce;
+      @media screen and (max-width: $tablet) {
+        box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #d0ebff66,
+          inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #2d536f66;
+      }
     }
 
-    @media screen and (max-width: $tablet) {
-      box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #2d536fe5,
-        inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
+    &:active {
+      box-shadow: inset 4px 4px 4px 0px #2d536fe5,
+        inset -4px -4px 4px 0px #d0ebffce;
+
+      @media screen and (max-width: $desktop) {
+        box-shadow: inset 2px 2px 2px 0px #2d536fe5,
+          inset -2px -2px 2px 0px #d0ebffce;
+      }
+
+      @media screen and (max-width: $tablet) {
+        box-shadow: inset 0.8185136914253235px 0.8185136914253235px 0.8185136914253235px 0px #2d536fe5,
+          inset -0.8185136914253235px -0.8185136914253235px 0.8185136914253235px 0px #d0ebffce;
+      }
     }
   }
 }
-}
+
 .button__ordercall {
   width: 249px;
   height: 59px;
@@ -4505,11 +4668,11 @@ $gray: #D9D9D9;
   }
 
   @media screen and (max-width: $tablet) {
-    width: 52.28px;
+    width: 53.28px;
     height: 12.14px;
     margin-top: 0px;
     margin-left: 0px;
-    padding: 3px, 6px, 3px, 6px;
+    padding: 3px, 1px, 3px, 1px;
     border-radius: 2px;
     border: 1px solid $pink;
     font-size: 4.91px;
@@ -4593,6 +4756,10 @@ $gray: #D9D9D9;
     margin: 0 auto;
   }
 
+  @media screen and (max-width: 225px) {
+    flex-direction: column;
+  }
+
   &__text {
     font-size: 63px;
     color: $white;
@@ -4608,6 +4775,12 @@ $gray: #D9D9D9;
 
     @media screen and (max-width: $mobile) {
       font-size: 9px;
+    }
+
+    @media screen and (max-width: 225px) {
+      font-size: 9px;
+      text-align: center;
+      margin-bottom: 5px;
     }
   }
 
@@ -4636,6 +4809,13 @@ $gray: #D9D9D9;
       width: 120px;
       height: 10px;
       border-radius: 25;
+    }
+
+    @media screen and (max-width: 225px) {
+      width: 65%;
+      max-width: 120px;
+      justify-content: center;
+      align-self: center;
     }
   }
 
@@ -5306,7 +5486,7 @@ footer {
   }
 }
 
- .license-modal__content img {
+.license-modal__content img {
   width: 100%;
   height: auto;
 }
@@ -5392,8 +5572,22 @@ footer {
       padding: 20px;
     }
 
+    @media screen and (max-width: 540px) {
+      width: 55%;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 65%;
+    }
+
     @media screen and (max-width: $mobile) {
+      width: 75%;
       padding: 10px;
+    }
+
+    @media screen and (max-width: 155px) {
+      width: 85%;
+      padding: 5px;
     }
   }
 
@@ -5423,8 +5617,22 @@ footer {
       width: 15px;
     }
 
+    @media screen and (max-width: 450px) {}
+
     &__hover {
       transition: .3s;
+    }
+  }
+
+  &__close-img {
+    width: 24px;
+
+    @media screen and (max-width: 450px) {
+      width: 18px;
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 12px;
     }
   }
 }
@@ -5464,6 +5672,10 @@ footer {
       margin: 0 0 5px;
       font-size: 10px;
     }
+
+    &_quiz {
+      text-align: center;
+    }
   }
 
   &__p {
@@ -5483,6 +5695,28 @@ footer {
 
     @media screen and (max-width: $mobile) {
       font-size: 8px;
+    }
+
+    &-quiz {
+      font-family: 'Coolvetica400';
+      font-size: 26px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 10px;
+      letter-spacing: 0.1em;
+      text-align: center;
+
+      @media screen and (max-width: $desktop) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: $desktop) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: 8px;
+      }
     }
   }
 
@@ -5506,6 +5740,7 @@ footer {
     @media screen and (max-width: $tablet) {
       height: 40px;
       font-size: 12px;
+      padding: 2px 5px 2px 5px;
     }
 
     @media screen and (max-width: $mobile) {
@@ -5540,7 +5775,11 @@ footer {
       font-size: 12px;
     }
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 347px) {
+      font-size: 8px;
+    }
+
+    @media screen and (max-width: 275px) {
       font-size: 6px;
     }
 
@@ -5566,17 +5805,29 @@ footer {
   }
 }
 
+.consultation-form__tel::placeholder {
+  white-space: pre-wrap;
+
+  @media screen and (max-width: 547px) {
+    transform: translateY(-5px);
+  }
+
+  @media screen and (max-width: $mobile) {
+    transform: translateY(-2px);
+  }
+}
+
 .ordercall__submit-btn,
 .consultation__submit-btn {
   width: 85%;
   height: 65px;
-  padding: 8px 16px 8px 16px;
+  padding: 4px 16px 8px 16px;
   border-radius: 106px;
   border: none;
   gap: 5px;
   background: #FF9FB7;
   color: #FFFFFF;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: 0em;
   margin: 10px;
@@ -5677,7 +5928,7 @@ footer {
   width: 1175px;
   height: 89px;
   color: $blue;
-  font-family: Coolvetica;
+  font-family: 'Coolvetica400';
   font-weight: 600;
   font-size: 50px;
   line-height: 70px;
@@ -5726,7 +5977,7 @@ footer {
 
 .bluetext,
 .bluetext1 {
-  font-family: Gilroy;
+  font-family: 'Gilroy600';
   font-weight: 600;
   font-size: 50px;
   line-height: 55px;
@@ -5751,7 +6002,7 @@ footer {
 .text {
   width: 932px;
   height: 180px;
-  font-family: Gilroy;
+  font-family: 'Gilroy500';
   font-weight: 500;
   font-size: 50px;
   line-height: 50px;
@@ -5787,7 +6038,7 @@ footer {
 .text1 {
   width: 1070px;
   height: 60px;
-  font-family: Gilroy;
+  font-family: 'Gilroy700';
   font-weight: 700;
   font-size: 42px;
   line-height: 50px;
@@ -5823,7 +6074,7 @@ footer {
 .ul {
   width: 1116px;
   height: 183px;
-  font-family: Gilroy;
+  font-family: 'Gilroy500';
   font-weight: 500;
   font-size: 28px;
   line-height: 41.2px;
@@ -5925,7 +6176,7 @@ footer {
   border: none;
   border-radius: 106px;
   cursor: pointer;
-  font-family: Gilroy;
+  font-family: 'Gilroy700';
   font-weight: 700;
   font-size: 31.94px;
   line-height: 38.6px;
@@ -6544,13 +6795,15 @@ footer {
   }
 }
 
+
 // СБОР ДАННЫХ КЛИЕНТА
 .quiz_userdata_div {
   display: flex;
   flex-direction: column;
   // gap: 15px;
-  margin-bottom: 15px;
-  margin-left: 450px;
+  margin-bottom: 5px;
+  // margin-left: 450px;
+  align-items: center;
 
   @media screen and (max-width: $desktop) {
     @include container;
@@ -6560,7 +6813,7 @@ footer {
 }
 
 .quiz_userdata {
-  width: 55%;
+  width: 120%;
   height: 75px;
   padding: 8px 16px 8px 16px;
   border-radius: 106px;
@@ -6641,21 +6894,26 @@ footer {
 .error_mess {
   width: 100%;
   padding: 5px;
-  color: $blue;
+  // color: $blue;
   border-radius: 0 0 5px 5px;
 
-  font-family: "Gilroy";
-  font-weight: 400;
-  font-size: 30px;
+  font-family: 'Gilroy700';
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  text-align: center;
+  // font-family: "Gilroy";
+  // font-weight: 400;
+  // font-size: 30px;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: $tablet) {
     @include mobile-container;
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
