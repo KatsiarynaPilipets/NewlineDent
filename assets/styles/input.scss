@@ -1513,6 +1513,41 @@ del {
   }
 }
 
+// Основной контейнер иконок
+.work_cost-icons {
+  @include container;
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: $desktop) {
+    @include tablet-container;
+  }
+  @media screen and (max-width: $tablet) {
+    @include mobile-container;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 240px;
+  }
+  &__img {
+    max-width: 312px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $desktop) {
+      max-width: 185.95px;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 5px;
+      max-width: 63.78px;
+    }
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 3px;
+      max-width: 35px;
+    }
+  }
+}
+
 // Контейнер для блоков с информацией
 .work_cost-info {
   @include container;
@@ -1533,46 +1568,6 @@ del {
            max-width: 240px;
       gap: 3px;
     }
-  
-    &__icons {
-    @include container;
-    display: flex;
-    justify-content: space-around;
-  
-    @media screen and (max-width: $desktop) {
-      @include tablet-container;
-    }
-  
-    @media screen and (max-width: $tablet) {
-      @include mobile-container;
-    }
-  
-    @media screen and (max-width: $mobile) {
-      max-width: 240px;
-    }
-  }
-  
-  &__img {
-    max-width: 312px;
-    width: 100%;
-    margin-bottom: 30px;
-
-    @media screen and (max-width: $desktop) {
-      max-width: 185.95px;
-      margin-bottom: 20px;
-    }
-
-    @media screen and (max-width: $tablet) {
-      margin-bottom: 5px;
-      max-width: 63.78px;
-    }
-
-    @media screen and (max-width: $mobile) {
-      margin-bottom: 3px;
-      max-width: 35px;
-      
-    }
-  }
   
   &__items {
     display: flex;
@@ -4090,8 +4085,8 @@ $gray: #D9D9D9;
   @media screen and (max-width: $tablet) {
     font-size: 24.5px;
     height: 27.16px;
-    width: 50%;
-    margin-left: 150px;
+    width: 56%;
+    margin-left: 40px;
   }
 
   @media screen and (max-width: $mobile) {
@@ -4146,13 +4141,14 @@ $gray: #D9D9D9;
     border-radius: 12.25px;
     height: 290px;
     max-width: 101.88px;
+    margin-left: -90px;
   }
 
   @media screen and (max-width: $mobile) {
     border-radius: 6px;
     height: 240px;
     max-width: 220px;
-    padding-left: -150px;
+    margin-left: -150px;
     // word-wrap: break-word;
     // overflow: hidden;
   }

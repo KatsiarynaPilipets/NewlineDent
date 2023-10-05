@@ -1534,6 +1534,53 @@ del {
   }
 }
 
+.work_cost-icons {
+  max-width: 1622px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1630px) {
+  .work_cost-icons {
+    max-width: 859.68px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 870px) {
+  .work_cost-icons {
+    max-width: 328.39px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-icons {
+    max-width: 240px;
+  }
+}
+.work_cost-icons__img {
+  max-width: 312px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1630px) {
+  .work_cost-icons__img {
+    max-width: 185.95px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .work_cost-icons__img {
+    margin-bottom: 5px;
+    max-width: 63.78px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .work_cost-icons__img {
+    margin-bottom: 3px;
+    max-width: 35px;
+  }
+}
+
 .work_cost-info {
   max-width: 1622px;
   margin: 0 auto;
@@ -1558,55 +1605,8 @@ del {
 }
 @media screen and (max-width: 340px) {
   .work_cost-info {
-    flex-direction: row;
     max-width: 240px;
     gap: 3px;
-  }
-}
-.work_cost-info__icons {
-  max-width: 1622px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-}
-@media screen and (max-width: 1630px) {
-  .work_cost-info__icons {
-    max-width: 859.68px;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 870px) {
-  .work_cost-info__icons {
-    max-width: 328.39px;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 340px) {
-  .work_cost-info__icons {
-    max-width: 240px;
-  }
-}
-.work_cost-info__img {
-  max-width: 312px;
-  width: 100%;
-  margin-bottom: 30px;
-}
-@media screen and (max-width: 1630px) {
-  .work_cost-info__img {
-    max-width: 185.95px;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 870px) {
-  .work_cost-info__img {
-    margin-bottom: 5px;
-    max-width: 63.78px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .work_cost-info__img {
-    margin-bottom: 3px;
-    max-width: 35px;
   }
 }
 .work_cost-info__items {
@@ -1860,7 +1860,6 @@ del {
   font-weight: 600;
   line-height: normal;
   margin: 28px 0px 15px 45px;
-  cursor: pointer;
 }
 @media screen and (max-width: 1630px) {
   .work_cost-info__btn2 {
@@ -1898,6 +1897,7 @@ del {
     border: 1px;
   }
 }
+
 .reviews__header2 {
   font-size: 120px;
   line-height: 107px;
@@ -4004,6 +4004,80 @@ del {
     width: 76px;
   }
 }
+.stage__image-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #cbe5ff;
+  width: 410px;
+  height: 370px;
+  border-radius: 36px;
+  margin-top: 60px;
+}
+@media screen and (max-width: 1630px) {
+  .stage__image-container {
+    max-width: 1622px;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 219px;
+    height: 198px;
+    border-radius: 19px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .stage__image-container {
+    max-width: 859.68px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 84px;
+    height: 76px;
+    border-radius: 7px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .stage__image-container {
+    max-width: 328.39px;
+    margin: 0 auto;
+    margin-top: 8px;
+    width: 78px;
+    height: 70px;
+    border-radius: 5px;
+  }
+}
+.stage__gradient-line {
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 124.79%);
+  border: none;
+  top: 640px;
+  margin-top: 45px;
+  height: 4px;
+  width: 370px;
+}
+@media screen and (max-width: 1630px) {
+  .stage__gradient-line {
+    max-width: 1622px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 2px;
+    width: 219px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .stage__gradient-line {
+    max-width: 859.68px;
+    margin: 0 auto;
+    height: 1px;
+    margin-top: 10px;
+    width: 82px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .stage__gradient-line {
+    max-width: 328.39px;
+    margin: 0 auto;
+    margin-top: 8px;
+    width: 76px;
+  }
+}
 .stage__text {
   font-family: "Gilroy500";
   font-weight: 500;
@@ -4121,8 +4195,8 @@ del {
   .advantages__container-title {
     font-size: 24.5px;
     height: 27.16px;
-    width: 50%;
-    margin-left: 150px;
+    width: 56%;
+    margin-left: 40px;
   }
 }
 @media screen and (max-width: 340px) {
@@ -4184,6 +4258,7 @@ del {
     border-radius: 12.25px;
     height: 290px;
     max-width: 101.88px;
+    margin-left: -90px;
   }
 }
 @media screen and (max-width: 340px) {
@@ -4191,7 +4266,7 @@ del {
     border-radius: 6px;
     height: 240px;
     max-width: 220px;
-    padding-left: -150px;
+    margin-left: -150px;
   }
 }
 .advantages-info__title {
@@ -6570,12 +6645,6 @@ footer {
 }
 
 .fortune-title {
-  color: #4fa7fb;
-  font-family: "Coolvetica400";
-  font-weight: 600;
-  font-size: 60.17px;
-  line-height: 53.56px;
-  margin-left: 100px;
   color: #4fa7fb;
   font-family: "Coolvetica400";
   font-weight: 600;
