@@ -1468,7 +1468,7 @@ del {
 
   @media screen and (max-width: $desktop) {
     @include container;
-    height: 696px;
+    height: 1050px;
   }
 
   @media screen and (max-width: $tablet) {
@@ -1534,7 +1534,7 @@ del {
     margin-bottom: 30px;
 
     @media screen and (max-width: $desktop) {
-      max-width: 185.95px;
+      max-width: 260px;
       margin-bottom: 20px;
     }
     @media screen and (max-width: $tablet) {
@@ -1558,7 +1558,7 @@ del {
 
     @media screen and (max-width: $desktop) {
         @include tablet-container;
-      gap: 15px;
+      gap: 25px;
     }
     @media screen and (max-width: $tablet) {
       @include mobile-container;
@@ -1581,8 +1581,8 @@ del {
     color: $white;
       
         @media screen and (max-width: $desktop) {
-      max-width: 265.09px;
-      height: 448.38px;
+      max-width: 300px;
+      height: 740px;
     }
     @media screen and (max-width: $tablet) {
       border-radius: 12.25px;
@@ -1612,9 +1612,9 @@ del {
     @media screen and (max-width: $desktop) {
         @include tablet-container;
       max-width: 217.81px;
-      height: 60.59px;
-      font-size: 15px;
-      padding-top: 18.59px;
+      height: 110px;
+      font-size: 25px;
+      padding-top: 25px;
       padding-left: 0px;
       line-height: 20.55px;
     }
@@ -1673,7 +1673,7 @@ del {
     width: 100%;
     
      @media screen and (max-width: $desktop) {
-      font-size: 12.75px;
+      font-size: 20px;
       margin-left: 24px;
       margin-top: 10px;
     }
@@ -1699,7 +1699,7 @@ del {
     margin-left: 65px;
      
        @media screen and (max-width: $desktop) {
-      font-size: 9.56px;
+      font-size: 15px;
       margin-left: 38px;
       max-width: 159.91px;
     }
@@ -1758,7 +1758,7 @@ del {
       height: 42px;
       font-size: 21.25px;
       border-radius: 6px;
-      margin: 16px 0px 0px 24px;
+      margin: 20px 0px 0px 24px;
     }
      
       @media screen and (max-width: $tablet) {
@@ -1809,7 +1809,7 @@ del {
       font-size: 13.81px;
       border-radius: 6px;
       padding-left: 0px;
-      margin: 10px 0px 0px 24px;
+      margin: 15px 0px 0px 24px;
     }
      
        @media screen and (max-width: $tablet) {
@@ -4045,55 +4045,57 @@ $gray: #D9D9D9;
 
   @media screen and (max-width: $desktop) {
     @include container;
-    height: 696px;    
+    height: 1300px;
   }
 
   @media screen and (max-width: $tablet) {
     @include tablet-container;
-    height: 375px;
+    height: 410px;
   }
 
   @media screen and (max-width: $mobile) {
     @include mobile-container;
-    height: 300px;
+    height: 330px;
   }
 
 &__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
 
 // Главный заголовок блока
 &-title {
   height: 254px;
   width: 80%;
-  text-justify: center;
-  text-align: center;
   color: $blue;
   font-family: "Coolvetica400";
   font-size: 100px;
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 25px;
-  margin-left: 200px;
+  margin-bottom: 3vw;
+
 
   @media screen and (max-width: $desktop) {
     height: 114px;
     width: 60%;
     font-size: 63.75px;
-    margin-bottom: 40px;
-    margin-left: 300px;
+
   }
 
   @media screen and (max-width: $tablet) {
     font-size: 24.5px;
     height: 27.16px;
     width: 56%;
-    margin-left: 40px;
+    margin-bottom: 16vw;
   }
 
   @media screen and (max-width: $mobile) {
     font-size: 14px;
     height: 5px;
     margin-top: 5px;
-    margin-left: 60px;
+    margin-bottom: 15vw;
 }
 }
 }
@@ -4104,6 +4106,7 @@ $gray: #D9D9D9;
   font-family: "Gilroy500";
   display: flex;
   justify-content: space-around;
+  align-items: center;
   gap: 30px;
 
   @media screen and (max-width: $desktop) {
@@ -4112,7 +4115,7 @@ $gray: #D9D9D9;
   }
 
   @media screen and (max-width: $tablet) {
-    @include mobile-container;
+  @include mobile-container;
     gap: 6px;
   }
 
@@ -4134,21 +4137,20 @@ $gray: #D9D9D9;
 
   @media screen and (max-width: $desktop) {
     max-width: 265.09px;
-    height: 448.38px;
+    height: 1050px;
   }
 
   @media screen and (max-width: $tablet) {
     border-radius: 12.25px;
     height: 290px;
     max-width: 101.88px;
-    margin-left: -90px;
+    margin-left: -30px;
   }
 
   @media screen and (max-width: $mobile) {
     border-radius: 6px;
     height: 240px;
     max-width: 220px;
-    margin-left: -150px;
     // word-wrap: break-word;
     // overflow: hidden;
   }
@@ -4168,7 +4170,7 @@ $gray: #D9D9D9;
     @include tablet-container;
     max-width: 217.81px;
     height: 25px;
-    font-size: 15px;
+    font-size: 25px;
     padding-top: 18.59px;
     padding-left: 10px;
     line-height: 20.55px;
@@ -4221,9 +4223,9 @@ $gray: #D9D9D9;
     margin-left: 65px;
 
     @media screen and (max-width: $desktop) {
-      font-size: 9.56px;
+      font-size: 19px;
       margin-left: 38px;
-      max-width: 159.91px;
+      max-width: 210px;
     }
 
     @media screen and (max-width: $tablet) {
