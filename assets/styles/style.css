@@ -1487,7 +1487,7 @@ del {
   .work_cost {
     max-width: 1622px;
     margin: 0 auto;
-    height: 696px;
+    height: 1050px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -1564,7 +1564,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .work_cost-icons__img {
-    max-width: 185.95px;
+    max-width: 260px;
     margin-bottom: 20px;
   }
 }
@@ -1593,7 +1593,7 @@ del {
   .work_cost-info {
     max-width: 859.68px;
     margin: 0 auto;
-    gap: 15px;
+    gap: 25px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -1622,8 +1622,8 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .work_cost-info__items {
-    max-width: 265.09px;
-    height: 448.38px;
+    max-width: 300px;
+    height: 740px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -1655,9 +1655,9 @@ del {
     max-width: 859.68px;
     margin: 0 auto;
     max-width: 217.81px;
-    height: 60.59px;
-    font-size: 15px;
-    padding-top: 18.59px;
+    height: 110px;
+    font-size: 25px;
+    padding-top: 25px;
     padding-left: 0px;
     line-height: 20.55px;
   }
@@ -1724,7 +1724,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .work_cost-info__title2 {
-    font-size: 12.75px;
+    font-size: 20px;
     margin-left: 24px;
     margin-top: 10px;
   }
@@ -1752,7 +1752,7 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .work_cost-info__list {
-    font-size: 9.56px;
+    font-size: 15px;
     margin-left: 38px;
     max-width: 159.91px;
   }
@@ -1818,7 +1818,7 @@ del {
     height: 42px;
     font-size: 21.25px;
     border-radius: 6px;
-    margin: 16px 0px 0px 24px;
+    margin: 20px 0px 0px 24px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -1870,7 +1870,7 @@ del {
     font-size: 13.81px;
     border-radius: 6px;
     padding-left: 0px;
-    margin: 10px 0px 0px 24px;
+    margin: 15px 0px 0px 24px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -4152,43 +4152,44 @@ del {
   .advantages {
     max-width: 1622px;
     margin: 0 auto;
-    height: 696px;
+    height: 1300px;
   }
 }
 @media screen and (max-width: 870px) {
   .advantages {
     max-width: 859.68px;
     margin: 0 auto;
-    height: 375px;
+    height: 410px;
   }
 }
 @media screen and (max-width: 340px) {
   .advantages {
     max-width: 328.39px;
     margin: 0 auto;
-    height: 300px;
+    height: 330px;
   }
+}
+.advantages__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .advantages__container-title {
   height: 254px;
   width: 80%;
-  text-justify: center;
-  text-align: center;
   color: #4fa7fb;
   font-family: "Coolvetica400";
   font-size: 100px;
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 25px;
-  margin-left: 200px;
+  margin-bottom: 3vw;
 }
 @media screen and (max-width: 1630px) {
   .advantages__container-title {
     height: 114px;
     width: 60%;
     font-size: 63.75px;
-    margin-bottom: 40px;
-    margin-left: 300px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -4196,7 +4197,7 @@ del {
     font-size: 24.5px;
     height: 27.16px;
     width: 56%;
-    margin-left: 40px;
+    margin-bottom: 16vw;
   }
 }
 @media screen and (max-width: 340px) {
@@ -4204,7 +4205,7 @@ del {
     font-size: 14px;
     height: 5px;
     margin-top: 5px;
-    margin-left: 60px;
+    margin-bottom: 15vw;
   }
 }
 
@@ -4214,6 +4215,7 @@ del {
   font-family: "Gilroy500";
   display: flex;
   justify-content: space-around;
+  align-items: center;
   gap: 30px;
 }
 @media screen and (max-width: 1630px) {
@@ -4250,7 +4252,7 @@ del {
 @media screen and (max-width: 1630px) {
   .advantages-info__items {
     max-width: 265.09px;
-    height: 448.38px;
+    height: 1050px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -4258,7 +4260,7 @@ del {
     border-radius: 12.25px;
     height: 290px;
     max-width: 101.88px;
-    margin-left: -90px;
+    margin-left: -30px;
   }
 }
 @media screen and (max-width: 340px) {
@@ -4266,7 +4268,6 @@ del {
     border-radius: 6px;
     height: 240px;
     max-width: 220px;
-    margin-left: -150px;
   }
 }
 .advantages-info__title {
@@ -4284,7 +4285,7 @@ del {
     margin: 0 auto;
     max-width: 217.81px;
     height: 25px;
-    font-size: 15px;
+    font-size: 25px;
     padding-top: 18.59px;
     padding-left: 10px;
     line-height: 20.55px;
@@ -4340,9 +4341,9 @@ del {
 }
 @media screen and (max-width: 1630px) {
   .advantages-info__list {
-    font-size: 9.56px;
+    font-size: 19px;
     margin-left: 38px;
-    max-width: 159.91px;
+    max-width: 210px;
   }
 }
 @media screen and (max-width: 870px) {
