@@ -51,14 +51,14 @@ setInterval(showBanner, 180000);
   const fortuneCloseButton = document.getElementById('fortune-close-button');
 
 
-  /*const callback = (entries, observer) => {
+  const callback = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         showFortune(); // Вызов функции showFortune, когда пользователь долистывает до середины страницы
       }
     });
   };
-*/
+
   const target = document.querySelector('.wrapper-map');
 
   const observer = new IntersectionObserver(callback, {
@@ -144,10 +144,10 @@ setInterval(showBanner, 180000);
         fortuneResultInput.value = "Нет таких значений";
     }
 
-    /*setTimeout(function() {
+    setTimeout(function() {
       fortuneResultInput.value = getResultMessage(randomDegrees);
     }, 900000);
-  }*/
+  }
 
     fortuneArrow.addEventListener('click', spinWheel, { once: true });
 
@@ -159,9 +159,9 @@ setInterval(showBanner, 180000);
       const formattedDate = currentDate.toLocaleDateString('ru-RU', options);
       dateElement.textContent = formattedDate;
     }
-    /*setInterval(updateDate, 10000000);*/
+    setInterval(updateDate, 10000000);
 
     window.addEventListener('load', restoreScrollPosition);
 
   }
-});
+);
