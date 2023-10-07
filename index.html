@@ -43,22 +43,22 @@
         <div class="cover-container">
           <div>
             <!-- Блок с тремя преимуществами -->
-            <div class="advantages">
-              <div class="advantages__item">
-                <img src="assets/img/main/garant.png" alt="garant" class="advantages__img" />
-                <div class="advantages__name">
+            <div class="advantages-top">
+              <div class="advantages-top__item">
+                <img src="assets/img/main/garant.png" alt="garant" class="advantages-top__img" />
+                <div class="advantages-top__name">
                   <p>Пожизненная гарантия</p>
                 </div>
               </div>
-              <div class="advantages__item">
-                <img src="assets/img/main/teeth.png" alt="garant" class="advantages__img" />
-                <div class="advantages__name">
+              <div class="advantages-top__item">
+                <img src="assets/img/main/teeth.png" alt="garant" class="advantages-top__img" />
+                <div class="advantages-top__name">
                   <p>Приживаемость 99.8%</p>
                 </div>
               </div>
-              <div class="advantages__item">
-                <img src="assets/img/main/apple.png" alt="garant" class="advantages__img" />
-                <div class="advantages__name">
+              <div class="advantages-top__item">
+                <img src="assets/img/main/apple.png" alt="garant" class="advantages-top__img" />
+                <div class="advantages-top__name">
                   <p>Еда без ограничений</p>
                 </div>
               </div>
@@ -170,11 +170,11 @@
             </div>
           </div>
           <div class="about-right">
-            <p class="about-content">All-on-4 — это технология протезирования, при которой полная челюсть
-              искусственных зубов держится всего на 4-х имплантатах. Это возможно благодаря высоким
-              технологиям на стыке IT, инженерии, стоматологии и хирургии. При помощи современного
-              оборудования определяется оптимальное положение имплантатов в кости пациента,
-              чтобы 4 искусственных корня могли заменить 24 естественных корня (в среднем) и выдержать
+            <p class="about-content">All-on-4 — это технология протезирования, при которой полная челюсть
+              искусственных зубов держится всего на 4-х имплантатах. Это возможно благодаря высоким
+              технологиям на стыке IT, инженерии, стоматологии и хирургии. При помощи современного
+              оборудования определяется оптимальное положение имплантатов в кости пациента,
+              чтобы 4 искусственных корня могли заменить 24 естественных корня (в среднем) и выдержать
               полноценную жевательную нагрузку.</p>
           </div>
         </div>
@@ -202,28 +202,7 @@
         </div>
       </div>
 
-      <!-- Модальное окно -->
-      <!--<div class="modal" id="modal-1">
-                <div class="modal__content">
-                    <button class="modal__close-button"><img src="assets/images/modal/close-cross-button.png" width="24"
-                            alt=""></button>
-                    <form class="contact-form" novalidate>
-                        <h2 class="contact-form__title">Укажите свой номер телефона</h2>
-                        <p>свяжемся с вами и разберем вашу ситуацию</p>
-                        <div class="contact-form__input-box">
-                            <input type="tel" id="phone" class="contact-form__tel" name="phone"
-                                pattern="\+?[0-9\s\-\(\)]+" minlength="10" required />
-                        </div>
-                        <span class="error" aria-live="polite"></span>
-                        <div class="contact-form__input-box">
-                            <button type="submit" class="submit-btn">Получить БЕСПЛАТНУЮ консультацию</button>
-                        </div>
-                        <div class="contact-form__info">
-                            <p>c 10:00 до 21:00<br>Понедельник-Суббота<br>+7 (812) 66-57-332</p>
-                        </div>
-                    </form>
-                </div>
-            </div>-->
+
     </section>
 
     <!-- 5. Рушана -->
@@ -669,15 +648,14 @@
             src="https://yandex.ru/map-widget/v1/?ll=30.407010%2C59.928794&mode=search&o&ol=biz&z=17">
           </iframe>
         </div>
-        <div class="map__address">
+        <address class="map__address">
           <p class="map__address-paragraph">м.Новочеркасская</p>
           <p class="map__address-paragraph">ст.м. "Новочеркасская"</p>
           <p class="map__address-paragraph">ул. Стахановцев, д. 6</p>
           <p class="map__address-workmode">режим работы: пн-вс: 9:00 — 21:00</p>
           <button id="callClinic" class="button__call">Позвонить в клинику</button>
           <button class="button__ordercall ordercall">Заказать звонок</button>
-          <!--/*не забудь тег<address></address>-->
-        </div>
+        </address>
         <div class="map__link">
           <img class="map__link-img" src="./assets/img_route/Yandex.png" alt="yandex_icon">
           <a class="map__link-href" href="https://yandex.ru/maps/?rtext=~59.928746,30.406790">
@@ -1054,141 +1032,140 @@
         <button type="submit" class="btn_gray btn_next_submit">Отправить</button>
       </div>
     </div>
+  </form>
 
-    <!-- Модальное окно с лицензией. Лена -->
-    <div id="license-modal" class="license-modal" onclick="hideModalLicense(event);">
-      <span class="close">&times;</span>
-      <div class="license-modal__content">
-        <img id="license-modal__image" src="" alt="license">
-      </div>
+  <!-- Модальное окно с лицензией. Лена -->
+  <div id="license-modal" class="license-modal" onclick="hideModalLicense(event);">
+    <span class="close">&times;</span>
+    <div class="license-modal__content">
+      <img id="license-modal__image" src="" alt="license">
     </div>
-    <!-- Модальное окно обратный звонок. Лена -->
-    <div class="ordercall-modal" id="ordercall-modal">
-      <div class="ordercall-modal__content">
-        <button class="ordercall-modal__close-button"><img src="./assets/img_route/close_button.png" width="24"
-            alt=""></button>
-        <form class="ordercall-form" novalidate>
-          <h2 class="ordercall-form__title">Укажите свой номер телефона</h2>
-          <p class="ordercall-form__p">и наш специалист перезвонит Вам</p>
-          <div class="ordercall-form__input-box">
-            <input type="tel" id="phoneOrderCall" class="ordercall-form__tel" name="phone" pattern="\+?[0-9\s\-\(\)]+"
-              minlength="10" maxlength="15" required placeholder="Телефон в формате +7" />
-          </div>
-          <span class="ordercall-error" aria-live="polite"></span>
-          <div class="ordercall-form__input-box">
-            <button type="submit" class="ordercall__submit-btn">Заказать обратный звонок</button>
-          </div>
-          <div class="ordercall-form__info">
-            <p>c 10:00 до 21:00</p>
-            <p>Понедельник-Суббота</p>
-            <p>+7 (812) 66-57-332</p>
-          </div>
-        </form>
-      </div>
+  </div>
+  <!-- Модальное окно обратный звонок. Лена -->
+  <div class="ordercall-modal" id="ordercall-modal">
+    <div class="ordercall-modal__content">
+      <button class="ordercall-modal__close-button"><img src="./assets/img_route/close_button.png" width="24"
+          alt=""></button>
+      <form id="order-call-form" class="ordercall-form" novalidate>
+        <h2 class="ordercall-form__title">Укажите свой номер телефона</h2>
+        <p class="ordercall-form__p">и наш специалист перезвонит Вам</p>
+        <div class="ordercall-form__input-box">
+          <input type="tel" id="phoneOrderCall" class="ordercall-form__tel" name="phone" pattern="\+?[0-9\s\-\(\)]+"
+            minlength="10" maxlength="15" required placeholder="Телефон в формате +7" />
+        </div>
+        <span class="ordercall-error" aria-live="polite"></span>
+        <div class="ordercall-form__input-box">
+          <button type="submit" class="ordercall__submit-btn">Заказать обратный звонок</button>
+        </div>
+        <div class="ordercall-form__info">
+          <p>c 10:00 до 21:00</p>
+          <p>Понедельник-Суббота</p>
+          <p>+7 (812) 66-57-332</p>
+        </div>
+      </form>
     </div>
-    <!-- Модальное окно Получить БЕСПЛАТНУЮ консультацию. Лена-->
-    <div class="consultation-modal" id="consultation-modal">
-      <div class="consultation-modal__content">
-        <button class="consultation-modal__close-button"><img class="consultation-modal__close-img"
-            src="./assets/img_route/close_button.png" alt="X"></button>
-        <form class="consultation-form" novalidate>
-          <h2 class="consultation-form__title">Укажите свой номер телефона</h2>
-          <p class="consultation-form__p">свяжемся с вами и разберем вашу ситуацию</p>
-          <div class="consultation-form__input-box">
-            <input type="tel" id="phoneConsultation" class="consultation-form__tel" name="phone"
-              pattern="\+?[0-9\s\-\(\)]+" minlength="10" maxlength="15" required placeholder="Телефон в формате +7" />
-          </div>
-          <span class="consultation-error" aria-live="polite"></span>
-          <div class="consultation-form__input-box">
-            <button type="submit" class="consultation__submit-btn">Получить БЕСПЛАТНУЮ консультацию</button>
-          </div>
-          <div class="consultation-form__info">
-            <p>c 10:00 до 21:00</p>
-            <p>Понедельник-Суббота</p>
-            <p>+7 (812) 66-57-332</p>
-          </div>
-        </form>
-      </div>
+  </div>
+  <!-- Модальное окно Получить БЕСПЛАТНУЮ консультацию. Лена-->
+  <div class="consultation-modal" id="consultation-modal">
+    <div class="consultation-modal__content">
+      <button class="consultation-modal__close-button"><img class="consultation-modal__close-img"
+          src="./assets/img_route/close_button.png" alt="X"></button>
+      <form class="consultation-form" novalidate>
+        <h2 class="consultation-form__title">Укажите свой номер телефона</h2>
+        <p class="consultation-form__p">свяжемся с вами и разберем вашу ситуацию</p>
+        <div class="consultation-form__input-box">
+          <input type="tel" id="phoneConsultation" class="consultation-form__tel" name="phone"
+            pattern="\+?[0-9\s\-\(\)]+" minlength="10" maxlength="15" required placeholder="Телефон в формате +7" />
+        </div>
+        <span class="consultation-error" aria-live="polite"></span>
+        <div class="consultation-form__input-box">
+          <button type="submit" class="consultation__submit-btn">Получить БЕСПЛАТНУЮ консультацию</button>
+        </div>
+        <div class="consultation-form__info">
+          <p>c 10:00 до 21:00</p>
+          <p>Понедельник-Суббота</p>
+          <p>+7 (812) 66-57-332</p>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <!--Баннер-->
-    <div class="banner-container">
-      <div class="overlay"></div>
-      <div class="banner">
-        <h3 class="title">Зачем искать что-то еще?</h3>
-        <p class="text"><span class="bluetext">Вы уже нашли</span> одну из лучших клиник в Санкт-Петербурге <span
-            class="bluetext">с цифровым оборудованием</span></p>
-        <p class="text1">Запишитесь сейчас и получите <span class="bluetext1">БЕСПЛАТНО</span>:</p>
-        <ul class="ul">
-          <li>План лечения на консультации ведущего имплантолога</li>
-          <li>Моделирование вашей новой улыбки</li>
-          <li>Диагностику и 3D-снимок, чтобы узнать все о состоянии зубов</li>
-        </ul>
-        <form class="form">
-          <div class="phone-input">
-            <input type="tel" class="phone-input-input" placeholder="Введите номер телефона" style="font-size: 2vw;">
-            <button class="phone-input-button">Отправить</button>
-          </div>
-          <button id="close-button" aria-label="Close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="white">
-              <path d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"></path>
-              <path d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"></path>
-            </svg>
-          </button>
-          <iframe id="banner-iframe" frameborder="0" allowfullscreen></iframe>
-        </form>
-      </div>
+  <!--Баннер-->
+  <div class="banner-container">
+    <div class="overlay"></div>
+    <div class="banner">
+      <h3 class="title">Зачем искать что-то еще?</h3>
+      <p class="text"><span class="bluetext">Вы уже нашли</span> одну из лучших клиник в Санкт-Петербурге <span
+          class="bluetext">с цифровым оборудованием</span></p>
+      <p class="text1">Запишитесь сейчас и получите <span class="bluetext1">БЕСПЛАТНО</span>:</p>
+      <ul class="ul">
+        <li>План лечения на консультации ведущего имплантолога</li>
+        <li>Моделирование вашей новой улыбки</li>
+        <li>Диагностику и 3D-снимок, чтобы узнать все о состоянии зубов</li>
+      </ul>
+      <form class="form">
+        <div class="phone-input">
+          <input type="tel" class="phone-input-input" placeholder="Введите номер телефона" style="font-size: 2vw;">
+          <button class="phone-input-button">Отправить</button>
+        </div>
+        <button id="close-button" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="white">
+            <path d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"></path>
+            <path d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"></path>
+          </svg>
+        </button>
+      </form>
     </div>
+  </div>
 
-    <!--Фортуна-->
+  <!--Фортуна-->
 
-    <div class="fortune-container" id="fortune">
-      <div class="fortune-overlay"></div>
-      <div class="fortune">
-        <div class="left">
+  <div class="fortune-container" id="fortune">
+    <div class="fortune-overlay"></div>
+    <div class="fortune">
+      <div class="left">
+        <div>
+          <div class="fortune-title-menu">
+            <h2 class="fortune-title">Только до</h2>
+            <div class="date" id="date"></div>
+            <div class="fortune-left">Осталось 3 All-on-4 в подарок</div>
+          </div>
+          <p class="fortune-text">Разыгрываем <span class="fortune-bluetext">имплантацию зубов ALL-on-4 в
+              подарок</span> и
+            5 других подарков</p>
+          <p class="fortune-text1">Выигрывает каждый участвующий!</p>
+          <p class="fortune-put">Ввдите номер телефона и испытайте удачу:</p>
           <div>
-            <div class="fortune-title-menu">
-              <h2 class="fortune-title">Только до</h2>
-              <div class="date" id="date"></div>
-              <div class="fortune-left">Осталось 3 All-on-4 в подарок</div>
-            </div>
-            <p class="fortune-text">Разыгрываем <span class="fortune-bluetext">имплантацию зубов ALL-on-4 в
-                подарок</span> и
-              5 других подарков</p>
-            <p class="fortune-text1">Выигрывает каждый участвующий!</p>
-            <p class="fortune-put">Ввдите номер телефона и испытайте удачу:</p>
-            <div>
-            </div>
-            <form class="fortune-form">
-              <div class="fortune-phone-input">
-                <input type="fortune-phone" class="fortune-phone-input-input" placeholder="+ 7 (999) 999 99 99"
-                  style="font-size: 2vw;" pattern="\+?[0-9\s\-\(\)]+">
-                <button class="fortune-phone-input-button">Забрать подарок</button>
-              </div>
-            </form>
           </div>
-        </div>
-        <div class="right">
-          <div class="wheel-container">
-            <img src="./assets/img/banner/wheel.png" alt="wheel" id="wheel" class="wheel">
-            <input type="fortune-hidden" id="fortune-result" class="fortune-hidden-input">
-            <img src="./assets/img/banner/arrow.png" id="fortune-arrow" class="fortune-arrow">
-          </div>
-          <button id="fortune-close-button" aria-label="Close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="white">
-              <path d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"></path>
-              <path d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"></path>
-            </svg>
-          </button>
+          <form class="fortune-form">
+            <div class="fortune-phone-input">
+              <input type="fortune-phone" class="fortune-phone-input-input" placeholder="+ 7 (999) 999 99 99"
+                style="font-size: 2vw;" pattern="\+?[0-9\s\-\(\)]+">
+              <button class="fortune-phone-input-button">Забрать подарок</button>
+            </div>
+          </form>
         </div>
       </div>
+      <div class="right">
+        <div class="wheel-container">
+          <img src="./assets/img/banner/wheel.png" alt="wheel" id="wheel" class="wheel">
+          <input type="fortune-hidden" id="fortune-result" class="fortune-hidden-input">
+          <img src="./assets/img/banner/arrow.png" id="fortune-arrow" class="fortune-arrow">
+        </div>
+        <button id="fortune-close-button" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="white">
+            <path d="M7.293 8.71l1.414-1.414L24.71 23.297l-1.414 1.415z"></path>
+            <path d="M7.293 23.29L23.295 7.288l1.414 1.415L8.707 24.704z"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-    </div>
+  </div>
 
 
-    <script src="script.js"></script>
-    <script src="quiz_popup.js"></script>
-    <script src="banner.js"></script>
+
+  <script src="script.js"></script>
+  <script src="quiz_popup.js"></script>
 
 </body>
 

@@ -27,8 +27,7 @@ body {
 }
 @font-face {
   font-family: "Coolvetica400";
-  src: local("Coolvetica400"),
-    url(../fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
+  src: local("Coolvetica400"), url(../fonts/Coolvetica_400/CoolveticaRg-Regular.ttf);
 }
 @font-face {
   font-family: "Roboto400";
@@ -397,74 +396,74 @@ ul {
 }
 
 /* Стили для преимуществ */
-.advantages {
+.advantages-top {
   margin-top: 54px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 @media screen and (max-width: 1630px) {
-  .advantages {
+  .advantages-top {
     margin-top: 28.93px;
     gap: 7.96px;
   }
 }
 @media screen and (max-width: 870px) {
-  .advantages {
+  .advantages-top {
     margin-top: 11.18px;
     gap: 3.06px;
     width: max-content;
   }
 }
-.advantages__item {
+.advantages-top__item {
   display: flex;
   flex-direction: row;
   gap: 24px;
   align-items: center;
 }
 @media screen and (max-width: 1630px) {
-  .advantages__item {
+  .advantages-top__item {
     gap: 12.74px;
   }
 }
 @media screen and (max-width: 870px) {
-  .advantages__item {
+  .advantages-top__item {
     gap: 4.9px;
   }
 }
-.advantages__img {
+.advantages-top__img {
   max-width: 100px;
   width: 100%;
 }
 @media screen and (max-width: 1630px) {
-  .advantages__img {
+  .advantages-top__img {
     max-width: 53.1px;
   }
 }
 @media screen and (max-width: 870px) {
-  .advantages__img {
+  .advantages-top__img {
     max-width: 20.41px;
   }
 }
-.advantages__name {
+.advantages-top__name {
   display: inline-block;
   padding: 20px 15px 20px 15px;
   border-radius: 12px;
   background-color: #4fa7fb;
 }
 @media screen and (max-width: 1630px) {
-  .advantages__name {
+  .advantages-top__name {
     padding: 11px 8px 11px 8px;
     border-radius: 6px;
   }
 }
 @media screen and (max-width: 870px) {
-  .advantages__name {
+  .advantages-top__name {
     padding: 4px 3px 4px 3px;
     border-radius: 2px;
   }
 }
-.advantages__name p {
+.advantages-top__name p {
   font-family: "Roboto400";
   font-size: 30px;
   font-weight: 400;
@@ -474,13 +473,13 @@ ul {
   color: #ffffff;
 }
 @media screen and (max-width: 1630px) {
-  .advantages__name p {
+  .advantages-top__name p {
     font-size: 15.93px;
     line-height: 14.18px;
   }
 }
 @media screen and (max-width: 870px) {
-  .advantages__name p {
+  .advantages-top__name p {
     font-size: 6.12px;
     line-height: 5.45px;
   }
@@ -758,8 +757,7 @@ ul {
 }
 
 /* Стили для заголовка h2 */
-.header2,
-.reviews__header2 {
+.header2, .reviews__header2 {
   padding-top: 100px;
   font-family: "Coolvetica400";
   font-size: 100px;
@@ -769,21 +767,18 @@ ul {
   text-align: center;
   color: #4fa7fb;
 }
-.header2 span,
-.reviews__header2 span {
+.header2 span, .reviews__header2 span {
   color: #ff9fb7;
 }
 @media screen and (max-width: 1630px) {
-  .header2,
-  .reviews__header2 {
+  .header2, .reviews__header2 {
     padding-top: 53.17px;
     font-size: 53.17px;
     line-height: 47.32px;
   }
 }
 @media screen and (max-width: 870px) {
-  .header2,
-  .reviews__header2 {
+  .header2, .reviews__header2 {
     padding-top: 20.43px;
     font-size: 20.43px;
     line-height: 18.19px;
@@ -1135,14 +1130,12 @@ ul {
 .sign_up_free {
   width: 100%;
   background-position-x: 90%;
-  background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%),
-    url(../img/sign_up_free/sign_up_block.jpg);
+  background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%), url(../img/sign_up_free/sign_up_block.jpg);
 }
 @media screen and (max-width: 1800px) {
   .sign_up_free {
     margin: 0 auto;
-    background: linear-gradient(125deg, #4fa7fb 61%, transparent 50%),
-      url(../img/sign_up_free/sign_up_block.jpg);
+    background: linear-gradient(125deg, #4fa7fb 61%, transparent 50%), url(../img/sign_up_free/sign_up_block.jpg);
     background-position-x: 115%;
     background-repeat: no-repeat;
   }
@@ -1150,8 +1143,7 @@ ul {
 @media screen and (max-width: 1630px) {
   .sign_up_free {
     margin: 0 auto;
-    background: linear-gradient(125deg, #4fa7fb 58%, transparent 50%),
-      url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background: linear-gradient(125deg, #4fa7fb 58%, transparent 50%), url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-repeat: no-repeat;
     background-position-x: 80%;
     width: 100%;
@@ -1160,8 +1152,7 @@ ul {
 @media screen and (max-width: 1400px) {
   .sign_up_free {
     margin: 0 auto;
-    background: linear-gradient(125deg, #4fa7fb 60, transparent 50%),
-      url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background: linear-gradient(125deg, #4fa7fb 60, transparent 50%), url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-repeat: no-repeat;
     background-position-x: 86%;
     width: 100%;
@@ -1170,8 +1161,7 @@ ul {
 @media screen and (max-width: 1100px) {
   .sign_up_free {
     margin: 0 auto;
-    background: linear-gradient(125deg, #4fa7fb 59%, transparent 50%),
-      url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background: linear-gradient(125deg, #4fa7fb 59%, transparent 50%), url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-repeat: no-repeat;
     background-position-x: 88%;
     width: 100%;
@@ -1180,8 +1170,7 @@ ul {
 @media screen and (max-width: 1000px) {
   .sign_up_free {
     margin: 0 auto;
-    background: linear-gradient(125deg, #4fa7fb 61%, transparent 50%),
-      url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
+    background: linear-gradient(125deg, #4fa7fb 61%, transparent 50%), url(../img/sign_up_free/sign_up_block_2_tablet.jpg);
     background-repeat: no-repeat;
     background-position-x: 98%;
     width: 100%;
@@ -1189,8 +1178,7 @@ ul {
 }
 @media screen and (max-width: 870px) {
   .sign_up_free {
-    background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%),
-      url(../img/sign_up_free/sign_up_block_mobile.jpg);
+    background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%), url(../img/sign_up_free/sign_up_block_mobile.jpg);
     background-repeat: no-repeat;
     background-position-x: 75%;
     margin: 0;
@@ -1198,8 +1186,7 @@ ul {
 }
 @media screen and (max-width: 600px) {
   .sign_up_free {
-    background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%),
-      url(../img/sign_up_free/sign_up_block_mobile.jpg);
+    background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%), url(../img/sign_up_free/sign_up_block_mobile.jpg);
     background-repeat: no-repeat;
     background-position-x: 85%;
     margin: 0;
@@ -1207,8 +1194,7 @@ ul {
 }
 @media screen and (max-width: 500px) {
   .sign_up_free {
-    background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%),
-      url(../img/sign_up_free/sign_up_block_mobile.jpg);
+    background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%), url(../img/sign_up_free/sign_up_block_mobile.jpg);
     background-repeat: no-repeat;
     background-position-x: 93%;
     margin: 0;
@@ -1216,8 +1202,7 @@ ul {
 }
 @media screen and (max-width: 400px) {
   .sign_up_free {
-    background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%),
-      url(../img/sign_up_free/sign_up_block_mobile.jpg);
+    background: linear-gradient(125deg, #4fa7fb 60%, transparent 50%), url(../img/sign_up_free/sign_up_block_mobile.jpg);
     background-repeat: no-repeat;
     background-position-x: 95%;
     margin: 0;
@@ -1328,23 +1313,20 @@ del {
     line-height: 12.64px;
   }
 }
-.sign_up__title,
-.sign_up_price > p {
+.sign_up__title, .sign_up_price > p {
   font-family: "Gilroy700";
   font-size: 50px;
   color: #fff;
 }
 @media screen and (max-width: 1630px) {
-  .sign_up__title,
-  .sign_up_price > p {
+  .sign_up__title, .sign_up_price > p {
     max-width: 859.68px;
     margin: 0 auto;
     font-size: 26.56px;
   }
 }
 @media screen and (max-width: 870px) {
-  .sign_up__title,
-  .sign_up_price > p {
+  .sign_up__title, .sign_up_price > p {
     max-width: 328.39px;
     margin: 0 auto;
     font-size: 10.21px;
@@ -1606,6 +1588,7 @@ del {
   display: flex;
   justify-content: space-around;
   gap: 30px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1630px) {
   .work_cost-info {
@@ -2386,9 +2369,8 @@ del {
 
 @-moz-document url-prefix() {
   .btn_sign_pink {
-    width: 500px;
-    height: 70px;
     margin-top: 100px;
+    padding: 30px;
   }
   @media screen and (max-width: 1630px) {
     .btn_sign_pink {
@@ -2414,14 +2396,17 @@ del {
     }
   }
 }
+.turquoise {
+  background: linear-gradient(102deg, #4fa7fb 76%, #9fe4e9 50%);
+}
+
 .container__turquoise {
   display: flex;
   flex-direction: row;
-  background: url(../img/turquoise/turquoise_senior-man-showing-blank-phone.jpg)
-    no-repeat;
+  background: url(../img/turquoise/turquoise_senior-man-showing-blank-phone.jpg) no-repeat;
   height: 814px;
   background-position-x: 106%;
-  background-size: 60% 100%;
+  background-size: contain;
 }
 .container__turquoise_inner {
   display: flex;
@@ -2434,8 +2419,7 @@ del {
     max-width: 859.68px;
     margin: 0 auto;
     height: 432px;
-    background: url(../img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg)
-      no-repeat;
+    background: url(../img/turquoise/turquoise_2_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
   }
@@ -2449,8 +2433,7 @@ del {
     max-width: 328.39px;
     margin: 0 auto;
     height: 166.03px;
-    background: url(../img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg)
-      no-repeat;
+    background: url(../img/turquoise/turquoise_3_senior-man-showing-blank-phone.jpg) no-repeat;
     background-position-x: 104%;
     background-size: 60% 100%;
   }
@@ -2775,19 +2758,11 @@ del {
     margin-left: 0;
   }
 }
-.quiz_blocks_radio2,
-.quiz_blocks_radio3,
-.quiz_blocks_radio4,
-.quiz_blocks_radio5,
-.quiz_blocks_radio6 {
+.quiz_blocks_radio2, .quiz_blocks_radio3, .quiz_blocks_radio4, .quiz_blocks_radio5, .quiz_blocks_radio6 {
   height: 450px;
 }
 @media screen and (max-width: 1630px) {
-  .quiz_blocks_radio2,
-  .quiz_blocks_radio3,
-  .quiz_blocks_radio4,
-  .quiz_blocks_radio5,
-  .quiz_blocks_radio6 {
+  .quiz_blocks_radio2, .quiz_blocks_radio3, .quiz_blocks_radio4, .quiz_blocks_radio5, .quiz_blocks_radio6 {
     max-width: 859.68px;
     margin: 0 auto;
     width: 770.72px;
@@ -2796,11 +2771,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .quiz_blocks_radio2,
-  .quiz_blocks_radio3,
-  .quiz_blocks_radio4,
-  .quiz_blocks_radio5,
-  .quiz_blocks_radio6 {
+  .quiz_blocks_radio2, .quiz_blocks_radio3, .quiz_blocks_radio4, .quiz_blocks_radio5, .quiz_blocks_radio6 {
     max-width: 328.39px;
     margin: 0 auto;
     width: 296.03px;
@@ -2830,12 +2801,7 @@ del {
   }
 }
 
-.quiz_elem_1,
-.quiz_elem_2,
-.quiz_elem_3,
-.quiz_elem_4,
-.quiz_elem_5,
-.quiz_elem_6 {
+.quiz_elem_1, .quiz_elem_2, .quiz_elem_3, .quiz_elem_4, .quiz_elem_5, .quiz_elem_6 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2843,12 +2809,7 @@ del {
   margin-right: 50px;
 }
 @media screen and (max-width: 1630px) {
-  .quiz_elem_1,
-  .quiz_elem_2,
-  .quiz_elem_3,
-  .quiz_elem_4,
-  .quiz_elem_5,
-  .quiz_elem_6 {
+  .quiz_elem_1, .quiz_elem_2, .quiz_elem_3, .quiz_elem_4, .quiz_elem_5, .quiz_elem_6 {
     max-width: 859.68px;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -2856,12 +2817,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .quiz_elem_1,
-  .quiz_elem_2,
-  .quiz_elem_3,
-  .quiz_elem_4,
-  .quiz_elem_5,
-  .quiz_elem_6 {
+  .quiz_elem_1, .quiz_elem_2, .quiz_elem_3, .quiz_elem_4, .quiz_elem_5, .quiz_elem_6 {
     max-width: 328.39px;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -2895,22 +2851,14 @@ del {
     padding-left: 10px;
   }
 }
-.quiz_elem_2,
-.quiz_elem_3,
-.quiz_elem_4,
-.quiz_elem_5,
-.quiz_elem_6 {
+.quiz_elem_2, .quiz_elem_3, .quiz_elem_4, .quiz_elem_5, .quiz_elem_6 {
   width: 700px;
   height: 200px;
   border-radius: 30px;
   padding-left: 60px;
 }
 @media screen and (max-width: 1630px) {
-  .quiz_elem_2,
-  .quiz_elem_3,
-  .quiz_elem_4,
-  .quiz_elem_5,
-  .quiz_elem_6 {
+  .quiz_elem_2, .quiz_elem_3, .quiz_elem_4, .quiz_elem_5, .quiz_elem_6 {
     max-width: 859.68px;
     margin: 0 auto;
     width: 372.07px;
@@ -2920,11 +2868,7 @@ del {
   }
 }
 @media screen and (max-width: 870px) {
-  .quiz_elem_2,
-  .quiz_elem_3,
-  .quiz_elem_4,
-  .quiz_elem_5,
-  .quiz_elem_6 {
+  .quiz_elem_2, .quiz_elem_3, .quiz_elem_4, .quiz_elem_5, .quiz_elem_6 {
     max-width: 328.39px;
     margin: 0 auto;
     width: 142.91px;
@@ -3158,8 +3102,7 @@ del {
   background-color: #4fa7fb;
 }
 
-.btn_gray_next.active,
-.btn_gray_back.active {
+.btn_gray_next.active, .btn_gray_back.active {
   width: 271px;
   height: 120px;
   border-radius: 200px;
@@ -3167,8 +3110,7 @@ del {
   background-color: #ff9fb7;
   box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
 }
-.btn_gray_next:hover,
-.btn_gray_back:hover {
+.btn_gray_next:hover, .btn_gray_back:hover {
   background-color: #ff9fb7;
   box-shadow: inset -4px -4px 7px rgba(200, 141, 156, 0.8);
 }
@@ -3255,6 +3197,7 @@ del {
   align-content: end;
   height: 558px;
   margin-top: 50px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1630px) {
   .doctors-frame {
@@ -3338,8 +3281,7 @@ del {
     line-height: 19px;
     padding: 12px;
     left: -1px;
-    box-shadow: 4.2448177338px 4.2448177338px 10.6120443344px 0px
-      rgba(255, 255, 255, 0.4196078431) inset;
+    box-shadow: 4.2448177338px 4.2448177338px 10.6120443344px 0px rgba(255, 255, 255, 0.4196078431) inset;
     box-shadow: -4.2448177338px -4.2448177338px 15.9180660248px 0px #5f8ebe inset;
   }
 }
@@ -3355,8 +3297,7 @@ del {
     line-height: 7px;
     padding: 6px;
     left: -1px;
-    box-shadow: 1.6455708742px 1.6455708742px 4.1139273643px 0px
-      rgba(255, 255, 255, 0.4196078431) inset;
+    box-shadow: 1.6455708742px 1.6455708742px 4.1139273643px 0px rgba(255, 255, 255, 0.4196078431) inset;
     box-shadow: -1.6455708742px -1.6455708742px 6.1708903313px 0px #5f8ebe inset;
   }
 }
@@ -3429,9 +3370,7 @@ del {
   display: block;
   grid-column: 1/5;
   margin: 100px auto;
-  width: 788px;
-  height: 118px;
-  padding: 30px 60px 30px 60px;
+  padding: 30px 60px;
   border-radius: 12px;
   border: none;
   gap: 10px;
@@ -4035,11 +3974,7 @@ del {
   }
 }
 .stage__gradient-line {
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    rgba(255, 255, 255, 0) 124.79%
-  );
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 124.79%);
   border: none;
   top: 640px;
   margin-top: 45px;
@@ -4113,11 +4048,7 @@ del {
   }
 }
 .stage__gradient-line {
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    rgba(255, 255, 255, 0) 124.79%
-  );
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 124.79%);
   border: none;
   top: 640px;
   margin-top: 45px;
@@ -4289,6 +4220,7 @@ del {
   justify-content: space-around;
   align-items: center;
   gap: 30px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1630px) {
   .advantages-info {
@@ -4833,39 +4765,29 @@ del {
 .button__call:hover {
   color: #4fa7fb;
   background-color: #cbe5ff;
-  box-shadow: inset 4px 4px 14px 0px rgba(208, 235, 255, 0.4),
-    inset -4px -4px 10px 0px rgba(45, 83, 111, 0.4);
+  box-shadow: inset 4px 4px 14px 0px rgba(208, 235, 255, 0.4), inset -4px -4px 10px 0px rgba(45, 83, 111, 0.4);
 }
 @media screen and (max-width: 1630px) {
   .button__call:hover {
-    box-shadow: inset 2px 2px 2px 0px rgba(208, 235, 255, 0.4),
-      inset -2px -2px 2px 0px rgba(45, 83, 111, 0.4);
+    box-shadow: inset 2px 2px 2px 0px rgba(208, 235, 255, 0.4), inset -2px -2px 2px 0px rgba(45, 83, 111, 0.4);
   }
 }
 @media screen and (max-width: 1630px) and (max-width: 870px) {
   .button__call:hover {
-    box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px
-        rgba(208, 235, 255, 0.4),
-      inset -0.8185136914px -0.8185136914px 0.8185136914px 0px
-        rgba(45, 83, 111, 0.4);
+    box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px rgba(208, 235, 255, 0.4), inset -0.8185136914px -0.8185136914px 0.8185136914px 0px rgba(45, 83, 111, 0.4);
   }
 }
 .button__call:hover:active {
-  box-shadow: inset 4px 4px 4px 0px rgba(45, 83, 111, 0.8980392157),
-    inset -4px -4px 4px 0px rgba(208, 235, 255, 0.8078431373);
+  box-shadow: inset 4px 4px 4px 0px rgba(45, 83, 111, 0.8980392157), inset -4px -4px 4px 0px rgba(208, 235, 255, 0.8078431373);
 }
 @media screen and (max-width: 1630px) {
   .button__call:hover:active {
-    box-shadow: inset 2px 2px 2px 0px rgba(45, 83, 111, 0.8980392157),
-      inset -2px -2px 2px 0px rgba(208, 235, 255, 0.8078431373);
+    box-shadow: inset 2px 2px 2px 0px rgba(45, 83, 111, 0.8980392157), inset -2px -2px 2px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
 @media screen and (max-width: 870px) {
   .button__call:hover:active {
-    box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px
-        rgba(45, 83, 111, 0.8980392157),
-      inset -0.8185136914px -0.8185136914px 0.8185136914px 0px
-        rgba(208, 235, 255, 0.8078431373);
+    box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px rgba(45, 83, 111, 0.8980392157), inset -0.8185136914px -0.8185136914px 0.8185136914px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
 
@@ -4928,21 +4850,16 @@ del {
   }
 }
 .button__ordercall:active {
-  box-shadow: inset 4px 4px 4px 0px rgba(45, 83, 111, 0.8980392157),
-    inset -4px -4px 4px 0px rgba(208, 235, 255, 0.4392156863);
+  box-shadow: inset 4px 4px 4px 0px rgba(45, 83, 111, 0.8980392157), inset -4px -4px 4px 0px rgba(208, 235, 255, 0.4392156863);
 }
 @media screen and (max-width: 1630px) {
   .button__ordercall:active {
-    box-shadow: inset 2px 2px 2px 0px rgba(45, 83, 111, 0.8980392157),
-      inset -2px -2px 2px 0px rgba(208, 235, 255, 0.8078431373);
+    box-shadow: inset 2px 2px 2px 0px rgba(45, 83, 111, 0.8980392157), inset -2px -2px 2px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
 @media screen and (max-width: 870px) {
   .button__ordercall:active {
-    box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px
-        rgba(45, 83, 111, 0.8980392157),
-      inset -0.8185136914px -0.8185136914px 0.8185136914px 0px
-        rgba(208, 235, 255, 0.8078431373);
+    box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px rgba(45, 83, 111, 0.8980392157), inset -0.8185136914px -0.8185136914px 0.8185136914px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
 
@@ -5153,21 +5070,16 @@ del {
   background-color: #4fa7fb;
 }
 .consultation__call-button:active {
-  box-shadow: inset 4px 4px 4px 0px rgba(45, 83, 111, 0.8980392157),
-    inset -4px -4px 4px 0px rgba(208, 235, 255, 0.8078431373);
+  box-shadow: inset 4px 4px 4px 0px rgba(45, 83, 111, 0.8980392157), inset -4px -4px 4px 0px rgba(208, 235, 255, 0.8078431373);
 }
 @media screen and (max-width: 1630px) {
   .consultation__call-button:active {
-    box-shadow: inset 2px 2px 2px 0px rgba(45, 83, 111, 0.8980392157),
-      inset -2px -2px 2px 0px rgba(208, 235, 255, 0.8078431373);
+    box-shadow: inset 2px 2px 2px 0px rgba(45, 83, 111, 0.8980392157), inset -2px -2px 2px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
 @media screen and (max-width: 870px) {
   .consultation__call-button:active {
-    box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px
-        rgba(45, 83, 111, 0.8980392157),
-      inset -0.8185136914px -0.8185136914px 0.8185136914px 0px
-        rgba(208, 235, 255, 0.8078431373);
+    box-shadow: inset 0.8185136914px 0.8185136914px 0.8185136914px 0px rgba(45, 83, 111, 0.8980392157), inset -0.8185136914px -0.8185136914px 0.8185136914px 0px rgba(208, 235, 255, 0.8078431373);
   }
 }
 
@@ -5265,7 +5177,6 @@ footer {
 /*Стили для блока с лицензией и гарантией*/
 .license {
   padding: 50px 100px 0px 0px;
-  display: grid;
 }
 @media screen and (max-width: 1630px) {
   .license {
@@ -6860,7 +6771,7 @@ footer {
 .fortune-text {
   width: 762.21px;
   height: 183px;
-  font-family: "Gilroy";
+  font-family: "Gilroy700";
   font-weight: 700;
   font-size: 50.15px;
   line-height: 60.63px;
@@ -7059,7 +6970,7 @@ footer {
   border: none;
   border-radius: 201px;
   cursor: pointer;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy700";
   font-weight: 700;
   font-size: 60.17px;
   line-height: 72.75px;
@@ -7265,9 +7176,7 @@ footer {
 .quiz_userdata:invalid {
   border-color: #4fa7fb;
 }
-.quiz_userdata_name,
-.quiz_userdata_tel,
-.quiz_userdata_email {
+.quiz_userdata_name, .quiz_userdata_tel, .quiz_userdata_email {
   display: flex;
   flex-direction: column;
 }
