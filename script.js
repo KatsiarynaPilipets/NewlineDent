@@ -579,8 +579,9 @@ const fortuneCloseButton = document.getElementById("fortune-close-button");
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      showFortune(); // Вызов функции showFortune, когда пользователь долистывает до середины страницы
-      updateDate(); // получаем дату
+      // console.log('is intersecting');
+      // showFortune(); // Вызов функции showFortune, когда пользователь долистывает до середины страницы
+      // updateDate(); // получаем дату
     }
   });
 };

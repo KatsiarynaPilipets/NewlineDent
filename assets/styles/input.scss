@@ -518,6 +518,7 @@ $mobile: 340px;
 
   &__img {
     max-width: 285px;
+    border-radius: 24px;
 
     @media screen and (max-width: $desktop) {
       max-width: 151.33px;
@@ -533,7 +534,7 @@ $mobile: 340px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 10px 20px 10px 20px;
+  padding: 40px;
   border-radius: 24px;
   background-color: $white;
 
@@ -594,6 +595,7 @@ $mobile: 340px;
   display: flex;
   flex-direction: row;
   gap: 15px;
+  flex-wrap: wrap;
 
   @media screen and (max-width: $desktop) {
     gap: 10.62px;
@@ -914,20 +916,23 @@ $mobile: 340px;
 
 .about {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 175px;
+  padding-bottom: 175px;
+  padding-top: 177px;
+  height: fit-content;
+  align-items: baseline;
+  gap: 100px;
 
   @media screen and (max-width: $desktop) {
-    margin-bottom: 25px;
+    padding: 120px 0;
   }
 
   @media screen and (max-width: $tablet) {
-    margin-bottom: 10px;
+    padding: 70px 0;
   }
 
   @media screen and (max-width: $mobile) {
     flex-direction: column;
-    margin-bottom: 5px;
+    padding: 50px 0;
   }
 }
 
@@ -935,16 +940,14 @@ $mobile: 340px;
   position: relative;
   background: rgba($color: $blue, $alpha: 1);
   color: #ececec;
-  width: 596px;
-  height: 114px;
-  text-align: center;
+  max-width: 596px;
+  text-align: left;
   font-family: "Coolvetica400";
   font-weight: 400;
   font-size: 80px;
   line-height: 71.2px;
-  margin-left: 42px;
-  margin-top: 100px;
-  padding-top: 10px;
+  padding: 20px 80px 20px 40px;
+  margin-bottom: -20px;
 
   @media screen and (max-width: $desktop) {
     width: 300px;
@@ -980,8 +983,9 @@ $mobile: 340px;
 }
 
 .about-left {
-  width: 800px;
-  height: 400px;
+  flex-basis: 50%;
+  // width: 800px;
+  height: fit-content;
 
   @media screen and (max-width: $desktop) {
     width: 600px;
@@ -998,9 +1002,9 @@ $mobile: 340px;
 }
 
 .about-img {
-  width: 737px;
-  height: 448px;
-  position: absolute;
+  max-width: 737px;
+  max-height: 448px;
+  width: 100%;
   border-radius: 48px;
   border: 3px solid $blue;
 
@@ -1025,10 +1029,11 @@ $mobile: 340px;
 }
 
 .about-right {
-  width: 771px;
-  height: 324px;
-  margin-top: 220px;
-  margin-left: 50px;
+  flex-basis: 50%;
+  // width: 771px;
+  // height: 324px;
+  // margin-top: 220px;
+  // margin-left: 50px;
 
   @media screen and (max-width: $desktop) {
     width: 700px;
@@ -1464,7 +1469,7 @@ del {
 // Стили для блока "Стоимость под ключ"
 .work_cost {
   background-color: $lightblue;
-  height: 1310px;
+  height: fit-content;
 
   @media screen and (max-width: $desktop) {
     @include container;
@@ -1517,6 +1522,7 @@ del {
   @include container;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
@@ -1531,6 +1537,7 @@ del {
     max-width: 312px;
     width: 100%;
     margin-bottom: 30px;
+    height: 100%;
 
     @media screen and (max-width: $desktop) {
       max-width: 260px;

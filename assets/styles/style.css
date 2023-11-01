@@ -530,6 +530,7 @@ ul {
 }
 .video-section__img {
   max-width: 285px;
+  border-radius: 24px;
 }
 @media screen and (max-width: 1630px) {
   .video-section__img {
@@ -546,7 +547,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 10px 20px 10px 20px;
+  padding: 40px;
   border-radius: 24px;
   background-color: #ffffff;
 }
@@ -611,6 +612,7 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 1630px) {
   .experience {
@@ -954,23 +956,26 @@ ul {
 
 .about {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 175px;
+  padding-bottom: 175px;
+  padding-top: 177px;
+  height: fit-content;
+  align-items: baseline;
+  gap: 100px;
 }
 @media screen and (max-width: 1630px) {
   .about {
-    margin-bottom: 25px;
+    padding: 120px 0;
   }
 }
 @media screen and (max-width: 870px) {
   .about {
-    margin-bottom: 10px;
+    padding: 70px 0;
   }
 }
 @media screen and (max-width: 340px) {
   .about {
     flex-direction: column;
-    margin-bottom: 5px;
+    padding: 50px 0;
   }
 }
 
@@ -978,16 +983,14 @@ ul {
   position: relative;
   background: #4fa7fb;
   color: #ececec;
-  width: 596px;
-  height: 114px;
-  text-align: center;
+  max-width: 596px;
+  text-align: left;
   font-family: "Coolvetica400";
   font-weight: 400;
   font-size: 80px;
   line-height: 71.2px;
-  margin-left: 42px;
-  margin-top: 100px;
-  padding-top: 10px;
+  padding: 20px 80px 20px 40px;
+  margin-bottom: -20px;
 }
 @media screen and (max-width: 1630px) {
   .about-title {
@@ -1026,8 +1029,8 @@ ul {
 }
 
 .about-left {
-  width: 800px;
-  height: 400px;
+  flex-basis: 50%;
+  height: fit-content;
 }
 @media screen and (max-width: 1630px) {
   .about-left {
@@ -1047,9 +1050,9 @@ ul {
 }
 
 .about-img {
-  width: 737px;
-  height: 448px;
-  position: absolute;
+  max-width: 737px;
+  max-height: 448px;
+  width: 100%;
   border-radius: 48px;
   border: 3px solid #4fa7fb;
 }
@@ -1077,10 +1080,7 @@ ul {
 }
 
 .about-right {
-  width: 771px;
-  height: 324px;
-  margin-top: 220px;
-  margin-left: 50px;
+  flex-basis: 50%;
 }
 @media screen and (max-width: 1630px) {
   .about-right {
@@ -1481,7 +1481,7 @@ del {
 
 .work_cost {
   background-color: #cbe5ff;
-  height: 1310px;
+  height: fit-content;
 }
 @media screen and (max-width: 1630px) {
   .work_cost {
@@ -1539,6 +1539,7 @@ del {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 @media screen and (max-width: 1630px) {
   .work_cost-icons {
@@ -1561,6 +1562,7 @@ del {
   max-width: 312px;
   width: 100%;
   margin-bottom: 30px;
+  height: 100%;
 }
 @media screen and (max-width: 1630px) {
   .work_cost-icons__img {
