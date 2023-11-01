@@ -6548,16 +6548,16 @@ footer {
 }
 
 .fortune {
-  width: 95%;
-  height: 95%;
+  max-width: 1200px;
   position: fixed;
   top: 50%;
   left: 50%;
+  padding: 32px;
   transform: translate(-50%, -50%);
   background-color: #f3f3f3;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  display: none;
+  justify-content: space-between;
   z-index: 2000;
 }
 @media screen and (max-width: 1630px) {
@@ -7007,31 +7007,23 @@ footer {
 
 .wheel-container {
   position: relative;
-  top: -77vh;
-  left: 52%;
 }
 @media screen and (max-width: 1630px) {
   .wheel-container {
     max-width: 1622px;
     margin: 0 auto;
-    top: -72vh;
-    left: 46%;
   }
 }
 @media screen and (max-width: 870px) {
   .wheel-container {
     max-width: 859.68px;
     margin: 0 auto;
-    top: -20vh;
-    left: 54%;
   }
 }
 @media screen and (max-width: 340px) {
   .wheel-container {
     max-width: 328.39px;
     margin: 0 auto;
-    top: -25vh;
-    left: 47%;
   }
 }
 
@@ -7054,17 +7046,6 @@ footer {
   animation-direction: alternate;
   animation-fill-mode: forwards;
 }
-@media screen and (max-width: 1630px) {
-  .wheel {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 870px) {
-  .wheel {
-    width: 50%;
-  }
-}
-
 @keyframes wheel-rotate-1 {
   0% {
     transform: rotate(0deg);

@@ -580,6 +580,7 @@ const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       showFortune(); // Вызов функции showFortune, когда пользователь долистывает до середины страницы
+      updateDate(); // получаем дату
     }
   });
 };
@@ -595,8 +596,8 @@ const observer = new IntersectionObserver(callback, {
 observer.observe(target);
 
 const showFortune = function () {
-  fortune.style.display = "block";
-  fortuneOverlay.style.display = "block";
+  fortune.style.display = "flex";
+  fortuneOverlay.style.display = "flex";
 };
 
 const closeFortune = function () {
@@ -670,7 +671,7 @@ function spinWheel() {
 
   setTimeout(function () {
     fortuneResultInput.value = getResultMessage(randomDegrees);
-  }, 900000);
+  }, 1000);
 }
 
 fortuneArrow.addEventListener("click", spinWheel, { once: true });
@@ -681,9 +682,10 @@ function updateDate() {
   currentDate.setDate(currentDate.getDate() + 3);
   const options = { day: "numeric", month: "long" };
   const formattedDate = currentDate.toLocaleDateString("ru-RU", options);
+  console.log(formattedDate);
   dateElement.textContent = formattedDate;
 }
-setInterval(updateDate, 10000000);
+// setInterval(updateDate, 1000);
 
 window.addEventListener("load", restoreScrollPosition);
 
