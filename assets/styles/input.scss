@@ -68,7 +68,7 @@ $mobile: 340px;
 
 //mixins
 @mixin container {
-  max-width: 1622px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -102,20 +102,20 @@ $mobile: 340px;
     margin: 0 auto;
   }
 }
+header {
+  padding: 52px 0;
+}
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 63px;
 
   @media screen and (max-width: $desktop) {
-    margin-top: 26.55px;
   }
 
   @media screen and (max-width: $tablet) {
-    margin-top: 10.2px;
   }
 
   @media screen and (max-width: $mobile) {
@@ -128,17 +128,15 @@ $mobile: 340px;
   font-family: "Gilroy700";
   font-size: 18px;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
   text-decoration: none;
   color: $blue;
-  margin-right: 15.8%;
 
   @media screen and (max-width: $desktop) {
     font-size: 9.56px;
     line-height: 11.56px;
-    margin-right: 135.66px;
   }
 
   @media screen and (max-width: $tablet) {
@@ -158,10 +156,10 @@ $mobile: 340px;
 
 /* Стили для меню */
 .menu {
-  margin-right: 10%;
+  // margin-right: 10%;
 
   @media screen and (max-width: $mobile) {
-    margin-right: 5%;
+    // margin-right: 5%;
   }
 
   & ul {
@@ -253,12 +251,12 @@ $mobile: 340px;
   color: #f7f7f7;
 
   @media screen and (max-width: $desktop) {
-    font-size: 12.74px;
+    font-size: 16px;
     line-height: 15.41px;
   }
 
   @media screen and (max-width: $tablet) {
-    font-size: 4.9px;
+    font-size: 10px;
     line-height: 5.92px;
   }
 }
@@ -271,7 +269,8 @@ $mobile: 340px;
   background-image: url(../img/main/main-man.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
-  background-position-y: -25px;
+  background-position-y: -5px;
+  padding: 75px 0;
 
   @media screen and (max-width: 1865px) {
     background-position-x: 430px;
@@ -294,10 +293,10 @@ $mobile: 340px;
 
 /* Заголовок h1 */
 .main-header {
-  max-width: 1134px;
+  max-width: 1000px;
   padding-top: 114px;
   font-family: "Coolvetica400";
-  font-size: 140px;
+  font-size: 120px;
   font-weight: 400;
   line-height: 125px;
   letter-spacing: 0em;
@@ -375,17 +374,14 @@ $mobile: 340px;
   display: flex;
   flex-direction: row;
   align-items: end;
-  padding-bottom: 59px;
-  gap: 346px;
+  justify-content: space-between;
 
   @media screen and (max-width: $desktop) {
     padding-bottom: 31.73px;
-    gap: 178.95px;
   }
 
   @media screen and (max-width: $tablet) {
     padding-bottom: 11.96px;
-    gap: 68.78px;
   }
 
   @media screen and (max-width: $mobile) {
@@ -399,7 +395,7 @@ $mobile: 340px;
   margin-top: 54px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 
   @media screen and (max-width: $desktop) {
     margin-top: 28.93px;
@@ -458,7 +454,7 @@ $mobile: 340px;
 
     & p {
       font-family: "Roboto400";
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 400;
       line-height: 27px;
       letter-spacing: 0em;
@@ -496,7 +492,7 @@ $mobile: 340px;
 
 /* Стили для блока с видео*/
 .video-container {
-  max-width: 789px;
+  max-width: 550px;
 
   @media screen and (max-width: $desktop) {
     max-width: 423.73px;
@@ -733,13 +729,13 @@ $mobile: 340px;
 
 .section-with-conditions {
   background-color: $lightblue;
+  padding: 75px 0;
 }
 
 /* Стили для заголовка h2 */
 .header2 {
-  padding-top: 100px;
   font-family: "Coolvetica400";
-  font-size: 100px;
+  font-size: 75px;
   font-weight: 400;
   line-height: 89px;
   letter-spacing: 0em;
@@ -766,44 +762,38 @@ $mobile: 340px;
 /* Стили для блока с условиями */
 .conditions {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 36px;
+  row-gap: 40px;
   justify-content: space-between;
   margin-top: 70px;
-  padding-bottom: 181px;
 
   @media screen and (max-width: $desktop) {
     margin-top: 37.54px;
-    padding-bottom: 96.24px;
-    row-gap: 19.14px;
+    row-gap: 20px;
   }
 
   @media screen and (max-width: $tablet) {
     margin-top: 14.49px;
-    padding-bottom: 36.98px;
     row-gap: 7.36px;
   }
 
   &__item {
-    flex-basis: 40%;
-    padding: 33px 28px;
-    border-radius: 600px;
+    flex-basis: 48%;
+    padding: 20px;
+    border-radius: 20px;
     background-color: $blue;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 30px;
+    align-items: center;
 
     @media screen and (max-width: $desktop) {
-      padding: 17.55px 14.89px;
-      border-radius: 213px;
-      gap: 21.27px;
+      padding: 15px;
     }
 
     @media screen and (max-width: $tablet) {
-      padding: 6.74px 5.72px;
-      border-radius: 82px;
-      gap: 8.18px;
+      padding: 12px;
+      flex-basis: 100%;
     }
 
     @media screen and (max-width: $mobile) {
@@ -812,8 +802,8 @@ $mobile: 340px;
   }
 
   &__img {
-    max-width: 264px;
-    max-height: 264px;
+    max-width: 200px;
+    max-height: 200px;
 
     @media screen and (max-width: $desktop) {
       max-width: 140.37px;
@@ -828,7 +818,7 @@ $mobile: 340px;
 
   &__text {
     display: flex;
-    width: 433px;
+    // width: 433px;
     flex-direction: column;
     gap: 30px;
 
@@ -898,6 +888,8 @@ $mobile: 340px;
 
 //Стили для блока о технологиях
 .about-technology {
+  padding: 75px 0;
+
   @include container;
 
   @media screen and (max-width: $desktop) {
@@ -916,23 +908,18 @@ $mobile: 340px;
 
 .about {
   display: flex;
-  padding-bottom: 175px;
-  padding-top: 177px;
   height: fit-content;
   align-items: baseline;
   gap: 100px;
 
   @media screen and (max-width: $desktop) {
-    padding: 120px 0;
   }
 
   @media screen and (max-width: $tablet) {
-    padding: 70px 0;
+    flex-direction: column;
   }
 
   @media screen and (max-width: $mobile) {
-    flex-direction: column;
-    padding: 50px 0;
   }
 }
 
@@ -940,11 +927,11 @@ $mobile: 340px;
   position: relative;
   background: rgba($color: $blue, $alpha: 1);
   color: #ececec;
-  max-width: 596px;
+  max-width: 570px;
   text-align: left;
   font-family: "Coolvetica400";
   font-weight: 400;
-  font-size: 80px;
+  font-size: 75px;
   line-height: 71.2px;
   padding: 20px 80px 20px 40px;
   margin-bottom: -20px;
@@ -1061,7 +1048,6 @@ $mobile: 340px;
   font-size: 24px;
   line-height: 36px;
   color: $dark;
-  letter-spacing: 3%;
 
   @media screen and (max-width: $desktop) {
     font-weight: 400;
@@ -1077,18 +1063,20 @@ $mobile: 340px;
 
 // БЛОК ЗАПИШИСЬ НА КОНСУЛЬТАЦИЮ
 .sign_up_free {
-  // max-width: 1920px;
   width: 100%;
   background-position-x: 90%;
+  padding: 75px 0;
 
-  // margin: 0 auto;
   background: linear-gradient(125deg, $blue 60%, transparent 50%),
     url(../img/sign_up_free/sign_up_block.jpg);
+  background-size: contain;
 
   @media screen and (max-width: 1800px) {
     margin: 0 auto;
     background: linear-gradient(125deg, $blue 61%, transparent 50%),
       url(../img/sign_up_free/sign_up_block.jpg);
+    background-size: contain;
+
     background-position-x: 115%;
     background-repeat: no-repeat;
   }
@@ -1178,7 +1166,6 @@ $mobile: 340px;
 .container__sign_up {
   display: flex;
   flex-direction: row;
-  height: 397px;
   // background-image: url(../img/sign_up_free/sign_up_block.jpg);
   // background-repeat: no-repeat;
   overflow: hidden;
@@ -1198,23 +1185,6 @@ $mobile: 340px;
     height: 81.09px;
   }
 }
-
-// // диагональный синий блок: размеры, угол наклона
-// .blue_gradient {
-//   background: linear-gradient(125deg, $blue 80%, transparent 50%);
-
-//   @media screen and (max-width: $desktop) {
-//     @include tablet-container;
-//     background: linear-gradient(125deg, $blue 79%, transparent 50%);
-//     margin: 0;
-//   }
-
-//   @media screen and (max-width: $tablet) {
-//     @include mobile-container;
-//     background: linear-gradient(125deg, $blue 80%, transparent 50%);
-//     margin: 0;
-//   }
-// }
 
 del {
   text-decoration: line-through;
@@ -1270,24 +1240,18 @@ del {
 
   // стили блока заголовка
   &__title {
-    width: 1005px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    max-width: 900px;
     line-height: 60.45px;
 
     @media screen and (max-width: $desktop) {
       @include tablet-container;
-      width: 533.91px;
-      margin-top: 21.25px;
-      margin-bottom: 10px;
+      max-width: 500px;
       line-height: 32.88px;
     }
 
     @media screen and (max-width: $tablet) {
       @include mobile-container;
-      width: 205.19px;
-      margin-top: 8.17px;
-      margin-bottom: 10px;
+      max-width: 205.19px;
       line-height: 12.64px;
     }
   }
@@ -1296,7 +1260,7 @@ del {
   &__title,
   &_price > p {
     font-family: "Gilroy700";
-    font-size: 50px;
+    font-size: 40px;
     color: #fff;
 
     @media screen and (max-width: $desktop) {
@@ -1348,20 +1312,14 @@ del {
 .inner_container_sign-up {
   display: flex;
   flex-direction: column;
-  margin: 10px 100px;
-  height: 317px;
   gap: 5px;
 
   @media screen and (max-width: $desktop) {
     @include tablet-container;
-    margin: 20px 40px;
-    height: 317px;
   }
 
   @media screen and (max-width: $tablet) {
     @include mobile-container;
-    margin: 8px 15px;
-    height: 93.5px;
     gap: 3px;
   }
 
@@ -1470,6 +1428,7 @@ del {
 .work_cost {
   background-color: $lightblue;
   height: fit-content;
+  padding: 75px 0;
 
   @media screen and (max-width: $desktop) {
     @include container;
@@ -1489,15 +1448,14 @@ del {
   &__container {
     // Главный заголовок блока
     &-title {
-      height: 107px;
       width: 100%;
       text-align: center;
       color: $blue;
       font-family: "Coolvetica400";
       font-weight: 400;
-      font-size: 100px;
+      font-size: 75px;
       font-style: normal;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
 
       @media screen and (max-width: $desktop) {
         font-size: 63.75px;
@@ -1580,10 +1538,7 @@ del {
     display: flex;
     flex-direction: column;
     border-radius: 60px;
-    height: 844px;
-    max-width: 499px;
-    width: 100%;
-    margin-bottom: 59px;
+    padding: 35px;
     background-color: $blue;
     color: $white;
 
@@ -1609,37 +1564,26 @@ del {
   &__title {
     width: 100%;
     max-width: 450px;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 38px;
-    height: 141px;
-    padding-top: 25px;
-    padding-left: 45px;
     margin-left: 0px;
 
     @media screen and (max-width: $desktop) {
       @include tablet-container;
       max-width: 217.81px;
-      height: 110px;
       font-size: 25px;
-      padding-top: 25px;
-      padding-left: 0px;
       line-height: 20.55px;
     }
     @media screen and (max-width: $tablet) {
       @include mobile-container;
       max-width: 83.71px;
-      height: 16px;
       font-size: 6.53px;
-      padding-top: 2px;
       line-height: 7.9px;
     }
     @media screen and (max-width: $mobile) {
       max-width: 65px;
-      height: 18px;
       font-size: 3px;
-      padding-top: 3px;
       line-height: 5px;
-      padding-left: 2.5px;
     }
   }
 
@@ -1647,33 +1591,27 @@ del {
   &__line {
     height: 4px;
     width: 100%;
-    margin-left: 45px;
     background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 61.46%);
 
     @media screen and (max-width: $desktop) {
       @include tablet-container;
-      margin-left: 24px;
       margin-top: 7px;
     }
 
     @media screen and (max-width: $tablet) {
       @include tablet-container;
       height: 2px;
-      margin-left: 9.39px;
       margin-top: 5px;
     }
 
     @media screen and (max-width: $mobile) {
       @include mobile-container();
-      height: 1px;
-      margin-left: 5px;
     }
   }
 
   // Заголовок после линии
   &__title2 {
     font-size: 24px;
-    margin-left: 45px;
     font-weight: 700;
     margin-top: 20px;
     max-width: 344px;
@@ -1681,19 +1619,16 @@ del {
 
     @media screen and (max-width: $desktop) {
       font-size: 20px;
-      margin-left: 24px;
       margin-top: 10px;
     }
 
     @media screen and (max-width: $tablet) {
       font-size: 4.9px;
-      margin-left: 9.39px;
       margin-top: 5px;
     }
 
     @media screen and (max-width: $mobile) {
       font-size: 2.5px;
-      margin: 2.5px 3px 0px 5px;
     }
   }
 
@@ -1703,25 +1638,22 @@ del {
     width: 100%;
     font-family: "Gilroy500";
     font-size: 18px;
-    margin-left: 65px;
+    margin-left: 20px;
 
     @media screen and (max-width: $desktop) {
       font-size: 15px;
-      margin-left: 38px;
+      margin-left: 10px;
       max-width: 159.91px;
     }
 
     @media screen and (max-width: $tablet) {
       font-size: 3.68px;
-      margin-left: 13.39px;
       max-width: 57.45px;
     }
 
     @media screen and (max-width: $mobile) {
       max-width: 70px;
-      width: 80%;
       font-size: 2.5px;
-      margin: 3px 0px 0px 12px;
     }
   }
 
@@ -1757,7 +1689,7 @@ del {
     font-size: 40px;
     font-weight: 700;
     line-height: normal;
-    margin: 28px 0px 15px 46px;
+    margin: 28px 0px 15px 0;
 
     @media screen and (max-width: $desktop) {
       @include tablet-container;
@@ -1765,7 +1697,7 @@ del {
       height: 42px;
       font-size: 21.25px;
       border-radius: 6px;
-      margin: 20px 0px 0px 24px;
+      margin: 20px 0px 15px 0px;
     }
 
     @media screen and (max-width: $tablet) {
@@ -1792,12 +1724,9 @@ del {
   }
 
   &__btn2 {
-    //max-width: 407px;
-    max-width: 407px;
     width: 100%;
 
-    // min-width: 217px;
-    height: 61px;
+    padding: 10px;
     border-radius: 12px;
     border-color: transparent;
     background-color: $pink;
@@ -1807,7 +1736,7 @@ del {
     font-size: 26px;
     font-weight: 600;
     line-height: normal;
-    margin: 28px 0px 15px 45px;
+    margin: 28px 0px 15px 0px;
 
     @media screen and (max-width: $desktop) {
       @include tablet-container;
@@ -1815,8 +1744,7 @@ del {
       height: 31.94px;
       font-size: 13.81px;
       border-radius: 6px;
-      padding-left: 0px;
-      margin: 15px 0px 0px 24px;
+      margin: 15px 0px 0px 0px;
     }
 
     @media screen and (max-width: $tablet) {
